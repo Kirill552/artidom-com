@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import styles from './Hero.module.css';
 
 export default function Hero() {
@@ -13,8 +14,14 @@ export default function Hero() {
         <button className={styles.button}>{t('cta')}</button>
       </div>
       <div className={styles.visual}>
-        <div className={styles.imagePlaceholder}>
-          {/* Real photo of the Montenegro workshop or school goes here */}
+        <div className={styles.imageWrapper}>
+          <Image 
+            src="/images/projects/school/photo_5267340135563465940_y.jpg"
+            alt="Artidom Furniture Production Montenegro"
+            fill
+            className={styles.image}
+            priority
+          />
         </div>
         <div className={styles.floatingTag}>
           Montenegro Workshop

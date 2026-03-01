@@ -6,13 +6,13 @@
 .cases {
   margin-top: 10vh;
   background: white;
-  padding: 6rem;
-  border-radius: 60px;
+  padding: 4rem;
+  border-radius: 40px;
   box-shadow: var(--shadow-soft);
 }
 
 .caseHeader {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .caseLabel {
@@ -26,26 +26,26 @@
 }
 
 .caseTitle {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 
 .caseContent {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6rem;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
   align-items: center;
 }
 
 .caseText p {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  opacity: 0.7;
-  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin-bottom: 2.5rem;
 }
 
 .stats {
   display: flex;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 .statItem {
@@ -54,33 +54,44 @@
 }
 
 .statItem strong {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: var(--font-display);
   color: var(--color-accent);
 }
 
 .statItem span {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   opacity: 0.5;
 }
 
 .caseVisual {
-  background: var(--color-bg);
+  position: relative;
+}
+
+.caseImageWrapper {
+  position: relative;
   aspect-ratio: 16 / 9;
-  border-radius: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--color-muted);
+  box-shadow: var(--shadow-soft);
+}
+
+.image {
+  object-fit: cover;
 }
 
 @media (max-width: 1024px) {
   .cases {
-    padding: 3rem;
+    padding: 2rem;
   }
   .caseContent {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2rem;
   }
   .caseTitle {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }

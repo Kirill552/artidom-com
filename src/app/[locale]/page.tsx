@@ -1,5 +1,6 @@
 import Hero from '@/components/Hero';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import styles from './page.module.css';
 
 export default function IndexPage() {
@@ -30,7 +31,14 @@ export default function IndexPage() {
               </div>
             </div>
             <div className={styles.caseVisual}>
-               {/* School photo placeholder */}
+              <div className={styles.caseImageWrapper}>
+                <Image 
+                  src="/images/projects/school/photo_5267340135563465942_y.jpg"
+                  alt="International School Montenegro Interior by Artidom"
+                  fill
+                  className={styles.image}
+                />
+              </div>
             </div>
           </div>
         </section>
