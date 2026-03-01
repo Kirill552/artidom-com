@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTIDOM | High-Tech Business</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #0a0a0a;
+            --accent: #0047bb; /* Corporate Blue */
+            --secondary: #f4f7fa;
+            --border: #e0e6ed;
+            --font-main: 'Satoshi', sans-serif;
+        }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-main);
+            margin: 0;
+            line-height: 1.5;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            background: #fff;
+            z-index: 100;
+        }
+        .logo {
+            font-weight: 900;
+            font-size: 1.8rem;
+            color: var(--accent);
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text);
+            margin-left: 2rem;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        .hero {
+            padding: 10vh 5%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5%;
+            align-items: center;
+        }
+        .badge {
+            display: inline-block;
+            background: var(--secondary);
+            padding: 0.5rem 1rem;
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+        }
+        h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 1.05;
+            margin: 0 0 1.5rem 0;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            color: #555;
+            margin-bottom: 2.5rem;
+            max-width: 500px;
+        }
+        .cta-group {
+            display: flex;
+            gap: 1rem;
+        }
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+        .btn-primary {
+            background: var(--accent);
+            color: #fff;
+        }
+        .btn-secondary {
+            border: 1px solid var(--border);
+            color: var(--text);
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .stat-item h3 {
+            font-size: 2rem;
+            margin: 0;
+            color: var(--accent);
+        }
+        .stat-item p {
+            font-size: 0.9rem;
+            margin: 0.5rem 0 0 0;
+        }
+        .image-placeholder {
+            background: var(--secondary);
+            aspect-ratio: 16/10;
+            border-radius: 20px;
+            border: 1px dashed #ccc;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">ARTIDOM B2B</div>
+        <div class="nav-links">
+            <a href="#">Solutions</a>
+            <a href="#">Standards</a>
+            <a href="#">Case Studies</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <span class="badge">European Quality Standard 2026</span>
+            <h1>High-Performance Furnishing Systems</h1>
+            <p>Precision-engineered interior solutions for commercial spaces and hotel infrastructure across DACH and Balkans.</p>
+            <div class="cta-group">
+                <a href="#" class="btn btn-primary">Request Tech Spec</a>
+                <a href="#" class="btn btn-secondary">Our Facility</a>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>25+</h3>
+                    <p>Years in Industry</p>
+                </div>
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Business Projects</p>
+                </div>
+                <div class="stat-item">
+                    <h3>EU</h3>
+                    <p>Certified Materials</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-placeholder"></div>
+    </div>
+</body>
+</html>

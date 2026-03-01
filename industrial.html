@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTIDOM | Modern Industrial</title>
+    <style>
+        :root {
+            --bg: #121212;
+            --text: #e0e0e0;
+            --accent: #b08d57; /* Copper/Wood */
+            --muted: #333;
+            --font-main: 'Inter', sans-serif;
+            --font-display: 'Playfair Display', serif;
+        }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-main);
+            margin: 0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--muted);
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+        }
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 0.9rem;
+            opacity: 0.7;
+            transition: 0.3s;
+        }
+        nav a:hover { opacity: 1; color: var(--accent); }
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            min-height: 70vh;
+        }
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: 4.5rem;
+            line-height: 1.1;
+            margin: 0;
+            font-weight: 400;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.6;
+            max-width: 400px;
+        }
+        .visual-box {
+            background: #1a1a1a;
+            aspect-ratio: 4/5;
+            position: relative;
+            border: 1px solid var(--muted);
+            overflow: hidden;
+        }
+        .visual-box::after {
+            content: "RAW MATERIAL 
+ CRAFTMANSHIP 
+ 25 YEARS";
+            position: absolute;
+            bottom: 2rem;
+            left: 2rem;
+            font-family: var(--font-display);
+            white-space: pre-wrap;
+            color: var(--accent);
+            opacity: 0.5;
+        }
+        .cta-btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2.5rem;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .cta-btn:hover {
+            background: var(--accent);
+            color: #fff;
+            transform: scale(1.05);
+        }
+        .meta-data {
+            margin-top: 4rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">ARTIDOM<sup>®</sup></div>
+            <nav>
+                <a href="#">Projects</a>
+                <a href="#">Manufacturing</a>
+                <a href="#">HoReCa</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="content">
+                <p>Industrial Atelier since 2001</p>
+                <h1>Bespoke Furniture Manufacturing</h1>
+                <p>Custom metal and wood solutions for modern hospitality business. From Montenegro to the world.</p>
+                <a href="#" class="cta-btn">View Workshop</a>
+                <div class="meta-data">
+                    <span>42.4411° N, 19.2625° E</span>
+                    <span>Montenegro Facility</span>
+                    <span>Project B2B Only</span>
+                </div>
+            </div>
+            <div class="visual-box">
+                <!-- Placeholder for high-end raw material photo -->
+            </div>
+        </section>
+    </div>
+</body>
+</html>
