@@ -3,13 +3,13 @@ import { routing } from './routing';
 
 export default getRequestConfig(async ({ locale }) => {
   // Validate that the incoming `locale` parameter is valid
+  let finalLocale = locale;
   if (!routing.locales.includes(locale as any)) {
-    return {
-      messages: (await import(`../messages/en.json`)).default
-    };
+    finalLocale = routing.defaultLocale;
   }
 
   return {
-    messages: (await import(`../messages/${locale}.json`)).default
+    locale: finalLocale,
+    messages: (await import(`../messages/${finalLocale}.json`)).default
   };
 });
