@@ -1,60 +1,40 @@
 import { notFound } from 'next/navigation';
-import { Metadata } from 'next';
-import fs from 'fs/promises';
-import path from 'path';
+import { getPost } from '@/lib/cms';
+import WorkshopProof from '@/components/WorkshopProof';
+import { Link } from '@/i18n/routing';
+import { setRequestLocale } from 'next-intl/server';
+import styles from './page.module.css';
 
-async function getArticle(slug: string) {
-  try {
-    const dataFilePath = path.join(process.cwd(), 'data', 'articles.json');
-    const fileData = await fs.readFile(dataFilePath, 'utf-8');
-    const articles = JSON.parse(fileData);
-    return articles.find((a: any) => a.slug === slug);
-  } catch (e) {
-    return null;
-  }
-}
-
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-  const { slug } = await params;
-  const article = await getArticle(slug);
-  
-  if (!article) return { title: 'Not Found' };
-  
-  return {
-    title: `${article.title} | ARTIDOM Journal`,
-    description: article.excerpt,
-  };
-}
-
-export default async function ArticlePage({ params }: { params: Promise<{ slug: string, locale: string }> }) {
+export default async function PostPage({ params }: { params: Promise<{ slug: string, locale: string }> }) {
   const { slug, locale } = await params;
-  const article = await getArticle(slug);
-
-  if (!article) notFound();
-
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": article.title,
-    "description": article.excerpt,
-    "datePublished": article.date,
-    "author": { "@type": "Organization", "name": "ARTIDOM" }
-  };
+  setRequestLocale(locale);
+  const post = await getPost(slug, locale);
+  if (!post) notFound();
 
   return (
-    <main style={{ minHeight: '100vh', padding: '6rem 0' }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <div className="container" style={{ maxWidth: '800px' }}>
-        <span style={{ textTransform: 'uppercase', letterSpacing: '2px', color: 'var(--color-accent)', fontSize: '0.8rem', fontWeight: '600' }}>
-          {new Date(article.date).toLocaleDateString(locale)}
-        </span>
-        <h1 style={{ fontSize: '3.5rem', margin: '1.5rem 0 3rem 0' }}>{article.title}</h1>
-        
-        <div style={{ fontSize: '1.2rem', lineHeight: '1.8', color: 'var(--color-text)', opacity: 0.9 }}>
-          {article.content.split('\n').map((paragraph: string, i: number) => (
-            <p key={i} style={{ marginBottom: '1.5rem' }}>{paragraph}</p>
-          ))}
+    <main>
+      <div className={styles.heroImage} />
+
+      <article className={`container ${styles.article}`}>
+        <div className={styles.meta}>
+          <span className={styles.tag}>{post.tag}</span>
+          <span className={styles.date}>
+            {new Date(post.publishedAt).toLocaleDateString()}
+          </span>
         </div>
+
+        <h1 className={styles.title}>{post.title}</h1>
+
+        <div
+          className={styles.body}
+          dangerouslySetInnerHTML={{ __html: post.body }}
+        />
+      </article>
+
+      <WorkshopProof />
+
+      <div className={`container ${styles.back}`}>
+        <Link href="/blog">← Journal</Link>
       </div>
     </main>
   );

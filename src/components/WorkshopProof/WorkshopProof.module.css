@@ -1,0 +1,25 @@
+.strip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.25rem 2rem;
+    background: var(--color-muted);
+    flex-wrap: wrap;
+}
+
+.item {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--color-accent);
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.dot {
+    color: var(--color-accent);
+    opacity: 0.4;
+}

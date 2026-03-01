@@ -1,22 +1,74 @@
-export default async function WorkshopPage() {
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { Link } from '@/i18n/routing';
+import Image from 'next/image';
+import WorkshopProof from '@/components/WorkshopProof';
+import styles from './page.module.css';
+
+export default async function WorkshopPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
+  const t = await getTranslations('Workshop');
+
+  const steps = ['step1', 'step2', 'step3', 'step4'] as const;
+  const materials = ['mat1', 'mat2', 'mat3'] as const;
+
   return (
-    <main style={{ minHeight: '80vh', padding: '6rem 0' }}>
-      <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
-        <div>
-          <h1 style={{ fontSize: '4rem', marginBottom: '2rem' }}>The Workshop</h1>
-          <p style={{ fontSize: '1.2rem', opacity: 0.8, lineHeight: '1.8', marginBottom: '2rem' }}>
-            Located in the heart of Montenegro, our woodworking atelier is equipped with modern panel saws, edge banders, and precision tools. 
-            We do not claim to be a giant factory; instead, we are a transparent, highly efficient workshop focused on exceptional craftsmanship and strict European quality control.
-          </p>
-          <ul style={{ listStyle: 'none', padding: 0 }}>
-            {['25 Years of Woodworking', 'Premium Materials', 'Direct B2B Pricing', 'Custom Dimensions'].map((item) => (
-              <li key={item} style={{ fontSize: '1.1rem', marginBottom: '1rem', color: 'var(--color-accent)', fontWeight: '500' }}>✓ {item}</li>
-            ))}
-          </ul>
+    <main>
+      {/* Hero */}
+      <section className={styles.hero}>
+        <div className={styles.heroOverlay}>
+          <span className={styles.heroLabel}>{t('hero_label')}</span>
+          <h1 className={styles.heroTitle}>{t('hero_title')}</h1>
         </div>
-        <div style={{ aspectRatio: '4/5', background: 'var(--color-muted)', borderRadius: '40px', boxShadow: 'var(--shadow-soft)' }}>
-          {/* Workshop photo */}
+      </section>
+
+      {/* Intro */}
+      <section className={`container ${styles.intro}`}>
+        <div className={styles.introFact}>
+          {t('intro_fact').split('\n').map((line, i) => (
+            <p key={i}>{line}</p>
+          ))}
         </div>
+        <p className={styles.introText}>{t('intro_text')}</p>
+      </section>
+
+      <WorkshopProof />
+
+      {/* Steps */}
+      <section className={`container ${styles.steps}`}>
+        <span className={styles.label}>{t('steps_title')}</span>
+        <div className={styles.stepsGrid}>
+          {steps.map((s) => (
+            <div key={s} className={styles.step}>
+              <div className={styles.stepImage} />
+              <h3 className={styles.stepTitle}>{t(`${s}_title`)}</h3>
+              <p className={styles.stepText}>{t(`${s}_text`)}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Materials */}
+      <section className={`container ${styles.materials}`}>
+        <span className={styles.label}>{t('materials_title')}</span>
+        <div className={styles.materialsGrid}>
+          {materials.map((m) => (
+            <div key={m} className={styles.material}>
+              <div className={styles.materialImage} />
+              <span className={styles.materialName}>{t(`${m}_name`)}</span>
+              <span className={styles.materialOrigin}>{t(`${m}_origin`)}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Capacity */}
+      <WorkshopProof variant="default" />
+
+      {/* Link to Projects */}
+      <div className={`container ${styles.projectsLink}`}>
+        <Link href="/projects">{t('projects_link')}</Link>
       </div>
     </main>
   );

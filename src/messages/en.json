@@ -1,17 +1,199 @@
 {
+  "Nav": {
+    "solutions": "solutions",
+    "workshop": "workshop",
+    "catalog": "catalog",
+    "projects": "projects",
+    "journal": "journal",
+    "cta": "Request Quote",
+    "lang_en": "EN",
+    "lang_de": "DE",
+    "lang_sr": "SR"
+  },
   "Index": {
     "title": "ARTIDOM | Furniture Manufacturing & Furnishing in Montenegro",
     "hero": {
-      "label": "Modern Woodworking Atelier",
-      "title": "Project-based Furniture & Kitchens",
-      "description": "25 years of industry expertise. Local manufacturing facility in Montenegro. We deliver complete interior solutions for B2B and high-end residential projects.",
+      "label": "Montenegro Woodworking Atelier",
+      "title": "Project-based furniture & kitchens",
+      "description": "25 years in the industry. Production facility in Bar, Montenegro. Custom orders for B2B and residential projects.",
       "cta": "Request Quote"
     },
     "cases": {
       "school": {
-        "title": "Flagship Case: International School",
-        "description": "Comprehensive furnishing of a 1,200 sqm educational facility in Montenegro. Custom classroom storage, reception areas, and specialized furniture units."
+        "label": "Featured Project",
+        "title": "International School Montenegro",
+        "description": "1,200 sqm educational facility. Custom classroom storage, reception areas, and staff room units.",
+        "stat_sqm": "1,200 sqm",
+        "stat_units": "40+ units",
+        "stat_location": "Montenegro"
       }
+    },
+    "sectors": {
+      "title": "What we build",
+      "horeca": {
+        "label": "HoReCa",
+        "description": "Hotel rooms, restaurant zones, lobby furniture — complete FF&E packages"
+      },
+      "education": {
+        "label": "Education",
+        "description": "Classroom storage, reception, staff areas — delivered and installed"
+      },
+      "workspace": {
+        "label": "Workspace",
+        "description": "Office interiors from brief to installation — desks, storage, meeting zones"
+      },
+      "residential": {
+        "label": "Residential",
+        "description": "Kitchen and living units for villas and branded apartments"
+      }
+    },
+    "process": {
+      "title": "How we work",
+      "step1": "Brief",
+      "step2": "Design",
+      "step3": "Production",
+      "step4": "Delivery & Install"
+    },
+    "cta": {
+      "title": "Tell us about your project",
+      "subtitle": "We respond within 24 hours",
+      "name": "Your name",
+      "company": "Company (optional)",
+      "message": "Project description",
+      "submit": "Send →"
     }
+  },
+  "WorkshopProof": {
+    "default": [
+      "Bar, Montenegro",
+      "CNC + hand finishing",
+      "EU delivery from 3 weeks"
+    ],
+    "horeca": [
+      "FF&E packages for 40+ room properties",
+      "CNC-cut from your drawings",
+      "Lead time 6 weeks"
+    ],
+    "residential": [
+      "Custom from 1 unit",
+      "Work from DWG/PDF drawings",
+      "Ex-works or installed"
+    ],
+    "catalog": [
+      "Made in Bar, Montenegro",
+      "Custom dimensions available",
+      "14-day lead time standard units"
+    ]
+  },
+  "Workshop": {
+    "hero_label": "Bar, Montenegro — since 2001",
+    "hero_title": "Where the furniture is made",
+    "intro_fact": "40 craftsmen.\n800 sqm production floor.\n300 km from Budva.",
+    "intro_text": "Our facility in Bar handles everything from material intake to finished unit. CNC cutting, frame assembly, finishing, and quality control — all in-house.",
+    "steps_title": "Production process",
+    "step1_title": "Material intake",
+    "step1_text": "Oak, walnut, MDF — checked on arrival. Acclimatised 48h before cutting.",
+    "step2_title": "CNC cutting",
+    "step2_text": "Precision cutting from client DWG or our drawings. Tolerance ±0.5mm.",
+    "step3_title": "Assembly & finishing",
+    "step3_text": "Frame assembly, edge banding, surface finishing — lacquer or natural oil.",
+    "step4_title": "QC & packing",
+    "step4_text": "Each unit inspected before packing. EU export packaging on request.",
+    "materials_title": "Primary materials",
+    "mat1_name": "Austrian Oak",
+    "mat1_origin": "Austria / Germany",
+    "mat2_name": "Walnut",
+    "mat2_origin": "Eastern Europe",
+    "mat3_name": "MDF + Veneer",
+    "mat3_origin": "Regional supply",
+    "capacity_title": "Capacity",
+    "cap1": "800 sqm production floor",
+    "cap2": "Up to 200 units / month",
+    "cap3": "Custom orders from 1 unit",
+    "projects_link": "See completed projects →"
+  },
+  "Solutions": {
+    "horeca": {
+      "label": "HoReCa",
+      "title": "Hotel & restaurant furnishing from Montenegro",
+      "description": "Complete FF&E packages for hospitality projects. From hotel rooms to restaurant zones — single supplier, consistent finish.",
+      "pain1": "Tight delivery window",
+      "sol1": "Production staged to your construction schedule",
+      "pain2": "FF&E for multiple room types",
+      "sol2": "Single supplier, consistent finish across all units",
+      "pain3": "Custom dimensions for non-standard spaces",
+      "sol3": "CNC-cut from your technical drawings",
+      "pain4": "Long-distance supplier coordination",
+      "sol4": "Production facility 40 km from Budva — site visits possible"
+    },
+    "education": {
+      "label": "Education",
+      "title": "School & campus furniture — delivered",
+      "description": "Classroom storage, reception areas, staff room units. We furnished a 1,200 sqm international school in Montenegro.",
+      "pain1": "Large volume, uniform spec",
+      "sol1": "Batch production — same finish across 40+ units",
+      "pain2": "Budget constraints",
+      "sol2": "Direct manufacturer pricing, no reseller margin",
+      "pain3": "Installation coordination",
+      "sol3": "Delivery and installation included",
+      "pain4": "Custom labeling / size adjustments",
+      "sol4": "All dimensions cut to your floor plan"
+    },
+    "workspace": {
+      "label": "Workspace",
+      "title": "Office interiors — brief to installation",
+      "description": "Desks, storage, meeting zone furniture. Custom dimensions for your floor plan.",
+      "pain1": "Office refit on a deadline",
+      "sol1": "Fixed production schedule, delivery date confirmed upfront",
+      "pain2": "Multiple furniture types from one project",
+      "sol2": "Desks, storage, reception — all from one supplier",
+      "pain3": "Non-standard room layouts",
+      "sol3": "CNC-cut to your DWG drawings",
+      "pain4": "Finish consistency across departments",
+      "sol4": "One production run — identical finish throughout"
+    },
+    "residential": {
+      "label": "Residential",
+      "title": "Villas and apartments — full FF&E",
+      "description": "Kitchen units, living room storage, bedroom furniture for villas and branded apartments in Montenegro and EU.",
+      "pain1": "Interior designer has a spec, needs execution",
+      "sol1": "We work from DWG/PDF drawings directly",
+      "pain2": "Shipping to EU",
+      "sol2": "Delivered and installed — or ex-works Montenegro",
+      "pain3": "One-off custom piece",
+      "sol3": "Minimum order: 1 unit",
+      "pain4": "Material selection",
+      "sol4": "Sample pack sent on request — oak, walnut, lacquer finishes"
+    }
+  },
+  "Contact": {
+    "title": "Tell us about your project",
+    "subtitle": "We respond within 24 hours",
+    "name": "Your name",
+    "company": "Company",
+    "project_type": "Project type",
+    "type_hotel": "Hotel",
+    "type_school": "School",
+    "type_villa": "Villa / Apartment",
+    "type_office": "Office",
+    "type_other": "Other",
+    "country": "Country",
+    "message": "Project description",
+    "submit": "Send →",
+    "success": "Message received. We will respond within 24 hours.",
+    "address": "Bar, Montenegro",
+    "email": "info@artidom.com"
+  },
+  "Footer": {
+    "tagline": "Custom furniture. Montenegro-made.",
+    "address": "Bar, Montenegro",
+    "email": "info@artidom.com",
+    "phone": "+382 XX XXX XXX",
+    "nav_solutions": "Solutions",
+    "nav_workshop": "Workshop",
+    "nav_catalog": "Catalog",
+    "nav_projects": "Projects",
+    "nav_contact": "Contact",
+    "copyright": "ARTIDOM"
   }
 }

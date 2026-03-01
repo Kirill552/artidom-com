@@ -1,10 +1,23 @@
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { getSchemaData } from '@/lib/seo/schema';
-import Link from 'next/link';
+import Nav from '@/components/Nav';
+import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 import './globals.css';
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://artidom.com'),
+  title: { default: 'ARTIDOM | Furniture Manufacturing Montenegro', template: '%s | ARTIDOM' },
+  description: 'Custom furniture manufacturing in Bar, Montenegro. FF&E for hotels, schools, villas. EU delivery.',
+  openGraph: {
+    siteName: 'ARTIDOM',
+    locale: 'en_US',
+    type: 'website',
+  },
+};
 
 export default async function LocaleLayout({
   children,
@@ -19,6 +32,8 @@ export default async function LocaleLayout({
     notFound();
   }
 
+  setRequestLocale(locale);
+
   const messages = await getMessages();
   const schemaData = getSchemaData(locale);
 
@@ -29,29 +44,20 @@ export default async function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
+        <link rel="alternate" hrefLang="en" href="https://artidom.com/en/" />
+        <link rel="alternate" hrefLang="de" href="https://artidom.com/de/" />
+        <link rel="alternate" hrefLang="sr" href="https://artidom.com/sr/" />
+        <link rel="alternate" hrefLang="x-default" href="https://artidom.com/en/" />
       </head>
       <body>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider messages={messages} locale={locale}>
           <div className="container">
-            <header className="site-header">
-              <div className="site-logo">Artidom</div>
-              <nav className="site-nav">
-                <Link href={`/${locale}/solutions`}>solutions</Link>
-                <Link href={`/${locale}/catalog`}>catalog</Link>
-                <Link href={`/${locale}/workshop`}>the workshop</Link>
-                <Link href={`/${locale}/blog`}>journal (seo)</Link>
-              </nav>
-            </header>
+            <Nav />
           </div>
-          
+
           {children}
 
-          <footer className="site-footer">
-            <div className="container">
-              <h2>ARTIDOM</h2>
-              <p>Montenegro Manufacturing Facility &bull; 2026</p>
-            </div>
-          </footer>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

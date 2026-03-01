@@ -1,19 +1,43 @@
-export default async function CatalogPage() {
+import { Link } from '@/i18n/routing';
+import { catalogItems } from '@/lib/catalog';
+import WorkshopProof from '@/components/WorkshopProof';
+import { setRequestLocale } from 'next-intl/server';
+import styles from './page.module.css';
+
+export default async function CatalogPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
-    <main style={{ minHeight: '80vh', padding: '6rem 0' }}>
-      <div className="container">
-        <h1 style={{ fontSize: '4rem', marginBottom: '2rem' }}>Product Catalog</h1>
-        <p style={{ fontSize: '1.2rem', opacity: 0.8, maxWidth: '600px' }}>
-          Explore our range of bespoke manufacturing capabilities. Every piece is crafted in Montenegro.
-        </p>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', marginTop: '4rem' }}>
-          {['Professional Kitchens', 'Smart Storage Systems', 'Bar Counters', 'Seating & Tables'].map((category) => (
-            <div key={category} style={{ aspectRatio: '16/9', background: 'var(--color-muted)', borderRadius: '30px', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'flex-end', padding: '2rem' }}>
-              <h2 style={{ fontSize: '2.5rem', color: 'white', textShadow: '0 2px 10px rgba(0,0,0,0.2)' }}>{category}</h2>
-            </div>
+    <main>
+      <section className={`container ${styles.header}`}>
+        <h1 className={styles.title}>What we make</h1>
+        <p className={styles.subtitle}>Custom-produced in Bar, Montenegro. Lead time 3–6 weeks.</p>
+
+        <div className={styles.tabs}>
+          {(['all', 'kitchens', 'storage', 'bespoke'] as const).map((c) => (
+            <span key={c} className={styles.tab}>{c}</span>
           ))}
         </div>
-      </div>
+      </section>
+
+      <WorkshopProof variant="catalog" />
+
+      <section className={`container ${styles.grid}`}>
+        {catalogItems.map((item) => {
+          const name = item.name[locale as 'en' | 'de' | 'sr'] ?? item.name.en;
+          return (
+            <Link key={item.slug} href={`/catalog/${item.slug}`} className={styles.card}>
+              <div className={styles.cardImage} />
+              <div className={styles.cardInfo}>
+                <span className={styles.cardName}>{name}</span>
+                <span className={styles.cardMeta}>{item.material} · {item.dimensions}</span>
+                <span className={styles.cardCta}>Request →</span>
+              </div>
+            </Link>
+          );
+        })}
+      </section>
     </main>
   );
 }

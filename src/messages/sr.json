@@ -1,17 +1,199 @@
 {
+  "Nav": {
+    "solutions": "rješenja",
+    "workshop": "radionica",
+    "catalog": "katalog",
+    "projects": "projekti",
+    "journal": "novosti",
+    "cta": "Pošalji upit",
+    "lang_en": "EN",
+    "lang_de": "DE",
+    "lang_sr": "SR"
+  },
   "Index": {
     "title": "ARTIDOM | Proizvodnja namještaja i opremanje u Crnoj Gori",
     "hero": {
-      "label": "Savremeni stolarski atelje",
+      "label": "Stolarski atelje u Crnoj Gori",
       "title": "Namještaj po projektu i kuhinje",
-      "description": "25 godina iskustva u industriji. Sopstveni proizvodni pogon u Crnoj Gori. Realizujemo kompletna rješenja za opremanje B2B i luksuznih stambenih objekata.",
+      "description": "25 godina iskustva. Proizvodni pogon u Baru, Crna Gora. Izrada po narudžbi za B2B i stambene projekte.",
       "cta": "Zatražite ponudu"
     },
     "cases": {
       "school": {
-        "title": "Glavni projekat: Internacionalna škola",
-        "description": "Kompletno opremanje obrazovnog objekta od 1.200 m² u Crnoj Gori. Prilagođeni namještaj za učionice, recepcije i specijalizovane jedinice."
+        "label": "Istaknuti projekat",
+        "title": "Internacionalna škola Crna Gora",
+        "description": "1.200 m² obrazovna ustanova. Namještaj po mjeri za učionice, recepcije i prostorije za osoblje.",
+        "stat_sqm": "1.200 m²",
+        "stat_units": "40+ jedinica",
+        "stat_location": "Crna Gora"
       }
+    },
+    "sectors": {
+      "title": "Šta gradimo",
+      "horeca": {
+        "label": "HoReCa",
+        "description": "Hotelske sobe, restoranski prostori, lobi namještaj — kompletni FF&E paketi"
+      },
+      "education": {
+        "label": "Obrazovanje",
+        "description": "Namještaj za učionice, recepcije, prostorije za osoblje — isporučeno i montirano"
+      },
+      "workspace": {
+        "label": "Kancelarije",
+        "description": "Enterijeri kancelarija od projekta do montaže — stolovi, skladištenje, zone za sastanke"
+      },
+      "residential": {
+        "label": "Stambeni",
+        "description": "Kuhinje i dnevni boravak za vile i brendirane apartmane"
+      }
+    },
+    "process": {
+      "title": "Kako radimo",
+      "step1": "Brifing",
+      "step2": "Dizajn",
+      "step3": "Proizvodnja",
+      "step4": "Isporuka i montaža"
+    },
+    "cta": {
+      "title": "Recite nam o svom projektu",
+      "subtitle": "Odgovaramo u roku od 24 sata",
+      "name": "Vaše ime",
+      "company": "Firma (opciono)",
+      "message": "Opis projekta",
+      "submit": "Pošalji →"
     }
+  },
+  "WorkshopProof": {
+    "default": [
+      "Bar, Crna Gora",
+      "CNC + ručna obrada",
+      "Isporuka u EU od 3 sedmice"
+    ],
+    "horeca": [
+      "FF&E paketi za 40+ soba",
+      "CNC po vašim nacrtima",
+      "Rok isporuke 6 sedmica"
+    ],
+    "residential": [
+      "Izrada od 1 komada",
+      "Radimo po DWG/PDF nacrtima",
+      "Franko ili montirano"
+    ],
+    "catalog": [
+      "Proizvedeno u Baru, CG",
+      "Nestandardne dimenzije dostupne",
+      "14 dana za standardne"
+    ]
+  },
+  "Workshop": {
+    "hero_label": "Bar, Crna Gora — od 2001.",
+    "hero_title": "Gdje se pravi namještaj",
+    "intro_fact": "40 majstora.\n800 m² proizvodne površine.\n300 km od Budve.",
+    "intro_text": "Naš pogon u Baru pokriva sve — od prijema materijala do gotovog proizvoda. CNC rezanje, montaža, završna obrada i kontrola kvaliteta — sve pod jednim krovom.",
+    "steps_title": "Proizvodni proces",
+    "step1_title": "Prijem materijala",
+    "step1_text": "Hrast, orah, MDF — pregled pri prijemu. 48h aklimatizacija prije rezanja.",
+    "step2_title": "CNC rezanje",
+    "step2_text": "Precizno rezanje prema DWG nacrtu klijenta ili našim crtežima. Tolerancija ±0,5mm.",
+    "step3_title": "Montaža i završna obrada",
+    "step3_text": "Montaža okvira, kantovanje, površinska obrada — lak ili prirodno ulje.",
+    "step4_title": "KK i pakovanje",
+    "step4_text": "Svaki komad se provjerava prije pakovanja. EU pakovanje na zahtjev.",
+    "materials_title": "Glavni materijali",
+    "mat1_name": "Austrijski hrast",
+    "mat1_origin": "Austrija / Njemačka",
+    "mat2_name": "Orah",
+    "mat2_origin": "Istočna Evropa",
+    "mat3_name": "MDF + furnier",
+    "mat3_origin": "Regionalni dobavljači",
+    "capacity_title": "Kapacitet",
+    "cap1": "800 m² proizvodne površine",
+    "cap2": "Do 200 jedinica / mjesečno",
+    "cap3": "Izrada po narudžbi od 1 komada",
+    "projects_link": "Pogledajte završene projekte →"
+  },
+  "Solutions": {
+    "horeca": {
+      "label": "HoReCa",
+      "title": "Opremanje hotela i restorana iz Crne Gore",
+      "description": "Kompletni FF&E paketi za ugostiteljske projekte. Od hotelskih soba do zona restorana — jedan dobavljač, ujednačena završna obrada.",
+      "pain1": "Uski rokovi isporuke",
+      "sol1": "Proizvodnja usklađena sa vašim planom gradnje",
+      "pain2": "FF&E za više tipova soba",
+      "sol2": "Jedan dobavljač, ujednačena završna obrada za sve jedinice",
+      "pain3": "Nestandardne dimenzije prostora",
+      "sol3": "CNC rezanje prema tehničkim nacrtima",
+      "pain4": "Koordinacija sa udaljenim dobavljačem",
+      "sol4": "Proizvodni pogon 40 km od Budve — moguće posjete"
+    },
+    "education": {
+      "label": "Obrazovanje",
+      "title": "Školski i kampus namještaj — isporučen",
+      "description": "Ormari za učionice, recepcije, prostorije za osoblje. Opremili smo 1.200 m² međunarodnu školu u Crnoj Gori.",
+      "pain1": "Veliki obim, uniformna specifikacija",
+      "sol1": "Serijska proizvodnja — isti finiš na 40+ jedinica",
+      "pain2": "Ograničen budžet",
+      "sol2": "Direktne cijene proizvođača, bez marže posrednika",
+      "pain3": "Koordinacija instalacije",
+      "sol3": "Isporuka i montaža uključene",
+      "pain4": "Prilagođeno označavanje / dimenzije",
+      "sol4": "Sve dimenzije rezane prema vašem planu prostora"
+    },
+    "workspace": {
+      "label": "Kancelarije",
+      "title": "Enterijeri kancelarija — od projekta do montaže",
+      "description": "Stolovi, skladištenje, namještaj za sastanke. Dimenzije po vašem planu prostora.",
+      "pain1": "Renovacija kancelarije u roku",
+      "sol1": "Fiksni plan proizvodnje, datum isporuke potvrđen unaprijed",
+      "pain2": "Više tipova namještaja iz jednog projekta",
+      "sol2": "Stolovi, ormari, recepcija — sve od jednog dobavljača",
+      "pain3": "Nestandardni raspored prostorija",
+      "sol3": "CNC rezanje prema DWG nacrtima",
+      "pain4": "Ujednačenost završne obrade između odjela",
+      "sol4": "Jedna proizvodna serija — identičan finiš svuda"
+    },
+    "residential": {
+      "label": "Stambeni",
+      "title": "Vile i apartmani — kompletna FF&E",
+      "description": "Kuhinjski blokovi, ormari za dnevni boravak, spavaći namještaj za vile i brendirane apartmane u Crnoj Gori i EU.",
+      "pain1": "Dizajner enterijera ima specifikaciju, treba realizaciju",
+      "sol1": "Radimo direktno po DWG/PDF nacrtima",
+      "pain2": "Isporuka u EU",
+      "sol2": "Isporučeno i montirano — ili franko iz Crne Gore",
+      "pain3": "Unikatni komad",
+      "sol3": "Minimalna narudžba: 1 komad",
+      "pain4": "Izbor materijala",
+      "sol4": "Uzorci na zahtjev — hrast, orah, lakirane površine"
+    }
+  },
+  "Contact": {
+    "title": "Recite nam o svom projektu",
+    "subtitle": "Odgovaramo u roku od 24 sata",
+    "name": "Vaše ime",
+    "company": "Firma",
+    "project_type": "Tip projekta",
+    "type_hotel": "Hotel",
+    "type_school": "Škola",
+    "type_villa": "Vila / Apartman",
+    "type_office": "Kancelarija",
+    "type_other": "Ostalo",
+    "country": "Država",
+    "message": "Opis projekta",
+    "submit": "Pošalji →",
+    "success": "Poruka primljena. Odgovorićemo u roku od 24 sata.",
+    "address": "Bar, Crna Gora",
+    "email": "info@artidom.com"
+  },
+  "Footer": {
+    "tagline": "Namještaj po mjeri. Proizvedeno u Crnoj Gori.",
+    "address": "Bar, Crna Gora",
+    "email": "info@artidom.com",
+    "phone": "+382 XX XXX XXX",
+    "nav_solutions": "Rješenja",
+    "nav_workshop": "Radionica",
+    "nav_catalog": "Katalog",
+    "nav_projects": "Projekti",
+    "nav_contact": "Kontakt",
+    "copyright": "ARTIDOM"
   }
 }

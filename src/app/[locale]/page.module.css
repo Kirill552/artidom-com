@@ -1,35 +1,30 @@
-.main {
-  min-height: 100vh;
-  padding-bottom: 8rem;
+.label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--color-accent);
+  font-weight: 300;
+  margin-bottom: 1.5rem;
 }
 
-.cases {
-  margin-top: 10vh;
-  background: white;
-  padding: 4rem;
-  border-radius: 40px;
-  box-shadow: var(--shadow-soft);
+/* Case */
+.case {
+  padding: 6rem 0;
 }
 
 .caseHeader {
   margin-bottom: 3rem;
 }
 
-.caseLabel {
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  font-size: 0.7rem;
-  color: var(--color-accent);
-  font-weight: 600;
-  display: block;
-  margin-bottom: 1rem;
-}
-
 .caseTitle {
-  font-size: 2.5rem;
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 300;
 }
 
-.caseContent {
+.caseBody {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 4rem;
@@ -38,9 +33,9 @@
 
 .caseText p {
   font-size: 1.1rem;
-  line-height: 1.6;
+  line-height: 1.8;
   opacity: 0.8;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .stats {
@@ -48,50 +43,184 @@
   gap: 3rem;
 }
 
-.statItem {
+.stat {
   display: flex;
   flex-direction: column;
+  gap: 0.25rem;
 }
 
-.statItem strong {
-  font-size: 2rem;
+.stat strong {
   font-family: var(--font-display);
-  color: var(--color-accent);
+  font-size: 1.8rem;
+  font-weight: 300;
 }
 
-.statItem span {
+.stat span {
   font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
+  letter-spacing: 2px;
   opacity: 0.5;
 }
 
-.caseVisual {
+.caseImage {
   position: relative;
-}
-
-.caseImageWrapper {
-  position: relative;
-  aspect-ratio: 16 / 9;
-  border-radius: 20px;
+  height: 500px;
+  border-radius: 40px;
   overflow: hidden;
-  background: var(--color-muted);
-  box-shadow: var(--shadow-soft);
 }
 
 .image {
   object-fit: cover;
 }
 
-@media (max-width: 1024px) {
-  .cases {
-    padding: 2rem;
-  }
-  .caseContent {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-  .caseTitle {
-    font-size: 2rem;
-  }
+/* Sectors */
+.sectors {
+  padding: 6rem 0;
+}
+
+.sectorGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.sectorCard {
+  background: var(--color-muted);
+  border-radius: 24px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform 0.4s ease, background 0.4s;
+  cursor: pointer;
+}
+
+.sectorCard:hover {
+  transform: translateY(-6px);
+  background: var(--color-text);
+  color: var(--color-bg);
+}
+
+.sectorLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--color-accent);
+}
+
+.sectorCard:hover .sectorLabel {
+  color: var(--color-muted);
+}
+
+.sectorDesc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.7;
+  flex: 1;
+}
+
+.sectorArrow {
+  font-size: 1.2rem;
+  opacity: 0.4;
+}
+
+/* Process */
+.process {
+  background: var(--color-muted);
+  padding: 4rem 0;
+  margin: 2rem 0;
+}
+
+.processSteps {
+  display: flex;
+  gap: 0;
+}
+
+.processStep {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 2rem;
+  border-right: 1px solid rgba(45, 42, 38, 0.1);
+}
+
+.processStep:last-child {
+  border-right: none;
+}
+
+.processNum {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--color-accent);
+  opacity: 0.4;
+}
+
+.processName {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+/* CTA Block */
+.ctaBlock {
+  padding: 6rem 0;
+  max-width: 700px;
+}
+
+.ctaTitle {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 0.75rem;
+}
+
+.ctaSub {
+  opacity: 0.6;
+  margin-bottom: 2.5rem;
+}
+
+.ctaForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ctaForm input,
+.ctaForm textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-muted);
+  padding: 0.75rem 0;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-text);
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.ctaForm input:focus,
+.ctaForm textarea:focus {
+  border-bottom-color: var(--color-accent);
+}
+
+.ctaForm button {
+  align-self: flex-start;
+  margin-top: 1rem;
+  padding: 1rem 2.5rem;
+  background: var(--color-text);
+  color: var(--color-bg);
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.ctaForm button:hover {
+  opacity: 0.7;
 }

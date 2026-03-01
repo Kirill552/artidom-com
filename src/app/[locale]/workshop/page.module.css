@@ -1,0 +1,142 @@
+.label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--color-accent);
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.hero {
+    height: 70vh;
+    min-height: 500px;
+    background: var(--color-muted);
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.heroOverlay {
+    padding: 4rem;
+    background: linear-gradient(to top, rgba(45, 42, 38, 0.6) 0%, transparent 100%);
+    width: 100%;
+}
+
+.heroLabel {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: rgba(253, 250, 245, 0.7);
+    margin-bottom: 1rem;
+}
+
+.heroTitle {
+    font-family: var(--font-display);
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--color-bg);
+    max-width: 700px;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 6rem;
+    align-items: start;
+    padding: 6rem 0;
+}
+
+.introFact p {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+.introText {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    opacity: 0.75;
+    padding-top: 0.5rem;
+}
+
+.steps {
+    padding: 5rem 0;
+}
+
+.stepsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.stepImage {
+    height: 220px;
+    background: var(--color-muted);
+    border-radius: 24px;
+    margin-bottom: 1.5rem;
+}
+
+.stepTitle {
+    font-family: var(--font-main);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.75rem;
+}
+
+.stepText {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    opacity: 0.7;
+}
+
+.materials {
+    padding: 5rem 0;
+}
+
+.materialsGrid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.materialImage {
+    height: 300px;
+    background: var(--color-muted);
+    border-radius: 40px;
+    margin-bottom: 1.25rem;
+}
+
+.materialName {
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 0.25rem;
+}
+
+.materialOrigin {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-accent);
+    opacity: 0.7;
+}
+
+.projectsLink {
+    padding: 3rem 0 6rem;
+}
+
+.projectsLink a {
+    font-size: 1rem;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: var(--color-accent);
+}
