@@ -1,16 +1,16 @@
 {
   "Index": {
-    "title": "ARTIDOM | Bespoke Furniture Manufacturing in Montenegro",
+    "title": "ARTIDOM | Furniture Manufacturing & Furnishing in Montenegro",
     "hero": {
-      "label": "Industrial Woodworking Atelier",
-      "title": "Bespoke Furnishing Solutions",
-      "description": "Custom furniture and professional kitchens for business and residential projects. 25 years of industry expertise. Based in Montenegro.",
-      "cta": "Start a Project"
+      "label": "Modern Woodworking Atelier",
+      "title": "Project-based Furniture & Kitchens",
+      "description": "25 years of industry expertise. Local manufacturing facility in Montenegro. We deliver complete interior solutions for B2B and high-end residential projects.",
+      "cta": "Request Quote"
     },
     "cases": {
       "school": {
-        "title": "International School Montenegro",
-        "description": "Comprehensive furnishing of a multi-story educational facility. Custom storage and classroom solutions."
+        "title": "Flagship Case: International School",
+        "description": "Comprehensive furnishing of a 1,200 sqm educational facility in Montenegro. Custom classroom storage, reception areas, and specialized furniture units."
       }
     }
   }
