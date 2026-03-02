@@ -1,25 +1,14 @@
 'use client';
 import { useTranslations, useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
+import { appLocales, replaceLocaleInPathname } from '@/i18n/locale-config';
 import { usePathname } from 'next/navigation';
 import styles from './Nav.module.css';
 
 export default function Nav() {
   const t = useTranslations('Nav');
   const locale = useLocale();
-  const pathname = usePathname(); // e.g., /en/projects
-
-  const locales = ['en', 'de', 'sr'] as const;
-
-  // Replace current locale prefix with new one for hard navigation
-  const getLocalizedHref = (lang: string) => {
-    if (!pathname) return `/${lang}`;
-    const prefixRegex = new RegExp(`^/(${locales.join('|')})(?:/|$)`);
-    if (prefixRegex.test(pathname)) {
-      return pathname.replace(prefixRegex, `/${lang}/`).replace(/\/$/, ''); // Remove trailing slash
-    }
-    return `/${lang}${pathname}`;
-  };
+  const pathname = usePathname();
 
   return (
     <header className={styles.nav}>
@@ -37,12 +26,12 @@ export default function Nav() {
 
       <div className={styles.right}>
         <div className={styles.langSwitch}>
-          {locales.map((lang) => {
+          {appLocales.map((lang) => {
             const isActive = locale === lang;
             return (
               <a
                 key={lang}
-                href={isActive ? undefined : getLocalizedHref(lang)}
+                href={isActive ? undefined : replaceLocaleInPathname(pathname, lang)}
                 className={`${styles.lang} ${isActive ? styles.langActive : ''}`}
                 style={isActive ? { pointerEvents: 'none' } : undefined}
               >

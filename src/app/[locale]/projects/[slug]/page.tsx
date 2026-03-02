@@ -11,8 +11,8 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
     const project = getProject(slug);
     if (!project) notFound();
 
-    const title = project.title[locale as 'en' | 'de' | 'sr'] ?? project.title.en;
-    const desc = project.description[locale as 'en' | 'de' | 'sr'] ?? project.description.en;
+    const title = project.title[locale as 'en' | 'sr'] ?? project.title.en;
+    const desc = project.description[locale as 'en' | 'sr'] ?? project.description.en;
 
     return (
         <main>

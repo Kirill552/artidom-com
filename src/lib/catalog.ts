@@ -1,7 +1,7 @@
 export interface CatalogItem {
     slug: string;
     category: 'kitchens' | 'storage' | 'bespoke';
-    name: { en: string; de: string; sr: string };
+    name: { en: string; sr: string };
     material: string;
     origin: string;
     dimensions: string;
@@ -9,14 +9,14 @@ export interface CatalogItem {
     leadTime: string;
     coverImage: string;
     images: string[];
-    description: { en: string; de: string; sr: string };
+    description: { en: string; sr: string };
 }
 
 export const catalogItems: CatalogItem[] = [
     {
         slug: 'oak-kitchen-unit',
         category: 'kitchens',
-        name: { en: 'Kitchen Unit — Oak / Stone', de: 'Küchenblock — Eiche / Stein', sr: 'Kuhinjski blok — hrast / kamen' },
+        name: { en: 'Kitchen Unit — Oak / Stone', sr: 'Kuhinjski blok — hrast / kamen' },
         material: 'Austrian Oak',
         origin: 'Austria',
         dimensions: 'Custom to floor plan',
@@ -26,7 +26,6 @@ export const catalogItems: CatalogItem[] = [
         images: [],
         description: {
             en: 'Solid oak kitchen unit. Dimensions cut to your floor plan. Available with stone or laminate countertop.',
-            de: 'Küchenblock aus massiver Eiche. Maße nach Grundriss. Mit Stein- oder Laminatarbeitsplatte.',
             sr: 'Kuhinjski blok od masivnog hrasta. Dimenzije po osnovi. Sa kamenom ili laminatnom radnom pločom.',
         },
     },

@@ -10,8 +10,8 @@ export default async function CatalogItemPage({ params }: { params: Promise<{ sl
     const item = getCatalogItem(slug);
     if (!item) notFound();
 
-    const name = item.name[locale as 'en' | 'de' | 'sr'] ?? item.name.en;
-    const desc = item.description[locale as 'en' | 'de' | 'sr'] ?? item.description.en;
+    const name = item.name[locale as 'en' | 'sr'] ?? item.name.en;
+    const desc = item.description[locale as 'en' | 'sr'] ?? item.description.en;
 
     return (
         <main className="container">

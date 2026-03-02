@@ -25,7 +25,7 @@ export default async function CatalogPage({ params }: { params: Promise<{ locale
 
       <section className={`container ${styles.grid}`}>
         {catalogItems.map((item) => {
-          const name = item.name[locale as 'en' | 'de' | 'sr'] ?? item.name.en;
+          const name = item.name[locale as 'en' | 'sr'] ?? item.name.en;
           return (
             <Link key={item.slug} href={`/catalog/${item.slug}`} className={styles.card}>
               <div className={styles.cardImage} />

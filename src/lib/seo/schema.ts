@@ -1,6 +1,5 @@
 export const getSchemaData = (locale: string) => {
   const isEn = locale === 'en';
-  const isDe = locale === 'de';
   
   return {
     "@context": "https://schema.org",
@@ -29,11 +28,9 @@ export const getSchemaData = (locale: string) => {
       "closes": "18:00"
     },
     "sameAs": [],
-    "description": isEn 
+    "description": isEn
       ? "Bespoke furniture manufacturing and turnkey interior furnishing in Montenegro. 25 years of woodworking expertise."
-      : isDe 
-        ? "Maßgefertigte Möbelproduktion und schlüsselfertige Inneneinrichtung in Montenegro. 25 Jahre Erfahrung in der Holzbearbeitung."
-        : "Proizvodnja namještaja po mjeri i opremanje enterijera u Crnoj Gori. 25 godina iskustva u drvnoj industriji.",
+      : "Proizvodnja namještaja po mjeri i opremanje enterijera u Crnoj Gori. 25 godina iskustva u drvnoj industriji.",
     "parentOrganization": {
       "@type": "Organization",
       "name": "ARTIDOM Group",
@@ -46,7 +43,7 @@ export const getProjectSchema = (locale: string) => {
   return {
     "@context": "https://schema.org",
     "@type": "Project",
-    "name": locale === 'en' ? "International School Montenegro Furnishing" : "Internationale Schule Montenegro Möblierung",
+    "name": locale === 'en' ? "International School Montenegro Furnishing" : "Opremanje Internacionalne škole Crna Gora",
     "description": "1,200 sqm comprehensive educational facility furnishing project.",
     "location": {
       "@type": "Place",
