@@ -5,7 +5,8 @@ import styles from './page.module.css';
 
 export default function ContactPage() {
     const t = useTranslations('Contact');
-    const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+    const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error' | 'rate_limit'>('idle');
+    const [errorField, setErrorField] = useState('');
     const phone = t('phone');
     const phoneHref = phone.replace(/\s+/g, '');
     const email = t('email');
@@ -13,9 +14,24 @@ export default function ContactPage() {
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
         setStatus('loading');
+        setErrorField('');
         const form = e.currentTarget;
         try {
-            await fetch('/api/contact', { method: 'POST', body: new FormData(form) });
+            const res = await fetch('/api/contact', { method: 'POST', body: new FormData(form) });
+            if (res.status === 429) {
+                setStatus('rate_limit');
+                return;
+            }
+            if (res.status === 400) {
+                const data = await res.json();
+                setErrorField(data.error || '');
+                setStatus('error');
+                return;
+            }
+            if (!res.ok) {
+                setStatus('error');
+                return;
+            }
             setStatus('success');
         } catch {
             setStatus('error');
@@ -34,6 +50,8 @@ export default function ContactPage() {
                     ) : (
                         <form className={styles.form} onSubmit={handleSubmit}>
                             <input name="name" placeholder={t('name')} required />
+                            <input name="phone" type="tel" placeholder={t('phone_placeholder')} />
+                            <input name="email" type="email" placeholder={t('email_placeholder')} />
                             <input name="company" placeholder={t('company')} />
                             <select name="projectType">
                                 <option value="">{t('project_type')}</option>
@@ -43,7 +61,25 @@ export default function ContactPage() {
                             </select>
                             <input name="country" placeholder={t('country')} />
                             <textarea name="message" placeholder={t('message')} rows={5} required />
-                            <button type="submit">{t('submit')}</button>
+                            <input name="website" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
+                            <button type="submit" disabled={status === 'loading'}>
+                                {t('submit')}
+                            </button>
+                            {status === 'rate_limit' && (
+                                <p className={styles.errorMsg}>{t('error_rate_limit')}</p>
+                            )}
+                            {status === 'error' && errorField === 'phone' && (
+                                <p className={styles.errorMsg}>{t('error_phone')}</p>
+                            )}
+                            {status === 'error' && errorField === 'email' && (
+                                <p className={styles.errorMsg}>{t('error_email')}</p>
+                            )}
+                            {status === 'error' && errorField === 'name' && (
+                                <p className={styles.errorMsg}>{t('error_name')}</p>
+                            )}
+                            {status === 'error' && !['phone', 'email', 'name'].includes(errorField) && (
+                                <p className={styles.errorMsg}>{t('error_generic')}</p>
+                            )}
                         </form>
                     )}
                 </div>

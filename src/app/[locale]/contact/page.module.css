@@ -72,6 +72,17 @@
     opacity: 0.7;
 }
 
+.form button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.errorMsg {
+    color: #c44;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
 .right {
     padding-top: 7rem;
 }

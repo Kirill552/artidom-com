@@ -8,6 +8,7 @@ import Image from 'next/image';
 import { getProject } from '@/lib/projects';
 import { getPageMetadata } from '@/lib/seo/page-metadata';
 import { getHowToSchema, getBreadcrumbSchema } from '@/lib/seo/local-page-schema';
+import { CtaForm } from '@/components/CtaForm';
 import styles from './page.module.css';
 
 export async function generateMetadata({
@@ -128,12 +129,7 @@ export default async function IndexPage({ params }: { params: Promise<{ locale: 
       <section className={`container ${styles.ctaBlock}`}>
         <h2 className={styles.ctaTitle}>{t('cta.title')}</h2>
         <p className={styles.ctaSub}>{t('cta.subtitle')}</p>
-        <form className={styles.ctaForm} action="/api/contact" method="POST">
-          <input name="name" placeholder={t('cta.name')} required />
-          <input name="company" placeholder={t('cta.company')} />
-          <textarea name="message" placeholder={t('cta.message')} rows={4} required />
-          <button type="submit">{t('cta.submit')}</button>
-        </form>
+        <CtaForm className={styles.ctaForm} />
       </section>
     </main>
     </>
