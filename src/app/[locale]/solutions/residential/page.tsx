@@ -5,7 +5,7 @@ import LocalSeoLinks from '@/components/LocalSeoLinks';
 import { setRequestLocale } from 'next-intl/server';
 import { defaultLocale, isAppLocale } from '@/i18n/locale-config';
 import { getPageMetadata } from '@/lib/seo/page-metadata';
-import { getFaqPageSchema } from '@/lib/seo/local-page-schema';
+import { getFaqPageSchema, getBreadcrumbSchema } from '@/lib/seo/local-page-schema';
 import {
     getResidentialFaqSection,
     getResidentialLocalLinks,
@@ -39,9 +39,16 @@ export default async function ResidentialPage({ params }: { params: Promise<{ lo
     const faqSection = getResidentialFaqSection(appLocale);
     const faqSchema = getFaqPageSchema(faqSection.items);
 
+    const breadcrumbSchema = getBreadcrumbSchema([
+        { name: appLocale === 'sr' ? 'Početna' : 'Home', url: `https://www.artidom.art/${appLocale}` },
+        { name: appLocale === 'sr' ? 'Rješenja' : 'Solutions', url: `https://www.artidom.art/${appLocale}/solutions` },
+        { name: appLocale === 'sr' ? 'Stanovi' : 'Residential', url: `https://www.artidom.art/${appLocale}/solutions/residential` },
+    ]);
+
     return (
         <>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <SectorPage sector="residential" proofVariant="residential">
                 <div className="container">
                     <LocalSeoLinks

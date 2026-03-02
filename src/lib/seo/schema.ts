@@ -62,8 +62,7 @@ export const getSchemaData = (locale: string) => {
     "sameAs": [],
     "description": isEn
       ? "Custom kitchens, wardrobes and apartment furnishing in Montenegro. Workshop in Sutomore, Bar with selected HoReCa and B2B fit-outs."
-      : "Kuhinje po mjeri, plakari i izrada namještaja po mjeri za apartmane u Crnoj Gori. Radionica u Sutomoru, Bar i odabrani HoReCa i B2B projekti.",
-    "foundingDate": "2001"
+      : "Kuhinje po mjeri, plakari i izrada namještaja po mjeri za apartmane u Crnoj Gori. Radionica u Sutomoru, Bar i odabrani HoReCa i B2B projekti."
   };
 };
 

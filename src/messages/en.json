@@ -19,7 +19,7 @@
       "label": "Workshop in Bar, Montenegro",
       "tag": "Apartments first. B2B on request.",
       "title": "Custom kitchens and apartment furnishing in Montenegro",
-      "description": "We make kitchens, wardrobes and built-in furniture for apartments, villas and rental properties. Production in Bar, installation across Montenegro, selected HoReCa and B2B orders as well.",
+      "description": "ARTIDOM makes kitchens, wardrobes and built-in furniture for apartments, villas and rental properties in Montenegro. Production at our workshop in Sutomore, Bar. Measurement and installation across the coast and Podgorica. Typical lead time 3–5 weeks. Selected HoReCa and B2B orders as well.",
       "cta": "Request estimate",
       "image_alt": "Warm minimal apartment by ARTIDOM"
     },
@@ -56,9 +56,13 @@
     "process": {
       "title": "How we work",
       "step1": "Brief",
+      "step1_text": "We discuss your layout, style preferences and budget. You share measurements or we visit the apartment in Bar, Budva or Podgorica.",
       "step2": "Drawings & estimate",
+      "step2_text": "Our designer creates 3D renders and technical drawings. You receive a transparent cost estimate with no hidden fees.",
       "step3": "Production",
-      "step4": "Delivery & install"
+      "step3_text": "Furniture is manufactured at our 300 m² workshop in Sutomore using CNC cutting and European-grade materials.",
+      "step4": "Delivery & install",
+      "step4_text": "We deliver and install everything on-site across Montenegro. Average lead time is 3–5 weeks from approval."
     },
     "cta": {
       "title": "Need a kitchen, wardrobes or a furnishing package?",
@@ -93,13 +97,13 @@
   },
   "Workshop": {
     "meta": {
-      "title": "Furniture Workshop in Bar, Montenegro",
-      "description": "See where ARTIDOM makes custom kitchens, wardrobes and built-in furniture in Bar, Montenegro. CNC cutting, assembly, finishing and packing in one workshop."
+      "title": "Custom Furniture Workshop in Bar, Montenegro — ARTIDOM",
+      "description": "ARTIDOM workshop in Sutomore, Bar: CNC cutting, assembly and finishing of custom kitchens, wardrobes and built-in furniture for apartments in Montenegro."
     },
-    "hero_label": "Bar, Montenegro — since 2001",
+    "hero_label": "Sutomore, Bar, Montenegro",
     "hero_title": "Custom furniture workshop in Bar",
-    "intro_fact": "40 craftsmen.\n800 sqm workshop.\nProduction in Bar for apartments and selected B2B interiors.",
-    "intro_text": "In our Bar facility we make kitchens, wardrobes, TV walls, counters and other interior joinery. Cutting, assembly, finishing and packing happen in the same workshop.",
+    "intro_fact": "40 craftsmen.\n300 sqm workshop.\nProduction in Bar for apartments and selected B2B interiors.",
+    "intro_text": "ARTIDOM is a custom furniture workshop in Sutomore, Bar, Montenegro. We produce kitchens, wardrobes, TV walls, counters and other interior joinery. CNC cutting, assembly, finishing and packing happen in the same 300 m² facility. We serve apartment owners and selected B2B clients across Montenegro, including Bar, Budva, Tivat and Podgorica.",
     "steps_title": "Production process",
     "step1_title": "Material intake",
     "step1_text": "Boards, veneer, fittings and stone tops are checked on arrival before they enter production.",
@@ -117,15 +121,15 @@
     "mat3_name": "Compact / Stone Tops",
     "mat3_origin": "Selected project suppliers",
     "capacity_title": "Capacity",
-    "cap1": "800 sqm production floor",
+    "cap1": "300 sqm production floor",
     "cap2": "Apartment packages and single custom units",
     "cap3": "Selected HoReCa / B2B fit-outs",
     "projects_link": "See selected projects →"
   },
   "Solutions": {
     "common": {
-      "needs_title": "What this sector needs",
-      "solution_title": "How we handle it",
+      "needs_title": "What does the project require?",
+      "solution_title": "How does ARTIDOM handle it?",
       "cta": "Tell us about your project →"
     },
     "horeca": {
@@ -189,7 +193,7 @@
       },
       "label": "Residential",
       "title": "Custom kitchens, wardrobes and apartment furnishing",
-      "description": "We furnish apartments, villas and rental properties in Montenegro: kitchens, wardrobes, entry storage, TV walls and compact built-in solutions. Production in Bar, measurement and installation across the country.",
+      "description": "We furnish apartments, villas and rental properties in Montenegro: kitchens, wardrobes, entry storage, TV walls and compact built-in solutions. Production at our 300 m² workshop in Sutomore (Bar), measurement and installation across the country. Typical lead time is 3–5 weeks.",
       "image_alt": "Apartment kitchen and storage by ARTIDOM",
       "pain1": "Apartment needs a kitchen, wardrobes and storage that actually fit",
       "sol1": "We build to the real floor plan, not standard module sizes",

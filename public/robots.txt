@@ -1,0 +1,27 @@
+# Artidom.art — Custom furniture workshop in Bar, Montenegro
+# Allow all crawlers including AI engines
+
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# AI search engines — explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+Sitemap: https://www.artidom.art/sitemap.xml

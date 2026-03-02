@@ -76,10 +76,12 @@
 }
 
 .stepImage {
+    position: relative;
     height: 220px;
     background: var(--color-muted);
     border-radius: 24px;
     margin-bottom: 1.5rem;
+    overflow: hidden;
 }
 
 .stepTitle {
@@ -108,10 +110,12 @@
 }
 
 .materialImage {
+    position: relative;
     height: 300px;
     background: var(--color-muted);
     border-radius: 40px;
     margin-bottom: 1.25rem;
+    overflow: hidden;
 }
 
 .materialName {

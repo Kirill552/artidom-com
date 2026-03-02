@@ -19,7 +19,7 @@
       "label": "Radionica u Baru, Crna Gora",
       "tag": "Stanovi prvo. B2B po upitu.",
       "title": "Kuhinje po mjeri i opremanje apartmana u Crnoj Gori",
-      "description": "Pravimo kuhinje, plakare i ugradni namještaj za stanove, apartmane, vile i nekretnine za izdavanje. Proizvodnja u Baru, montaža širom Crne Gore, uz mogućnost odabranih HoReCa i B2B projekata.",
+      "description": "ARTIDOM pravi kuhinje, plakare i ugradni namještaj za stanove, apartmane, vile i nekretnine za izdavanje u Crnoj Gori. Proizvodnja u radionici u Sutomoru, Bar. Mjerenje i montaža širom primorja i u Podgorici. Rok izrade 3–5 sedmica. Odabrani HoReCa i B2B projekti takođe.",
       "cta": "Zatražite procjenu",
       "image_alt": "Topli minimalistički apartman ARTIDOM"
     },
@@ -56,9 +56,13 @@
     "process": {
       "title": "Kako radimo",
       "step1": "Brif",
+      "step1_text": "Razgovaramo o rasporedu, stilu i budžetu. Možete dostaviti mjere ili organizujemo dolazak u stan u Baru, Budvi ili Podgorici.",
       "step2": "Crteži i procjena",
+      "step2_text": "Dizajner pravi 3D vizualizacije i tehničke crteže. Dobijate transparentnu ponudu bez skrivenih troškova.",
       "step3": "Proizvodnja",
-      "step4": "Isporuka i montaža"
+      "step3_text": "Namještaj se proizvodi u našoj radionici od 300 m² u Sutomoru — CNC rezanje i materijali evropskog kvaliteta.",
+      "step4": "Isporuka i montaža",
+      "step4_text": "Dostavljamo i montiramo na lokaciji širom Crne Gore. Prosječni rok je 3–5 sedmica od odobrenja."
     },
     "cta": {
       "title": "Treba vam kuhinja, plakari ili kompletno opremanje apartmana?",
@@ -93,13 +97,13 @@
   },
   "Workshop": {
     "meta": {
-      "title": "Izrada namještaja po mjeri u Baru, Crna Gora",
-      "description": "Pogledajte gdje ARTIDOM radi izradu namještaja po mjeri, kuhinja, plakara i ugradnih elemenata u Baru. CNC rezanje, sklapanje, završna obrada i pakovanje u istoj radionici."
+      "title": "Radionica za namještaj po mjeri u Baru — ARTIDOM Crna Gora",
+      "description": "ARTIDOM radionica u Sutomoru, Bar: CNC rezanje, sklapanje i završna obrada kuhinja po mjeri, plakara i ugradnog namještaja za stanove i apartmane u Crnoj Gori."
     },
-    "hero_label": "Bar, Crna Gora — od 2001.",
+    "hero_label": "Sutomore, Bar, Crna Gora",
     "hero_title": "Radionica za izradu namještaja po mjeri u Baru",
-    "intro_fact": "40 majstora.\n800 m² radionice.\nProizvodnja u Baru za apartmane i odabrane B2B enterijere.",
-    "intro_text": "U našem pogonu pravimo kuhinje po mjeri, plakare, TV zidove, pultove i druge elemente enterijera. Rezanje, sklapanje, završna obrada i pakovanje radimo u istom prostoru.",
+    "intro_fact": "40 majstora.\n300 m² radionice.\nProizvodnja u Baru za apartmane i odabrane B2B enterijere.",
+    "intro_text": "ARTIDOM je radionica za namještaj po mjeri u Sutomoru, Bar, Crna Gora. Proizvodimo kuhinje, plakare, TV zidove, pultove i druge elemente enterijera. CNC rezanje, sklapanje, završna obrada i pakovanje obavljamo u istom pogonu od 300 m². Uslužujemo vlasnike stanova i odabrane B2B klijente širom Crne Gore — Bar, Budva, Tivat i Podgorica.",
     "steps_title": "Proizvodni proces",
     "step1_title": "Prijem materijala",
     "step1_text": "Ploče, furnir, okovi i radne ploče se pregledaju pri prijemu prije ulaska u proizvodnju.",
@@ -117,15 +121,15 @@
     "mat3_name": "Kompakt / kamene ploče",
     "mat3_origin": "Odabrani projektni dobavljači",
     "capacity_title": "Kapacitet",
-    "cap1": "800 m² proizvodne površine",
+    "cap1": "300 m² proizvodne površine",
     "cap2": "Apartmanski paketi i pojedinačni komadi po mjeri",
     "cap3": "Odabrani HoReCa / B2B enterijeri",
     "projects_link": "Pogledajte odabrane projekte →"
   },
   "Solutions": {
     "common": {
-      "needs_title": "Šta ovaj sektor traži",
-      "solution_title": "Kako to rješavamo",
+      "needs_title": "Šta projekat zahtijeva?",
+      "solution_title": "Kako ARTIDOM to rješava?",
       "cta": "Recite nam o projektu →"
     },
     "horeca": {
@@ -189,7 +193,7 @@
       },
       "label": "Stanovi i apartmani",
       "title": "Kuhinje po mjeri, plakari i opremanje apartmana",
-      "description": "Opremamo stanove, apartmane, vile i nekretnine za izdavanje u Crnoj Gori: kuhinje, plakare, ulazno odlaganje, TV zidove i kompaktna ugradna rješenja. Proizvodnja u Baru, mjerenje i montaža širom zemlje.",
+      "description": "Opremamo stanove, apartmane, vile i nekretnine za izdavanje u Crnoj Gori: kuhinje, plakare, ulazno odlaganje, TV zidove i kompaktna ugradna rješenja. Proizvodnja u radionici od 300 m² u Sutomoru (Bar), mjerenje i montaža širom zemlje. Prosječan rok izrade 3–5 sedmica.",
       "image_alt": "Apartmanska kuhinja i odlaganje ARTIDOM",
       "pain1": "Apartman traži kuhinju, plakare i odlaganje koji tačno staju u prostor",
       "sol1": "Radimo po realnoj osnovi, ne po standardnim modulima",

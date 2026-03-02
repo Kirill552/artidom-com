@@ -7,6 +7,7 @@ import WorkshopProof from '@/components/WorkshopProof';
 import Image from 'next/image';
 import { getProject } from '@/lib/projects';
 import { getPageMetadata } from '@/lib/seo/page-metadata';
+import { getHowToSchema, getBreadcrumbSchema } from '@/lib/seo/local-page-schema';
 import styles from './page.module.css';
 
 export async function generateMetadata({
@@ -35,7 +36,20 @@ export default async function IndexPage({ params }: { params: Promise<{ locale: 
   const featuredTitle = featuredProject.title[localeKey];
   const featuredDescription = featuredProject.description[localeKey];
 
+  const howToSchema = getHowToSchema(
+    t('process.title'),
+    localeKey === 'sr'
+      ? 'Kako naručiti namještaj po mjeri u Crnoj Gori — od brifa do montaže'
+      : 'How to order custom furniture in Montenegro — from brief to installation',
+    ['step1', 'step2', 'step3', 'step4'].map((s) => ({
+      name: t(`process.${s}`),
+      text: t(`process.${s}_text`),
+    })),
+  );
+
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
     <main>
       {/* Hero */}
       <div className="container">
@@ -122,5 +136,6 @@ export default async function IndexPage({ params }: { params: Promise<{ locale: 
         </form>
       </section>
     </main>
+    </>
   );
 }

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { defaultLocale, isAppLocale } from '@/i18n/locale-config';
 import { getPageMetadata } from '@/lib/seo/page-metadata';
+import { getBreadcrumbSchema } from '@/lib/seo/local-page-schema';
 import styles from './page.module.css';
 
 export async function generateMetadata({
@@ -23,8 +24,16 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
     setRequestLocale(locale);
     const t = await getTranslations('Projects');
     const projects = getProjectsByLocale(locale);
+    const appLocale = isAppLocale(locale) ? locale : defaultLocale;
+
+    const breadcrumbSchema = getBreadcrumbSchema([
+        { name: appLocale === 'sr' ? 'Početna' : 'Home', url: `https://www.artidom.art/${locale}` },
+        { name: t('title'), url: `https://www.artidom.art/${locale}/projects` },
+    ]);
 
     return (
+        <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
         <main className="container">
             <section className={styles.page}>
                 <h1 className={styles.title}>{t('title')}</h1>
@@ -55,5 +64,6 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                 </div>
             </section>
         </main>
+        </>
     );
 }
