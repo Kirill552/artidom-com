@@ -39,3 +39,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# AI assistants config
+.claude/
+.codex/
+.gemini/
+CLAUDE.md
+AGENTS.md
+GEMINI.md
+
+# source photos (not for production)
+/photo/
