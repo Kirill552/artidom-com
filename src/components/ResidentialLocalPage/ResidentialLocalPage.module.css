@@ -1,0 +1,125 @@
+.hero {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    padding: 4rem 0 5rem;
+}
+
+.label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--color-accent);
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-family: var(--font-display);
+    font-size: 3.4rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.05;
+    margin-bottom: 1.5rem;
+}
+
+.intro {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    opacity: 0.76;
+}
+
+.heroImage {
+    position: relative;
+    min-height: 460px;
+    border-radius: 36px;
+    overflow: hidden;
+    background: var(--color-muted);
+}
+
+.heroMedia {
+    object-fit: cover;
+}
+
+.sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 5rem 0 2rem;
+}
+
+.card {
+    padding: 2rem;
+    border-radius: 32px;
+    background: var(--color-muted);
+}
+
+.cardTitle {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.list {
+    display: grid;
+    gap: 1rem;
+    padding-left: 1.25rem;
+}
+
+.list li {
+    font-size: 1rem;
+    line-height: 1.7;
+    opacity: 0.82;
+}
+
+.noteWrap {
+    padding: 1rem 0 0;
+}
+
+.note {
+    max-width: 840px;
+    padding: 1.5rem 1.75rem;
+    border-left: 2px solid var(--color-accent);
+    font-size: 1rem;
+    line-height: 1.8;
+    opacity: 0.82;
+}
+
+.cta {
+    padding: 1rem 0 6rem;
+}
+
+.ctaBtn {
+    display: inline-block;
+    padding: 1.2rem 2.75rem;
+    background: var(--color-text);
+    color: var(--color-bg);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+@media (max-width: 980px) {
+    .hero,
+    .sections {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        gap: 2rem;
+        padding: 3rem 0 4rem;
+    }
+
+    .title {
+        font-size: 2.6rem;
+    }
+
+    .heroImage {
+        min-height: 320px;
+    }
+}

@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import type { ReactNode } from 'react';
 import WorkshopProof from '@/components/WorkshopProof';
 import { Link } from '@/i18n/routing';
 import Image from 'next/image';
@@ -10,9 +11,10 @@ type ProofVariant = 'default' | 'horeca' | 'residential' | 'catalog';
 interface SectorPageProps {
     sector: Sector;
     proofVariant?: ProofVariant;
+    children?: ReactNode;
 }
 
-export default function SectorPage({ sector, proofVariant = 'default' }: SectorPageProps) {
+export default function SectorPage({ sector, proofVariant = 'default', children }: SectorPageProps) {
     const t = useTranslations(`Solutions.${sector}`);
     const tCommon = useTranslations('Solutions.common');
     const pains = ['pain1', 'pain2', 'pain3', 'pain4'] as const;
@@ -72,6 +74,8 @@ export default function SectorPage({ sector, proofVariant = 'default' }: SectorP
                     </div>
                 </div>
             </section>
+
+            {children}
 
             {/* CTA */}
             <section className={`container ${styles.cta}`}>
