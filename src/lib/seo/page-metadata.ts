@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { appLocales, defaultLocale, type AppLocale } from '@/i18n/locale-config';
 
-const siteUrl = 'https://artidom.art';
+const siteUrl = 'https://www.artidom.art';
 
 function normalizePath(path = '') {
   if (!path || path === '/') {
