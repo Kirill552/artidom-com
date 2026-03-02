@@ -21,8 +21,9 @@ export const projects: Project[] = [
         },
         location: 'Bar, Montenegro',
         year: 2025,
-        coverImage: '/images/projects/warm-minimal-apartment/01.jpg',
+        coverImage: '/images/projects/warm-minimal-apartment/cover.webp',
         images: [
+            '/images/projects/warm-minimal-apartment/cover.webp',
             '/images/projects/warm-minimal-apartment/01.jpg',
             '/images/projects/warm-minimal-apartment/02.jpg',
             '/images/projects/warm-minimal-apartment/03.jpg',
