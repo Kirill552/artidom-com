@@ -5,6 +5,9 @@ import styles from './Footer.module.css';
 export default function Footer() {
     const t = useTranslations('Footer');
     const year = new Date().getFullYear();
+    const phone = t('phone');
+    const phoneHref = phone.replace(/\s+/g, '');
+    const email = t('email');
 
     return (
         <footer className={styles.footer}>
@@ -16,7 +19,7 @@ export default function Footer() {
                 </div>
 
                 <nav className={styles.links}>
-                    <Link href="/solutions/horeca">{t('nav_solutions')}</Link>
+                    <Link href="/solutions/residential">{t('nav_solutions')}</Link>
                     <Link href="/workshop">{t('nav_workshop')}</Link>
                     <Link href="/catalog">{t('nav_catalog')}</Link>
                     <Link href="/projects">{t('nav_projects')}</Link>
@@ -24,14 +27,14 @@ export default function Footer() {
                 </nav>
 
                 <div className={styles.contact}>
-                    <a href={`mailto:${t('email')}`}>{t('email')}</a>
-                    <a href={`tel:${t('phone')}`}>{t('phone')}</a>
+                    <a href={`mailto:${email}`}>{email}</a>
+                    <a href={`tel:${phoneHref}`}>{phone}</a>
                 </div>
             </div>
 
             <div className={styles.bottom}>
                 <span>{t('copyright')} © {year}</span>
-                <span>Bar, Montenegro</span>
+                <span>{t('legal')}</span>
             </div>
         </footer>
     );

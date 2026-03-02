@@ -5,8 +5,10 @@ import styles from './page.module.css';
 
 export default function ContactPage() {
     const t = useTranslations('Contact');
-
     const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+    const phone = t('phone');
+    const phoneHref = phone.replace(/\s+/g, '');
+    const email = t('email');
 
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
@@ -28,7 +30,7 @@ export default function ContactPage() {
                     <p className={styles.subtitle}>{t('subtitle')}</p>
 
                     {status === 'success' ? (
-                        <div className={styles.successMessage}>{t('success')}</div>
+                        <div className={styles.success}>{t('success')}</div>
                     ) : (
                         <form className={styles.form} onSubmit={handleSubmit}>
                             <input name="name" placeholder={t('name')} required />
@@ -48,12 +50,24 @@ export default function ContactPage() {
 
                 <div className={styles.right}>
                     <div className={styles.contactDetail}>
+                        <span className={styles.detailLabel}>{t('phone_label')}</span>
+                        <a href={`tel:${phoneHref}`}>{phone}</a>
+                    </div>
+                    <div className={styles.contactDetail}>
                         <span className={styles.detailLabel}>{t('email_label')}</span>
-                        <a href={`mailto:${t('email')}`}>{t('email')}</a>
+                        <a href={`mailto:${email}`}>{email}</a>
+                    </div>
+                    <div className={styles.contactDetail}>
+                        <span className={styles.detailLabel}>{t('company_label')}</span>
+                        <span className={styles.detailValue}>{t('company_name')}</span>
+                    </div>
+                    <div className={styles.contactDetail}>
+                        <span className={styles.detailLabel}>{t('tax_id_label')}</span>
+                        <span className={styles.detailValue}>{t('tax_id')}</span>
                     </div>
                     <div className={styles.contactDetail}>
                         <span className={styles.detailLabel}>{t('location_label')}</span>
-                        <span>{t('address')}</span>
+                        <span className={styles.detailValue}>{t('address')}</span>
                     </div>
                 </div>
             </section>

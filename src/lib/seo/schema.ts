@@ -4,13 +4,19 @@ export const getSchemaData = (locale: string) => {
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "ARTIDOM",
+    "name": "Artidom DOO",
+    "legalName": "Artidom DOO",
+    "alternateName": "ARTIDOM",
     "image": "https://artidom.art/og-image.jpg",
     "@id": "https://artidom.art",
     "url": "https://artidom.art",
-    "telephone": "+382...", 
+    "email": "director@a-96.ru",
+    "telephone": "+38268282371",
+    "taxID": "03505464",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "Mirošica 2, Sutomore",
+      "postalCode": "85000",
       "addressLocality": "Bar",
       "addressCountry": "ME"
     },
@@ -27,15 +33,37 @@ export const getSchemaData = (locale: string) => {
       "opens": "09:00",
       "closes": "18:00"
     },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "telephone": "+38268282371",
+      "email": "director@a-96.ru",
+      "areaServed": "ME",
+      "availableLanguage": ["sr", "en"]
+    },
+    "areaServed": [
+      {
+        "@type": "Country",
+        "name": "Montenegro"
+      },
+      {
+        "@type": "City",
+        "name": "Bar"
+      },
+      {
+        "@type": "City",
+        "name": "Podgorica"
+      },
+      {
+        "@type": "City",
+        "name": "Budva"
+      }
+    ],
     "sameAs": [],
     "description": isEn
-      ? "Custom kitchens, wardrobes and apartment furnishing in Montenegro. Workshop in Bar with selected HoReCa and B2B fit-outs."
-      : "Kuhinje po mjeri, plakari i opremanje apartmana u Crnoj Gori. Radionica u Baru i odabrani HoReCa i B2B projekti.",
-    "parentOrganization": {
-      "@type": "Organization",
-      "name": "ARTIDOM Group",
-      "foundingDate": "2001"
-    }
+      ? "Custom kitchens, wardrobes and apartment furnishing in Montenegro. Workshop in Sutomore, Bar with selected HoReCa and B2B fit-outs."
+      : "Kuhinje po mjeri, plakari i izrada namještaja po mjeri za apartmane u Crnoj Gori. Radionica u Sutomoru, Bar i odabrani HoReCa i B2B projekti.",
+    "foundingDate": "2001"
   };
 };
 

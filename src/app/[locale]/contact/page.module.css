@@ -90,7 +90,27 @@
 }
 
 .contactDetail a,
-.contactDetail span {
+.detailValue {
     font-size: 1rem;
     font-weight: 300;
+}
+
+.detailValue {
+    white-space: pre-line;
+}
+
+@media (max-width: 960px) {
+    .page {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 3rem 0 6rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .right {
+        padding-top: 0;
+    }
 }

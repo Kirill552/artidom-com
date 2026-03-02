@@ -4,8 +4,18 @@ import { routing } from './i18n/routing';
 import { mapLegacyLocalePathname } from './i18n/locale-config';
 
 const intlMiddleware = createMiddleware(routing);
+const canonicalHost = 'artidom.art';
 
 export default function middleware(request: NextRequest) {
+  const hostname = (request.headers.get('x-forwarded-host') ?? request.headers.get('host') ?? request.nextUrl.hostname)
+    .split(':')[0];
+
+  if (hostname === `www.${canonicalHost}`) {
+    const url = request.nextUrl.clone();
+    url.hostname = canonicalHost;
+    return NextResponse.redirect(url, 308);
+  }
+
   const legacyPathname = mapLegacyLocalePathname(request.nextUrl.pathname);
 
   if (legacyPathname) {
@@ -18,6 +28,5 @@ export default function middleware(request: NextRequest) {
 }
 
 export const config = {
-  // Match only internationalized pathnames
-  matcher: ['/', '/(de|en|sr)/:path*']
+  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
 };

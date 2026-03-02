@@ -204,7 +204,7 @@
   "Contact": {
     "meta": {
       "title": "Contact ARTIDOM Montenegro",
-      "description": "Send ARTIDOM your apartment, kitchen or B2B furniture brief. Workshop in Bar, Montenegro. Reply within 24 hours."
+      "description": "Send ARTIDOM your apartment, kitchen or B2B furniture brief. Workshop in Sutomore, Bar, Montenegro. Reply within 24 hours."
     },
     "title": "Tell us about your apartment or B2B project",
     "subtitle": "Send a floor plan, drawings or a short brief. We reply within 24 hours.",
@@ -220,10 +220,16 @@
     "message": "Project description",
     "submit": "Send →",
     "success": "Message received. We will reply within 24 hours.",
-    "address": "Bar, Montenegro",
-    "email": "info@artidom.com",
+    "address": "Mirošica 2, Sutomore\n85000 Bar, Montenegro",
+    "email": "director@a-96.ru",
     "email_label": "Email",
-    "location_label": "Location"
+    "location_label": "Address",
+    "phone": "+382 68 282 371",
+    "phone_label": "Phone",
+    "company_label": "Company",
+    "company_name": "Artidom DOO",
+    "tax_id_label": "PIB",
+    "tax_id": "03505464"
   },
   "Catalog": {
     "meta": {
@@ -269,15 +275,16 @@
     }
   },
   "Footer": {
-    "tagline": "Custom kitchens, wardrobes and built-in furniture from Bar.",
-    "address": "Bar, Montenegro",
-    "email": "info@artidom.com",
-    "phone": "+382 XX XXX XXX",
+    "tagline": "Custom kitchens, wardrobes and built-in furniture from Bar, Montenegro.",
+    "address": "Mirošica 2, Sutomore\n85000 Bar, Montenegro",
+    "email": "director@a-96.ru",
+    "phone": "+382 68 282 371",
     "nav_solutions": "Solutions",
     "nav_workshop": "Workshop",
     "nav_catalog": "Catalog",
     "nav_projects": "Projects",
     "nav_contact": "Contact",
-    "copyright": "ARTIDOM"
+    "copyright": "ARTIDOM",
+    "legal": "Artidom DOO · PIB 03505464"
   }
 }
