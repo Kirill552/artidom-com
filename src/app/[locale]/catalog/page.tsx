@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { Link } from '@/i18n/routing';
-import { catalogItems, getCatalogLocaleValue } from '@/lib/catalog';
+import { catalogItems } from '@/lib/catalog';
 import WorkshopProof from '@/components/WorkshopProof';
+import { CatalogGrid } from '@/components/CatalogGrid';
 import { defaultLocale, isAppLocale, type AppLocale } from '@/i18n/locale-config';
 import { getPageMetadata } from '@/lib/seo/page-metadata';
 import { getBreadcrumbSchema } from '@/lib/seo/local-page-schema';
@@ -39,42 +38,25 @@ export default async function CatalogPage({ params }: { params: Promise<{ locale
         <h1 className={styles.title}>{t('title')}</h1>
         <p className={styles.subtitle}>{t('subtitle')}</p>
 
-        <div className={styles.tabs}>
-          {(['all', 'kitchens', 'storage', 'bespoke'] as const).map((c) => (
-            <span key={c} className={styles.tab}>{t(`tabs.${c}`)}</span>
-          ))}
-        </div>
+        <CatalogGrid
+          items={catalogItems}
+          locale={localeKey}
+          tabs={{
+            all: t('tabs.all'),
+            kitchens: t('tabs.kitchens'),
+            storage: t('tabs.storage'),
+            bespoke: t('tabs.bespoke'),
+          }}
+          categories={{
+            kitchens: t('categories.kitchens'),
+            storage: t('categories.storage'),
+            bespoke: t('categories.bespoke'),
+          }}
+          cardCta={t('card_cta')}
+        />
       </section>
 
       <WorkshopProof variant="catalog" />
-
-      <section className={`container ${styles.grid}`}>
-        {catalogItems.map((item) => {
-          const name = item.name[localeKey];
-          const leadTime = getCatalogLocaleValue(item.leadTime, localeKey);
-
-          return (
-            <Link key={item.slug} href={`/catalog/${item.slug}`} className={styles.card}>
-              <div className={styles.cardImage}>
-                <Image
-                  src={item.coverImage}
-                  alt={name}
-                  fill
-                  className={styles.image}
-                  sizes="(max-width: 900px) 100vw, (max-width: 1400px) 50vw, 33vw"
-                />
-              </div>
-              <div className={styles.cardInfo}>
-                <span className={styles.cardName}>{name}</span>
-                <span className={styles.cardMeta}>
-                  {t(`categories.${item.category}`)} · {leadTime}
-                </span>
-                <span className={styles.cardCta}>{t('card_cta')}</span>
-              </div>
-            </Link>
-          );
-        })}
-      </section>
     </main>
     </>
   );

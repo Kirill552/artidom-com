@@ -1,0 +1,138 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.mainBtn {
+    position: relative;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0;
+    background: var(--color-muted);
+    border-radius: 40px;
+    overflow: hidden;
+    cursor: zoom-in;
+}
+
+.thumbGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.thumbBtn {
+    position: relative;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0;
+    border-radius: 24px;
+    overflow: hidden;
+    background: var(--color-muted);
+    cursor: zoom-in;
+}
+
+/* Лайтбокс */
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    line-height: 1;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    z-index: 10;
+}
+
+.closeBtn:hover {
+    opacity: 1;
+}
+
+.lightboxImage {
+    position: relative;
+    width: min(90vw, 1200px);
+    height: min(85vh, 900px);
+    cursor: default;
+}
+
+.lightboxImg {
+    object-fit: contain;
+}
+
+.navBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 4rem;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+    padding: 1rem;
+    z-index: 10;
+    line-height: 1;
+}
+
+.navBtn:hover {
+    opacity: 1;
+}
+
+.navPrev {
+    left: 1rem;
+}
+
+.navNext {
+    right: 1rem;
+}
+
+.counter {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 700px) {
+    .thumbGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .thumbBtn {
+        height: 120px !important;
+    }
+
+    .navBtn {
+        font-size: 2.5rem;
+        padding: 0.5rem;
+    }
+
+    .navPrev {
+        left: 0.25rem;
+    }
+
+    .navNext {
+        right: 0.25rem;
+    }
+}
