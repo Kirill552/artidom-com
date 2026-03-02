@@ -8,6 +8,12 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.content}>
+        <img
+          src="/images/shell.png"
+          alt=""
+          aria-hidden="true"
+          className={styles.shellBg}
+        />
         <span className={styles.badge}>{t('label')}</span>
         <h1 className={styles.title}>{t('title')}</h1>
         <p className={styles.description}>{t('description')}</p>
