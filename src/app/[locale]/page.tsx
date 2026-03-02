@@ -1,15 +1,39 @@
+import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
+import { defaultLocale, isAppLocale, type AppLocale } from '@/i18n/locale-config';
 import Hero from '@/components/Hero';
 import WorkshopProof from '@/components/WorkshopProof';
 import Image from 'next/image';
+import { getProject } from '@/lib/projects';
+import { getPageMetadata } from '@/lib/seo/page-metadata';
 import styles from './page.module.css';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const appLocale = isAppLocale(locale) ? locale : defaultLocale;
+
+  return getPageMetadata({ locale: appLocale, namespace: 'Index' });
+}
 
 export default async function IndexPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
 
   const t = await getTranslations('Index');
+  const featuredProject = getProject('warm-minimal-apartment');
+  const localeKey: AppLocale = isAppLocale(locale) ? locale : defaultLocale;
+
+  if (!featuredProject) {
+    throw new Error('Featured project is missing.');
+  }
+
+  const featuredTitle = featuredProject.title[localeKey];
+  const featuredDescription = featuredProject.description[localeKey];
 
   return (
     <main>
@@ -24,33 +48,34 @@ export default async function IndexPage({ params }: { params: Promise<{ locale: 
       {/* Featured Case */}
       <section className={`container ${styles.case}`}>
         <div className={styles.caseHeader}>
-          <span className={styles.label}>{t('cases.school.label')}</span>
-          <h2 className={styles.caseTitle}>{t('cases.school.title')}</h2>
+          <span className={styles.label}>{t('cases.featured.label')}</span>
+          <h2 className={styles.caseTitle}>{featuredTitle}</h2>
         </div>
         <div className={styles.caseBody}>
           <div className={styles.caseText}>
-            <p>{t('cases.school.description')}</p>
+            <p>{featuredDescription}</p>
             <div className={styles.stats}>
               <div className={styles.stat}>
-                <strong>{t('cases.school.stat_sqm')}</strong>
-                <span>Total area</span>
+                <strong>{featuredProject.location}</strong>
+                <span>{t('cases.featured.location_label')}</span>
               </div>
               <div className={styles.stat}>
-                <strong>{t('cases.school.stat_units')}</strong>
-                <span>Custom units</span>
+                <strong>{t('cases.featured.scope_value')}</strong>
+                <span>{t('cases.featured.scope_label')}</span>
               </div>
               <div className={styles.stat}>
-                <strong>{t('cases.school.stat_location')}</strong>
-                <span>Location</span>
+                <strong>{t('cases.featured.type_value')}</strong>
+                <span>{t('cases.featured.type_label')}</span>
               </div>
             </div>
           </div>
           <div className={styles.caseImage}>
             <Image
-              src="/images/projects/school/photo_5267340135563465942_y.jpg"
-              alt="International School Montenegro by Artidom"
+              src={featuredProject.coverImage}
+              alt={t('cases.featured.image_alt')}
               fill
               className={styles.image}
+              sizes="(max-width: 1024px) 100vw, 55vw"
             />
           </div>
         </div>
@@ -60,7 +85,7 @@ export default async function IndexPage({ params }: { params: Promise<{ locale: 
       <section className={`container ${styles.sectors}`}>
         <span className={styles.label}>{t('sectors.title')}</span>
         <div className={styles.sectorGrid}>
-          {(['horeca', 'education', 'workspace', 'residential'] as const).map((s) => (
+          {(['residential', 'horeca', 'workspace', 'education'] as const).map((s) => (
             <Link key={s} href={`/solutions/${s}`} className={styles.sectorCard}>
               <span className={styles.sectorLabel}>{t(`sectors.${s}.label`)}</span>
               <p className={styles.sectorDesc}>{t(`sectors.${s}.description`)}</p>

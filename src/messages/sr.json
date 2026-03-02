@@ -5,57 +5,64 @@
     "catalog": "katalog",
     "projects": "projekti",
     "journal": "novosti",
-    "cta": "Pošalji upit",
+    "cta": "Zatražite procjenu",
     "lang_en": "EN",
     "lang_sr": "SR"
   },
   "Index": {
-    "title": "ARTIDOM | Proizvodnja namještaja i opremanje u Crnoj Gori",
+    "title": "ARTIDOM | Kuhinje po mjeri i opremanje apartmana u Crnoj Gori",
+    "meta": {
+      "title": "Kuhinje po mjeri i opremanje apartmana u Crnoj Gori",
+      "description": "ARTIDOM izrađuje i montira kuhinje po mjeri, plakare i ugradni namještaj za stanove, apartmane i vile u Crnoj Gori. Radimo i odabrane HoReCa i B2B projekte."
+    },
     "hero": {
-      "label": "Stolarski atelje u Crnoj Gori",
-      "title": "Namještaj po projektu i kuhinje",
-      "description": "25 godina iskustva. Proizvodni pogon u Baru, Crna Gora. Izrada po narudžbi za B2B i stambene projekte.",
-      "cta": "Zatražite ponudu"
+      "label": "Radionica u Baru, Crna Gora",
+      "tag": "Stanovi prvo. B2B po upitu.",
+      "title": "Kuhinje po mjeri i opremanje apartmana u Crnoj Gori",
+      "description": "Pravimo kuhinje, plakare i ugradni namještaj za stanove, apartmane, vile i nekretnine za izdavanje. Proizvodnja u Baru, montaža širom Crne Gore, uz mogućnost odabranih HoReCa i B2B projekata.",
+      "cta": "Zatražite procjenu",
+      "image_alt": "Topli minimalistički apartman ARTIDOM"
     },
     "cases": {
-      "school": {
-        "label": "Istaknuti projekat",
-        "title": "Internacionalna škola Crna Gora",
-        "description": "1.200 m² obrazovna ustanova. Namještaj po mjeri za učionice, recepcije i prostorije za osoblje.",
-        "stat_sqm": "1.200 m²",
-        "stat_units": "40+ jedinica",
-        "stat_location": "Crna Gora"
+      "featured": {
+        "label": "Istaknuti apartmanski projekat",
+        "location_label": "Lokacija",
+        "scope_label": "Obuhvat",
+        "scope_value": "Kuhinja + odlaganje",
+        "type_label": "Tip projekta",
+        "type_value": "Stambeno opremanje",
+        "image_alt": "Topli minimalistički apartman u Baru, ARTIDOM"
       }
     },
     "sectors": {
-      "title": "Šta gradimo",
+      "title": "Glavni pravci rada",
       "horeca": {
         "label": "HoReCa",
-        "description": "Hotelske sobe, restoranski prostori, lobi namještaj — kompletni FF&E paketi"
+        "description": "Pultovi, restorani, hoteli i drugi odabrani B2B enterijeri"
       },
       "education": {
         "label": "Obrazovanje",
-        "description": "Namještaj za učionice, recepcije, prostorije za osoblje — isporučeno i montirano"
+        "description": "Namještaj za učionice i javne zone kada je projekat tehnički definisan"
       },
       "workspace": {
-        "label": "Kancelarije",
-        "description": "Enterijeri kancelarija od projekta do montaže — stolovi, skladištenje, zone za sastanke"
+        "label": "Radni prostori",
+        "description": "Recepcije, stolovi i odlaganje za kancelarije, klinike i javne prostore"
       },
       "residential": {
-        "label": "Stambeni",
-        "description": "Kuhinje i dnevni boravak za vile i brendirane apartmane"
+        "label": "Stanovi i apartmani",
+        "description": "Kuhinje po mjeri, plakari i kompletno opremanje stanova, apartmana i vila"
       }
     },
     "process": {
       "title": "Kako radimo",
-      "step1": "Brifing",
-      "step2": "Dizajn",
+      "step1": "Brif",
+      "step2": "Crteži i procjena",
       "step3": "Proizvodnja",
       "step4": "Isporuka i montaža"
     },
     "cta": {
-      "title": "Recite nam o svom projektu",
-      "subtitle": "Odgovaramo u roku od 24 sata",
+      "title": "Treba vam kuhinja, plakari ili kompletno opremanje apartmana?",
+      "subtitle": "Pošaljite osnovu, crteže ili kratak opis. Odgovaramo u roku od 24 sata.",
       "name": "Vaše ime",
       "company": "Firma (opciono)",
       "message": "Opis projekta",
@@ -64,127 +71,205 @@
   },
   "WorkshopProof": {
     "default": [
-      "Bar, Crna Gora",
-      "CNC + ručna obrada",
-      "Isporuka u EU od 3 sedmice"
+      "Kuhinje, plakari i ugradni namještaj iz Bara",
+      "CNC rezanje + ručna završna obrada",
+      "Mjerenje i montaža širom Crne Gore"
     ],
     "horeca": [
-      "FF&E paketi za 40+ soba",
-      "CNC po vašim nacrtima",
-      "Rok isporuke 6 sedmica"
+      "Pultovi po mjeri i brendirani frontovi",
+      "Koordinacija od crteža do montaže",
+      "Odabrani HoReCa i B2B projekti"
     ],
     "residential": [
-      "Izrada od 1 komada",
-      "Radimo po DWG/PDF nacrtima",
-      "Franko ili montirano"
+      "Od jednog apartmana do kompletne vile",
+      "Radimo po DWG, PDF ili osnovi prostora",
+      "Sve se pravi po realnoj geometriji prostorije"
     ],
     "catalog": [
-      "Proizvedeno u Baru, CG",
-      "Nestandardne dimenzije dostupne",
-      "14 dana za standardne"
+      "Izrada po osnovi prostora",
+      "Materijali i finiši se biraju po projektu",
+      "Tipičan rok izrade 3-6 sedmica"
     ]
   },
   "Workshop": {
+    "meta": {
+      "title": "Radionica namještaja u Baru, Crna Gora",
+      "description": "Pogledajte gdje ARTIDOM izrađuje kuhinje po mjeri, plakare i ugradni namještaj u Baru. CNC rezanje, sklapanje, završna obrada i pakovanje u istoj radionici."
+    },
     "hero_label": "Bar, Crna Gora — od 2001.",
-    "hero_title": "Gdje se pravi namještaj",
-    "intro_fact": "40 majstora.\n800 m² proizvodne površine.\n300 km od Budve.",
-    "intro_text": "Naš pogon u Baru pokriva sve — od prijema materijala do gotovog proizvoda. CNC rezanje, montaža, završna obrada i kontrola kvaliteta — sve pod jednim krovom.",
+    "hero_title": "Radionica za namještaj po mjeri u Baru",
+    "intro_fact": "40 majstora.\n800 m² radionice.\nProizvodnja u Baru za apartmane i odabrane B2B enterijere.",
+    "intro_text": "U našem pogonu pravimo kuhinje po mjeri, plakare, TV zidove, pultove i druge elemente enterijera. Rezanje, sklapanje, završna obrada i pakovanje radimo u istom prostoru.",
     "steps_title": "Proizvodni proces",
     "step1_title": "Prijem materijala",
-    "step1_text": "Hrast, orah, MDF — pregled pri prijemu. 48h aklimatizacija prije rezanja.",
+    "step1_text": "Ploče, furnir, okovi i radne ploče se pregledaju pri prijemu prije ulaska u proizvodnju.",
     "step2_title": "CNC rezanje",
-    "step2_text": "Precizno rezanje prema DWG nacrtu klijenta ili našim crtežima. Tolerancija ±0,5mm.",
-    "step3_title": "Montaža i završna obrada",
-    "step3_text": "Montaža okvira, kantovanje, površinska obrada — lak ili prirodno ulje.",
-    "step4_title": "KK i pakovanje",
-    "step4_text": "Svaki komad se provjerava prije pakovanja. EU pakovanje na zahtjev.",
+    "step2_text": "Elementi se režu po projektnim crtežima sa ponovljivom preciznošću za kuhinje, plakare i pultove.",
+    "step3_title": "Sklapanje i završna obrada",
+    "step3_text": "Korpusi se sklapaju, kantuju i završno obrađuju u laku, furniru ili drugom traženom materijalu.",
+    "step4_title": "Kontrola i pakovanje",
+    "step4_text": "Svaka jedinica se provjerava, obilježava i priprema za isporuku na objekat ili eksportno pakovanje.",
     "materials_title": "Glavni materijali",
-    "mat1_name": "Austrijski hrast",
-    "mat1_origin": "Austrija / Njemačka",
-    "mat2_name": "Orah",
-    "mat2_origin": "Istočna Evropa",
-    "mat3_name": "MDF + furnier",
-    "mat3_origin": "Regionalni dobavljači",
+    "mat1_name": "Hrast / furnir",
+    "mat1_origin": "EU dobavljači",
+    "mat2_name": "Lakirani MDF",
+    "mat2_origin": "Projektni finiši",
+    "mat3_name": "Kompakt / kamene ploče",
+    "mat3_origin": "Odabrani projektni dobavljači",
     "capacity_title": "Kapacitet",
     "cap1": "800 m² proizvodne površine",
-    "cap2": "Do 200 jedinica / mjesečno",
-    "cap3": "Izrada po narudžbi od 1 komada",
-    "projects_link": "Pogledajte završene projekte →"
+    "cap2": "Apartmanski paketi i pojedinačni komadi po mjeri",
+    "cap3": "Odabrani HoReCa / B2B enterijeri",
+    "projects_link": "Pogledajte odabrane projekte →"
   },
   "Solutions": {
+    "common": {
+      "needs_title": "Šta ovaj sektor traži",
+      "solution_title": "Kako to rješavamo",
+      "cta": "Recite nam o projektu →"
+    },
     "horeca": {
+      "meta": {
+        "title": "HoReCa namještaj i pultovi po mjeri u Crnoj Gori",
+        "description": "Pultovi po mjeri, hotelski i restoranski elementi iz Bara, Crna Gora. Odabrani HoReCa i B2B projekti sa proizvodnjom, isporukom i montažom."
+      },
       "label": "HoReCa",
-      "title": "Opremanje hotela i restorana iz Crne Gore",
-      "description": "Kompletni FF&E paketi za ugostiteljske projekte. Od hotelskih soba do zona restorana — jedan dobavljač, ujednačena završna obrada.",
-      "pain1": "Uski rokovi isporuke",
-      "sol1": "Proizvodnja usklađena sa vašim planom gradnje",
-      "pain2": "FF&E za više tipova soba",
-      "sol2": "Jedan dobavljač, ujednačena završna obrada za sve jedinice",
-      "pain3": "Nestandardne dimenzije prostora",
-      "sol3": "CNC rezanje prema tehničkim nacrtima",
-      "pain4": "Koordinacija sa udaljenim dobavljačem",
-      "sol4": "Proizvodni pogon 40 km od Budve — moguće posjete"
+      "title": "Pultovi, restoranski i hotelski elementi po mjeri",
+      "description": "Sekundarni pravac za ARTIDOM: pultovi, brendirani frontovi, sobni elementi i odabrani javni enterijeri kada je zadatak jasno definisan i tehnički razrađen.",
+      "image_alt": "HoReCa pult po mjeri ARTIDOM",
+      "pain1": "Brendu treba namještaj po mjeri za front, ne gotova oprema sa police",
+      "sol1": "Pravimo pultove, fronte i radni dio iza pulta po konceptu i radnom toku",
+      "pain2": "Otvaranje lokala ima fiksan rok",
+      "sol2": "Proizvodnju vežemo za dinamiku gradilišta i datum primopredaje",
+      "pain3": "Jedan lokal traži više tipova namještaja i finiša",
+      "sol3": "Pultovi, zidne obloge, police i sobni elementi mogu doći iz jedne radionice",
+      "pain4": "Projektu treba dobavljač iz Crne Gore koji je blizu objekta",
+      "sol4": "Naša radionica u Baru pokriva mjerenje, proizvodnju, isporuku i montažu"
     },
     "education": {
+      "meta": {
+        "title": "Školski namještaj i stolarija po mjeri u Crnoj Gori",
+        "description": "Ormari za učionice, recepcije i elementi za javne zone škola i kampusa u Crnoj Gori, proizvedeni u ARTIDOM radionici u Baru."
+      },
       "label": "Obrazovanje",
-      "title": "Školski i kampus namještaj — isporučen",
-      "description": "Ormari za učionice, recepcije, prostorije za osoblje. Opremili smo 1.200 m² međunarodnu školu u Crnoj Gori.",
-      "pain1": "Veliki obim, uniformna specifikacija",
-      "sol1": "Serijska proizvodnja — isti finiš na 40+ jedinica",
-      "pain2": "Ograničen budžet",
-      "sol2": "Direktne cijene proizvođača, bez marže posrednika",
-      "pain3": "Koordinacija instalacije",
-      "sol3": "Isporuka i montaža uključene",
-      "pain4": "Prilagođeno označavanje / dimenzije",
-      "sol4": "Sve dimenzije rezane prema vašem planu prostora"
+      "title": "Ormari za učionice, recepcije i javne zone",
+      "description": "Preuzimamo obrazovne projekte kada je zadatak tehnički definisan i rok jasan: učioničko odlaganje, recepcije, prostorije za osoblje i javni elementi.",
+      "image_alt": "Školski projekat ARTIDOM",
+      "pain1": "Projektni tim traži ponovljive jedinice u istom finišu",
+      "sol1": "Serijska proizvodnja drži iste dimenzije i završnu obradu kroz cijeli paket",
+      "pain2": "U obuhvatu su učionice, javne zone i prostori za osoblje",
+      "sol2": "Odlaganje, recepciju i servisne elemente radimo iz jedne usklađene specifikacije",
+      "pain3": "Montaža mora stati u tačno određen rok otvaranja",
+      "sol3": "Pakovanje, isporuka i montaža planiraju se prema dinamici projekta",
+      "pain4": "Crteži se mijenjaju tokom koordinacije",
+      "sol4": "Pošto je proizvodnja lokalna, izmjene i dodatna mjerenja lakše se usklađuju"
     },
     "workspace": {
-      "label": "Kancelarije",
-      "title": "Enterijeri kancelarija — od projekta do montaže",
-      "description": "Stolovi, skladištenje, namještaj za sastanke. Dimenzije po vašem planu prostora.",
-      "pain1": "Renovacija kancelarije u roku",
-      "sol1": "Fiksni plan proizvodnje, datum isporuke potvrđen unaprijed",
-      "pain2": "Više tipova namještaja iz jednog projekta",
-      "sol2": "Stolovi, ormari, recepcija — sve od jednog dobavljača",
-      "pain3": "Nestandardni raspored prostorija",
-      "sol3": "CNC rezanje prema DWG nacrtima",
-      "pain4": "Ujednačenost završne obrade između odjela",
-      "sol4": "Jedna proizvodna serija — identičan finiš svuda"
+      "meta": {
+        "title": "Kancelarijski namještaj po mjeri u Crnoj Gori",
+        "description": "Recepcije, odlaganje i namještaj za sastanke za kancelarije, klinike i javne prostore u Crnoj Gori. Proizvodnja u Baru uz podršku za mjerenje i montažu."
+      },
+      "label": "Radni prostori",
+      "title": "Recepcije, stolovi za sastanke i odlaganje",
+      "description": "Za kancelarije, klinike i javne prostore kojima trebaju ugradni elementi, recepcije ili kompaktan namještaj po rasporedu prostora.",
+      "image_alt": "Javni enterijer ARTIDOM",
+      "pain1": "Radni prostor ima nestandardnu osnovu i serijski namještaj gubi kvadrate",
+      "sol1": "Recepcije, odlaganje i stolove pravimo po realnom rasporedu prostora",
+      "pain2": "Klijent želi miran i ujednačen jezik materijala kroz cio enterijer",
+      "sol2": "Fronte, obloge i korpuse definišemo zajedno i proizvodimo u jednoj seriji",
+      "pain3": "Mali javni enterijeri i dalje traže postojane materijale",
+      "sol3": "Spajamo komercijalno izdržljive finiše sa urednim stambenim detaljima",
+      "pain4": "Projektu treba radionica koja direktno prati crteže",
+      "sol4": "Radimo po DWG, PDF i označenim osnovama uz lokalnu podršku za mjerenje"
     },
     "residential": {
-      "label": "Stambeni",
-      "title": "Vile i apartmani — kompletna FF&E",
-      "description": "Kuhinjski blokovi, ormari za dnevni boravak, spavaći namještaj za vile i brendirane apartmane u Crnoj Gori i EU.",
-      "pain1": "Dizajner enterijera ima specifikaciju, treba realizaciju",
-      "sol1": "Radimo direktno po DWG/PDF nacrtima",
-      "pain2": "Isporuka u EU",
-      "sol2": "Isporučeno i montirano — ili franko iz Crne Gore",
-      "pain3": "Unikatni komad",
-      "sol3": "Minimalna narudžba: 1 komad",
-      "pain4": "Izbor materijala",
-      "sol4": "Uzorci na zahtjev — hrast, orah, lakirane površine"
+      "meta": {
+        "title": "Kuhinje po mjeri i opremanje apartmana u Crnoj Gori",
+        "description": "Izrađujemo kuhinje po mjeri, plakare, TV zidove i ugradno odlaganje za stanove, apartmane i vile u Crnoj Gori. Pogon u Baru, mjerenje i montaža širom zemlje."
+      },
+      "label": "Stanovi i apartmani",
+      "title": "Kuhinje po mjeri, plakari i opremanje apartmana",
+      "description": "Opremamo stanove, apartmane, vile i nekretnine za izdavanje u Crnoj Gori: kuhinje, plakare, ulazno odlaganje, TV zidove i kompaktna ugradna rješenja. Proizvodnja u Baru, mjerenje i montaža širom zemlje.",
+      "image_alt": "Apartmanska kuhinja i odlaganje ARTIDOM",
+      "pain1": "Apartman traži kuhinju, plakare i odlaganje koji tačno staju u prostor",
+      "sol1": "Radimo po realnoj osnovi, ne po standardnim modulima",
+      "pain2": "Investitor ili vlasnik želi jednu radionicu za kompletan apartmanski paket",
+      "sol2": "Kuhinje, plakare, kupatilske elemente i zidne obloge radimo u istom pogonu",
+      "pain3": "Stan za izdavanje traži postojane materijale i čist izgled",
+      "sol3": "Predlažemo završne obrade koje trpe svakodnevnu upotrebu i kratkoročni najam",
+      "pain4": "Objekat je na primorju ili u Podgorici i treba koordinaciju mjerenja i montaže",
+      "sol4": "Mjerenje, isporuku i montažu vodimo iz radionice u Baru"
     }
   },
   "Contact": {
-    "title": "Recite nam o svom projektu",
-    "subtitle": "Odgovaramo u roku od 24 sata",
+    "meta": {
+      "title": "Kontakt ARTIDOM Crna Gora",
+      "description": "Pošaljite ARTIDOM-u opis apartmana, kuhinje ili B2B projekta. Radionica u Baru, Crna Gora. Odgovaramo u roku od 24 sata."
+    },
+    "title": "Recite nam o stambenom ili B2B projektu",
+    "subtitle": "Pošaljite osnovu, crteže ili kratak opis. Odgovaramo u roku od 24 sata.",
     "name": "Vaše ime",
     "company": "Firma",
     "project_type": "Tip projekta",
-    "type_hotel": "Hotel",
-    "type_school": "Škola",
-    "type_villa": "Vila / Apartman",
-    "type_office": "Kancelarija",
+    "type_hotel": "Hotel / Restoran",
+    "type_school": "Škola / Javni prostor",
+    "type_villa": "Apartman / Vila",
+    "type_office": "Kancelarija / Klinika",
     "type_other": "Ostalo",
     "country": "Država",
     "message": "Opis projekta",
     "submit": "Pošalji →",
-    "success": "Poruka primljena. Odgovorićemo u roku od 24 sata.",
+    "success": "Poruka je primljena. Odgovorićemo u roku od 24 sata.",
     "address": "Bar, Crna Gora",
-    "email": "info@artidom.com"
+    "email": "info@artidom.com",
+    "email_label": "Email",
+    "location_label": "Lokacija"
+  },
+  "Catalog": {
+    "meta": {
+      "title": "Kuhinje po mjeri, plakari i stolarija u Crnoj Gori",
+      "description": "Pogledajte ARTIDOM pravce za kuhinje, odlaganje i posebne komade za apartmane, vile i odabrane B2B enterijere u Crnoj Gori."
+    },
+    "title": "Kuhinje po mjeri, plakari i stolarija",
+    "subtitle": "Početne tipologije za apartmane, vile i odabrane B2B enterijere. Svaki element radimo po vašoj osnovi u Baru, Crna Gora.",
+    "tabs": {
+      "all": "Sve",
+      "kitchens": "Kuhinje",
+      "storage": "Odlaganje",
+      "bespoke": "Po mjeri"
+    },
+    "categories": {
+      "kitchens": "Kuhinje",
+      "storage": "Odlaganje",
+      "bespoke": "Po mjeri"
+    },
+    "card_cta": "Zatražite procjenu →",
+    "specs": {
+      "material": "Materijal",
+      "origin": "Porijeklo",
+      "dimensions": "Dimenzije",
+      "finish": "Opcije završne obrade",
+      "lead_time": "Rok izrade"
+    },
+    "request_cta": "Pošalji upit za ovaj model →"
+  },
+  "Projects": {
+    "meta": {
+      "title": "Projekti kuhinja, apartmana i HoReCa enterijera u Crnoj Gori",
+      "description": "Pogledajte ARTIDOM kuhinje, plakare, ugradnu stolariju i odabrane HoReCa projekte proizvedene u Baru, Crna Gora."
+    },
+    "title": "Odabrani projekti u Crnoj Gori",
+    "subtitle": "Fokus je na stanovima i apartmanima: kuhinje, plakari, odlaganje i mali broj HoReCa / javnih enterijera iz naše radionice u Baru.",
+    "all": "Svi projekti",
+    "sectors": {
+      "residential": "Stanovi i apartmani",
+      "horeca": "HoReCa",
+      "education": "Obrazovanje",
+      "workspace": "Radni prostori"
+    }
   },
   "Footer": {
-    "tagline": "Namještaj po mjeri. Proizvedeno u Crnoj Gori.",
+    "tagline": "Kuhinje, plakari i namještaj po mjeri iz Bara.",
     "address": "Bar, Crna Gora",
     "email": "info@artidom.com",
     "phone": "+382 XX XXX XXX",

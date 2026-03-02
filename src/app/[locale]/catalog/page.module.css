@@ -55,10 +55,16 @@
 }
 
 .cardImage {
+    position: relative;
     height: 320px;
     background: var(--color-muted);
     border-radius: 32px;
     margin-bottom: 1.25rem;
+    overflow: hidden;
+}
+
+.image {
+    object-fit: cover;
 }
 
 .cardName {
@@ -82,4 +88,25 @@
     color: var(--color-accent);
     text-decoration: underline;
     text-underline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+    .header {
+        padding-top: 3rem;
+    }
+
+    .title {
+        font-size: 2.75rem;
+    }
+
+    .tabs {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        padding-top: 2rem;
+    }
 }

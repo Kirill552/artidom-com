@@ -9,7 +9,7 @@ export async function GET() {
     const fileData = await fs.readFile(dataFilePath, 'utf-8');
     const articles = JSON.parse(fileData);
     return NextResponse.json(articles);
-  } catch (error) {
+  } catch {
     return NextResponse.json({ error: 'Failed to read articles' }, { status: 500 });
   }
 }
@@ -30,7 +30,7 @@ export async function POST(request: Request) {
     await fs.writeFile(dataFilePath, JSON.stringify(articles, null, 2), 'utf-8');
     
     return NextResponse.json({ success: true, article: newArticle }, { status: 201 });
-  } catch (error) {
+  } catch {
     return NextResponse.json({ error: 'Failed to save article' }, { status: 500 });
   }
 }

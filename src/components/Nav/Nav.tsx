@@ -17,7 +17,7 @@ export default function Nav() {
       </Link>
 
       <nav className={styles.links}>
-        <Link href="/solutions/horeca">{t('solutions')}</Link>
+        <Link href="/solutions/residential">{t('solutions')}</Link>
         <Link href="/workshop">{t('workshop')}</Link>
         <Link href="/catalog">{t('catalog')}</Link>
         <Link href="/projects">{t('projects')}</Link>

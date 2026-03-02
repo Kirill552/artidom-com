@@ -5,19 +5,19 @@ export const getSchemaData = (locale: string) => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "ARTIDOM",
-    "image": "https://artidom.com/og-image.jpg",
-    "@id": "https://artidom.com",
-    "url": "https://artidom.com",
+    "image": "https://artidom.art/og-image.jpg",
+    "@id": "https://artidom.art",
+    "url": "https://artidom.art",
     "telephone": "+382...", 
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Budva",
+      "addressLocality": "Bar",
       "addressCountry": "ME"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 42.2911,
-      "longitude": 18.8403
+      "latitude": 42.0931,
+      "longitude": 19.1003
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -29,8 +29,8 @@ export const getSchemaData = (locale: string) => {
     },
     "sameAs": [],
     "description": isEn
-      ? "Bespoke furniture manufacturing and turnkey interior furnishing in Montenegro. 25 years of woodworking expertise."
-      : "Proizvodnja namještaja po mjeri i opremanje enterijera u Crnoj Gori. 25 godina iskustva u drvnoj industriji.",
+      ? "Custom kitchens, wardrobes and apartment furnishing in Montenegro. Workshop in Bar with selected HoReCa and B2B fit-outs."
+      : "Kuhinje po mjeri, plakari i opremanje apartmana u Crnoj Gori. Radionica u Baru i odabrani HoReCa i B2B projekti.",
     "parentOrganization": {
       "@type": "Organization",
       "name": "ARTIDOM Group",

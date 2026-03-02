@@ -1,12 +1,10 @@
 'use client';
-import { FormEvent, useState } from 'react';
+import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { useLocale } from 'next-intl';
 import styles from './page.module.css';
 
 export default function ContactPage() {
     const t = useTranslations('Contact');
-    const locale = useLocale();
 
     const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
@@ -17,7 +15,7 @@ export default function ContactPage() {
         try {
             await fetch('/api/contact', { method: 'POST', body: new FormData(form) });
             setStatus('success');
-        } catch (error) {
+        } catch {
             setStatus('error');
         }
     }
@@ -37,7 +35,7 @@ export default function ContactPage() {
                             <input name="company" placeholder={t('company')} />
                             <select name="projectType">
                                 <option value="">{t('project_type')}</option>
-                                {(['hotel', 'school', 'villa', 'office', 'other'] as const).map(v => (
+                                {(['villa', 'hotel', 'office', 'school', 'other'] as const).map(v => (
                                     <option key={v} value={v}>{t(`type_${v}`)}</option>
                                 ))}
                             </select>
@@ -50,11 +48,11 @@ export default function ContactPage() {
 
                 <div className={styles.right}>
                     <div className={styles.contactDetail}>
-                        <span className={styles.detailLabel}>Email</span>
+                        <span className={styles.detailLabel}>{t('email_label')}</span>
                         <a href={`mailto:${t('email')}`}>{t('email')}</a>
                     </div>
                     <div className={styles.contactDetail}>
-                        <span className={styles.detailLabel}>Location</span>
+                        <span className={styles.detailLabel}>{t('location_label')}</span>
                         <span>{t('address')}</span>
                     </div>
                 </div>

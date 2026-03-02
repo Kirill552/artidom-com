@@ -1,8 +1,21 @@
+import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
-import Image from 'next/image';
 import WorkshopProof from '@/components/WorkshopProof';
+import { defaultLocale, isAppLocale } from '@/i18n/locale-config';
+import { getPageMetadata } from '@/lib/seo/page-metadata';
 import styles from './page.module.css';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const appLocale = isAppLocale(locale) ? locale : defaultLocale;
+
+  return getPageMetadata({ locale: appLocale, namespace: 'Workshop', path: '/workshop' });
+}
 
 export default async function WorkshopPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

@@ -16,6 +16,7 @@
 
 .meta {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     margin-bottom: 2rem;
 }
@@ -42,6 +43,24 @@
     opacity: 0.75;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.galleryItem {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    border-radius: 28px;
+    overflow: hidden;
+    background: var(--color-muted);
+}
+
+.galleryImage {
+    object-fit: cover;
+}
+
 .back {
     padding: 2rem 0 6rem;
 }
@@ -51,4 +70,23 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     color: var(--color-accent);
+}
+
+@media (max-width: 900px) {
+    .hero {
+        height: 46vh;
+        min-height: 320px;
+    }
+
+    .content {
+        padding: 3rem 0;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
 }

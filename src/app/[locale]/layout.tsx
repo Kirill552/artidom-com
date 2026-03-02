@@ -3,7 +3,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { defaultLocale, isAppLocale } from '@/i18n/locale-config';
+import { isAppLocale } from '@/i18n/locale-config';
 import { getSchemaData } from '@/lib/seo/schema';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
@@ -11,12 +11,11 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://artidom.com'),
-  title: { default: 'ARTIDOM | Furniture Manufacturing Montenegro', template: '%s | ARTIDOM' },
-  description: 'Custom furniture manufacturing in Bar, Montenegro. FF&E for hotels, schools, villas. EU delivery.',
+  metadataBase: new URL('https://artidom.art'),
+  title: { default: 'ARTIDOM | Custom Kitchens & Furniture in Montenegro', template: '%s | ARTIDOM' },
+  description: 'Custom kitchens, wardrobes and apartment furniture made in Bar, Montenegro. Residential projects first, selected HoReCa and B2B fit-outs.',
   openGraph: {
     siteName: 'ARTIDOM',
-    locale: 'sr_ME',
     type: 'website',
   },
 };
@@ -46,9 +45,6 @@ export default async function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
-        <link rel="alternate" hrefLang="en" href="https://artidom.com/en/" />
-        <link rel="alternate" hrefLang="sr" href="https://artidom.com/sr/" />
-        <link rel="alternate" hrefLang="x-default" href={`https://artidom.com/${defaultLocale}/`} />
       </head>
       <body>
         <NextIntlClientProvider messages={messages} locale={locale}>

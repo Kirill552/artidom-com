@@ -35,9 +35,15 @@
 }
 
 .heroImage {
+    position: relative;
     height: 450px;
     background: var(--color-muted);
     border-radius: 40px;
+    overflow: hidden;
+}
+
+.heroImageMedia {
+    object-fit: cover;
 }
 
 .painSol {
