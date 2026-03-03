@@ -13,7 +13,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
   return (
     <main>
-      <div className={styles.heroImage} />
+      {post.coverImage && (
+        <div className={styles.heroImage} style={{ backgroundImage: `url(${post.coverImage.url})` }} />
+      )}
 
       <article className={`container ${styles.article}`}>
         <div className={styles.meta}>

@@ -25,7 +25,9 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
               href={`/blog/${post.slug}`}
               className={`${styles.card} ${i === 0 ? styles.cardWide : ''}`}
             >
-              <div className={styles.cardImage} />
+              {post.coverImage && (
+                <div className={styles.cardImage} style={{ backgroundImage: `url(${post.coverImage.url})` }} />
+              )}
               <div className={styles.cardBody}>
                 <span className={styles.cardTag}>{post.tag}</span>
                 <h2 className={styles.cardTitle}>{post.title}</h2>

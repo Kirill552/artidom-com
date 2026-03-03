@@ -2,6 +2,8 @@
     height: 55vh;
     min-height: 400px;
     background: var(--color-muted);
+    background-size: cover;
+    background-position: center;
     margin-bottom: 0;
 }
 
