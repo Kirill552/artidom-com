@@ -40,8 +40,8 @@ export default async function WorkshopPage({ params }: { params: Promise<{ local
   );
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: appLocale === 'sr' ? 'Početna' : 'Home', url: `https://www.artidom.art/${appLocale}` },
-    { name: t('hero_title'), url: `https://www.artidom.art/${appLocale}/workshop` },
+    { name: appLocale === 'sr' ? 'Početna' : 'Home', url: `https://artidom.art/${appLocale}` },
+    { name: t('hero_title'), url: `https://artidom.art/${appLocale}/workshop` },
   ]);
 
   const steps = ['step1', 'step2', 'step3', 'step4'] as const;

@@ -26,8 +26,8 @@ export default async function CatalogPage({ params }: { params: Promise<{ locale
   const localeKey: AppLocale = isAppLocale(locale) ? locale : defaultLocale;
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: localeKey === 'sr' ? 'Početna' : 'Home', url: `https://www.artidom.art/${locale}` },
-    { name: t('title'), url: `https://www.artidom.art/${locale}/catalog` },
+    { name: localeKey === 'sr' ? 'Početna' : 'Home', url: `https://artidom.art/${locale}` },
+    { name: t('title'), url: `https://artidom.art/${locale}/catalog` },
   ]);
 
   return (

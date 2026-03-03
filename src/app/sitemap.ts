@@ -3,7 +3,7 @@ import { appLocales } from '@/i18n/locale-config';
 import { catalogItems } from '@/lib/catalog';
 import { projects } from '@/lib/projects';
 
-const BASE_URL = 'https://www.artidom.art';
+const BASE_URL = 'https://artidom.art';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];

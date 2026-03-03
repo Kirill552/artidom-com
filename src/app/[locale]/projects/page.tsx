@@ -27,8 +27,8 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
     const appLocale = isAppLocale(locale) ? locale : defaultLocale;
 
     const breadcrumbSchema = getBreadcrumbSchema([
-        { name: appLocale === 'sr' ? 'Početna' : 'Home', url: `https://www.artidom.art/${locale}` },
-        { name: t('title'), url: `https://www.artidom.art/${locale}/projects` },
+        { name: appLocale === 'sr' ? 'Početna' : 'Home', url: `https://artidom.art/${locale}` },
+        { name: t('title'), url: `https://artidom.art/${locale}/projects` },
     ]);
 
     return (

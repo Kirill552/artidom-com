@@ -24,4 +24,4 @@ Allow: /
 User-agent: GoogleOther
 Allow: /
 
-Sitemap: https://www.artidom.art/sitemap.xml
+Sitemap: https://artidom.art/sitemap.xml

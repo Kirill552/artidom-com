@@ -40,9 +40,9 @@ export default async function ResidentialPage({ params }: { params: Promise<{ lo
     const faqSchema = getFaqPageSchema(faqSection.items);
 
     const breadcrumbSchema = getBreadcrumbSchema([
-        { name: appLocale === 'sr' ? 'Početna' : 'Home', url: `https://www.artidom.art/${appLocale}` },
-        { name: appLocale === 'sr' ? 'Rješenja' : 'Solutions', url: `https://www.artidom.art/${appLocale}/solutions` },
-        { name: appLocale === 'sr' ? 'Stanovi' : 'Residential', url: `https://www.artidom.art/${appLocale}/solutions/residential` },
+        { name: appLocale === 'sr' ? 'Početna' : 'Home', url: `https://artidom.art/${appLocale}` },
+        { name: appLocale === 'sr' ? 'Rješenja' : 'Solutions', url: `https://artidom.art/${appLocale}/solutions` },
+        { name: appLocale === 'sr' ? 'Stanovi' : 'Residential', url: `https://artidom.art/${appLocale}/solutions/residential` },
     ]);
 
     return (
