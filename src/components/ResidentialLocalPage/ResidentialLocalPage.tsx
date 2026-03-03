@@ -63,6 +63,10 @@ export default function ResidentialLocalPage({ page }: ResidentialLocalPageProps
                     {page.cta}
                 </Link>
             </section>
+
+            <div className={`container ${styles.back}`}>
+                <Link href="/solutions/residential">← Residential</Link>
+            </div>
         </main>
     );
 }

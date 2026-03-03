@@ -77,6 +77,10 @@ export default async function CatalogItemPage({ params }: { params: Promise<{ sl
                     </Link>
                 </div>
             </section>
+
+            <div className={styles.back}>
+                <Link href="/catalog">← Catalog</Link>
+            </div>
         </main>
     );
 }
