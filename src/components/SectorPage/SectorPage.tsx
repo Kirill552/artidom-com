@@ -20,7 +20,7 @@ export default function SectorPage({ sector, proofVariant = 'default', children 
     const pains = ['pain1', 'pain2', 'pain3', 'pain4'] as const;
     const sectorImages = {
         residential: '/images/projects/warm-minimal-apartment/01.jpg',
-        horeca: '/images/projects/horeca-counters/04.jpg',
+        horeca: '/images/projects/horeca-counters/03.webp',
         education: '/images/projects/school/photo_5267340135563465942_y.jpg',
         workspace: '/images/projects/school/photo_5267340135563465940_y.jpg',
     } as const;

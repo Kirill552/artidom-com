@@ -16,7 +16,7 @@ export async function generateMetadata({
         locale: appLocale,
         namespace: 'Solutions.horeca',
         path: '/solutions/horeca',
-        image: '/images/projects/horeca-counters/04.jpg',
+        image: '/images/projects/horeca-counters/03.webp',
     });
 }
 

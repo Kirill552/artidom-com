@@ -110,13 +110,12 @@ export const projects: Project[] = [
         },
         location: 'Selected Balkans Projects',
         year: 2024,
-        coverImage: '/images/projects/horeca-counters/04.jpg',
+        coverImage: '/images/projects/horeca-counters/03.webp',
         images: [
-            '/images/projects/horeca-counters/04.jpg',
-            '/images/projects/horeca-counters/01.jpg',
-            '/images/projects/horeca-counters/02.jpg',
-            '/images/projects/horeca-counters/03.jpg',
-            '/images/projects/horeca-counters/05.jpg',
+            '/images/projects/horeca-counters/03.webp',
+            '/images/projects/horeca-counters/01.webp',
+            '/images/projects/horeca-counters/02.webp',
+            '/images/projects/horeca-counters/06.webp',
         ],
         description: {
             en: 'Selected restaurant, kiosk and service-counter joinery for HoReCa formats. Useful when a brand needs a custom front, a working back counter and durable materials.',
