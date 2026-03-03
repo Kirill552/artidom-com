@@ -7,7 +7,7 @@ export const getSchemaData = (locale: string) => {
     "name": "Artidom DOO",
     "legalName": "Artidom DOO",
     "alternateName": "ARTIDOM",
-    "image": "https://www.artidom.art/og-image.jpg",
+    "image": "https://www.artidom.art/api/og",
     "@id": "https://www.artidom.art",
     "url": "https://www.artidom.art",
     "email": "director@a-96.ru",

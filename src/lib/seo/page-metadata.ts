@@ -43,7 +43,7 @@ export function buildMetadata({
   path = '',
   title,
   description,
-  image = '/og-image.jpg',
+  image,
 }: {
   locale: AppLocale;
   path?: string;
@@ -67,7 +67,7 @@ export function buildMetadata({
       siteName: 'ARTIDOM',
       locale: locale === 'sr' ? 'sr_ME' : 'en_US',
       type: 'website',
-      images: [{ url: resolveImageUrl(image) }],
+      images: [{ url: image ? resolveImageUrl(image) : `${siteUrl}/api/og?title=${encodeURIComponent(title)}&subtitle=${encodeURIComponent(description.slice(0, 100))}` }],
     },
   };
 }
