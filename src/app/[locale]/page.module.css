@@ -10,7 +10,7 @@
 
 /* Case */
 .case {
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 
 .caseHeader {
@@ -75,7 +75,7 @@
 
 /* Sectors */
 .sectors {
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 
 .sectorGrid {
@@ -164,7 +164,7 @@
 
 /* CTA Block */
 .ctaBlock {
-  padding: 6rem 0;
+  padding: 4rem 0;
   max-width: 700px;
 }
 
@@ -256,15 +256,15 @@
   }
 
   .case {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
 
   .sectors {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
 
   .ctaBlock {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
 }
 
@@ -326,14 +326,14 @@
   }
 
   .ctaBlock {
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
 
   .case {
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
 
   .sectors {
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
 }
