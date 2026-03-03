@@ -16,7 +16,7 @@ export async function generateMetadata({
         locale: appLocale,
         namespace: 'Solutions.workspace',
         path: '/solutions/workspace',
-        image: '/images/projects/school/photo_5267340135563465940_y.jpg',
+        image: '/images/projects/workspace-cover.webp',
     });
 }
 

@@ -4,7 +4,6 @@ import test from 'node:test';
 import {
   appLocales,
   defaultLocale,
-  mapLegacyLocalePathname,
   replaceLocaleInPathname,
 } from './locale-config.ts';
 
@@ -21,10 +20,4 @@ test('replaces current locale prefix when switching languages', () => {
 test('adds locale prefix when pathname has no locale segment', () => {
   assert.equal(replaceLocaleInPathname('/projects', 'en'), '/en/projects');
   assert.equal(replaceLocaleInPathname('/', 'sr'), '/sr');
-});
-
-test('maps legacy German routes to Serbian equivalents', () => {
-  assert.equal(mapLegacyLocalePathname('/de'), '/sr');
-  assert.equal(mapLegacyLocalePathname('/de/projects'), '/sr/projects');
-  assert.equal(mapLegacyLocalePathname('/en/projects'), null);
 });

@@ -22,7 +22,7 @@ export default function SectorPage({ sector, proofVariant = 'default', children 
         residential: '/images/projects/warm-minimal-apartment/01.jpg',
         horeca: '/images/projects/horeca-counters/03.webp',
         education: '/images/projects/school/photo_5267340135563465942_y.jpg',
-        workspace: '/images/projects/school/photo_5267340135563465940_y.jpg',
+        workspace: '/images/projects/workspace-cover.webp',
     } as const;
 
     return (

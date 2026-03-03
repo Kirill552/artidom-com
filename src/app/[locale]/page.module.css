@@ -224,3 +224,116 @@
 .ctaForm button:hover {
   opacity: 0.7;
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .caseBody {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .caseImage {
+    height: 350px;
+    border-radius: 24px;
+  }
+
+  .sectorGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .processSteps {
+    flex-wrap: wrap;
+  }
+
+  .processStep {
+    flex: 1 1 45%;
+    border-right: none;
+    border-bottom: 1px solid rgba(45, 42, 38, 0.1);
+  }
+
+  .processStep:last-child {
+    border-bottom: none;
+  }
+
+  .case {
+    padding: 4rem 0;
+  }
+
+  .sectors {
+    padding: 4rem 0;
+  }
+
+  .ctaBlock {
+    padding: 4rem 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .caseTitle {
+    font-size: 2rem;
+  }
+
+  .caseBody {
+    gap: 1.5rem;
+  }
+
+  .caseText p {
+    font-size: 1rem;
+  }
+
+  .caseImage {
+    height: 260px;
+    border-radius: 20px;
+  }
+
+  .stats {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .stat strong {
+    font-size: 1.3rem;
+  }
+
+  .sectorGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .sectorCard {
+    padding: 1.75rem 1.5rem;
+    border-radius: 18px;
+  }
+
+  .processSteps {
+    flex-direction: column;
+  }
+
+  .processStep {
+    flex: none;
+    padding: 1.5rem;
+    border-right: none;
+    border-bottom: 1px solid rgba(45, 42, 38, 0.1);
+  }
+
+  .processNum {
+    font-size: 2rem;
+  }
+
+  .ctaTitle {
+    font-size: 2rem;
+  }
+
+  .ctaBlock {
+    padding: 3rem 0;
+  }
+
+  .case {
+    padding: 3rem 0;
+  }
+
+  .sectors {
+    padding: 3rem 0;
+  }
+}

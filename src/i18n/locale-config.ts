@@ -1,6 +1,4 @@
 export const appLocales = ['sr', 'en'] as const;
-export const legacyLocales = ['de'] as const;
-export const allLocales = [...appLocales, ...legacyLocales] as const;
 
 export type AppLocale = (typeof appLocales)[number];
 
@@ -15,7 +13,7 @@ export function replaceLocaleInPathname(pathname: string | null, locale: AppLoca
     return `/${locale}`;
   }
 
-  const prefixRegex = new RegExp(`^/(${allLocales.join('|')})(?=/|$)`);
+  const prefixRegex = new RegExp(`^/(${appLocales.join('|')})(?=/|$)`);
 
   if (prefixRegex.test(pathname)) {
     const localizedPath = pathname.replace(prefixRegex, `/${locale}`);
@@ -23,13 +21,4 @@ export function replaceLocaleInPathname(pathname: string | null, locale: AppLoca
   }
 
   return `/${locale}${pathname.startsWith('/') ? pathname : `/${pathname}`}`;
-}
-
-export function mapLegacyLocalePathname(pathname: string): string | null {
-  if (!pathname.match(/^\/de(?=\/|$)/)) {
-    return null;
-  }
-
-  const localizedPath = pathname.replace(/^\/de(?=\/|$)/, `/${defaultLocale}`);
-  return localizedPath === '' ? `/${defaultLocale}` : localizedPath;
 }
