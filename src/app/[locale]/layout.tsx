@@ -3,12 +3,28 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { Outfit, Cormorant_Garamond } from 'next/font/google';
 import { isAppLocale } from '@/i18n/locale-config';
 import { getSchemaData } from '@/lib/seo/schema';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 import './globals.css';
+
+const outfit = Outfit({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['200', '300', '400', '500', '600'],
+  display: 'swap',
+  variable: '--font-main',
+});
+
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin', 'latin-ext', 'cyrillic'],
+  weight: ['300', '400', '600'],
+  style: ['normal', 'italic'],
+  display: 'swap',
+  variable: '--font-display',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.artidom.art'),
@@ -48,7 +64,7 @@ export default async function LocaleLayout({
   const schemaData = getSchemaData(locale);
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className={`${outfit.variable} ${cormorant.variable}`}>
       <head>
         <script
           type="application/ld+json"

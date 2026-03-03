@@ -144,3 +144,42 @@
     text-underline-offset: 4px;
     color: var(--color-accent);
 }
+
+@media (max-width: 900px) {
+    .heroTitle {
+        font-size: 2.5rem;
+    }
+    .heroOverlay {
+        padding: 2rem;
+    }
+    .intro {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 3rem 0;
+    }
+    .stepsGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .materialsGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero {
+        height: 50vh;
+        min-height: 350px;
+    }
+    .heroTitle {
+        font-size: 2rem;
+    }
+    .stepsGrid {
+        grid-template-columns: 1fr;
+    }
+    .steps {
+        padding: 3rem 0;
+    }
+    .materials {
+        padding: 3rem 0;
+    }
+}

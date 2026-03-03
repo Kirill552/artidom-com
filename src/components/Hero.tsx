@@ -10,13 +10,14 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={styles.content}>
         <Image
-          src="/images/shell.png"
+          src="/images/shell.webp"
           alt=""
           aria-hidden="true"
           className={styles.shellBg}
           width={480}
           height={480}
           sizes="480px"
+          loading="lazy"
         />
         <span className={styles.badge}>{t('label')}</span>
         <h1 className={styles.title}>{t('title')}</h1>

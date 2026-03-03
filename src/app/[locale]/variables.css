@@ -6,9 +6,7 @@
   --color-muted: #e5e0d8;   /* Warm Gray */
   --color-white: #ffffff;
   
-  /* Typography */
-  --font-display: 'Cormorant Garamond', serif;
-  --font-main: 'Outfit', sans-serif;
+  /* Typography — задаются через next/font в layout.tsx */
   
   /* Spacing */
   --space-unit: 1rem;

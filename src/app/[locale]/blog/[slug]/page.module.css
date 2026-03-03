@@ -66,3 +66,23 @@
     letter-spacing: 2px;
     color: var(--color-accent);
 }
+
+@media (max-width: 768px) {
+    .heroImage {
+        height: 40vh;
+        min-height: 250px;
+    }
+    .article {
+        padding: 2.5rem 0;
+    }
+    .title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .body {
+        font-size: 1rem;
+    }
+    .body h2 {
+        font-size: 1.25rem;
+    }
+}
