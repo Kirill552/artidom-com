@@ -24,6 +24,18 @@
   opacity: 0.12;
   pointer-events: none;
   user-select: none;
+  animation: shellReveal 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes shellReveal {
+  from {
+    opacity: 0;
+    transform: rotate(-30deg) scale(0.85);
+  }
+  to {
+    opacity: 0.12;
+    transform: rotate(0deg) scale(1);
+  }
 }
 
 .badge {
