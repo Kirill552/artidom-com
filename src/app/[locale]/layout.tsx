@@ -1,6 +1,7 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
+import Script from 'next/script';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Outfit, Cormorant_Garamond } from 'next/font/google';
@@ -27,7 +28,7 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://artidom.art'),
+  metadataBase: new URL('https://www.artidom.art'),
   title: { default: 'ARTIDOM | Custom Kitchens & Furniture in Montenegro', template: '%s | ARTIDOM' },
   description: 'Custom kitchens, wardrobes and apartment furniture made in Bar, Montenegro. Residential projects first, selected HoReCa and B2B fit-outs.',
   icons: {
@@ -83,6 +84,24 @@ export default async function LocaleLayout({
         </NextIntlClientProvider>
         <SpeedInsights />
         <Analytics />
+        {/* Google Analytics */}
+        <Script
+          id="google-analytics"
+          strategy="lazyOnload"
+          src="https://www.googletagmanager.com/gtag/js?id=G-45T3K75X9X"
+        />
+        <Script
+          id="google-analytics-config"
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-45T3K75X9X');
+            `,
+          }}
+        />
       </body>
     </html>
   );
