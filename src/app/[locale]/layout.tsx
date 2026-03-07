@@ -88,7 +88,7 @@ export default async function LocaleLayout({
         <Script
           id="google-analytics"
           strategy="lazyOnload"
-          src="https://www.googletagmanager.com/gtag/js?id=G-45T3K75X9X"
+          src="https://www.googletagmanager.com/gtag/js?id=G-3BPCM5087W"
         />
         <Script
           id="google-analytics-config"
@@ -98,7 +98,7 @@ export default async function LocaleLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-45T3K75X9X');
+              gtag('config', 'G-3BPCM5087W');
             `,
           }}
         />
