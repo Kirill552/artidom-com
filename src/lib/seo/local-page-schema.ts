@@ -9,7 +9,7 @@ interface ServiceSchemaOptions {
     areaServed: string;
     image: string;
     path: string;
-    locale: 'en' | 'sr';
+    locale: 'en' | 'sr' | 'ru';
 }
 
 export function getFaqPageSchema(items: FAQSchemaItem[]) {
@@ -75,7 +75,7 @@ export function getServiceSchema({ title, description, areaServed, image, path, 
         url: `https://artidom.art/${locale}${path}`,
         image: image.startsWith('http') ? image : `https://artidom.art${image}`,
         areaServed: {
-            '@type': areaServed === 'Montenegro' || areaServed === 'Crna Gora' ? 'Country' : 'City',
+            '@type': areaServed === 'Montenegro' || areaServed === 'Crna Gora' || areaServed === 'Черногория' ? 'Country' : 'City',
             name: areaServed,
         },
         provider: {

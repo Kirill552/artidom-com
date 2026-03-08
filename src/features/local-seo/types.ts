@@ -1,8 +1,9 @@
-export type SupportedSeoLocale = 'en' | 'sr';
+export type SupportedSeoLocale = 'en' | 'sr' | 'ru';
 
 export interface LocalizedText {
     en: string;
     sr: string;
+    ru: string;
 }
 
 export interface FAQItem {

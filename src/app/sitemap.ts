@@ -3,23 +3,23 @@ import { appLocales } from '@/i18n/locale-config';
 import { catalogItems } from '@/lib/catalog';
 import { projects } from '@/lib/projects';
 
-const BASE_URL = 'https://www.artidom.art';
+const BASE_URL = 'https://artidom.art';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
 
   const staticPages = [
-    { path: '', priority: 1.0, lastModified: '2026-03-03' },
-    { path: '/workshop', priority: 0.9, lastModified: '2026-02-20' },
-    { path: '/catalog', priority: 0.8, lastModified: '2026-02-25' },
-    { path: '/projects', priority: 0.8, lastModified: '2026-03-03' },
-    { path: '/solutions', priority: 0.7, lastModified: '2026-02-15' },
-    { path: '/solutions/residential', priority: 0.8, lastModified: '2026-03-01' },
-    { path: '/solutions/horeca', priority: 0.7, lastModified: '2026-02-15' },
-    { path: '/solutions/education', priority: 0.6, lastModified: '2026-02-10' },
-    { path: '/solutions/workspace', priority: 0.6, lastModified: '2026-02-10' },
-    { path: '/contact', priority: 0.7, lastModified: '2026-02-15' },
-    { path: '/blog', priority: 0.6, lastModified: '2026-03-01' },
+    { path: '', priority: 1.0, lastModified: '2026-03-08' },
+    { path: '/workshop', priority: 0.9, lastModified: '2026-03-08' },
+    { path: '/catalog', priority: 0.8, lastModified: '2026-03-08' },
+    { path: '/projects', priority: 0.8, lastModified: '2026-03-08' },
+    { path: '/solutions', priority: 0.7, lastModified: '2026-03-08' },
+    { path: '/solutions/residential', priority: 0.8, lastModified: '2026-03-08' },
+    { path: '/solutions/horeca', priority: 0.7, lastModified: '2026-03-08' },
+    { path: '/solutions/education', priority: 0.6, lastModified: '2026-03-08' },
+    { path: '/solutions/workspace', priority: 0.6, lastModified: '2026-03-08' },
+    { path: '/contact', priority: 0.7, lastModified: '2026-03-08' },
+    { path: '/blog', priority: 0.6, lastModified: '2026-03-08' },
   ];
 
   const residentialLocalSlugs = ['bar', 'podgorica', 'budva', 'cijena'];
@@ -39,7 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const locale of appLocales) {
       entries.push({
         url: `${BASE_URL}/${locale}/solutions/residential/${slug}`,
-        lastModified: new Date('2026-02-20'),
+        lastModified: new Date('2026-03-08'),
         changeFrequency: 'monthly',
         priority: 0.8,
       });
@@ -50,7 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const locale of appLocales) {
       entries.push({
         url: `${BASE_URL}/${locale}/catalog/${item.slug}`,
-        lastModified: new Date('2026-02-25'),
+        lastModified: new Date('2026-03-08'),
         changeFrequency: 'monthly',
         priority: 0.7,
       });
@@ -61,7 +61,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const locale of appLocales) {
       entries.push({
         url: `${BASE_URL}/${locale}/projects/${project.slug}`,
-        lastModified: new Date('2026-03-01'),
+        lastModified: new Date('2026-03-08'),
         changeFrequency: 'monthly',
         priority: 0.7,
       });

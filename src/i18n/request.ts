@@ -5,6 +5,7 @@ import { isAppLocale } from './locale-config';
 const messageImports = {
   en: () => import('../messages/en.json'),
   sr: () => import('../messages/sr.json'),
+  ru: () => import('../messages/ru.json'),
 } as const;
 
 export default getRequestConfig(async ({ requestLocale }) => {

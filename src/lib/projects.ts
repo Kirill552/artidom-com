@@ -1,14 +1,14 @@
 export interface Project {
     slug: string;
     sector: 'horeca' | 'education' | 'workspace' | 'residential';
-    title: { en: string; sr: string };
+    title: { en: string; sr: string; ru: string };
     location: string;
     year: number;
     sqm?: number;
     units?: number;
     coverImage: string;
     images: string[];
-    description: { en: string; sr: string };
+    description: { en: string; sr: string; ru: string };
 }
 
 export const projects: Project[] = [
@@ -18,6 +18,7 @@ export const projects: Project[] = [
         title: {
             en: 'Warm Minimal Apartment',
             sr: 'Topli minimalistički apartman',
+            ru: 'Тёплая минималистичная квартира',
         },
         location: 'Bar, Montenegro',
         year: 2025,
@@ -34,6 +35,7 @@ export const projects: Project[] = [
         description: {
             en: 'Apartment furnishing in Bar with a custom kitchen, integrated storage, warm oak textures and discreet lighting. A clean residential package for private living or short-stay rental.',
             sr: 'Opremanje apartmana u Baru sa kuhinjom po mjeri, integrisanim odlaganjem, toplim hrastovim tonovima i diskretnom rasvjetom. Čist stambeni paket za privatno stanovanje ili najam.',
+            ru: 'Меблировка квартиры в Баре: кухня на заказ, встроенное хранение, тёплые дубовые текстуры и деликатное освещение. Аккуратный пакет для жизни или краткосрочной аренды.',
         },
     },
     {
@@ -42,6 +44,7 @@ export const projects: Project[] = [
         title: {
             en: 'Compact Apartment Kitchen & Storage',
             sr: 'Kompaktni apartman: kuhinja i odlaganje',
+            ru: 'Компактная квартира: кухня и хранение',
         },
         location: 'Montenegro Coast',
         year: 2025,
@@ -59,6 +62,7 @@ export const projects: Project[] = [
         description: {
             en: 'Small-footprint apartment furnishing for the Montenegro coast: kitchen line, entry storage, wardrobes and built-in joinery that use every wall with purpose.',
             sr: 'Opremanje malog apartmana na crnogorskom primorju: kuhinja, ulazno odlaganje, plakari i ugradni elementi koji koriste svaki zid sa razlogom.',
+            ru: 'Меблировка компактной квартиры на побережье Черногории: кухонная линия, прихожая, шкафы и встроенные элементы — каждая стена задействована.',
         },
     },
     {
@@ -67,6 +71,7 @@ export const projects: Project[] = [
         title: {
             en: 'Graphite Apartment Kitchen',
             sr: 'Grafitna kuhinja za apartman',
+            ru: 'Графитовая кухня для квартиры',
         },
         location: 'Budva, Montenegro',
         year: 2025,
@@ -79,6 +84,7 @@ export const projects: Project[] = [
         description: {
             en: 'Custom kitchen for a Budva apartment with graphite fronts, integrated appliances, wall-to-wall fitting and compact storage planning for daily use or rental.',
             sr: 'Kuhinja po mjeri za apartman u Budvi sa grafitnim frontovima, ugradnom tehnikom, uklapanjem od zida do zida i pažljivo planiranim odlaganjem za svakodnevnu upotrebu ili najam.',
+            ru: 'Кухня на заказ для квартиры в Будве: графитовые фасады, встроенная техника, подгонка от стены до стены и продуманное хранение для жизни или аренды.',
         },
     },
     {
@@ -87,6 +93,7 @@ export const projects: Project[] = [
         title: {
             en: 'Residential Joinery Details',
             sr: 'Detalji stambene stolarije',
+            ru: 'Детали жилой столярки',
         },
         location: 'Montenegro',
         year: 2025,
@@ -99,6 +106,7 @@ export const projects: Project[] = [
         description: {
             en: 'Selected apartment and villa joinery details: wardrobes, bed surrounds, integrated niches and compact built-in elements produced to the interior layout.',
             sr: 'Izabrani detalji stambene i vilske stolarije: plakari, uzglavlja, integrisane niše i kompaktni ugradni elementi izrađeni po rasporedu enterijera.',
+            ru: 'Избранные детали столярки для квартир и вилл: шкафы, обрамление кроватей, встроенные ниши и компактные элементы по планировке интерьера.',
         },
     },
     {
@@ -107,6 +115,7 @@ export const projects: Project[] = [
         title: {
             en: 'HoReCa Counter Collection',
             sr: 'Kolekcija HoReCa pultova',
+            ru: 'Коллекция HoReCa стоек',
         },
         location: 'Selected Balkans Projects',
         year: 2024,
@@ -120,6 +129,7 @@ export const projects: Project[] = [
         description: {
             en: 'Selected restaurant, kiosk and service-counter joinery for HoReCa formats. Useful when a brand needs a custom front, a working back counter and durable materials.',
             sr: 'Izabrani restoranski, kioski i uslužni pultovi za HoReCa formate. Prikaz kada brendu trebaju prilagođen front, radni dio iza pulta i postojani materijali.',
+            ru: 'Избранные ресторанные, киосковые и сервисные стойки для HoReCa форматов. Когда бренду нужен фасад на заказ, рабочая зона за стойкой и прочные материалы.',
         },
     },
     {
@@ -128,6 +138,7 @@ export const projects: Project[] = [
         title: {
             en: 'International School Montenegro',
             sr: 'Međunarodna škola Crna Gora',
+            ru: 'Международная школа в Черногории',
         },
         location: 'Montenegro',
         year: 2024,
@@ -141,6 +152,7 @@ export const projects: Project[] = [
         description: {
             en: '1,200 sqm educational facility in Montenegro. Custom classroom storage, reception joinery and staff-room furniture produced and installed to the project schedule.',
             sr: 'Obrazovni objekat od 1.200 m² u Crnoj Gori. Namještaj po mjeri za učionice, recepciju i prostorije za osoblje proizveden i montiran po dinamici projekta.',
+            ru: 'Образовательное учреждение 1 200 м² в Черногории. Мебель для классов, ресепшн и учительских — производство и монтаж по графику проекта.',
         },
     },
 ];
@@ -152,7 +164,7 @@ export function getProject(slug: string): Project | undefined {
 export function getProjectsByLocale(locale: string) {
     return projects.map((p) => ({
         ...p,
-        title: p.title[locale as 'en' | 'sr'] ?? p.title.en,
-        description: p.description[locale as 'en' | 'sr'] ?? p.description.en,
+        title: p.title[locale as 'en' | 'sr' | 'ru'] ?? p.title.en,
+        description: p.description[locale as 'en' | 'sr' | 'ru'] ?? p.description.en,
     }));
 }

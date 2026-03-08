@@ -24,4 +24,8 @@ Allow: /
 User-agent: GoogleOther
 Allow: /
 
-Sitemap: https://www.artidom.art/sitemap.xml
+Sitemap: https://artidom.art/sitemap.xml
+
+# LLM-specific files for AI search engines
+LLMs-txt: https://artidom.art/llms.txt
+LLMs-full-txt: https://artidom.art/llms-full.txt

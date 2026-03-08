@@ -65,7 +65,7 @@ export function buildMetadata({
       description,
       url,
       siteName: 'ARTIDOM',
-      locale: locale === 'sr' ? 'sr_ME' : 'en_US',
+      locale: locale === 'sr' ? 'sr_ME' : locale === 'ru' ? 'ru_RU' : 'en_US',
       type: 'website',
       images: [{ url: image ? resolveImageUrl(image) : `${siteUrl}/api/og?title=${encodeURIComponent(title)}&subtitle=${encodeURIComponent(description.slice(0, 100))}` }],
     },
