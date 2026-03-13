@@ -243,8 +243,11 @@
     "email": "artidom96@gmail.com",
     "email_label": "Email",
     "location_label": "Адрес",
-    "phone": "+382 69 256 978",
     "phone_label": "Телефон",
+    "contacts": [
+      { "name": "Veronika", "phone": "+382 69 256 978", "role": "artidom.art" },
+      { "name": "Vladimir", "phone": "+382 68 282 371", "role": "Директор" }
+    ],
     "company_label": "Компания",
     "company_name": "Artidom DOO",
     "tax_id_label": "PIB",
@@ -297,7 +300,10 @@
     "tagline": "Кухни, шкафы и встроенная мебель на заказ в Баре, Черногория.",
     "address": "Mirošica 2, Sutomore\n85000 Bar, Черногория",
     "email": "artidom96@gmail.com",
-    "phone": "+382 69 256 978",
+    "contacts": [
+      { "name": "Veronika", "phone": "+382 69 256 978" },
+      { "name": "Vladimir", "phone": "+382 68 282 371" }
+    ],
     "nav_solutions": "Решения",
     "nav_workshop": "Производство",
     "nav_catalog": "Каталог",

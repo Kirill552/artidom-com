@@ -8,8 +8,7 @@ export default function ContactPage() {
     const t = useTranslations('Contact');
     const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error' | 'rate_limit'>('idle');
     const [errorField, setErrorField] = useState('');
-    const phone = t('phone');
-    const phoneHref = phone.replace(/\s+/g, '');
+    const contacts = t.raw('contacts') as Array<{ name: string; phone: string; role: string }>;
     const email = t('email');
 
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -86,10 +85,12 @@ export default function ContactPage() {
                 </div>
 
                 <div className={styles.right}>
-                    <div className={styles.contactDetail}>
-                        <span className={styles.detailLabel}>{t('phone_label')}</span>
-                        <a href={`tel:${phoneHref}`}>{phone}</a>
-                    </div>
+                    {contacts.map((c) => (
+                        <div key={c.name} className={styles.contactDetail}>
+                            <span className={styles.detailLabel}>{c.name} — {c.role}</span>
+                            <a href={`tel:${c.phone.replace(/\s+/g, '')}`}>{c.phone}</a>
+                        </div>
+                    ))}
                     <div className={styles.contactDetail}>
                         <span className={styles.detailLabel}>WhatsApp / Viber</span>
                         <MessengerLinks />

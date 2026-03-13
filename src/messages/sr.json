@@ -243,8 +243,11 @@
     "email": "artidom96@gmail.com",
     "email_label": "Email",
     "location_label": "Adresa",
-    "phone": "+382 69 256 978",
     "phone_label": "Telefon",
+    "contacts": [
+      { "name": "Veronika", "phone": "+382 69 256 978", "role": "artidom.art" },
+      { "name": "Vladimir", "phone": "+382 68 282 371", "role": "Direktor" }
+    ],
     "company_label": "Firma",
     "company_name": "Artidom DOO",
     "tax_id_label": "PIB",
@@ -297,7 +300,10 @@
     "tagline": "Izrada kuhinja, plakara i namještaja po mjeri u Baru.",
     "address": "Mirošica 2, Sutomore\n85000 Bar, Crna Gora",
     "email": "artidom96@gmail.com",
-    "phone": "+382 69 256 978",
+    "contacts": [
+      { "name": "Veronika", "phone": "+382 69 256 978" },
+      { "name": "Vladimir", "phone": "+382 68 282 371" }
+    ],
     "nav_solutions": "Rješenja",
     "nav_workshop": "Radionica",
     "nav_catalog": "Katalog",

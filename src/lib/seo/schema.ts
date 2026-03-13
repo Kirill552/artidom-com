@@ -31,15 +31,25 @@ export const getSchemaData = (locale: string) => {
       "opens": "09:00",
       "closes": "18:00"
     },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "name": "Veronika",
-      "contactType": "customer support",
-      "telephone": "+38269256978",
-      "email": "artidom96@gmail.com",
-      "areaServed": "ME",
-      "availableLanguage": ["sr", "en", "ru"]
-    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "name": "Veronika",
+        "contactType": "customer support",
+        "telephone": "+38269256978",
+        "email": "artidom96@gmail.com",
+        "areaServed": "ME",
+        "availableLanguage": ["sr", "en", "ru"]
+      },
+      {
+        "@type": "ContactPoint",
+        "name": "Vladimir",
+        "contactType": "sales",
+        "telephone": "+38268282371",
+        "areaServed": "ME",
+        "availableLanguage": ["sr", "en", "ru"]
+      }
+    ],
     "areaServed": [
       {
         "@type": "Country",

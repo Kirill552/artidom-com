@@ -6,8 +6,7 @@ import styles from './Footer.module.css';
 export default function Footer() {
     const t = useTranslations('Footer');
     const year = new Date().getFullYear();
-    const phone = t('phone');
-    const phoneHref = phone.replace(/\s+/g, '');
+    const contacts = t.raw('contacts') as Array<{ name: string; phone: string }>;
     const email = t('email');
 
     return (
@@ -29,7 +28,11 @@ export default function Footer() {
 
                 <div className={styles.contact}>
                     <a href={`mailto:${email}`}>{email}</a>
-                    <a href={`tel:${phoneHref}`}>{phone}</a>
+                    {contacts.map((c) => (
+                        <a key={c.name} href={`tel:${c.phone.replace(/\s+/g, '')}`}>
+                            {c.name}: {c.phone}
+                        </a>
+                    ))}
                     <MessengerLinks />
                 </div>
             </div>
