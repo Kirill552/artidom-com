@@ -74,8 +74,37 @@ export const getSchemaData = (locale: string) => {
       {
         "@type": "City",
         "name": "Kotor"
+      },
+      {
+        "@type": "City",
+        "name": "Herceg Novi"
+      },
+      {
+        "@type": "City",
+        "name": "Ulcinj"
+      },
+      {
+        "@type": "City",
+        "name": "Nikšić"
+      },
+      {
+        "@type": "City",
+        "name": "Cetinje"
+      },
+      {
+        "@type": "City",
+        "name": "Sutomore"
       }
     ],
+    "serviceArea": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.0931,
+        "longitude": 19.1003
+      },
+      "geoRadius": "150000"
+    },
     "priceRange": "€€",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -120,23 +149,3 @@ export const getSchemaData = (locale: string) => {
   };
 };
 
-export const getProjectSchema = (locale: string) => {
-  return {
-    "@context": "https://schema.org",
-    "@type": "Project",
-    "name": locale === 'en' ? "International School Montenegro Furnishing" : "Opremanje Internacionalne škole Crna Gora",
-    "description": "1,200 sqm comprehensive educational facility furnishing project.",
-    "location": {
-      "@type": "Place",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Montenegro",
-        "addressCountry": "ME"
-      }
-    },
-    "author": {
-      "@type": "Organization",
-      "name": "ARTIDOM"
-    }
-  };
-};

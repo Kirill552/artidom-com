@@ -7,6 +7,7 @@ import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { defaultLocale, isAppLocale, type AppLocale } from '@/i18n/locale-config';
 import { buildMetadata } from '@/lib/seo/page-metadata';
+import { getBreadcrumbSchema } from '@/lib/seo/local-page-schema';
 import ProjectGallery from './ProjectGallery';
 import styles from './page.module.css';
 
@@ -46,8 +47,15 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
     const unitsLabel = project.units ? `${project.units} ${localeKey === 'sr' ? 'jedinica' : 'units'}` : null;
     const sqmLabel = project.sqm ? `${project.sqm} m²` : null;
 
+    const breadcrumbSchema = getBreadcrumbSchema([
+        { name: localeKey === 'sr' ? 'Početna' : 'Home', url: `https://artidom.art/${localeKey}` },
+        { name: localeKey === 'sr' ? 'Projekti' : 'Projects', url: `https://artidom.art/${localeKey}/projects` },
+        { name: title, url: `https://artidom.art/${localeKey}/projects/${slug}` },
+    ]);
+
     return (
         <main>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <div className={styles.hero}>
                 <Image
                     src={project.coverImage}

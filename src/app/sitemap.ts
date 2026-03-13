@@ -2,10 +2,11 @@ import type { MetadataRoute } from 'next';
 import { appLocales } from '@/i18n/locale-config';
 import { catalogItems } from '@/lib/catalog';
 import { projects } from '@/lib/projects';
+import { getPosts } from '@/lib/cms';
 
 const BASE_URL = 'https://artidom.art';
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const entries: MetadataRoute.Sitemap = [];
 
   const staticPages = [
@@ -13,7 +14,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/workshop', priority: 0.9, lastModified: '2026-03-08' },
     { path: '/catalog', priority: 0.8, lastModified: '2026-03-08' },
     { path: '/projects', priority: 0.8, lastModified: '2026-03-08' },
-    { path: '/solutions', priority: 0.7, lastModified: '2026-03-08' },
     { path: '/solutions/residential', priority: 0.8, lastModified: '2026-03-08' },
     { path: '/solutions/horeca', priority: 0.7, lastModified: '2026-03-08' },
     { path: '/solutions/education', priority: 0.6, lastModified: '2026-03-08' },
@@ -64,6 +64,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: new Date('2026-03-08'),
         changeFrequency: 'monthly',
         priority: 0.7,
+      });
+    }
+  }
+
+  for (const locale of appLocales) {
+    const posts = await getPosts(locale);
+    for (const post of posts) {
+      entries.push({
+        url: `${BASE_URL}/${locale}/blog/${post.slug}`,
+        lastModified: post.publishedAt ? new Date(post.publishedAt) : new Date('2026-03-08'),
+        changeFrequency: 'monthly',
+        priority: 0.6,
       });
     }
   }

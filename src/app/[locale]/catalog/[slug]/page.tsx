@@ -8,6 +8,7 @@ import {
 } from '@/lib/catalog';
 import { ImageLightbox } from '@/components/ImageLightbox';
 import { buildMetadata } from '@/lib/seo/page-metadata';
+import { getBreadcrumbSchema } from '@/lib/seo/local-page-schema';
 import { defaultLocale, isAppLocale, type AppLocale } from '@/i18n/locale-config';
 import styles from './page.module.css';
 
@@ -49,8 +50,15 @@ export default async function CatalogItemPage({ params }: { params: Promise<{ sl
     const leadTime = getCatalogLocaleValue(item.leadTime, localeKey);
     const finishOptions = item.finishOptions.map((option) => getCatalogLocaleValue(option, localeKey));
 
+    const breadcrumbSchema = getBreadcrumbSchema([
+        { name: localeKey === 'sr' ? 'Početna' : 'Home', url: `https://artidom.art/${localeKey}` },
+        { name: localeKey === 'sr' ? 'Katalog' : 'Catalog', url: `https://artidom.art/${localeKey}/catalog` },
+        { name, url: `https://artidom.art/${localeKey}/catalog/${slug}` },
+    ]);
+
     return (
         <main className="container">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <section className={styles.page}>
                 <ImageLightbox
                     images={item.images}
