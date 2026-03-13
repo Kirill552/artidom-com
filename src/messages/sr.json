@@ -13,8 +13,8 @@
   "Index": {
     "title": "ARTIDOM | Kuhinje po mjeri i opremanje apartmana u Crnoj Gori",
     "meta": {
-      "title": "Kuhinje po mjeri i opremanje apartmana u Crnoj Gori",
-      "description": "ARTIDOM izrađuje i montira kuhinje po mjeri, plakare i ugradni namještaj za stanove, apartmane i vile u Crnoj Gori. Radimo i odabrane HoReCa i B2B projekte."
+      "title": "Naručite kuhinje po mjeri i namještaj za apartmane u Crnoj Gori — ARTIDOM",
+      "description": "Naručite kuhinje po mjeri, plakare i ugradni namještaj u Crnoj Gori. Radionica u Baru. Mjerenje, proizvodnja i montaža. Besplatna procjena. Cijena po projektu."
     },
     "hero": {
       "label": "Radionica u Baru, Crna Gora",
@@ -74,6 +74,11 @@
       "company": "Firma (opciono)",
       "message": "Opis projekta",
       "submit": "Pošalji →"
+    },
+    "pricing": {
+      "title": "Kako formiramo cijenu",
+      "text": "Svaki projekat se kalkuliše pojedinačno na osnovu veličine, materijala, složenosti završne obrade i broja jedinica. Nemamo fiksni cjenovnik — procjenu radimo nakon pregleda osnove ili opisa projekta. Tipična kuhinja po mjeri za apartman u Crnoj Gori kreće od srednjeg budžeta. Pošaljite plan za besplatnu procjenu u roku od 24 sata.",
+      "cta": "Zatražite besplatnu procjenu →"
     }
   },
   "WorkshopProof": {
@@ -100,8 +105,8 @@
   },
   "Workshop": {
     "meta": {
-      "title": "Radionica za namještaj po mjeri u Baru — ARTIDOM Crna Gora",
-      "description": "ARTIDOM radionica u Sutomoru, Bar: CNC rezanje, sklapanje i završna obrada kuhinja po mjeri, plakara i ugradnog namještaja za stanove i apartmane u Crnoj Gori."
+      "title": "Radionica za namještaj po mjeri u Baru — naručite kod ARTIDOM",
+      "description": "Naručite kuhinje po mjeri, plakare i stolariju iz ARTIDOM radionice u Sutomoru, Bar. CNC rezanje, sklapanje, završna obrada. 300 m², 40 majstora."
     },
     "hero_label": "Sutomore, Bar, Crna Gora",
     "hero_title": "Radionica za izradu namještaja po mjeri u Baru",
@@ -137,8 +142,8 @@
     },
     "horeca": {
       "meta": {
-        "title": "HoReCa namještaj i pultovi po mjeri u Crnoj Gori",
-        "description": "Pultovi po mjeri, hotelski i restoranski elementi iz Bara, Crna Gora. Odabrani HoReCa i B2B projekti sa proizvodnjom, isporukom i montažom."
+        "title": "Naručite restoranski i hotelski namještaj u Crnoj Gori — ARTIDOM",
+        "description": "Naručite pultove po mjeri, namještaj za sobe i servisnu stolariju u Crnoj Gori. Proizvodnja i montaža iz radionice u Baru."
       },
       "label": "HoReCa",
       "title": "Pultovi, restoranski i hotelski elementi po mjeri",
@@ -155,8 +160,8 @@
     },
     "education": {
       "meta": {
-        "title": "Školski namještaj i stolarija po mjeri u Crnoj Gori",
-        "description": "Ormari za učionice, recepcije i elementi za javne zone škola i kampusa u Crnoj Gori, proizvedeni u ARTIDOM radionici u Baru."
+        "title": "Naručite školski namještaj i stolariju u Crnoj Gori — ARTIDOM",
+        "description": "Naručite ormare za učionice, recepcije i stolariju za javne zone škola u Crnoj Gori. Serijska proizvodnja u Baru."
       },
       "label": "Obrazovanje",
       "title": "Ormari za učionice, recepcije i javne zone",
@@ -173,8 +178,8 @@
     },
     "workspace": {
       "meta": {
-        "title": "Kancelarijski namještaj po mjeri u Crnoj Gori",
-        "description": "Recepcije, odlaganje i namještaj za sastanke za kancelarije, klinike i javne prostore u Crnoj Gori. Proizvodnja u Baru uz podršku za mjerenje i montažu."
+        "title": "Naručite kancelarijski namještaj po mjeri u Crnoj Gori — ARTIDOM",
+        "description": "Naručite recepcije, stolove za sastanke i ugradno odlaganje za kancelarije i klinike u Crnoj Gori. Izrada po vašem rasporedu u Baru."
       },
       "label": "Radni prostori",
       "title": "Recepcije, stolovi za sastanke i odlaganje",
@@ -191,8 +196,8 @@
     },
     "residential": {
       "meta": {
-        "title": "Kuhinje po mjeri i opremanje apartmana u Crnoj Gori",
-        "description": "Izrađujemo kuhinje po mjeri, plakare, TV zidove i ugradno odlaganje za stanove, apartmane i vile u Crnoj Gori. Pogon u Baru, mjerenje i montaža širom zemlje."
+        "title": "Naručite kuhinje po mjeri i opremanje apartmana u Crnoj Gori — ARTIDOM",
+        "description": "Naručite kuhinje po mjeri, plakare, TV zidove i ugradno odlaganje za stanove i vile. Pogon u Baru, montaža širom zemlje. Cijena po projektu."
       },
       "label": "Stanovi i apartmani",
       "title": "Kuhinje po mjeri, plakari i opremanje apartmana",
@@ -210,8 +215,8 @@
   },
   "Contact": {
     "meta": {
-      "title": "Kontakt ARTIDOM Crna Gora",
-      "description": "Pošaljite ARTIDOM-u opis apartmana, kuhinje ili B2B projekta. Radionica u Sutomoru, Bar, Crna Gora. Odgovaramo u roku od 24 sata."
+      "title": "Kontakt ARTIDOM — naručite namještaj po mjeri u Crnoj Gori",
+      "description": "Pošaljite osnovu ili opis projekta. Radionica u Baru. Besplatna procjena u roku od 24 sata. Cijena po veličini i materijalu."
     },
     "title": "Recite nam o stambenom ili B2B projektu",
     "subtitle": "Pošaljite osnovu, crteže ili kratak opis. Odgovaramo u roku od 24 sata.",
@@ -235,10 +240,10 @@
     "error_name": "Unesite ime (najmanje 2 karaktera).",
     "error_generic": "Nešto je pošlo naopako. Pokušajte ponovo.",
     "address": "Mirošica 2, Sutomore\n85000 Bar, Crna Gora",
-    "email": "director@a-96.ru",
+    "email": "artidom96@gmail.com",
     "email_label": "Email",
     "location_label": "Adresa",
-    "phone": "+382 68 282 371",
+    "phone": "+382 69 256 978",
     "phone_label": "Telefon",
     "company_label": "Firma",
     "company_name": "Artidom DOO",
@@ -247,8 +252,8 @@
   },
   "Catalog": {
     "meta": {
-      "title": "Kuhinje po mjeri, plakari i stolarija u Crnoj Gori",
-      "description": "Pogledajte ARTIDOM pravce za kuhinje, odlaganje i posebne komade za apartmane, vile i odabrane B2B enterijere u Crnoj Gori."
+      "title": "Naručite kuhinje po mjeri, plakare i stolariju u Crnoj Gori — ARTIDOM",
+      "description": "Pregledajte i naručite ARTIDOM kuhinje po mjeri, odlaganje i stolariju za apartmane i vile. Izrada po osnovi prostora. Besplatna procjena. Cijena po projektu."
     },
     "title": "Kuhinje po mjeri, plakari i stolarija",
     "subtitle": "Početne tipologije za apartmane, vile i odabrane B2B enterijere. Svaki element radimo po vašoj osnovi u Baru, Crna Gora.",
@@ -275,8 +280,8 @@
   },
   "Projects": {
     "meta": {
-      "title": "Projekti kuhinja, apartmana i HoReCa enterijera u Crnoj Gori",
-      "description": "Pogledajte ARTIDOM kuhinje, plakare, ugradnu stolariju i odabrane HoReCa projekte proizvedene u Baru, Crna Gora."
+      "title": "Projekti namještaja po mjeri u Crnoj Gori — ARTIDOM portfolio",
+      "description": "Pogledajte završene kuhinje, plakare, ugradnu stolariju i HoReCa projekte iz ARTIDOM radionice u Baru, Budvi, Podgorici."
     },
     "title": "Odabrani projekti u Crnoj Gori",
     "subtitle": "Fokus je na stanovima i apartmanima: kuhinje, plakari, odlaganje i mali broj HoReCa / javnih enterijera iz naše radionice u Baru.",
@@ -291,8 +296,8 @@
   "Footer": {
     "tagline": "Izrada kuhinja, plakara i namještaja po mjeri u Baru.",
     "address": "Mirošica 2, Sutomore\n85000 Bar, Crna Gora",
-    "email": "director@a-96.ru",
-    "phone": "+382 68 282 371",
+    "email": "artidom96@gmail.com",
+    "phone": "+382 69 256 978",
     "nav_solutions": "Rješenja",
     "nav_workshop": "Radionica",
     "nav_catalog": "Katalog",
@@ -300,5 +305,44 @@
     "nav_contact": "Kontakt",
     "copyright": "ARTIDOM",
     "legal": "Artidom DOO · PIB 03505464"
+  },
+  "Blog": {
+    "meta": {
+      "title": "ARTIDOM novosti — namještaj, materijali i projekti u Crnoj Gori",
+      "description": "Članci o kuhinjama po mjeri, materijalima, proizvodnji i apartmanskim projektima u Crnoj Gori iz ARTIDOM radionice u Baru."
+    },
+    "title": "Novosti",
+    "subtitle": "Enterijer, materijali, bilješke iz proizvodnje u Crnoj Gori",
+    "empty": "Članci dolaze uskoro.",
+    "back": "Novosti"
+  },
+  "FAQ": {
+    "title": "Često postavljana pitanja",
+    "items": [
+      {
+        "question": "Koliko traje izrada kuhinje po mjeri?",
+        "answer": "3–5 sedmica od odobrenja crteža i materijala."
+      },
+      {
+        "question": "Da li dostavljate van Bara?",
+        "answer": "Da. Mjerenje, isporuka i montaža širom Crne Gore: Budva, Tivat, Kotor, Podgorica."
+      },
+      {
+        "question": "Koje materijale koristite?",
+        "answer": "Hrast evropskog kvaliteta, furnir, lakirani MDF, kompakt HPL i kamene ploče. Blum/Hettich okovi."
+      },
+      {
+        "question": "Možete li opremiti cijeli apartman?",
+        "answer": "Da — kuhinja, plakari, odlaganje, TV zid i kupatilski elementi u jednom paketu iz jedne radionice."
+      },
+      {
+        "question": "Koliko košta kuhinja po mjeri u Crnoj Gori?",
+        "answer": "Cijena zavisi od veličine, materijala i rasporeda. Pošaljite osnovu za besplatnu procjenu u roku od 24 sata."
+      },
+      {
+        "question": "Da li radite sa arhitektama i investitorima?",
+        "answer": "Da. Prihvatamo B2B i HoReCa projekte sa tehničkim crtežima (DWG, PDF)."
+      }
+    ]
   }
 }

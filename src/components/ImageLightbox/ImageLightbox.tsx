@@ -12,6 +12,8 @@ interface Props {
   imageClassName?: string
   mainHeight?: string
   thumbHeight?: string
+  initialIndex?: number
+  onLightboxChange?: (index: number | null) => void
 }
 
 export default function ImageLightbox({
@@ -22,8 +24,10 @@ export default function ImageLightbox({
   imageClassName,
   mainHeight = '550px',
   thumbHeight = '160px',
+  initialIndex,
+  onLightboxChange,
 }: Props) {
-  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(initialIndex ?? null)
 
   const close = useCallback(() => setLightboxIndex(null), [])
 
@@ -49,6 +53,10 @@ export default function ImageLightbox({
       window.removeEventListener('keydown', onKey)
     }
   }, [lightboxIndex, close, prev, next])
+
+  useEffect(() => {
+    onLightboxChange?.(lightboxIndex)
+  }, [lightboxIndex, onLightboxChange])
 
   const gallery = images.slice(1)
 

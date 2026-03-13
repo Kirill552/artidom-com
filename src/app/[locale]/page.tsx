@@ -7,7 +7,8 @@ import WorkshopProof from '@/components/WorkshopProof';
 import Image from 'next/image';
 import { getProject } from '@/lib/projects';
 import { getPageMetadata } from '@/lib/seo/page-metadata';
-import { getHowToSchema, getBreadcrumbSchema } from '@/lib/seo/local-page-schema';
+import { getHowToSchema, getBreadcrumbSchema, getFaqPageSchema } from '@/lib/seo/local-page-schema';
+import FaqSection from '@/components/FaqSection';
 import { CtaForm } from '@/components/CtaForm';
 import styles from './page.module.css';
 
@@ -37,6 +38,10 @@ export default async function IndexPage({ params }: { params: Promise<{ locale: 
   const featuredTitle = featuredProject.title[localeKey];
   const featuredDescription = featuredProject.description[localeKey];
 
+  const faqT = await getTranslations('FAQ');
+  const faqItems = faqT.raw('items') as Array<{ question: string; answer: string }>;
+  const faqSchema = getFaqPageSchema(faqItems);
+
   const howToSchema = getHowToSchema(
     t('process.title'),
     localeKey === 'sr'
@@ -51,6 +56,7 @@ export default async function IndexPage({ params }: { params: Promise<{ locale: 
   return (
     <>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     <main>
       {/* Hero */}
       <div className="container">
@@ -123,6 +129,18 @@ export default async function IndexPage({ params }: { params: Promise<{ locale: 
             ))}
           </div>
         </div>
+      </section>
+
+      {/* Pricing */}
+      <section className={`container ${styles.pricing}`}>
+        <span className={styles.label}>{t('pricing.title')}</span>
+        <p className={styles.pricingText}>{t('pricing.text')}</p>
+        <Link href="/contact" className={styles.pricingCta}>{t('pricing.cta')}</Link>
+      </section>
+
+      {/* FAQ */}
+      <section className="container">
+        <FaqSection title={faqT('title')} items={faqItems} />
       </section>
 
       {/* CTA Block */}

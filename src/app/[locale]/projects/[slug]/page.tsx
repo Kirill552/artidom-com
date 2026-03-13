@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Suspense } from 'react';
 import { notFound } from 'next/navigation';
 import { getProject } from '@/lib/projects';
 import { Link } from '@/i18n/routing';
@@ -6,6 +7,7 @@ import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { defaultLocale, isAppLocale, type AppLocale } from '@/i18n/locale-config';
 import { buildMetadata } from '@/lib/seo/page-metadata';
+import ProjectGallery from './ProjectGallery';
 import styles from './page.module.css';
 
 export async function generateMetadata({
@@ -40,7 +42,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
     const localeKey: AppLocale = isAppLocale(locale) ? locale : defaultLocale;
     const title = project.title[localeKey];
     const desc = project.description[localeKey];
-    const galleryImages = project.images.filter((image, index) => index !== 0);
     const sectorLabel = t(`sectors.${project.sector}`);
     const unitsLabel = project.units ? `${project.units} ${localeKey === 'sr' ? 'jedinica' : 'units'}` : null;
     const sqmLabel = project.sqm ? `${project.sqm} m²` : null;
@@ -71,19 +72,11 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                 <p className={styles.desc}>{desc}</p>
             </section>
 
-            {galleryImages.length > 0 && (
+            {project.images.length > 0 && (
                 <section className={`container ${styles.gallery}`}>
-                    {galleryImages.map((image, index) => (
-                        <div key={`${project.slug}-${index}`} className={styles.galleryItem}>
-                            <Image
-                                src={image}
-                                alt={`${title} — ${index + 2}`}
-                                fill
-                                className={styles.galleryImage}
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                            />
-                        </div>
-                    ))}
+                    <Suspense>
+                        <ProjectGallery images={project.images} alt={title} />
+                    </Suspense>
                 </section>
             )}
 

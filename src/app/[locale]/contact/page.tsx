@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import MessengerLinks from '@/components/MessengerLinks';
 import styles from './page.module.css';
 
 export default function ContactPage() {
@@ -88,6 +89,10 @@ export default function ContactPage() {
                     <div className={styles.contactDetail}>
                         <span className={styles.detailLabel}>{t('phone_label')}</span>
                         <a href={`tel:${phoneHref}`}>{phone}</a>
+                    </div>
+                    <div className={styles.contactDetail}>
+                        <span className={styles.detailLabel}>WhatsApp / Viber</span>
+                        <MessengerLinks />
                     </div>
                     <div className={styles.contactDetail}>
                         <span className={styles.detailLabel}>{t('email_label')}</span>

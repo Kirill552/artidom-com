@@ -162,6 +162,24 @@
   font-weight: 300;
 }
 
+/* Pricing */
+.pricing {
+  padding: 4rem 0;
+}
+
+.pricingText {
+  max-width: 680px;
+  line-height: 1.7;
+  color: var(--color-muted, #a09b93);
+  margin-bottom: 24px;
+}
+
+.pricingCta {
+  display: inline-block;
+  color: var(--color-accent, #7a826e);
+  font-weight: 500;
+}
+
 /* CTA Block */
 .ctaBlock {
   padding: 4rem 0;

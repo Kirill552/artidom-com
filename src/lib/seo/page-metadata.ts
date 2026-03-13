@@ -38,6 +38,18 @@ export function getPageAlternates(path = '') {
   };
 }
 
+const staticOgImages: Record<string, string> = {
+  '': '/og/home.png',
+  '/workshop': '/og/workshop.png',
+  '/catalog': '/og/catalog.png',
+  '/projects': '/og/projects.png',
+  '/contact': '/og/contact.png',
+  '/solutions/residential': '/og/residential.png',
+  '/solutions/horeca': '/og/horeca.png',
+  '/solutions/workspace': '/og/workspace.png',
+  '/solutions/education': '/og/education.png',
+};
+
 export function buildMetadata({
   locale,
   path = '',
@@ -67,7 +79,12 @@ export function buildMetadata({
       siteName: 'ARTIDOM',
       locale: locale === 'sr' ? 'sr_ME' : locale === 'ru' ? 'ru_RU' : 'en_US',
       type: 'website',
-      images: [{ url: image ? resolveImageUrl(image) : `${siteUrl}/api/og?title=${encodeURIComponent(title)}&subtitle=${encodeURIComponent(description.slice(0, 100))}` }],
+      images: [{ url: image
+        ? resolveImageUrl(image)
+        : staticOgImages[normalizePath(path)]
+          ? `${siteUrl}${staticOgImages[normalizePath(path)]}`
+          : `${siteUrl}/api/og?title=${encodeURIComponent(title)}&subtitle=${encodeURIComponent(description.slice(0, 100))}`
+      }],
     },
   };
 }

@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
+import MessengerLinks from '@/components/MessengerLinks';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -29,6 +30,7 @@ export default function Footer() {
                 <div className={styles.contact}>
                     <a href={`mailto:${email}`}>{email}</a>
                     <a href={`tel:${phoneHref}`}>{phone}</a>
+                    <MessengerLinks />
                 </div>
             </div>
 

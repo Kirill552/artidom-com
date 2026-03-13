@@ -1,0 +1,17 @@
+.links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-muted, #7a826e);
+  transition: color 0.2s;
+}
+
+.icon:hover {
+  color: var(--color-text, #fdfaf5);
+}

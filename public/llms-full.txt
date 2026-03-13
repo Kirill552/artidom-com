@@ -1,166 +1,111 @@
 # ARTIDOM — Custom Furniture Workshop in Montenegro
+# Full reference for AI systems
 
-> Custom kitchens, wardrobes and built-in furniture for apartments and villas in Montenegro.
+> Custom kitchens, wardrobes and built-in furniture for apartments in Montenegro.
+> Workshop in Sutomore, Bar. Measurement and installation across the coast and Podgorica.
 
-Artidom DOO is a furniture workshop in Sutomore, Bar, Montenegro. We design, produce and install custom kitchens, wardrobes, walk-in closets and bathroom furniture. Our 300 m² production facility serves residential clients across Montenegro — Bar, Budva, Podgorica, Tivat, Kotor. Selected HoReCa and B2B projects on request.
+## Company
+- Legal name: Artidom DOO
+- PIB (tax ID): 03505464
+- Country: Montenegro
+- Founded workshop in Bar for custom residential and B2B furniture production
 
-## Services
+## What we make
+- Custom kitchens for apartments and villas
+- Wardrobes and walk-in closets
+- TV walls, entry storage, bathroom joinery
+- Built-in shelving and storage systems
+- Counters, reception desks and branded fronts for HoReCa
+- Classroom storage, staff room furniture for education projects
+- Meeting tables and office storage for workspaces and clinics
 
-- Custom kitchens (кухни на заказ / kuhinje po mjeri)
-- Fitted wardrobes and walk-in closets (шкафы и гардеробные / plakari po mjeri)
-- Bathroom furniture (мебель для ванной / kupatilski namještaj)
-- Apartment furnishing packages
-- Selected HoReCa and B2B fit-outs
+## Directions
 
-## Key Facts
+### Residential (primary)
+Custom kitchens, wardrobes, TV walls and apartment furnishing packages.
+For apartment owners, investors and rental property managers.
+One workshop handles the whole apartment: kitchen + wardrobes + storage + panels.
 
-- Workshop: 300 m² in Sutomore, Bar, Montenegro
+### HoReCa (secondary)
+Restaurant counters, hotel room furniture, branded fronts and service joinery.
+Selected projects only, when the brief is technical and the schedule is clear.
+
+### Education
+Classroom storage, reception zones, staff rooms and public joinery.
+Batch production for consistent dimensions and finishes across the package.
+
+### Workspace
+Reception desks, meeting tables and built-in storage for offices, clinics and public spaces.
+Built to actual floor plan, not standard modules.
+
+## Workshop
+- Location: Sutomore, Bar, Montenegro (Mirošica 2, 85000)
+- Production floor: 300 sqm
+- Equipment: CNC cutting machines, edge banding, assembly stations, finishing area
 - Team: 40 craftsmen
-- Lead time: 3–5 weeks typical
-- CNC cutting + hand finishing
-- European-grade materials (oak, veneer, lacquered MDF, stone tops)
-- Measurement and installation across Montenegro
-
-## Contact
-
-- Website: https://artidom.art
-- Email: director@a-96.ru
-- Phone: +382 68 282 371
-- Address: Mirošica 2, Sutomore, 85000 Bar, Montenegro
-
-## Languages
-
-- Serbian (default): /sr/
-- English: /en/
-- Russian: /ru/
-
----
-
-## Detailed Services
-
-### Custom Kitchens
-Fitted kitchens designed around your floor plan and wall geometry. We build kitchen lines, L-shapes, U-shapes and island layouts. Integrated appliances, upper storage, soft-close mechanisms, built-in lighting. Materials range from lacquered MDF with compact worktops to oak veneer with stone tops. Suitable for apartments, villas and furnished rental properties. Lead time: 4-6 weeks.
-
-### Fitted Wardrobes and Walk-in Closets
-Wall-to-wall and floor-to-ceiling wardrobe systems. Built to the exact room dimensions — no gaps, no fillers. Internal layout includes hanging rails, shelves, drawers, shoe racks and accessories zones. Sliding or hinged doors in matte lacquer, oak veneer or mirror finish. Walk-in closets with open shelving and integrated lighting. Lead time: 3-5 weeks.
-
-### Bathroom Furniture
-Custom vanity units, mirror cabinets, tall storage columns and shelving for bathrooms. Moisture-resistant materials and finishes. Built to fit around plumbing and wall niches. Available in lacquered MDF, veneer or laminate. Lead time: 3-4 weeks.
-
-### Apartment Furnishing Packages
-Complete furniture sets for apartments and villas: kitchen + wardrobes + entry storage + bathroom furniture in a single order. One measurement visit, one production run, one installation. Reduces total lead time and cost compared to ordering each piece separately. Popular with property developers and rental investors.
-
-### HoReCa and B2B Fit-outs
-Custom counters, reception desks, service points and front-of-house joinery for restaurants, cafes, hotels, schools and offices. Taken on a selective basis. Previous projects include a 1,200 m² school facility (40 furniture units) and multiple restaurant counter installations across the Balkans.
-
----
+- Capabilities: cutting, assembly, lacquer/veneer finishing, packing
+- All stages in one facility
 
 ## Process
-
-### 1. Brief and Measurement
-You describe what you need. We visit the property, take measurements and discuss materials, layout and budget. Free of charge within Bar municipality; travel fee applies for other cities.
-
-### 2. Design and Estimate
-We produce technical drawings (2D layouts, section views) and a detailed cost estimate. You review, adjust and approve before production starts. Typical turnaround: 3-5 working days.
-
-### 3. Production
-Furniture is produced in our 300 m² workshop in Sutomore. CNC cutting for precision, hand finishing for quality. All fittings and hardware are European-grade. Production time: 3-6 weeks depending on complexity.
-
-### 4. Delivery and Installation
-We deliver and install at your property. Installation includes leveling, fitting, adjustment of doors and drawers, and cleanup. Installation time: 1-3 days for a typical kitchen or wardrobe set.
-
----
+1. Brief — discuss layout, style, budget. On-site measurement in Bar, Budva, Podgorica.
+2. Drawings & estimate — 3D renders, technical drawings, transparent cost estimate.
+3. Production — CNC cutting, assembly, finishing at workshop in Sutomore.
+4. Delivery & installation — on-site across Montenegro. Lead time 3-5 weeks from approval.
 
 ## Materials
+- European-grade oak and veneer (EU suppliers)
+- Lacquered MDF (project finish options)
+- Compact HPL and stone tops (selected project suppliers)
+- Blum, Hettich and other European fittings
 
-- Oak and veneer: European suppliers, natural oak and oak veneer panels for fronts and visible surfaces
-- Lacquered MDF: Matte and semi-matte finishes in any RAL colour, scratch-resistant lacquer
-- Compact and stone worktops: Compact laminate (12 mm) for kitchens and bathrooms; natural and engineered stone tops available on request
-- Hardware: Blum, Hettich and equivalent European-grade soft-close hinges, drawer systems and sliding mechanisms
-- Edge banding: Laser-edge technology for seamless front surfaces
-- All boards are E1-class (low formaldehyde emission), sourced from EU suppliers
+## Service area
+Bar, Budva, Tivat, Kotor, Herceg Novi, Podgorica — all of Montenegro.
+Measurement and installation included for coastal cities and Podgorica.
 
----
-
-## Coverage
-
-Artidom serves clients across Montenegro:
-
-- Bar and Sutomore — local area, no travel fee
-- Budva — 40 min drive, frequent projects
-- Podgorica — 1 hour drive, regular service
-- Tivat — 1.5 hours, Lustica Bay and Porto Montenegro area
-- Kotor — 1.5 hours, Old Town and Dobrota area
-- Herceg Novi — 2 hours, available on request
-- Other locations in Montenegro — available on request with travel fee
-
----
+## Pricing approach
+Price depends on: project size, materials, finish complexity, number of units.
+No fixed price list — each project is estimated individually.
+Free estimate within 24 hours of receiving floor plan or brief.
+Typical range: mid-segment, competitive for custom workshop production.
 
 ## FAQ
 
-### English
+Q: How long does a custom kitchen take?
+A: 3-5 weeks from approval of drawings and materials.
 
-Q: Where to order custom furniture in Montenegro?
-A: Artidom is a furniture workshop in Sutomore, Bar, Montenegro. We produce custom kitchens, wardrobes, walk-in closets and bathroom furniture in our own 300 m² facility. We serve clients across Montenegro including Bar, Budva, Podgorica, Tivat and Kotor. Contact us at +382 68 282 371 or director@a-96.ru.
+Q: Do you deliver outside Bar?
+A: Yes. Measurement, delivery and installation across Montenegro: Budva, Tivat, Kotor, Podgorica.
+
+Q: What materials do you use?
+A: European-grade oak, veneer, lacquered MDF, compact HPL and stone tops. Blum/Hettich fittings.
+
+Q: Can you furnish a whole apartment?
+A: Yes. Kitchen + wardrobes + storage + TV wall + bathroom joinery in one package from one workshop.
 
 Q: How much does a custom kitchen cost in Montenegro?
-A: The price depends on the size, materials, complexity of the layout and choice of worktop. A compact apartment kitchen in lacquered MDF with a compact worktop starts from a lower range; a full oak veneer kitchen with a stone top costs more. We provide a detailed cost estimate after measurement and design approval — no hidden fees.
+A: Price depends on size, materials and layout. Send a floor plan for a free estimate within 24 hours.
 
-Q: How long does custom furniture take in Montenegro?
-A: Typical lead time is 3-5 weeks from design approval to installation. Kitchens take 4-6 weeks, wardrobes 3-5 weeks, bathroom furniture 3-4 weeks. Complex projects or large apartment packages may take longer. We confirm the exact timeline before production starts.
+Q: Do you work with architects and developers?
+A: Yes. We take B2B and HoReCa projects with technical drawings (DWG, PDF).
 
-### Русский
+Q: Do you work with rental properties?
+A: Yes. We specify finishes that hold up in daily use and short-stay rentals.
 
-Q: Где заказать мебель на заказ в Черногории?
-A: Artidom — мебельная мастерская в Сутоморе (Бар, Черногория). Производим кухни на заказ, шкафы-купе, гардеробные и мебель для ванных комнат на собственном производстве площадью 300 м². Работаем по всей Черногории: Бар, Будва, Подгорица, Тиват, Котор. Телефон: +382 68 282 371, email: director@a-96.ru.
+## Contact
+- Contact person: Veronika
+- Phone: +382 69 256 978
+- Email: artidom96@gmail.com
+- WhatsApp: +7 912 037 0170
+- Address: Mirošica 2, Sutomore, 85000 Bar, Montenegro
+- Working hours: Mon-Fri 09:00-18:00
 
-Q: Сколько стоит кухня на заказ в Черногории?
-A: Цена зависит от размера кухни, выбранных материалов, сложности планировки и типа столешницы. Компактная кухня из лакированного МДФ с компакт-столешницей — бюджетный вариант; кухня из дубового шпона с каменной столешницей — дороже. После замера и утверждения проекта мы предоставляем детальную смету без скрытых доплат.
-
-Q: Сколько времени занимает изготовление мебели?
-A: Стандартный срок — 3-5 недель от утверждения проекта до установки. Кухни: 4-6 недель, шкафы: 3-5 недель, мебель для ванной: 3-4 недели. Для крупных заказов (меблировка всей квартиры) сроки могут быть больше. Точные сроки фиксируем до начала производства.
-
-### Srpski
-
-Q: Koliko košta kuhinja po mjeri u Crnoj Gori?
-A: Cijena zavisi od veličine kuhinje, izbora materijala, složenosti rasporeda i vrste radne ploče. Kompaktna kuhinja od lakiranog MDF-a sa kompakt radnom pločom je pristupačnija opcija; kuhinja od hrastovog furnira sa kamenom pločom košta više. Nakon mjerenja i odobrenja projekta dajemo detaljan predračun bez skrivenih troškova.
-
-Q: Koliko traje izrada namještaja po mjeri?
-A: Standardni rok je 3-5 nedjelja od odobrenja projekta do ugradnje. Kuhinje: 4-6 nedjelja, plakari: 3-5 nedjelja, kupatilski namještaj: 3-4 nedjelje. Za veće narudžbe (opremanje cijelog stana) rokovi mogu biti duži. Tačne rokove utvrđujemo prije početka proizvodnje.
-
----
-
-## E-E-A-T: Why Trust Artidom
-
-- Own production facility: 300 m² workshop in Sutomore, Bar — not a reseller or broker
-- Team of 40 craftsmen with hands-on woodworking and CNC experience
-- Real completed projects: apartments in Bar and Budva, a 1,200 m² school in Montenegro, HoReCa counters across the Balkans
-- CNC precision cutting combined with hand finishing for quality control
-- European-grade materials from verified EU suppliers (E1-class boards, Blum/Hettich hardware)
-- Registered company: Artidom DOO, Tax ID 03505464, Bar, Montenegro
-- Direct communication with the workshop — no intermediaries, no outsourced production
-
----
-
-## Pages
-
-Homepage (Serbian): https://artidom.art/sr/
-Homepage (English): https://artidom.art/en/
-
-Catalog: https://artidom.art/en/catalog — all furniture products
-Custom Apartment Kitchen: https://artidom.art/en/catalog/custom-apartment-kitchen — fitted kitchens for apartments
-Warm Oak Kitchen Wall: https://artidom.art/en/catalog/warm-oak-kitchen-wall — oak veneer kitchen composition
-Built-in Wardrobe System: https://artidom.art/en/catalog/built-in-wardrobe-system — wall-to-wall wardrobes
-Entry Storage Wall: https://artidom.art/en/catalog/entry-storage-wall — hallway storage furniture
-Service Counter Joinery: https://artidom.art/en/catalog/service-counter-joinery — HoReCa counters
-
-Projects: https://artidom.art/en/projects — completed residential, HoReCa and education projects
-
-Solutions — Residential: https://artidom.art/en/solutions/residential — apartments, villas, rental properties
-Solutions — HoReCa: https://artidom.art/en/solutions/horeca — restaurants, cafes, hotels
-Solutions — Education: https://artidom.art/en/solutions/education — schools and facilities
-Solutions — Workspace: https://artidom.art/en/solutions/workspace — offices and commercial spaces
-
-Workshop: https://artidom.art/en/workshop — about our production facility
-Contact: https://artidom.art/en/contact — phone, email, address
-Blog: https://artidom.art/en/blog — articles about furniture and interior design
+## Links
+- Website: https://artidom.art
+- Projects (SR): https://artidom.art/sr/projects
+- Projects (EN): https://artidom.art/en/projects
+- Catalog (SR): https://artidom.art/sr/catalog
+- Catalog (EN): https://artidom.art/en/catalog
+- Workshop: https://artidom.art/sr/workshop
+- Contact: https://artidom.art/sr/contact
+- Residential: https://artidom.art/sr/solutions/residential
+- HoReCa: https://artidom.art/sr/solutions/horeca

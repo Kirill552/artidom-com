@@ -8,8 +8,8 @@ export const getSchemaData = (locale: string) => {
     "image": "https://artidom.art/api/og",
     "@id": "https://artidom.art",
     "url": "https://artidom.art",
-    "email": "director@a-96.ru",
-    "telephone": "+38268282371",
+    "email": "artidom96@gmail.com",
+    "telephone": "+38269256978",
     "taxID": "03505464",
     "address": {
       "@type": "PostalAddress",
@@ -33,9 +33,10 @@ export const getSchemaData = (locale: string) => {
     },
     "contactPoint": {
       "@type": "ContactPoint",
+      "name": "Veronika",
       "contactType": "customer support",
-      "telephone": "+38268282371",
-      "email": "director@a-96.ru",
+      "telephone": "+38269256978",
+      "email": "artidom96@gmail.com",
       "areaServed": "ME",
       "availableLanguage": ["sr", "en", "ru"]
     },
@@ -65,6 +66,41 @@ export const getSchemaData = (locale: string) => {
         "name": "Kotor"
       }
     ],
+    "priceRange": "€€",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Custom furniture",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Custom kitchens"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Wardrobes and built-in storage"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Apartment furnishing packages"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "HoReCa and B2B joinery"
+          }
+        }
+      ]
+    },
     "sameAs": [],
     "description": locale === 'en'
       ? "Custom kitchens, wardrobes and apartment furnishing in Montenegro. Workshop in Sutomore, Bar with selected HoReCa and B2B fit-outs."
