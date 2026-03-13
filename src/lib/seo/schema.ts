@@ -111,7 +111,7 @@ export const getSchemaData = (locale: string) => {
         }
       ]
     },
-    "sameAs": [],
+    "sameAs": ["https://www.facebook.com/artidom.ru/"],
     "description": locale === 'en'
       ? "Custom kitchens, wardrobes and apartment furnishing in Montenegro. Workshop in Sutomore, Bar with selected HoReCa and B2B fit-outs."
       : locale === 'ru'
