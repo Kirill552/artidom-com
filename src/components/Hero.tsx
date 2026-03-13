@@ -34,6 +34,8 @@ export default function Hero() {
             fill
             className={styles.image}
             priority
+            fetchPriority="high"
+            loading="eager"
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </div>
