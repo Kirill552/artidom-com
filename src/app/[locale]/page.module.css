@@ -59,7 +59,7 @@
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  opacity: 0.5;
+  opacity: 0.65;
 }
 
 .caseImage {
@@ -121,7 +121,7 @@
 
 .sectorArrow {
   font-size: 1.2rem;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 /* Process */

@@ -29,7 +29,7 @@ export default function Hero() {
       <div className={styles.visual}>
         <div className={styles.imageWrapper}>
           <Image
-            src="/images/projects/warm-minimal-apartment/01.jpg"
+            src="/images/projects/warm-minimal-apartment/hero.webp"
             alt={t('image_alt')}
             fill
             className={styles.image}

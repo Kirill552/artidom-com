@@ -67,6 +67,12 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${outfit.variable} ${cormorant.variable}`}>
       <head>
+        <link
+          rel="preload"
+          as="image"
+          href="/images/projects/warm-minimal-apartment/hero.webp"
+          type="image/webp"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}

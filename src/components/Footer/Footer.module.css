@@ -32,7 +32,7 @@
 
 .address {
     font-size: 0.85rem;
-    opacity: 0.4;
+    opacity: 0.55;
     text-transform: uppercase;
     letter-spacing: 2px;
     white-space: pre-line;
@@ -81,7 +81,7 @@
     gap: 1rem;
     flex-wrap: wrap;
     font-size: 0.75rem;
-    opacity: 0.3;
+    opacity: 0.5;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
