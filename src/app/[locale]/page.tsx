@@ -90,7 +90,7 @@ export default async function IndexPage({ params }: { params: Promise<{ locale: 
               </div>
             </div>
           </div>
-          <div className={styles.caseImage}>
+          <Link href={`/projects/${featuredProject.slug}`} className={styles.caseImage}>
             <Image
               src={featuredProject.coverImage}
               alt={t('cases.featured.image_alt')}
@@ -98,7 +98,7 @@ export default async function IndexPage({ params }: { params: Promise<{ locale: 
               className={styles.image}
               sizes="(max-width: 1024px) 100vw, 55vw"
             />
-          </div>
+          </Link>
         </div>
       </section>
 
