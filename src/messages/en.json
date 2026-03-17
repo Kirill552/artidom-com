@@ -13,8 +13,8 @@
   "Index": {
     "title": "ARTIDOM | Custom Kitchens & Apartment Furniture in Montenegro",
     "meta": {
-      "title": "Custom Kitchens & Furniture in Montenegro — ARTIDOM",
-      "description": "Order custom kitchens, wardrobes and built-in furniture in Montenegro. Workshop in Bar. Measurement, production and installation across the coast. Get a free estimate."
+      "title": "Custom Kitchens & Furniture in Montenegro",
+      "description": "Order custom kitchens, wardrobes and built-in furniture in Montenegro. Own 300 sqm workshop in Sutomore, Bar with 40 craftsmen. Production takes 3-5 weeks. Measurement, 3D design, manufacturing and installation across the coast — Bar, Budva, Tivat, Kotor, Podgorica. Custom apartment furnishing packages for owners, developers and rental properties. European oak, veneer, lacquered MDF, Blum and Hettich hardware. Also serving hotels and restaurants (HoReCa). Free estimate within 24 hours."
     },
     "hero": {
       "label": "Workshop in Bar, Montenegro",
@@ -105,8 +105,8 @@
   },
   "Workshop": {
     "meta": {
-      "title": "Custom Furniture Workshop in Bar, Montenegro — ARTIDOM",
-      "description": "Order custom kitchens, wardrobes and joinery from ARTIDOM workshop in Sutomore, Bar. CNC cutting, assembly and finishing. 300 sqm production floor, 40 craftsmen."
+      "title": "Custom Furniture Workshop in Bar, Montenegro",
+      "description": "ARTIDOM is a custom furniture maker and carpentry workshop in Sutomore, Bar, Montenegro. We manufacture kitchens, wardrobes and joinery — CNC cutting, assembly and finishing on a 300 sqm production floor with 40 craftsmen. Carpenter services across the Montenegrin coast."
     },
     "hero_label": "Sutomore, Bar, Montenegro",
     "hero_title": "Custom furniture workshop in Bar",
@@ -142,7 +142,7 @@
     },
     "horeca": {
       "meta": {
-        "title": "Order Restaurant & Hotel Furniture in Montenegro — ARTIDOM",
+        "title": "Restaurant & Hotel Furniture in Montenegro",
         "description": "Order custom counters, hotel room furniture and service joinery in Montenegro. Production and installation from ARTIDOM workshop in Bar."
       },
       "label": "HoReCa",
@@ -160,7 +160,7 @@
     },
     "education": {
       "meta": {
-        "title": "Order School Furniture & Joinery in Montenegro — ARTIDOM",
+        "title": "School Furniture & Joinery in Montenegro",
         "description": "Order classroom storage, reception desks and public-zone joinery for schools in Montenegro. Batch production in Bar with installation support."
       },
       "label": "Education",
@@ -178,7 +178,7 @@
     },
     "workspace": {
       "meta": {
-        "title": "Order Custom Office Furniture in Montenegro — ARTIDOM",
+        "title": "Custom Office Furniture in Montenegro",
         "description": "Order reception desks, meeting tables and built-in storage for offices and clinics in Montenegro. Custom production in Bar to your layout."
       },
       "label": "Workspace",
@@ -196,7 +196,7 @@
     },
     "residential": {
       "meta": {
-        "title": "Order Custom Kitchens & Apartment Furnishing in Montenegro — ARTIDOM",
+        "title": "Custom Kitchens & Apartment Furnishing in Montenegro",
         "description": "Order custom kitchens, wardrobes, TV walls and built-in storage for apartments and villas in Montenegro. Production in Bar, installation across the coast. Price by project."
       },
       "label": "Residential",
@@ -215,7 +215,7 @@
   },
   "Contact": {
     "meta": {
-      "title": "Contact ARTIDOM — Order Custom Furniture in Montenegro",
+      "title": "Contact — Custom Furniture in Montenegro",
       "description": "Send your floor plan or project brief to ARTIDOM. Custom kitchens and furniture workshop in Bar, Montenegro. Free estimate within 24 hours."
     },
     "title": "Tell us about your apartment or B2B project",
@@ -255,7 +255,7 @@
   },
   "Catalog": {
     "meta": {
-      "title": "Order Custom Kitchens, Wardrobes & Joinery in Montenegro — ARTIDOM",
+      "title": "Custom Kitchens, Wardrobes & Joinery in Montenegro",
       "description": "Browse and order ARTIDOM custom kitchens, storage and joinery for apartments and villas in Montenegro. Each item built to your floor plan. Free estimate."
     },
     "title": "Custom kitchens, wardrobes and joinery",
@@ -283,7 +283,7 @@
   },
   "Projects": {
     "meta": {
-      "title": "Custom Furniture Projects in Montenegro — ARTIDOM Portfolio",
+      "title": "Custom Furniture Projects in Montenegro",
       "description": "See completed apartment kitchens, wardrobes, built-in joinery and HoReCa projects by ARTIDOM in Bar, Budva, Podgorica and across Montenegro."
     },
     "title": "Selected projects in Montenegro",
@@ -314,7 +314,7 @@
   },
   "Blog": {
     "meta": {
-      "title": "ARTIDOM Journal — Furniture, Materials & Projects in Montenegro",
+      "title": "Journal — Furniture, Materials & Projects in Montenegro",
       "description": "Articles about custom kitchens, materials, production and apartment projects in Montenegro from ARTIDOM workshop in Bar."
     },
     "title": "Journal",

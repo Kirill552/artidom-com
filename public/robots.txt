@@ -1,5 +1,5 @@
 # Artidom.art — Custom furniture workshop in Bar, Montenegro
-# Allow all crawlers including AI engines
+# Allow all crawlers including AI search engines
 
 User-agent: *
 Allow: /
@@ -12,20 +12,30 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
 User-agent: PerplexityBot
 Allow: /
 
 User-agent: ClaudeBot
 Allow: /
 
+# Training bots — blocked (no SEO benefit)
 User-agent: Google-Extended
-Allow: /
+Disallow: /
 
-User-agent: GoogleOther
-Allow: /
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+# Yandex: ignore UTM parameters
+Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term
 
 Sitemap: https://artidom.art/sitemap.xml
 
-# LLM-specific files for AI search engines
+# LLM-specific files
 LLMs-txt: https://artidom.art/llms.txt
 LLMs-full-txt: https://artidom.art/llms-full.txt

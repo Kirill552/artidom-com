@@ -13,8 +13,8 @@
   "Index": {
     "title": "ARTIDOM | Kuhinje po mjeri i opremanje apartmana u Crnoj Gori",
     "meta": {
-      "title": "Kuhinje po mjeri i namještaj u Crnoj Gori — ARTIDOM",
-      "description": "Naručite kuhinje po mjeri, plakare i ugradni namještaj u Crnoj Gori. Radionica u Baru. Mjerenje, proizvodnja i montaža. Besplatna procjena. Cijena po projektu."
+      "title": "Kuhinje po mjeri i namještaj u Crnoj Gori",
+      "description": "Naručite kuhinje po mjeri, plakare i ugradni namještaj u Crnoj Gori. Vlastita radionica 300 m² u Sutomoru, Bar sa 40 majstora. Izrada 3-5 sedmica. Mjerenje, 3D projekat, proizvodnja i montaža širom primorja — Bar, Budva, Tivat, Kotor, Herceg Novi, Podgorica. Kuhinje po individualnim mjerama, ugradni plakari, opremanje stanova i apartmana pod ključ. Evropski hrast, furnitura, lakirani MDF, Blum i Hettich okov. Besplatna procjena cijene."
     },
     "hero": {
       "label": "Radionica u Baru, Crna Gora",
@@ -105,7 +105,7 @@
   },
   "Workshop": {
     "meta": {
-      "title": "Radionica za namještaj po mjeri u Baru — naručite kod ARTIDOM",
+      "title": "Radionica za namještaj po mjeri u Baru",
       "description": "Naručite kuhinje po mjeri, plakare i stolariju iz ARTIDOM radionice u Sutomoru, Bar. CNC rezanje, sklapanje, završna obrada. 300 m², 40 majstora."
     },
     "hero_label": "Sutomore, Bar, Crna Gora",
@@ -142,7 +142,7 @@
     },
     "horeca": {
       "meta": {
-        "title": "Naručite restoranski i hotelski namještaj u Crnoj Gori — ARTIDOM",
+        "title": "Naručite restoranski i hotelski namještaj u Crnoj Gori",
         "description": "Naručite pultove po mjeri, namještaj za sobe i servisnu stolariju u Crnoj Gori. Proizvodnja i montaža iz radionice u Baru."
       },
       "label": "HoReCa",
@@ -160,7 +160,7 @@
     },
     "education": {
       "meta": {
-        "title": "Naručite školski namještaj i stolariju u Crnoj Gori — ARTIDOM",
+        "title": "Naručite školski namještaj i stolariju u Crnoj Gori",
         "description": "Naručite ormare za učionice, recepcije i stolariju za javne zone škola u Crnoj Gori. Serijska proizvodnja u Baru."
       },
       "label": "Obrazovanje",
@@ -178,7 +178,7 @@
     },
     "workspace": {
       "meta": {
-        "title": "Naručite kancelarijski namještaj po mjeri u Crnoj Gori — ARTIDOM",
+        "title": "Naručite kancelarijski namještaj po mjeri u Crnoj Gori",
         "description": "Naručite recepcije, stolove za sastanke i ugradno odlaganje za kancelarije i klinike u Crnoj Gori. Izrada po vašem rasporedu u Baru."
       },
       "label": "Radni prostori",
@@ -196,7 +196,7 @@
     },
     "residential": {
       "meta": {
-        "title": "Naručite kuhinje po mjeri i opremanje apartmana u Crnoj Gori — ARTIDOM",
+        "title": "Naručite kuhinje po mjeri i opremanje apartmana u Crnoj Gori",
         "description": "Naručite kuhinje po mjeri, plakare, TV zidove i ugradno odlaganje za stanove i vile. Pogon u Baru, montaža širom zemlje. Cijena po projektu."
       },
       "label": "Stanovi i apartmani",
@@ -215,7 +215,7 @@
   },
   "Contact": {
     "meta": {
-      "title": "Kontakt ARTIDOM — naručite namještaj po mjeri u Crnoj Gori",
+      "title": "Kontakt — naručite namještaj po mjeri u Crnoj Gori",
       "description": "Pošaljite osnovu ili opis projekta. Radionica u Baru. Besplatna procjena u roku od 24 sata. Cijena po veličini i materijalu."
     },
     "title": "Recite nam o stambenom ili B2B projektu",
@@ -255,7 +255,7 @@
   },
   "Catalog": {
     "meta": {
-      "title": "Naručite kuhinje po mjeri, plakare i stolariju u Crnoj Gori — ARTIDOM",
+      "title": "Naručite kuhinje po mjeri, plakare i stolariju u Crnoj Gori",
       "description": "Pregledajte i naručite ARTIDOM kuhinje po mjeri, odlaganje i stolariju za apartmane i vile. Izrada po osnovi prostora. Besplatna procjena. Cijena po projektu."
     },
     "title": "Kuhinje po mjeri, plakari i stolarija",
@@ -283,7 +283,7 @@
   },
   "Projects": {
     "meta": {
-      "title": "Projekti namještaja po mjeri u Crnoj Gori — ARTIDOM portfolio",
+      "title": "Projekti namještaja po mjeri u Crnoj Gori",
       "description": "Pogledajte završene kuhinje, plakare, ugradnu stolariju i HoReCa projekte iz ARTIDOM radionice u Baru, Budvi, Podgorici."
     },
     "title": "Odabrani projekti u Crnoj Gori",
@@ -314,7 +314,7 @@
   },
   "Blog": {
     "meta": {
-      "title": "ARTIDOM novosti — namještaj, materijali i projekti u Crnoj Gori",
+      "title": "Novosti — namještaj, materijali i projekti u Crnoj Gori",
       "description": "Članci o kuhinjama po mjeri, materijalima, proizvodnji i apartmanskim projektima u Crnoj Gori iz ARTIDOM radionice u Baru."
     },
     "title": "Novosti",

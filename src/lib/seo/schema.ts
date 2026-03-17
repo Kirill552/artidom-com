@@ -140,7 +140,7 @@ export const getSchemaData = (locale: string) => {
         }
       ]
     },
-    "sameAs": ["https://www.facebook.com/artidom.ru/"],
+    "sameAs": ["https://www.facebook.com/artidom.ru/", "https://www.instagram.com/artidom.me/"],
     "description": locale === 'en'
       ? "Custom kitchens, wardrobes and apartment furnishing in Montenegro. Workshop in Sutomore, Bar with selected HoReCa and B2B fit-outs."
       : locale === 'ru'
@@ -149,3 +149,21 @@ export const getSchemaData = (locale: string) => {
   };
 };
 
+export function getWebSiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ARTIDOM",
+    "alternateName": "Artidom DOO",
+    "url": "https://artidom.art",
+    "inLanguage": ["en", "sr", "ru"],
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://artidom.art/en/catalog?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  };
+}

@@ -1,35 +1,22 @@
 # ARTIDOM — Custom Furniture Workshop in Montenegro
 
-> Custom kitchens, wardrobes and built-in furniture for apartments in Montenegro.
-> Workshop in Sutomore, Bar. Measurement and installation across the coast.
+> Custom kitchens, wardrobes and apartment furnishing. Workshop in Bar, serving all of Montenegro.
 
-## What we do
-- Custom kitchens for apartments and villas
-- Wardrobes and built-in storage
-- TV walls, entry storage, bathroom joinery
-- Selected HoReCa and B2B fit-outs
+## Pages
 
-## Workshop
-- Location: Sutomore, Bar, Montenegro
-- Area: 300 sqm production floor
-- Equipment: CNC cutting, assembly, finishing
-- Team: 40 craftsmen
+- [Homepage (EN)](https://artidom.art/en): Custom kitchens and apartment furnishing in Montenegro
+- [Homepage (SR)](https://artidom.art/sr): Kuhinje po mjeri i namještaj u Crnoj Gori
+- [Homepage (RU)](https://artidom.art/ru): Кухни на заказ и меблировка квартир в Черногории
+- [Workshop](https://artidom.art/en/workshop): Production facility in Sutomore, Bar — 300 sqm, 40 craftsmen
+- [Catalog](https://artidom.art/en/catalog): Custom kitchens, wardrobes and joinery items
+- [Projects](https://artidom.art/en/projects): Portfolio of completed residential and HoReCa projects
+- [Residential Solutions](https://artidom.art/en/solutions/residential): Apartment and villa furnishing packages
+- [HoReCa](https://artidom.art/en/solutions/horeca): Restaurant, hotel and hospitality furniture
+- [Workspace](https://artidom.art/en/solutions/workspace): Office and clinic furniture
+- [Education](https://artidom.art/en/solutions/education): School and public space furniture
+- [Contact](https://artidom.art/en/contact): Get a free estimate
+- [Blog](https://artidom.art/en/blog): Journal and articles
 
-## Service area
-Bar, Budva, Tivat, Kotor, Podgorica — all of Montenegro
+## Details
 
-## Contact
-- Veronika: +382 69 256 978
-- Vladimir: +382 68 282 371
-- Email: artidom96@gmail.com
-- WhatsApp: +7 912 037 0170
-- Viber: +7 912 037 0170
-- Address: Mirošica 2, Sutomore, 85000 Bar, Montenegro
-
-## Links
-- Website: https://artidom.art
-- Projects (SR): https://artidom.art/sr/projects
-- Projects (EN): https://artidom.art/en/projects
-- Catalog (SR): https://artidom.art/sr/catalog
-- Catalog (EN): https://artidom.art/en/catalog
-- Contact: https://artidom.art/sr/contact
+- Full content: https://artidom.art/llms-full.txt

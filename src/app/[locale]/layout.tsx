@@ -6,7 +6,7 @@ import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Outfit, Cormorant_Garamond } from 'next/font/google';
 import { isAppLocale } from '@/i18n/locale-config';
-import { getSchemaData } from '@/lib/seo/schema';
+import { getSchemaData, getWebSiteSchema } from '@/lib/seo/schema';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
@@ -63,6 +63,7 @@ export default async function LocaleLayout({
 
   const messages = await getMessages();
   const schemaData = getSchemaData(locale);
+  const websiteSchema = getWebSiteSchema();
 
   return (
     <html lang={locale} className={`${outfit.variable} ${cormorant.variable}`}>
@@ -76,6 +77,10 @@ export default async function LocaleLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
       <body>
@@ -108,6 +113,26 @@ export default async function LocaleLayout({
             `,
           }}
         />
+        {/* Yandex.Metrika */}
+        <Script
+          id="yandex-metrika"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+              m[i].l=1*new Date();
+              for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+              k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+              (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+              ym(107732709,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true,ecommerce:"dataLayer"});
+            `,
+          }}
+        />
+        <noscript>
+          <div>
+            <img src="https://mc.yandex.ru/watch/107732709" style={{ position: 'absolute', left: '-9999px' }} alt="" />
+          </div>
+        </noscript>
       </body>
     </html>
   );
