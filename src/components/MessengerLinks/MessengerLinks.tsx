@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './MessengerLinks.module.css';
 
 const WA_URL = 'https://wa.me/79120370170';
