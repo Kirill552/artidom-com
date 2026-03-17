@@ -27,6 +27,10 @@ export default function CtaForm({ className }: Props) {
         return
       }
       setStatus('success')
+      if (typeof window !== 'undefined' && typeof window.ym === 'function') {
+        window.ym(107732709, 'reachGoal', 'contact_form_submit')
+        window.ym(107732709, 'reachGoal', 'cta_request_estimate')
+      }
     } catch {
       setStatus('error')
     }

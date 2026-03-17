@@ -33,6 +33,9 @@ export default function ContactPage() {
                 return;
             }
             setStatus('success');
+            if (typeof window !== 'undefined' && typeof window.ym === 'function') {
+                window.ym(107732709, 'reachGoal', 'contact_form_submit');
+            }
         } catch {
             setStatus('error');
         }
@@ -88,7 +91,7 @@ export default function ContactPage() {
                     {contacts.map((c) => (
                         <div key={c.name} className={styles.contactDetail}>
                             <span className={styles.detailLabel}>{c.name} — {c.role}</span>
-                            <a href={`tel:${c.phone.replace(/\s+/g, '')}`}>{c.phone}</a>
+                            <a href={`tel:${c.phone.replace(/\s+/g, '')}`} onClick={() => { if (typeof window !== 'undefined' && typeof window.ym === 'function') window.ym(107732709, 'reachGoal', 'phone_click') }}>{c.phone}</a>
                         </div>
                     ))}
                     <div className={styles.contactDetail}>

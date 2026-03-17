@@ -65,6 +65,18 @@ export function getBreadcrumbSchema(items: BreadcrumbItem[]) {
     };
 }
 
+export function getSpeakableSchema(url: string, cssSelectors: string[] = ['h1', '[data-speakable]']) {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'WebPage',
+        url,
+        speakable: {
+            '@type': 'SpeakableSpecification',
+            cssSelector: cssSelectors,
+        },
+    };
+}
+
 export function getServiceSchema({ title, description, areaServed, image, path, locale }: ServiceSchemaOptions) {
     return {
         '@context': 'https://schema.org',
