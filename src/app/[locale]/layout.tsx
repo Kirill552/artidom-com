@@ -9,6 +9,8 @@ import { isAppLocale } from '@/i18n/locale-config';
 import { getSchemaData, getWebSiteSchema } from '@/lib/seo/schema';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import YandexMetrikaHit from '@/components/YandexMetrikaHit';
+import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import './globals.css';
 
@@ -85,6 +87,9 @@ export default async function LocaleLayout({
       </head>
       <body>
         <NextIntlClientProvider messages={messages} locale={locale}>
+          <Suspense fallback={null}>
+            <YandexMetrikaHit />
+          </Suspense>
           <div className="container">
             <Nav />
           </div>
