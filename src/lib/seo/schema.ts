@@ -9,7 +9,7 @@ export const getSchemaData = (locale: string) => {
     "@id": "https://artidom.art",
     "url": "https://artidom.art",
     "email": "artidom96@gmail.com",
-    "telephone": "+38269256978",
+    "telephone": "+38268247350",
     "taxID": "03505464",
     "address": {
       "@type": "PostalAddress",
@@ -34,9 +34,9 @@ export const getSchemaData = (locale: string) => {
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "name": "Veronika",
+        "name": "Alena",
         "contactType": "customer support",
-        "telephone": "+38269256978",
+        "telephone": "+38268247350",
         "email": "artidom96@gmail.com",
         "areaServed": "ME",
         "availableLanguage": ["sr", "en", "ru"]

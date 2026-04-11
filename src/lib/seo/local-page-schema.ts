@@ -94,7 +94,7 @@ export function getServiceSchema({ title, description, areaServed, image, path, 
             '@type': 'LocalBusiness',
             name: 'Artidom DOO',
             url: 'https://artidom.art',
-            telephone: '+38269256978',
+            telephone: '+38268247350',
             email: 'artidom96@gmail.com',
         },
     };

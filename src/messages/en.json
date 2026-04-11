@@ -245,7 +245,7 @@
     "location_label": "Address",
     "phone_label": "Phone",
     "contacts": [
-      { "name": "Veronika", "phone": "+382 69 256 978", "role": "artidom.art" },
+      { "name": "Alena", "phone": "+382 68 247 350", "role": "artidom.art" },
       { "name": "Vladimir", "phone": "+382 68 282 371", "role": "Director" }
     ],
     "company_label": "Company",
@@ -301,7 +301,7 @@
     "address": "Mirošica 2, Sutomore\n85000 Bar, Montenegro",
     "email": "artidom96@gmail.com",
     "contacts": [
-      { "name": "Veronika", "phone": "+382 69 256 978" },
+      { "name": "Alena", "phone": "+382 68 247 350" },
       { "name": "Vladimir", "phone": "+382 68 282 371" }
     ],
     "nav_solutions": "Solutions",
