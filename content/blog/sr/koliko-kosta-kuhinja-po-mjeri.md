@@ -50,7 +50,7 @@ Cijena rada čini oko 25–35% ukupne cijene kuhinje. U to spadaju:
 - **Lakiranje ili furniranje** — za lakirane i hrastove frontove
 - **Montaža na lokaciji** — nivelacija, pričvršćivanje, podešavanje
 
-U radionici u Sutomoru (opština Bar) radimo sve ove faze pod jednim krovom. Tim od 40 majstora, CNC mašine, lakirnica. Rok od odobrenja projekta do ugradnje: 3–5 sedmica, zavisno od složenosti i materijala. Hrastovi frontovi sa posebnim lakiranjem mogu produžiti rok za sedmicu.
+U radionici u Sutomoru (opština Bar) radimo sve ove faze pod jednim krovom. CNC mašine, lakirnica, 300 m². Rok od odobrenja projekta do ugradnje: 3–5 sedmica, zavisno od složenosti i materijala. Hrastovi frontovi sa posebnim lakiranjem mogu produžiti rok za sedmicu.
 
 ## Kuhinje po mjeri u Podgorici — razlika u cijeni
 

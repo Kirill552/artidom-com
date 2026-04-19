@@ -42,7 +42,6 @@ Built to actual floor plan, not standard modules.
 - Location: Sutomore, Bar, Montenegro (Mirošica 2, 85000)
 - Production floor: 300 sqm
 - Equipment: CNC cutting machines, edge banding, assembly stations, finishing area
-- Team: 40 craftsmen
 - Capabilities: cutting, assembly, lacquer/veneer finishing, packing
 - All stages in one facility
 

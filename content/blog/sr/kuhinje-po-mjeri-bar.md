@@ -23,7 +23,7 @@ Dolazimo na lokaciju u Baru, Sutomoru ili okolini. Snimamo tlocrt, razgovaramo o
 Radimo 3D vizualizaciju i tehničke crteže. Dobijate transparentnu procjenu — bez skrivenih troškova. Besplatno, u roku od 24 sata od prijema tlocrta.
 
 **3. Proizvodnja**
-CNC rezanje ploča, sklapanje korpusa, lakiranje ili furniranje — sve u radionici od 300 m² u Sutomoru. Tim od 40 majstora. Rok: 3-5 sedmica od odobrenja.
+CNC rezanje ploča, sklapanje korpusa, lakiranje ili furniranje — sve u radionici od 300 m² u Sutomoru. Rok: 3-5 sedmica od odobrenja.
 
 **4. Isporuka i montaža**
 Dovozimo i montiramo u Baru i širom primorja: Budva, Tivat, Kotor, Herceg Novi. Montaža je uključena u cijenu.

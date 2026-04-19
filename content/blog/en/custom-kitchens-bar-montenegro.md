@@ -23,7 +23,7 @@ We visit your location in Bar, Sutomore or the surrounding area. We survey the f
 We create a 3D visualization and technical drawings. You receive a transparent estimate — no hidden costs. Free, within 24 hours of receiving the floor plan.
 
 **3. Production**
-CNC panel cutting, cabinet assembly, lacquering or veneering — all in our 300 sqm workshop in Sutomore. A team of 40 craftsmen. Lead time: 3-5 weeks from approval.
+CNC panel cutting, cabinet assembly, lacquering or veneering — all in our 300 sqm workshop in Sutomore. Lead time: 3-5 weeks from approval.
 
 **4. Delivery and installation**
 We deliver and install in Bar and across the coast: Budva, Tivat, Kotor, Herceg Novi. Installation is included in the price.
