@@ -10,7 +10,7 @@ coverImage: /images/blog/workshop-cnc.jpg
 
 Gotova kuhinja iz salona košta manje i stiže brže. To je jedini argument u njenu korist. Sve ostalo ide na stranu izrade po mjeri — pogotovo ako živite na primorju ili opremite apartman za izdavanje.
 
-Radimo kuhinje po mjeri u Sutomoru već godinama. Evo šta vidimo kad nas pozovu da zamijenimo gotovu kuhinju nakon dvije-tri sezone.
+Radimo kuhinje po mjeri u Zaljevu, Bar već godinama. Evo šta vidimo kad nas pozovu da zamijenimo gotovu kuhinju nakon dvije-tri sezone.
 
 ## Prostor: centimetri koje gotova kuhinja ne pokriva
 
@@ -69,4 +69,4 @@ Kuhinja po mjeri je bolji izbor ako:
 - živite blizu mora ili opremite apartman
 - želite da kuhinja traje 10+ godina bez zamjene
 
-U radionici u Sutomoru (Bar) radimo besplatnu procjenu u roku od 24 sata od prijema tlocrta. Pošaljite osnovu prostora i dobićete projekat, materijale i cijenu — bez obaveze.
+U radionici u Zaljevu (Bar) radimo besplatnu procjenu u roku od 24 sata od prijema tlocrta. Pošaljite osnovu prostora i dobićete projekat, materijale i cijenu — bez obaveze.

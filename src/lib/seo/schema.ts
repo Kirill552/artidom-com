@@ -13,15 +13,15 @@ export const getSchemaData = (locale: string) => {
     "taxID": "03505464",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Mirošica 2, Sutomore",
+      "streetAddress": "Zaljevo bb",
       "postalCode": "85000",
       "addressLocality": "Bar",
       "addressCountry": "ME"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 42.0931,
-      "longitude": 19.1003
+      "latitude": 42.0649384,
+      "longitude": 19.1172821
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -100,8 +100,8 @@ export const getSchemaData = (locale: string) => {
       "@type": "GeoCircle",
       "geoMidpoint": {
         "@type": "GeoCoordinates",
-        "latitude": 42.0931,
-        "longitude": 19.1003
+        "latitude": 42.0649384,
+        "longitude": 19.1172821
       },
       "geoRadius": "150000"
     },
@@ -140,12 +140,16 @@ export const getSchemaData = (locale: string) => {
         }
       ]
     },
-    "sameAs": ["https://www.facebook.com/artidom.ru/", "https://www.instagram.com/artidom.me/"],
+    "sameAs": [
+      "https://www.facebook.com/artidom.ru/",
+      "https://www.instagram.com/artidom.me/",
+      "https://maps.google.com/?cid=15428388142012942100"
+    ],
     "description": locale === 'en'
-      ? "Custom kitchens, wardrobes and apartment furnishing in Montenegro. Workshop in Sutomore, Bar with selected HoReCa and B2B fit-outs."
+      ? "Custom kitchens, wardrobes and apartment furnishing in Montenegro. Workshop in Zaljevo, Bar with selected HoReCa and B2B fit-outs."
       : locale === 'ru'
-      ? "Кухни, шкафы и мебель на заказ в Черногории. Собственное производство в Суторморе (Бар). Жилые проекты и B2B."
-      : "Kuhinje po mjeri, plakari i izrada namještaja po mjeri za apartmane u Crnoj Gori. Radionica u Sutomoru, Bar i odabrani HoReCa i B2B projekti."
+      ? "Кухни, шкафы и мебель на заказ в Черногории. Собственное производство в Залево (Бар). Жилые проекты и B2B."
+      : "Kuhinje po mjeri, plakari i izrada namještaja po mjeri za apartmane u Crnoj Gori. Radionica u Zaljevu, Bar i odabrani HoReCa i B2B projekti."
   };
 };
 

@@ -31,4 +31,4 @@ Mnoge kuhinje u novim crnogorskim zgradama stoje uz spoljašnje zidove sa lošom
 
 Kuhinja spremna za primorje košta otprilike 15–20% više od identičnog rasporeda sa osnovnim materijalima. Ta razlika se isplati tako što izbjegavate popravke u drugoj ili trećoj godini. Ako opremete stan za izdavanje, matematika je jednostavna — žalba gosta na natečena vratašca ormara košta više od nadogradnje.
 
-Proizvodimo kuhinje u našoj radionici u Sutomoru (opština Bar) i ugrađujemo duž obale. Ako želite da razgovaramo o materijalima za konkretan stan, pošaljite nam tlocrt — predložićemo raspored i ponudu u roku od nekoliko dana.
+Proizvodimo kuhinje u našoj radionici u Zaljevu, Bar i ugrađujemo duž obale. Ako želite da razgovaramo o materijalima za konkretan stan, pošaljite nam tlocrt — predložićemo raspored i ponudu u roku od nekoliko dana.

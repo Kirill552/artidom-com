@@ -4,11 +4,11 @@ slug: kuhinje-po-mjeri-bar
 tag: projects
 publishedAt: 2026-03-10
 seoTitle: "Kuhinje po mjeri Bar, Crna Gora — ARTIDOM radionica"
-seoDescription: "Kuhinje po mjeri u Baru: od mjerenja do montaže za 3-5 sedmica. Radionica u Sutomoru, CNC obrada, evropski materijali. Besplatna procjena."
+seoDescription: "Kuhinje po mjeri u Baru: od mjerenja do montaže za 3-5 sedmica. Radionica u Zaljevu, Bar, CNC obrada, evropski materijali. Besplatna procjena."
 coverImage: /images/projects/warm-minimal-apartment/01.jpg
 ---
 
-Kad tražite kuhinju po mjeri u Baru, trebate radionicu koja razumije primorske apartmane — niske plafone, nestandardne niše, vlagu blizu obale. ARTIDOM radi upravo to, iz vlastite radionice u Sutomoru.
+Kad tražite kuhinju po mjeri u Baru, trebate radionicu koja razumije primorske apartmane — niske plafone, nestandardne niše, vlagu blizu obale. ARTIDOM radi upravo to, iz vlastite radionice u Zaljevu, Bar.
 
 ## Šta znači "kuhinja po mjeri"
 
@@ -17,13 +17,13 @@ Kuhinja po mjeri znači da svaki element — korpus, front, radna ploča, okovi 
 ## Kako izgleda proces
 
 **1. Mjerenje i razgovor**
-Dolazimo na lokaciju u Baru, Sutomoru ili okolini. Snimamo tlocrt, razgovaramo o stilu, budžetu i rokovima.
+Dolazimo na lokaciju u Baru ili okolini. Snimamo tlocrt, razgovaramo o stilu, budžetu i rokovima.
 
 **2. Crteži i procjena**
 Radimo 3D vizualizaciju i tehničke crteže. Dobijate transparentnu procjenu — bez skrivenih troškova. Besplatno, u roku od 24 sata od prijema tlocrta.
 
 **3. Proizvodnja**
-CNC rezanje ploča, sklapanje korpusa, lakiranje ili furniranje — sve u radionici od 300 m² u Sutomoru. Rok: 3-5 sedmica od odobrenja.
+CNC rezanje ploča, sklapanje korpusa, lakiranje ili furniranje — sve u radionici od 300 m² u Zaljevu, Bar. Rok: 3-5 sedmica od odobrenja.
 
 **4. Isporuka i montaža**
 Dovozimo i montiramo u Baru i širom primorja: Budva, Tivat, Kotor, Herceg Novi. Montaža je uključena u cijenu.
@@ -35,7 +35,7 @@ Dovozimo i montiramo u Baru i širom primorja: Budva, Tivat, Kotor, Herceg Novi.
 - Kompakt HPL i kamene radne ploče
 - Blum i Hettich okovi — tiho zatvaranje, dugotrajnost
 
-## Zašto radionica u Sutomoru
+## Zašto radionica u Zaljevu, Bar
 
 Vlastita proizvodnja znači kontrolu kvaliteta od rezanja do pakovanja. Nema posrednika, nema čekanja na isporuku iz Srbije ili Italije. Sve faze na jednom mjestu.
 

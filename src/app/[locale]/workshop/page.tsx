@@ -63,8 +63,8 @@ export default async function WorkshopPage({ params }: { params: Promise<{ local
     step3: {
       src: '/images/workshop/step-assembly-finishing.webp',
       alt: {
-        en: 'Cabinet assembly and finishing at ARTIDOM workshop in Sutomore',
-        sr: 'Sklapanje i završna obrada korpusa u ARTIDOM radionici, Sutomore',
+        en: 'Cabinet assembly and finishing at ARTIDOM workshop in Zaljevo, Bar',
+        sr: 'Sklapanje i završna obrada korpusa u ARTIDOM radionici, Zaljevo, Bar',
       },
     },
     step4: {

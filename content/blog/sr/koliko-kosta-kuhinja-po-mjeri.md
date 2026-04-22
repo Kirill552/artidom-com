@@ -50,7 +50,7 @@ Cijena rada čini oko 25–35% ukupne cijene kuhinje. U to spadaju:
 - **Lakiranje ili furniranje** — za lakirane i hrastove frontove
 - **Montaža na lokaciji** — nivelacija, pričvršćivanje, podešavanje
 
-U radionici u Sutomoru (opština Bar) radimo sve ove faze pod jednim krovom. CNC mašine, lakirnica, 300 m². Rok od odobrenja projekta do ugradnje: 3–5 sedmica, zavisno od složenosti i materijala. Hrastovi frontovi sa posebnim lakiranjem mogu produžiti rok za sedmicu.
+U radionici u Zaljevu (opština Bar) radimo sve ove faze pod jednim krovom. CNC mašine, lakirnica, 300 m². Rok od odobrenja projekta do ugradnje: 3–5 sedmica, zavisno od složenosti i materijala. Hrastovi frontovi sa posebnim lakiranjem mogu produžiti rok za sedmicu.
 
 ## Kuhinje po mjeri u Podgorici — razlika u cijeni
 
@@ -93,7 +93,7 @@ Za kuhinje na primorju preporučujemo kompakt HPL kao optimalan odnos cijene i t
 
 ## Kuhinje po mjeri Bar i Budva — rokovi i montaža
 
-Iz radionice u Sutomoru pokrivamo cijelo primorje:
+Iz radionice u Zaljevu (Bar) pokrivamo cijelo primorje:
 
 - **Bar, Sutomore, Čanj** — mjerenje za 1–2 dana, montaža bez troškova prevoza
 - **Budva, Bečići, Rafailovići** — mjerenje u roku sedmice, prevoz uključen
@@ -123,7 +123,7 @@ Saberemo li sve: kuhinja koju ste zamislili za 1.500 € lako može izaći 1.800
 3. **Mjerenje na lokaciji** — dolazimo, snimamo zidove, instalacije, visinu plafona. Besplatno.
 4. **3D projekat i konačna ponuda** — transparentna specifikacija: svaki element, materijal, okov, cijena.
 5. **Odobrenje i avans** — 50% avansa, proizvodnja kreće odmah.
-6. **Proizvodnja** — 3–5 sedmica u radionici u Sutomoru.
+6. **Proizvodnja** — 3–5 sedmica u radionici u Zaljevu, Bar.
 7. **Montaža** — dolazimo, ugrađujemo, podešavamo. Čistimo za sobom.
 
 Pogledajte naše prethodne projekte u [katalogu](/sr/catalog) ili [saznajte više o radionici](/sr/workshop).
@@ -144,7 +144,7 @@ Od odobrenja projekta: 3 sedmice za ekonom izvedbu, 4–5 sedmica za srednji i p
 
 ### Da li radite van Bara?
 
-Da. Radionica je u Sutomoru, ali mjerimo i ugrađujemo širom Crne Gore — Bar, Budva, Tivat, Kotor, Herceg Novi, Podgorica. Za lokacije van primorja dogovaramo prevoz pojedinačno.
+Da. Radionica je u Zaljevu (Bar), ali mjerimo i ugrađujemo širom Crne Gore — Bar, Budva, Tivat, Kotor, Herceg Novi, Podgorica. Za lokacije van primorja dogovaramo prevoz pojedinačno.
 
 ### Kakvu garanciju dajete?
 

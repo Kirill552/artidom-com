@@ -56,7 +56,7 @@ const residentialFaqSection: FAQSectionContent = {
         },
         {
             question: localized('Can you work with apartments on the coast and in Podgorica?', 'Radite li stanove na primorju i u Podgorici?', 'Работаете ли вы с квартирами на побережье и в Подгорице?'),
-            answer: localized('Yes. The workshop is in Sutomore, and we organise measurement, delivery and installation across Bar, Budva, Podgorica and nearby locations.', 'Da. Radionica je u Sutomoru, a mjerenje, isporuku i montažu organizujemo za Bar, Budvu, Podgoricu i okolinu.', 'Да. Цех в Суторморе, а замер, доставку и монтаж организуем в Баре, Будве, Подгорице и окрестностях.'),
+            answer: localized('Yes. The workshop is in Zaljevo, Bar, and we organise measurement, delivery and installation across Bar, Budva, Podgorica and nearby locations.', 'Da. Radionica je u Zaljevu, Bar, a mjerenje, isporuku i montažu organizujemo za Bar, Budvu, Podgoricu i okolinu.', 'Да. Цех в Залево (Бар), а замер, доставку и монтаж организуем в Баре, Будве, Подгорице и окрестностях.'),
         },
         {
             question: localized('What is the usual lead time for apartment furnishing?', 'Koliki je tipičan rok za opremanje apartmana?', 'Какой средний срок меблировки квартиры?'),
@@ -83,7 +83,7 @@ const workshopFaqSection: FAQSectionContent = {
         },
         {
             question: localized('Can production and installation be coordinated from one workshop?', 'Može li proizvodnja i montaža da se vodi iz jedne radionice?', 'Можно ли вести производство и монтаж из одного цеха?'),
-            answer: localized('Yes. Measurement, cutting, assembly, packing, delivery and installation are coordinated from the same team in Sutomore, Bar.', 'Da. Mjerenje, rezanje, sklapanje, pakovanje, isporuka i montaža koordiniraju se iz istog tima u Sutomoru, Bar.', 'Да. Замер, раскрой, сборку, упаковку, доставку и монтаж координирует одна команда в Суторморе, Бар.'),
+            answer: localized('Yes. Measurement, cutting, assembly, packing, delivery and installation are coordinated from the same team in Zaljevo, Bar.', 'Da. Mjerenje, rezanje, sklapanje, pakovanje, isporuka i montaža koordiniraju se iz istog tima u Zaljevu, Bar.', 'Да. Замер, раскрой, сборку, упаковку, доставку и монтаж координирует одна команда в Залево (Бар).'),
         },
         {
             question: localized('Do you work from technical drawings only?', 'Radite li samo po tehničkim crtežima?', 'Работаете только по техническим чертежам?'),

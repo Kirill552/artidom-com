@@ -31,4 +31,4 @@ Many kitchens in new Montenegrin buildings sit against exterior walls with poor 
 
 A coastal-ready kitchen costs roughly 15–20% more than an identical layout using basic materials. That premium pays for itself by avoiding repairs in year two or three. If you are furnishing an apartment for rental, the math is simple — a guest complaint about a swollen cabinet door costs more than the upgrade.
 
-We produce kitchens in our workshop in Sutomore (Bar municipality) and install across the coast. If you want to discuss materials for a specific apartment, send us the floor plan — we will suggest a layout and quote within a few days.
+We produce kitchens in our workshop in Zaljevo, Bar and install across the coast. If you want to discuss materials for a specific apartment, send us the floor plan — we will suggest a layout and quote within a few days.
