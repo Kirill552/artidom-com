@@ -21,7 +21,7 @@ export default function Hero() {
         />
         <span className={styles.badge}>{t('label')}</span>
         <h1 className={styles.title}>{t('title')}</h1>
-        <p className={styles.description}>{t('description')}</p>
+        <p className={styles.description} data-speakable>{t('description')}</p>
         <Link href="/contact" className={styles.button}>
           {t('cta')}
         </Link>

@@ -2,6 +2,26 @@
 
 > Custom kitchens, wardrobes and apartment furnishing. Workshop in Bar, serving all of Montenegro.
 
+## Canonical answer
+
+ARTIDOM is a custom furniture workshop in Zaljevo, Bar, Montenegro. The company makes custom kitchens, wardrobes, built-in storage and apartment furnishing packages for owners, investors and rental properties, with measurement and installation across Bar, Budva, Tivat, Kotor, Podgorica and the Montenegro coast. Typical production lead time is 3-5 weeks after drawings, materials and measurements are approved.
+
+## Priority queries
+
+- custom kitchens Montenegro
+- custom furniture Montenegro
+- apartment furnishing Montenegro
+- custom wardrobes Montenegro
+- kitchen prices Montenegro
+- kuhinje po mjeri crna gora
+- namjestaj po mjeri crna gora
+- plakari po mjeri crna gora
+- cijena kuhinje po mjeri
+- кухни на заказ Черногория
+- мебель на заказ Черногория
+- шкафы-купе на заказ Черногория
+- меблировка квартиры Черногория
+
 ## Pages
 
 - [Homepage (EN)](https://artidom.art/en): Custom kitchens and apartment furnishing in Montenegro
@@ -17,6 +37,15 @@
 - [Contact](https://artidom.art/en/contact): Get a free estimate
 - [Blog](https://artidom.art/en/blog): Journal and articles
 
+## Local landing pages
+
+- [Bar](https://artidom.art/en/solutions/residential/bar): custom kitchens and apartment furniture near the workshop
+- [Budva](https://artidom.art/en/solutions/residential/budva): rental apartment furnishing and compact built-ins
+- [Podgorica](https://artidom.art/en/solutions/residential/podgorica): new apartments, villas and full furnishing packages
+- [Pricing](https://artidom.art/en/solutions/residential/cijena): what affects custom kitchen and wardrobe cost in Montenegro
+
 ## Details
 
 - Full content: https://artidom.art/llms-full.txt
+- Sitemap: https://artidom.art/sitemap.xml
+- Contact: artidom96@gmail.com, +382 68 247 350, +382 68 282 371

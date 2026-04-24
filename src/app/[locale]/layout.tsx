@@ -65,7 +65,7 @@ export default async function LocaleLayout({
 
   const messages = await getMessages();
   const schemaData = getSchemaData(locale);
-  const websiteSchema = getWebSiteSchema();
+  const websiteSchema = getWebSiteSchema(locale);
 
   return (
     <html lang={locale} className={`${outfit.variable} ${cormorant.variable}`}>
@@ -135,6 +135,7 @@ export default async function LocaleLayout({
         />
         <noscript>
           <div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="https://mc.yandex.ru/watch/107732709" style={{ position: 'absolute', left: '-9999px' }} alt="" />
           </div>
         </noscript>

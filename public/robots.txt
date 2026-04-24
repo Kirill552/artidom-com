@@ -1,14 +1,11 @@
 # Artidom.art — Custom furniture workshop in Bar, Montenegro
-# Allow all crawlers including AI search engines
+# Search crawlers and AI search retrieval are allowed. Training-only bots are blocked.
 
 User-agent: *
 Allow: /
 Disallow: /api/
 
-# AI search engines — explicitly allowed
-User-agent: GPTBot
-Allow: /
-
+# AI search / user-triggered retrieval — explicitly allowed
 User-agent: ChatGPT-User
 Allow: /
 
@@ -21,7 +18,10 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-# Training bots — blocked (no SEO benefit)
+# Training-only or non-search AI crawlers — blocked
+User-agent: GPTBot
+Disallow: /
+
 User-agent: Google-Extended
 Disallow: /
 

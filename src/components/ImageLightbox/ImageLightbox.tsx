@@ -7,6 +7,7 @@ import styles from './ImageLightbox.module.css'
 interface Props {
   images: string[]
   alt: string
+  alts?: string[]
   mainClassName?: string
   thumbClassName?: string
   imageClassName?: string
@@ -19,6 +20,7 @@ interface Props {
 export default function ImageLightbox({
   images,
   alt,
+  alts,
   mainClassName,
   thumbClassName,
   imageClassName,
@@ -59,6 +61,7 @@ export default function ImageLightbox({
   }, [lightboxIndex, onLightboxChange])
 
   const gallery = images.slice(1)
+  const getAlt = useCallback((index: number) => alts?.[index] ?? (index === 0 ? alt : `${alt} ${index + 1}`), [alt, alts])
 
   return (
     <>
@@ -70,7 +73,7 @@ export default function ImageLightbox({
         >
           <Image
             src={images[0]}
-            alt={alt}
+            alt={getAlt(0)}
             fill
             className={imageClassName}
             sizes="(max-width: 1100px) 100vw, 55vw"
@@ -88,7 +91,7 @@ export default function ImageLightbox({
               >
                 <Image
                   src={src}
-                  alt={`${alt} ${i + 2}`}
+                  alt={getAlt(i + 1)}
                   fill
                   className={imageClassName}
                   sizes="(max-width: 1100px) 50vw, 20vw"
@@ -113,7 +116,7 @@ export default function ImageLightbox({
           <div className={styles.lightboxImage} onClick={(e) => e.stopPropagation()}>
             <Image
               src={images[lightboxIndex]}
-              alt={`${alt} ${lightboxIndex + 1}`}
+              alt={getAlt(lightboxIndex)}
               fill
               className={styles.lightboxImg}
               sizes="95vw"

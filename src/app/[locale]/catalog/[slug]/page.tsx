@@ -4,11 +4,12 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import {
     getCatalogItem,
+    getCatalogImageAlt,
     getCatalogLocaleValue,
 } from '@/lib/catalog';
 import { ImageLightbox } from '@/components/ImageLightbox';
 import { buildMetadata } from '@/lib/seo/page-metadata';
-import { getBreadcrumbSchema } from '@/lib/seo/local-page-schema';
+import { getBreadcrumbSchema, getCatalogProductSchema } from '@/lib/seo/local-page-schema';
 import { defaultLocale, isAppLocale, type AppLocale } from '@/i18n/locale-config';
 import styles from './page.module.css';
 
@@ -49,20 +50,34 @@ export default async function CatalogItemPage({ params }: { params: Promise<{ sl
     const dimensions = getCatalogLocaleValue(item.dimensions, localeKey);
     const leadTime = getCatalogLocaleValue(item.leadTime, localeKey);
     const finishOptions = item.finishOptions.map((option) => getCatalogLocaleValue(option, localeKey));
+    const imageAlts = item.images.map((_, index) => getCatalogImageAlt(item, localeKey, index));
 
     const breadcrumbSchema = getBreadcrumbSchema([
         { name: localeKey === 'sr' ? 'Početna' : 'Home', url: `https://artidom.art/${localeKey}` },
         { name: localeKey === 'sr' ? 'Katalog' : 'Catalog', url: `https://artidom.art/${localeKey}/catalog` },
         { name, url: `https://artidom.art/${localeKey}/catalog/${slug}` },
     ]);
+    const productSchema = getCatalogProductSchema({
+        name,
+        description: desc,
+        material,
+        dimensions,
+        leadTime,
+        category: t(`categories.${item.category}`),
+        images: item.images,
+        path: `/catalog/${slug}`,
+        locale: localeKey,
+    });
 
     return (
         <main className="container">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
             <section className={styles.page}>
                 <ImageLightbox
                     images={item.images}
                     alt={name}
+                    alts={imageAlts}
                     mainClassName={styles.mainImage}
                     thumbClassName={styles.galleryThumb}
                     imageClassName={styles.image}

@@ -4,6 +4,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { defaultLocale, isAppLocale } from '@/i18n/locale-config';
 import { getPageMetadata } from '@/lib/seo/page-metadata';
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import styles from './page.module.css';
 
 export async function generateMetadata({
@@ -40,7 +41,15 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
               className={`${styles.card} ${i === 0 ? styles.cardWide : ''}`}
             >
               {post.coverImage && (
-                <div className={styles.cardImage} style={{ backgroundImage: `url(${post.coverImage.url})` }} />
+                <div className={styles.cardImage}>
+                  <Image
+                    src={post.coverImage.url}
+                    alt={`${post.title} - ARTIDOM journal`}
+                    fill
+                    className={styles.cardImageMedia}
+                    sizes={i === 0 ? '100vw' : '(max-width: 900px) 100vw, 50vw'}
+                  />
+                </div>
               )}
               <div className={styles.cardBody}>
                 <span className={styles.cardTag}>{post.tag}</span>

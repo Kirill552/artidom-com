@@ -6,7 +6,7 @@ import FAQSection from '@/components/FaqSection';
 import WorkshopProof from '@/components/WorkshopProof';
 import { defaultLocale, isAppLocale } from '@/i18n/locale-config';
 import { getPageMetadata } from '@/lib/seo/page-metadata';
-import { getFaqPageSchema, getHowToSchema, getBreadcrumbSchema } from '@/lib/seo/local-page-schema';
+import { getFaqPageSchema, getHowToSchema, getBreadcrumbSchema, getSpeakableSchema } from '@/lib/seo/local-page-schema';
 import { getWorkshopFaqSection } from '@/features/local-seo';
 import styles from './page.module.css';
 
@@ -43,6 +43,7 @@ export default async function WorkshopPage({ params }: { params: Promise<{ local
     { name: appLocale === 'sr' ? 'Početna' : 'Home', url: `https://artidom.art/${appLocale}` },
     { name: t('hero_title'), url: `https://artidom.art/${appLocale}/workshop` },
   ]);
+  const speakableSchema = getSpeakableSchema(`https://artidom.art/${appLocale}/workshop`);
 
   const steps = ['step1', 'step2', 'step3', 'step4'] as const;
   const stepImages: Record<string, { src: string; alt: Record<string, string> }> = {
@@ -51,6 +52,7 @@ export default async function WorkshopPage({ params }: { params: Promise<{ local
       alt: {
         en: 'Material intake at ARTIDOM furniture workshop in Bar, Montenegro',
         sr: 'Prijem materijala u radionici ARTIDOM, Bar, Crna Gora',
+        ru: 'Приём материалов в мебельном цехе ARTIDOM в Баре, Черногория',
       },
     },
     step2: {
@@ -58,6 +60,7 @@ export default async function WorkshopPage({ params }: { params: Promise<{ local
       alt: {
         en: 'CNC panel cutting for custom kitchens and wardrobes, Bar workshop',
         sr: 'CNC rezanje ploča za kuhinje i plakare po mjeri, radionica Bar',
+        ru: 'ЧПУ-раскрой плит для кухонь и шкафов на заказ в цехе ARTIDOM, Бар',
       },
     },
     step3: {
@@ -65,6 +68,7 @@ export default async function WorkshopPage({ params }: { params: Promise<{ local
       alt: {
         en: 'Cabinet assembly and finishing at ARTIDOM workshop in Zaljevo, Bar',
         sr: 'Sklapanje i završna obrada korpusa u ARTIDOM radionici, Zaljevo, Bar',
+        ru: 'Сборка и отделка корпусов мебели в цехе ARTIDOM, Залево, Бар',
       },
     },
     step4: {
@@ -72,6 +76,7 @@ export default async function WorkshopPage({ params }: { params: Promise<{ local
       alt: {
         en: 'Quality control and packing of custom furniture for delivery in Montenegro',
         sr: 'Kontrola kvaliteta i pakovanje namještaja za isporuku u Crnoj Gori',
+        ru: 'Контроль качества и упаковка мебели на заказ для доставки по Черногории',
       },
     },
   };
@@ -83,6 +88,7 @@ export default async function WorkshopPage({ params }: { params: Promise<{ local
       alt: {
         en: 'Oak veneer samples used for custom apartment furniture in Montenegro',
         sr: 'Uzorci hrastovog furnira za namještaj po mjeri u Crnoj Gori',
+        ru: 'Образцы шпона дуба для мебели на заказ в Черногории',
       },
     },
     mat2: {
@@ -90,6 +96,7 @@ export default async function WorkshopPage({ params }: { params: Promise<{ local
       alt: {
         en: 'Lacquered MDF panels for kitchen fronts and wardrobes',
         sr: 'Lakirane MDF ploče za frontove kuhinja i plakara',
+        ru: 'Лакированные МДФ панели для фасадов кухонь и шкафов',
       },
     },
     mat3: {
@@ -97,6 +104,7 @@ export default async function WorkshopPage({ params }: { params: Promise<{ local
       alt: {
         en: 'Compact laminate and stone countertop samples for kitchen projects',
         sr: 'Kompakt laminat i kamene radne ploče za kuhinjske projekte',
+        ru: 'Компакт-ламинат и образцы каменных столешниц для кухонь',
       },
     },
   };
@@ -106,6 +114,7 @@ export default async function WorkshopPage({ params }: { params: Promise<{ local
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       <main>
         {/* Hero */}
         <section className={styles.hero}>
@@ -122,7 +131,7 @@ export default async function WorkshopPage({ params }: { params: Promise<{ local
               <p key={i}>{line}</p>
             ))}
           </div>
-          <p className={styles.introText}>{t('intro_text')}</p>
+          <p className={styles.introText} data-speakable>{t('intro_text')}</p>
         </section>
 
         <WorkshopProof />

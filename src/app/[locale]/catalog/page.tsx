@@ -29,10 +29,22 @@ export default async function CatalogPage({ params }: { params: Promise<{ locale
     { name: localeKey === 'sr' ? 'Početna' : 'Home', url: `https://artidom.art/${locale}` },
     { name: t('title'), url: `https://artidom.art/${locale}/catalog` },
   ]);
+  const itemListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: t('title'),
+    itemListElement: catalogItems.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      url: `https://artidom.art/${localeKey}/catalog/${item.slug}`,
+      name: item.name[localeKey],
+    })),
+  };
 
   return (
     <>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
     <main>
       <section className={`container ${styles.header}`}>
         <h1 className={styles.title}>{t('title')}</h1>

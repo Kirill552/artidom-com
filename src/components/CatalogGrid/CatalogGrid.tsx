@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { Link } from '@/i18n/routing'
 import type { CatalogItem, CatalogCategory } from '@/lib/catalog'
-import { getCatalogLocaleValue } from '@/lib/catalog'
+import { getCatalogImageAlt, getCatalogLocaleValue } from '@/lib/catalog'
 import styles from './CatalogGrid.module.css'
 
 type FilterKey = 'all' | CatalogCategory
@@ -48,7 +48,7 @@ export default function CatalogGrid({ items, locale, tabs, categories, cardCta }
               <div className={styles.cardImage}>
                 <Image
                   src={item.coverImage}
-                  alt={name}
+                  alt={getCatalogImageAlt(item, locale, 0)}
                   fill
                   className={styles.image}
                   sizes="(max-width: 900px) 100vw, (max-width: 1400px) 50vw, 33vw"

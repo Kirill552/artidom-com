@@ -5,6 +5,7 @@ tag: projects
 publishedAt: "2026-02-20"
 seoTitle: "Opremanje apartmana za izdavanje u Crnoj Gori — praktičan vodič za vlasnike"
 seoDescription: "Najčešće greške pri opremanju apartmana za Airbnb i dugoročno izdavanje u Crnoj Gori. Savjeti za kuhinju, odlaganje i izdržljivost iz lokalne radionice."
+coverImage: "/images/projects/warm-minimal-apartment/cover.webp"
 ---
 
 Crna Gora ima preko 30.000 apartmana na Booking-u i Airbnb-u. Većina je opremljena na isti način: flat-pack namještaj iz Podgorice, jeftina kuhinja bez odlaganja i plakar u koji jedva stane zimska posteljina. Gosti to primijete. Ocjene padaju. Vlasnici se pitaju zašto.

@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
 import { Suspense } from 'react';
 import { notFound } from 'next/navigation';
-import { getProject } from '@/lib/projects';
+import { getProject, getProjectImageAlt } from '@/lib/projects';
 import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { defaultLocale, isAppLocale, type AppLocale } from '@/i18n/locale-config';
 import { buildMetadata } from '@/lib/seo/page-metadata';
-import { getBreadcrumbSchema } from '@/lib/seo/local-page-schema';
+import { getBreadcrumbSchema, getProjectCreativeWorkSchema } from '@/lib/seo/local-page-schema';
 import ProjectGallery from './ProjectGallery';
 import styles from './page.module.css';
 
@@ -43,6 +43,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
     const localeKey: AppLocale = isAppLocale(locale) ? locale : defaultLocale;
     const title = project.title[localeKey];
     const desc = project.description[localeKey];
+    const imageAlts = project.images.map((_, index) => getProjectImageAlt(project, localeKey, index));
     const sectorLabel = t(`sectors.${project.sector}`);
     const unitsLabel = project.units ? `${project.units} ${localeKey === 'sr' ? 'jedinica' : 'units'}` : null;
     const sqmLabel = project.sqm ? `${project.sqm} m²` : null;
@@ -52,14 +53,27 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         { name: localeKey === 'sr' ? 'Projekti' : 'Projects', url: `https://artidom.art/${localeKey}/projects` },
         { name: title, url: `https://artidom.art/${localeKey}/projects/${slug}` },
     ]);
+    const projectSchema = getProjectCreativeWorkSchema({
+        title,
+        description: desc,
+        sector: sectorLabel,
+        location: project.location,
+        year: project.year,
+        sqm: project.sqm,
+        units: project.units,
+        images: project.images,
+        path: `/projects/${slug}`,
+        locale: localeKey,
+    });
 
     return (
         <main>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(projectSchema) }} />
             <div className={styles.hero}>
                 <Image
                     src={project.coverImage}
-                    alt={title}
+                    alt={getProjectImageAlt(project, localeKey, 0)}
                     fill
                     className={styles.heroImage}
                     priority
@@ -83,7 +97,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             {project.images.length > 0 && (
                 <section className={`container ${styles.gallery}`}>
                     <Suspense>
-                        <ProjectGallery images={project.images} alt={title} />
+                        <ProjectGallery images={project.images} alt={title} alts={imageAlts} />
                     </Suspense>
                 </section>
             )}

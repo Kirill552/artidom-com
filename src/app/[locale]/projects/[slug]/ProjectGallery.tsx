@@ -7,9 +7,10 @@ import { ImageLightbox } from '@/components/ImageLightbox'
 interface Props {
   images: string[]
   alt: string
+  alts?: string[]
 }
 
-export default function ProjectGallery({ images, alt }: Props) {
+export default function ProjectGallery({ images, alt, alts }: Props) {
   const searchParams = useSearchParams()
   const router = useRouter()
   const pathname = usePathname()
@@ -30,6 +31,7 @@ export default function ProjectGallery({ images, alt }: Props) {
     <ImageLightbox
       images={images}
       alt={alt}
+      alts={alts}
       initialIndex={initialIndex}
       onLightboxChange={handleLightboxChange}
     />

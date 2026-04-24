@@ -5,6 +5,7 @@ tag: materials
 publishedAt: "2026-03-01"
 seoTitle: "Kitchen Materials for Coastal Montenegro — What Works and What Doesn't"
 seoDescription: "Practical guide to choosing kitchen worktops, fronts and hardware that hold up in Montenegro's coastal humidity. From a workshop in Bar."
+coverImage: "/images/workshop/mat-stone-tops.webp"
 ---
 
 Salt air, summer humidity above 80%, and winter condensation on cold walls. If you buy an apartment on the Montenegrin coast and order a kitchen without thinking about these conditions, expect swollen edges, peeling laminate and rusty hinges within two seasons.

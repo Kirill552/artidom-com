@@ -12,6 +12,47 @@ interface ServiceSchemaOptions {
     locale: 'en' | 'sr' | 'ru';
 }
 
+interface CatalogProductSchemaOptions {
+    name: string;
+    description: string;
+    material: string;
+    dimensions: string;
+    leadTime: string;
+    category: string;
+    images: string[];
+    path: string;
+    locale: 'en' | 'sr' | 'ru';
+}
+
+interface ProjectSchemaOptions {
+    title: string;
+    description: string;
+    sector: string;
+    location: string;
+    year: number;
+    images: string[];
+    path: string;
+    locale: 'en' | 'sr' | 'ru';
+    sqm?: number;
+    units?: number;
+}
+
+interface ArticleSchemaOptions {
+    title: string;
+    description: string;
+    image?: string;
+    publishedAt: string;
+    path: string;
+    locale: 'en' | 'sr' | 'ru';
+    tag: string;
+}
+
+const businessId = 'https://artidom.art/#localbusiness';
+
+function absoluteUrl(pathOrUrl: string) {
+    return pathOrUrl.startsWith('http') ? pathOrUrl : `https://artidom.art${pathOrUrl}`;
+}
+
 export function getFaqPageSchema(items: FAQSchemaItem[]) {
     return {
         '@context': 'https://schema.org',
@@ -86,16 +127,119 @@ export function getServiceSchema({ title, description, areaServed, image, path, 
         description,
         url: `https://artidom.art/${locale}${path}`,
         image: image.startsWith('http') ? image : `https://artidom.art${image}`,
+        category: 'Custom furniture and joinery',
+        serviceOutput: locale === 'ru'
+            ? 'Кухни, шкафы, системы хранения и меблировка квартир по размерам помещения'
+            : locale === 'sr'
+                ? 'Kuhinje, plakari, odlaganje i opremanje apartmana po mjeri prostora'
+                : 'Custom kitchens, wardrobes, storage and apartment furnishing built to the floor plan',
         areaServed: {
             '@type': areaServed === 'Montenegro' || areaServed === 'Crna Gora' || areaServed === 'Черногория' ? 'Country' : 'City',
             name: areaServed,
         },
         provider: {
-            '@type': 'LocalBusiness',
-            name: 'Artidom DOO',
+            '@id': businessId,
+        },
+        offers: {
+            '@type': 'Offer',
+            url: `https://artidom.art/${locale}${path}`,
+            priceCurrency: 'EUR',
+            availability: 'https://schema.org/InStock',
+            seller: {
+                '@id': businessId,
+            },
+        },
+    };
+}
+
+export function getCatalogProductSchema(options: CatalogProductSchemaOptions) {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'Product',
+        name: options.name,
+        description: options.description,
+        image: options.images.map(absoluteUrl),
+        category: options.category,
+        material: options.material,
+        brand: {
+            '@type': 'Brand',
+            name: 'ARTIDOM',
+        },
+        manufacturer: {
+            '@id': businessId,
+        },
+        additionalProperty: [
+            { '@type': 'PropertyValue', name: 'Dimensions', value: options.dimensions },
+            { '@type': 'PropertyValue', name: 'Lead time', value: options.leadTime },
+            { '@type': 'PropertyValue', name: 'Made in', value: 'Bar, Montenegro' },
+        ],
+        offers: {
+            '@type': 'Offer',
+            url: `https://artidom.art/${options.locale}${options.path}`,
+            priceCurrency: 'EUR',
+            availability: 'https://schema.org/InStock',
+            seller: { '@id': businessId },
+            priceSpecification: {
+                '@type': 'PriceSpecification',
+                priceCurrency: 'EUR',
+                description: options.locale === 'ru'
+                    ? 'Цена рассчитывается по размерам, материалам и монтажу'
+                    : options.locale === 'sr'
+                        ? 'Cijena se procjenjuje prema dimenzijama, materijalima i montaži'
+                        : 'Price is estimated by dimensions, materials and installation scope',
+            },
+        },
+    };
+}
+
+export function getProjectCreativeWorkSchema(options: ProjectSchemaOptions) {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'CreativeWork',
+        name: options.title,
+        description: options.description,
+        image: options.images.map(absoluteUrl),
+        url: `https://artidom.art/${options.locale}${options.path}`,
+        creator: { '@id': businessId },
+        provider: { '@id': businessId },
+        dateCreated: String(options.year),
+        contentLocation: {
+            '@type': 'Place',
+            name: options.location,
+            address: options.location,
+        },
+        about: [
+            options.sector,
+            'custom furniture Montenegro',
+            'apartment furnishing Montenegro',
+            'made-to-measure joinery',
+        ],
+        additionalProperty: [
+            options.sqm ? { '@type': 'PropertyValue', name: 'Area', value: `${options.sqm} m2` } : null,
+            options.units ? { '@type': 'PropertyValue', name: 'Units', value: String(options.units) } : null,
+        ].filter(Boolean),
+    };
+}
+
+export function getArticleSchema(options: ArticleSchemaOptions) {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: options.title,
+        description: options.description,
+        image: options.image ? [absoluteUrl(options.image)] : ['https://artidom.art/og/home.png'],
+        datePublished: options.publishedAt,
+        dateModified: options.publishedAt,
+        inLanguage: options.locale,
+        articleSection: options.tag,
+        mainEntityOfPage: `https://artidom.art/${options.locale}${options.path}`,
+        author: {
+            '@type': 'Organization',
+            name: 'ARTIDOM',
             url: 'https://artidom.art',
-            telephone: '+38268247350',
-            email: 'artidom96@gmail.com',
+        },
+        publisher: {
+            '@id': businessId,
         },
     };
 }

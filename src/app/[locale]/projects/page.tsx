@@ -30,10 +30,22 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
         { name: appLocale === 'sr' ? 'Početna' : 'Home', url: `https://artidom.art/${locale}` },
         { name: t('title'), url: `https://artidom.art/${locale}/projects` },
     ]);
+    const itemListSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: t('title'),
+        itemListElement: projects.map((project, index) => ({
+            '@type': 'ListItem',
+            position: index + 1,
+            url: `https://artidom.art/${appLocale}/projects/${project.slug}`,
+            name: project.title,
+        })),
+    };
 
     return (
         <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
         <main className="container">
             <section className={styles.page}>
                 <h1 className={styles.title}>{t('title')}</h1>
@@ -49,7 +61,13 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                             <div className={styles.cardImage}>
                                 <Image
                                     src={p.coverImage}
-                                    alt={p.title}
+                                    alt={
+                                        appLocale === 'ru'
+                                            ? `${p.title}: проект мебели на заказ в ${p.location}, ${p.year}`
+                                            : appLocale === 'sr'
+                                                ? `${p.title}: projekat namještaja po mjeri u ${p.location}, ${p.year}`
+                                                : `${p.title}: custom furniture project in ${p.location}, ${p.year}`
+                                    }
                                     fill
                                     className={styles.image}
                                     sizes="(max-width: 900px) 100vw, (max-width: 1400px) 50vw, 33vw"

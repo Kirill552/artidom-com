@@ -5,6 +5,7 @@ tag: materials
 publishedAt: "2026-03-01"
 seoTitle: "Materijali za kuhinju na primorju Crne Gore — šta traje, a šta ne"
 seoDescription: "Praktičan vodič za izbor radnih ploča, frontova i okova za kuhinje na crnogorskoj obali. Iz radionice u Baru."
+coverImage: "/images/workshop/mat-stone-tops.webp"
 ---
 
 Slani vazduh, ljetnja vlažnost iznad 80% i zimska kondenzacija na hladnim zidovima. Ako kupite stan na crnogorskom primorju i naručite kuhinju bez razmišljanja o ovim uslovima, očekujte natečene ivice, ljuštenje laminata i zarđale šarke u roku od dvije sezone.

@@ -161,6 +161,34 @@ export function getProject(slug: string): Project | undefined {
     return projects.find((p) => p.slug === slug);
 }
 
+export function getProjectImageAlt(project: Project, locale: string, index: number) {
+    const localeKey = (locale === 'sr' || locale === 'ru' ? locale : 'en') as 'en' | 'sr' | 'ru';
+    const title = project.title[localeKey];
+    const location = project.location;
+
+    if (project.sector === 'residential') {
+        if (localeKey === 'ru') {
+            return `${title}: кухня на заказ, шкафы и меблировка квартиры в ${location}, фото ${index + 1}`;
+        }
+
+        if (localeKey === 'sr') {
+            return `${title}: kuhinja po mjeri, plakari i opremanje apartmana u ${location}, fotografija ${index + 1}`;
+        }
+
+        return `${title}: custom kitchen, wardrobes and apartment furnishing in ${location}, photo ${index + 1}`;
+    }
+
+    if (localeKey === 'ru') {
+        return `${title}: мебель на заказ ARTIDOM в ${location}, фото ${index + 1}`;
+    }
+
+    if (localeKey === 'sr') {
+        return `${title}: namještaj po mjeri ARTIDOM u ${location}, fotografija ${index + 1}`;
+    }
+
+    return `${title}: custom furniture by ARTIDOM in ${location}, photo ${index + 1}`;
+}
+
 export function getProjectsByLocale(locale: string) {
     return projects.map((p) => ({
         ...p,

@@ -63,6 +63,14 @@ const residentialFaqSection: FAQSectionContent = {
             answer: localized('Most apartment packages land in the 3-6 week range after measurements and material confirmation. Larger or more custom packages can take longer.', 'Većina apartmanskih paketa je u rasponu 3-6 sedmica nakon mjerenja i potvrde materijala. Veći ili složeniji paketi mogu tražiti više vremena.', 'Большинство квартирных пакетов укладывается в 3–6 недель после замера и согласования материалов. Сложные проекты могут занять больше.'),
         },
         {
+            question: localized('What is included in an apartment furnishing package?', 'Šta ulazi u paket opremanja apartmana?', 'Что входит в пакет меблировки квартиры?'),
+            answer: localized('A typical package combines a custom kitchen, wardrobes, entry storage, bathroom joinery and TV wall. The exact scope is built from the floor plan and rental or private-use brief.', 'Tipičan paket spaja kuhinju po mjeri, plakare, ulazno odlaganje, kupatilske elemente i TV zid. Tačan obim se formira prema osnovi prostora i načinu korišćenja.', 'Обычный пакет включает кухню на заказ, шкафы, прихожую, мебель для ванной и ТВ-зону. Точный состав собираем по плану квартиры и сценарию использования.'),
+        },
+        {
+            question: localized('Can you make custom wardrobes as a separate order?', 'Možete li napraviti plakare po mjeri kao poseban posao?', 'Можно заказать только шкафы на заказ?'),
+            answer: localized('Yes. Built-in wardrobes, sliding wardrobes and full-height storage walls can be ordered separately or as part of a full apartment package.', 'Da. Ugradni plakari, klizni plakari i skladišni zidovi pune visine mogu se naručiti posebno ili u okviru kompletnog apartmanskog paketa.', 'Да. Встроенные шкафы, шкафы-купе и стенки хранения можно заказать отдельно или в составе полной меблировки квартиры.'),
+        },
+        {
             question: localized('Do you only make apartments or can you also do HoReCa and B2B?', 'Radite li samo stanove ili i HoReCa / B2B?', 'Вы работаете только с квартирами или берёте HoReCa / B2B?'),
             answer: localized('Residential is the main direction. We also take selected HoReCa and B2B briefs when the task, drawings and schedule are already clear.', 'Stanovi i apartmani su glavni pravac. Uzimamo i odabrane HoReCa i B2B projekte kada su zadatak, crteži i rok već jasno definisani.', 'Квартиры — основное направление. Берём избранные HoReCa и B2B заказы, когда задание, чертежи и сроки уже проработаны.'),
         },
@@ -80,6 +88,10 @@ const workshopFaqSection: FAQSectionContent = {
         {
             question: localized('Which materials do you work with most often?', 'Sa kojim materijalima najčešće radite?', 'С какими материалами вы работаете чаще всего?'),
             answer: localized('Mostly lacquered MDF, veneer, compact tops, stone-look tops and durable board materials for apartment, villa and selected public interiors.', 'Najčešće radimo lakirani MDF, furnir, kompakt ploče, radne ploče sa izgledom kamena i postojane pločaste materijale za stanove, vile i odabrane javne enterijere.', 'Чаще всего — лакированный МДФ, шпон, компакт-плиты, столешницы под камень и износостойкие плитные материалы для квартир, вилл и избранных общественных интерьеров.'),
+        },
+        {
+            question: localized('Do you have CNC cutting in the Bar workshop?', 'Imate li CNC rezanje u radionici u Baru?', 'Есть ли ЧПУ-раскрой в цехе в Баре?'),
+            answer: localized('Yes. CNC cutting, edge preparation, assembly, finishing, packing and installation coordination are handled from the Zaljevo workshop.', 'Da. CNC rezanje, priprema ivica, sklapanje, završna obrada, pakovanje i koordinacija montaže vode se iz radionice u Zaljevu.', 'Да. ЧПУ-раскрой, подготовка кромок, сборка, отделка, упаковка и координация монтажа идут из цеха в Залево.'),
         },
         {
             question: localized('Can production and installation be coordinated from one workshop?', 'Može li proizvodnja i montaža da se vodi iz jedne radionice?', 'Можно ли вести производство и монтаж из одного цеха?'),

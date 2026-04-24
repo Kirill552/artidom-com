@@ -5,7 +5,7 @@ tag: industry
 publishedAt: "2026-03-17"
 seoTitle: "Koliko košta kuhinja po mjeri u Crnoj Gori 2026"
 seoDescription: "Cijena kuhinje po mjeri u Crnoj Gori — od 280 do 650 €/m². Uporedili smo cijene materijala, okova i rada. Radionica u Baru, montaža širom primorja."
-coverImage: "/images/blog/kitchen-cost.webp"
+coverImage: "/images/projects/beige-apartment-kitchen/01.jpg"
 ---
 
 Kuhinja po mjeri u Crnoj Gori košta od 280 do 650 € po dužnom metru, zavisno od materijala, okova i radne ploče. Za prosječnu kuhinju od 3 metra to znači 840–1.950 €. Za kuhinju sa kamenom radnom pločom, hrastovim frontovima i Blum mehanizmima — bliže 2.000–3.500 € za isti raspored. Ovo su cijene iz naše radionice u Baru za mart 2026, sa montažom uključenom za lokacije na primorju.
@@ -95,7 +95,7 @@ Za kuhinje na primorju preporučujemo kompakt HPL kao optimalan odnos cijene i t
 
 Iz radionice u Zaljevu (Bar) pokrivamo cijelo primorje:
 
-- **Bar, Sutomore, Čanj** — mjerenje za 1–2 dana, montaža bez troškova prevoza
+- **Bar, Zaljevo, Stari Bar** — mjerenje za 1–2 dana, montaža bez troškova prevoza
 - **Budva, Bečići, Rafailovići** — mjerenje u roku sedmice, prevoz uključen
 - **Tivat, Kotor, Herceg Novi** — po dogovoru, prevoz 50–100 € zavisno od obima
 

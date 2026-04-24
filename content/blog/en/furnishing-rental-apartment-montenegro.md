@@ -5,6 +5,7 @@ tag: projects
 publishedAt: "2026-02-20"
 seoTitle: "Furnishing a Rental Apartment in Montenegro — Practical Guide for Owners"
 seoDescription: "Common mistakes when furnishing apartments for Airbnb and long-term rental in Montenegro. Kitchen, storage and durability tips from a local workshop."
+coverImage: "/images/projects/warm-minimal-apartment/cover.webp"
 ---
 
 Montenegro has over 30,000 apartments listed on Booking and Airbnb. Most are furnished the same way: IKEA-style flat-packs from Podgorica, a cheap kitchen with no storage, and a wardrobe that barely fits winter bedding. Guests notice. Ratings drop. Owners wonder why.

@@ -5,7 +5,7 @@ tag: industry
 publishedAt: "2026-03-17"
 seoTitle: "Furnishing Your Apartment in Montenegro — Guide 2026"
 seoDescription: "How to furnish an apartment in Montenegro: find a carpenter, choose materials, budget 3000-15000 EUR. Workshop in Bar, installation across the coast."
-coverImage: "/images/blog/apartment-furnishing.webp"
+coverImage: "/images/projects/compact-apartment/04.jpg"
 ---
 
 Furnishing an apartment in Montenegro typically costs between €3,000 and €15,000 depending on apartment size, material choices and whether you go custom or flat-pack. If you have just bought a place in Bar, Budva or Tivat and need it liveable — for yourself or for rental — this guide covers the practical steps: finding a furniture maker, understanding what materials work on the coast, realistic timelines, and where the money actually goes.

@@ -1,16 +1,56 @@
+const businessId = "https://artidom.art/#localbusiness";
+const websiteId = "https://artidom.art/#website";
+const logoUrl = "https://artidom.art/web-app-manifest-512x512.png";
+
+const serviceNames = {
+  en: [
+    "Custom kitchens in Montenegro",
+    "Custom furniture and furniture maker services",
+    "Apartment furnishing packages",
+    "Built-in wardrobes and storage walls",
+    "Kitchen pricing and project estimates",
+    "HoReCa counters and B2B joinery",
+  ],
+  sr: [
+    "Kuhinje po mjeri u Crnoj Gori",
+    "Namještaj po mjeri i izrada namještaja",
+    "Opremanje apartmana i stanova",
+    "Ugradni plakari i odlaganje",
+    "Cijena kuhinje po mjeri i procjena projekta",
+    "Pultovi po mjeri i B2B stolarija",
+  ],
+  ru: [
+    "Кухни на заказ в Черногории",
+    "Мебель на заказ и производство мебели",
+    "Меблировка квартир и апартаментов",
+    "Шкафы-купе и встроенное хранение",
+    "Стоимость кухни на заказ и расчет проекта",
+    "Барные стойки и B2B столярные изделия",
+  ],
+} as const;
+
+function getLocaleKey(locale: string): keyof typeof serviceNames {
+  return locale === "ru" || locale === "sr" ? locale : "en";
+}
+
 export const getSchemaData = (locale: string) => {
+  const localeKey = getLocaleKey(locale);
+
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Artidom DOO",
     "legalName": "Artidom DOO",
     "alternateName": "ARTIDOM",
-    "image": "https://artidom.art/api/og",
-    "@id": "https://artidom.art",
+    "image": "https://artidom.art/og/home.png",
+    "logo": logoUrl,
+    "@id": businessId,
     "url": "https://artidom.art",
     "email": "artidom96@gmail.com",
     "telephone": "+38268247350",
     "taxID": "03505464",
+    "currenciesAccepted": "EUR",
+    "paymentAccepted": "Cash, Bank transfer",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Zaljevo bb",
@@ -90,10 +130,6 @@ export const getSchemaData = (locale: string) => {
       {
         "@type": "City",
         "name": "Cetinje"
-      },
-      {
-        "@type": "City",
-        "name": "Sutomore"
       }
     ],
     "serviceArea": {
@@ -106,39 +142,20 @@ export const getSchemaData = (locale: string) => {
       "geoRadius": "150000"
     },
     "priceRange": "€€",
+    "knowsAbout": serviceNames[localeKey],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Custom furniture",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Custom kitchens"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Wardrobes and built-in storage"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Apartment furnishing packages"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "HoReCa and B2B joinery"
-          }
+      "name": localeKey === "ru" ? "Мебель на заказ" : localeKey === "sr" ? "Namještaj po mjeri" : "Custom furniture",
+      "itemListElement": serviceNames[localeKey].map((name) => ({
+        "@type": "Offer",
+        "areaServed": "Montenegro",
+        "priceCurrency": "EUR",
+        "itemOffered": {
+          "@type": "Service",
+          "name": name,
+          "provider": { "@id": businessId }
         }
-      ]
+      }))
     },
     "sameAs": [
       "https://www.facebook.com/artidom.ru/",
@@ -153,21 +170,27 @@ export const getSchemaData = (locale: string) => {
   };
 };
 
-export function getWebSiteSchema() {
+export function getWebSiteSchema(locale = 'sr') {
+  const localeKey = getLocaleKey(locale);
+
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": websiteId,
     "name": "ARTIDOM",
     "alternateName": "Artidom DOO",
     "url": "https://artidom.art",
     "inLanguage": ["en", "sr", "ru"],
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://artidom.art/en/catalog?q={search_term_string}"
-      },
-      "query-input": "required name=search_term_string"
-    }
+    "publisher": { "@id": businessId },
+    "about": { "@id": businessId },
+    "keywords": serviceNames[localeKey].join(", "),
+    "hasPart": [
+      "https://artidom.art/sr/solutions/residential",
+      "https://artidom.art/en/solutions/residential",
+      "https://artidom.art/ru/solutions/residential",
+      "https://artidom.art/sr/workshop",
+      "https://artidom.art/sr/catalog",
+      "https://artidom.art/sr/projects"
+    ]
   };
 }

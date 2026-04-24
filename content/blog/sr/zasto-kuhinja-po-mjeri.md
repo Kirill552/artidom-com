@@ -5,7 +5,7 @@ tag: industry
 publishedAt: 2026-03-26
 seoTitle: "Kuhinje po mjeri vs. gotove kuhinje — šta se isplati u Crnoj Gori"
 seoDescription: "Poredimo kuhinje po mjeri i gotove kuhinje za apartmane i stanove u Crnoj Gori. Praktične razlike u cijeni, trajnosti i prostoru. Iz radionice u Baru."
-coverImage: /images/blog/workshop-cnc.jpg
+coverImage: /images/workshop/step-cnc-cutting.webp
 ---
 
 Gotova kuhinja iz salona košta manje i stiže brže. To je jedini argument u njenu korist. Sve ostalo ide na stranu izrade po mjeri — pogotovo ako živite na primorju ili opremite apartman za izdavanje.

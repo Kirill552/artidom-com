@@ -7,7 +7,7 @@ import WorkshopProof from '@/components/WorkshopProof';
 import Image from 'next/image';
 import { getProject } from '@/lib/projects';
 import { getPageMetadata } from '@/lib/seo/page-metadata';
-import { getHowToSchema, getBreadcrumbSchema, getFaqPageSchema } from '@/lib/seo/local-page-schema';
+import { getHowToSchema, getFaqPageSchema, getSpeakableSchema } from '@/lib/seo/local-page-schema';
 import FaqSection from '@/components/FaqSection';
 import { CtaForm } from '@/components/CtaForm';
 import styles from './page.module.css';
@@ -52,11 +52,13 @@ export default async function IndexPage({ params }: { params: Promise<{ locale: 
       text: t(`process.${s}_text`),
     })),
   );
+  const speakableSchema = getSpeakableSchema(`https://artidom.art/${localeKey}`);
 
   return (
     <>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
     <main>
       {/* Hero */}
       <div className="container">

@@ -2,10 +2,10 @@ import type { Metadata } from 'next';
 import SectorPage from '@/components/SectorPage';
 import FAQSection from '@/components/FaqSection';
 import LocalSeoLinks from '@/components/LocalSeoLinks';
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { defaultLocale, isAppLocale } from '@/i18n/locale-config';
 import { getPageMetadata } from '@/lib/seo/page-metadata';
-import { getFaqPageSchema, getBreadcrumbSchema } from '@/lib/seo/local-page-schema';
+import { getFaqPageSchema, getBreadcrumbSchema, getServiceSchema, getSpeakableSchema } from '@/lib/seo/local-page-schema';
 import {
     getResidentialFaqSection,
     getResidentialLocalLinks,
@@ -38,6 +38,16 @@ export default async function ResidentialPage({ params }: { params: Promise<{ lo
     const localLinks = getResidentialLocalLinks(appLocale);
     const faqSection = getResidentialFaqSection(appLocale);
     const faqSchema = getFaqPageSchema(faqSection.items);
+    const t = await getTranslations({ locale: appLocale, namespace: 'Solutions.residential' });
+    const serviceSchema = getServiceSchema({
+        title: t('title'),
+        description: t('description'),
+        areaServed: appLocale === 'ru' ? 'Черногория' : appLocale === 'sr' ? 'Crna Gora' : 'Montenegro',
+        image: '/images/projects/warm-minimal-apartment/01.jpg',
+        path: '/solutions/residential',
+        locale: appLocale,
+    });
+    const speakableSchema = getSpeakableSchema(`https://artidom.art/${appLocale}/solutions/residential`);
 
     const breadcrumbSchema = getBreadcrumbSchema([
         { name: appLocale === 'sr' ? 'Početna' : 'Home', url: `https://artidom.art/${appLocale}` },
@@ -49,6 +59,8 @@ export default async function ResidentialPage({ params }: { params: Promise<{ lo
         <>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
             <SectorPage sector="residential" proofVariant="residential">
                 <div className="container">
                     <LocalSeoLinks

@@ -29,6 +29,45 @@ export function getCatalogLocaleValue(value: LocalizedText, locale: string) {
     return value[locale as CatalogLocale] ?? value.en;
 }
 
+export function getCatalogImageAlt(item: CatalogItem, locale: string, index: number) {
+    const localeKey = (locale === 'sr' || locale === 'ru' ? locale : 'en') as CatalogLocale;
+    const name = getCatalogLocaleValue(item.name, localeKey);
+
+    if (item.category === 'kitchens') {
+        if (localeKey === 'ru') {
+            return `${name}: кухня на заказ для квартиры в Черногории, фото ${index + 1}`;
+        }
+
+        if (localeKey === 'sr') {
+            return `${name}: kuhinja po mjeri za apartman u Crnoj Gori, fotografija ${index + 1}`;
+        }
+
+        return `${name}: custom apartment kitchen in Montenegro, photo ${index + 1}`;
+    }
+
+    if (item.category === 'storage') {
+        if (localeKey === 'ru') {
+            return `${name}: шкафы и встроенное хранение на заказ в Черногории, фото ${index + 1}`;
+        }
+
+        if (localeKey === 'sr') {
+            return `${name}: plakari i ugradno odlaganje po mjeri u Crnoj Gori, fotografija ${index + 1}`;
+        }
+
+        return `${name}: custom wardrobes and built-in storage in Montenegro, photo ${index + 1}`;
+    }
+
+    if (localeKey === 'ru') {
+        return `${name}: барная стойка и B2B мебель на заказ в Черногории, фото ${index + 1}`;
+    }
+
+    if (localeKey === 'sr') {
+        return `${name}: pultovi po mjeri i B2B namještaj u Crnoj Gori, fotografija ${index + 1}`;
+    }
+
+    return `${name}: custom service counter and B2B joinery in Montenegro, photo ${index + 1}`;
+}
+
 export const catalogItems: CatalogItem[] = [
     {
         slug: 'custom-apartment-kitchen',

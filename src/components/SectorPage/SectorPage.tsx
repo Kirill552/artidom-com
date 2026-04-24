@@ -33,7 +33,7 @@ export default function SectorPage({ sector, proofVariant = 'default', children 
                 <div className={styles.heroBody}>
                     <div className={styles.heroText}>
                         <h1 className={styles.heroTitle}>{t('title')}</h1>
-                        <p className={styles.heroDesc}>{t('description')}</p>
+                        <p className={styles.heroDesc} data-speakable>{t('description')}</p>
                     </div>
                     <div className={styles.heroImage}>
                         <Image

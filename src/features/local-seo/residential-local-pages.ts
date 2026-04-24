@@ -45,6 +45,14 @@ const pricingFaqs: FAQItem[] = [
         answer: localized('Length and height of the composition, front material, hardware brand, worktop type, integrated appliances and installation complexity.', 'Dužina i visina kompozicije, materijal frontova, marka okova, tip radne ploče, ugradna tehnika i složenost montaže.', 'Длина и высота композиции, материал фасадов, марка фурнитуры, тип столешницы, встроенная техника и сложность монтажа.'),
     },
     {
+        question: localized('Do you price kitchens by linear meter?', 'Računate li kuhinje po dužnom metru?', 'Считаете ли кухни по погонному метру?'),
+        answer: localized('A linear-meter range can help compare options, but the final estimate is project-based because height, fronts, worktop, hardware and installation change the number.', 'Dužni metar može pomoći za grubo poređenje, ali konačna procjena ide po projektu jer visina, frontovi, radna ploča, okovi i montaža mijenjaju cijenu.', 'Ориентир за погонный метр помогает сравнить варианты, но финальный расчёт идёт по проекту: высота, фасады, столешница, фурнитура и монтаж меняют сумму.'),
+    },
+    {
+        question: localized('Can you estimate wardrobes together with the kitchen?', 'Možete li procijeniti plakare zajedno sa kuhinjom?', 'Можно посчитать шкафы вместе с кухней?'),
+        answer: localized('Yes. Kitchen, built-in wardrobes, entry storage and TV wall can be estimated as one apartment furnishing package from the same workshop.', 'Da. Kuhinja, ugradni plakari, ulazno odlaganje i TV zid mogu se procijeniti kao jedan paket opremanja apartmana iz iste radionice.', 'Да. Кухню, встроенные шкафы, прихожую и ТВ-зону можно рассчитать одним пакетом меблировки из одного цеха.'),
+    },
+    {
         question: localized('Can you price a full apartment package?', 'Možete li procijeniti kompletan paket za apartman?', 'Можете рассчитать полный пакет на квартиру?'),
         answer: localized('Yes. Kitchens, wardrobes, entry storage, bathroom joinery and TV walls can be estimated as one package from the same workshop.', 'Da. Kuhinje, plakari, ulazno odlaganje, kupatilski elementi i TV zidovi mogu se procijeniti kao jedan paket iz iste radionice.', 'Да. Кухни, шкафы, прихожие, мебель для ванной и ТВ-зоны считаем одним пакетом из одного цеха.'),
     },

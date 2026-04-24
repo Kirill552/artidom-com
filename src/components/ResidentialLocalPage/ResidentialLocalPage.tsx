@@ -16,12 +16,12 @@ export default function ResidentialLocalPage({ page }: ResidentialLocalPageProps
                 <div className={styles.heroText}>
                     <span className={styles.label}>{page.label}</span>
                     <h1 className={styles.title}>{page.title}</h1>
-                    <p className={styles.intro}>{page.intro}</p>
+                    <p className={styles.intro} data-speakable>{page.intro}</p>
                 </div>
                 <div className={styles.heroImage}>
                     <Image
                         src={page.image}
-                        alt={page.title}
+                        alt={`${page.title} - ${page.label}`}
                         fill
                         className={styles.heroMedia}
                         sizes="(max-width: 900px) 100vw, 50vw"

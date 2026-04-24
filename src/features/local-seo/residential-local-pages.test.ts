@@ -27,6 +27,6 @@ test('resolved residential local page content keeps FAQ items', () => {
     assert.ok(page);
 
     const resolved = resolveResidentialLocalPage(page, 'sr');
-    assert.equal(resolved.faqs.length, 4);
+    assert.equal(resolved.faqs.length, 6);
     assert.match(resolved.metaTitle, /Cijena|Kuhinje/);
 });
