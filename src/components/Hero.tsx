@@ -28,16 +28,15 @@ export default function Hero() {
       </div>
       <div className={styles.visual}>
         <div className={styles.imageWrapper}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src="/images/projects/warm-minimal-apartment/hero.webp"
             alt={t('image_alt')}
+            fill
             className={styles.image}
+            sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 1024px) 70vw, 45vw"
+            quality={70}
             fetchPriority="high"
-            loading="eager"
-            decoding="async"
-            width={1200}
-            height={1600}
+            preload
           />
         </div>
         <div className={styles.floatingTag}>

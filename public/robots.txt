@@ -35,7 +35,3 @@ Disallow: /
 Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term
 
 Sitemap: https://artidom.art/sitemap.xml
-
-# LLM-specific files
-LLMs-txt: https://artidom.art/llms.txt
-LLMs-full-txt: https://artidom.art/llms-full.txt
