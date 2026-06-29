@@ -13,14 +13,14 @@
   "Index": {
     "title": "ARTIDOM | Kuhinje po mjeri i opremanje apartmana u Crnoj Gori",
     "meta": {
-      "title": "Izrada kuhinja po mjeri i namještaj u Crnoj Gori | ARTIDOM",
-      "description": "Izrada kuhinja po mjeri, plakara i ugradnog namještaja u Crnoj Gori. Radionica u Baru od 300 m². Proizvodnja 3-5 sedmica. Montaža širom primorja — Bar, Budva, Tivat, Kotor, Podgorica. Besplatna procjena."
+      "title": "Kuhinje po mjeri Bar Crna Gora | Namještaj po mjeri | ARTIDOM",
+      "description": "Kuhinje po mjeri Bar Crna Gora, namještaj po mjeri, plakari po mjeri i opremanje apartmana. Radionica u Zaljevu, Bar; mjerenje i montaža širom primorja."
     },
     "hero": {
       "label": "Radionica u Baru, Crna Gora",
       "tag": "Stanovi prvo. B2B po upitu.",
-      "title": "Kuhinje po mjeri i opremanje apartmana u Crnoj Gori",
-      "description": "ARTIDOM pravi kuhinje, plakare i ugradni namještaj za stanove, apartmane, vile i nekretnine za izdavanje u Crnoj Gori. Proizvodnja u radionici u Zaljevu, Bar. Mjerenje i montaža širom primorja i u Podgorici. Rok izrade 3–5 sedmica. Odabrani HoReCa i B2B projekti takođe.",
+      "title": "Kuhinje po mjeri i namještaj po mjeri u Baru",
+      "description": "ARTIDOM pravi kuhinje, plakare i ugradni namještaj za stanove, apartmane, vile i nekretnine za izdavanje u Crnoj Gori. Proizvodnja se vodi iz radionice u Zaljevu, Bar. Mjerenje i montaža širom primorja i u Podgorici. Odabrani HoReCa i B2B projekti takođe.",
       "cta": "Zatražite procjenu",
       "image_alt": "Topli minimalistički apartman ARTIDOM"
     },
@@ -61,13 +61,13 @@
       "step2": "Crteži i procjena",
       "step2_text": "Dizajner pravi 3D vizualizacije i tehničke crteže. Dobijate transparentnu ponudu bez skrivenih troškova.",
       "step3": "Proizvodnja",
-      "step3_text": "Namještaj se proizvodi u našoj radionici od 300 m² u Zaljevu, Bar — CNC rezanje i materijali evropskog kvaliteta.",
+      "step3_text": "Namještaj se proizvodi u našoj radionici u Zaljevu, Bar, prema potvrđenom projektu i materijalima.",
       "step4": "Isporuka i montaža",
-      "step4_text": "Dostavljamo i montiramo na lokaciji širom Crne Gore. Prosječni rok je 3–5 sedmica od odobrenja."
+      "step4_text": "Dostavljamo i montiramo na lokaciji širom Crne Gore. Rok zavisi od potvrđenog obima i materijala."
     },
     "cta": {
       "title": "Treba vam kuhinja, plakari ili kompletno opremanje apartmana?",
-      "subtitle": "Pošaljite osnovu, crteže ili kratak opis. Odgovaramo u roku od 24 sata.",
+      "subtitle": "Pošaljite osnovu, crteže ili kratak opis. Pregledaćemo obim i javiti se sa sljedećim korakom.",
       "name": "Vaše ime",
       "phone": "Broj telefona",
       "email": "Email",
@@ -77,14 +77,14 @@
     },
     "pricing": {
       "title": "Kako formiramo cijenu",
-      "text": "Svaki projekat se kalkuliše pojedinačno na osnovu veličine, materijala, složenosti završne obrade i broja jedinica. Nemamo fiksni cjenovnik — procjenu radimo nakon pregleda osnove ili opisa projekta. Tipična kuhinja po mjeri za apartman u Crnoj Gori kreće od srednjeg budžeta. Pošaljite plan za besplatnu procjenu u roku od 24 sata.",
-      "cta": "Zatražite besplatnu procjenu →"
+      "text": "Svaki projekat se kalkuliše pojedinačno na osnovu veličine, materijala, složenosti završne obrade i broja jedinica. Nemamo fiksni cjenovnik — procjenu radimo nakon pregleda osnove ili opisa projekta.",
+      "cta": "Zatražite procjenu →"
     }
   },
   "WorkshopProof": {
     "default": [
       "Kuhinje, plakari i ugradni namještaj iz Bara",
-      "CNC rezanje + ručna završna obrada",
+      "Radionička izrada + ručna završna obrada",
       "Mjerenje i montaža širom Crne Gore"
     ],
     "horeca": [
@@ -100,36 +100,36 @@
     "catalog": [
       "Izrada po osnovi prostora",
       "Materijali i finiši se biraju po projektu",
-      "Tipičan rok izrade 3-6 sedmica"
+      "Rok zavisi od obima projekta"
     ]
   },
   "Workshop": {
     "meta": {
-      "title": "Radionica za izrada namještaja po mjeri u Baru, Crna Gora | ARTIDOM",
-      "description": "Proizvodnja kuhinja po mjeri, plakara i stolarije u ARTIDOM radionici u Zaljevu, Bar. CNC rezanje, sklapanje, završna obrada. Radionica od 300 m²."
+      "title": "Radionica za izradu namještaja po mjeri u Baru, Crna Gora | ARTIDOM",
+      "description": "Proizvodnja kuhinja po mjeri, plakara i stolarije u ARTIDOM radionici u Zaljevu, Bar. Izrada po potvrđenom projektu, završna obrada i montaža."
     },
     "hero_label": "Zaljevo, Bar, Crna Gora",
     "hero_title": "Radionica za izradu namještaja po mjeri u Baru",
-    "intro_fact": "300 m² radionice.\nCNC mašine i lakirnica.\nProizvodnja u Baru za apartmane i odabrane B2B enterijere.",
-    "intro_text": "ARTIDOM je radionica za namještaj po mjeri u Zaljevu, Bar, Crna Gora. Proizvodimo kuhinje, plakare, TV zidove, pultove i druge elemente enterijera. CNC rezanje, sklapanje, završna obrada i pakovanje obavljamo u istom pogonu od 300 m². Uslužujemo vlasnike stanova i odabrane B2B klijente širom Crne Gore — Bar, Budva, Tivat i Podgorica.",
+    "intro_fact": "Radionica u Zaljevu, Bar.\nIzrada po potvrđenom projektu.\nProizvodnja za apartmane i odabrane B2B enterijere.",
+    "intro_text": "ARTIDOM je radionica za namještaj po mjeri u Zaljevu, Bar, Crna Gora. Proizvodimo kuhinje, plakare, TV zidove, pultove i druge elemente enterijera. Proizvodnja, završna obrada i koordinacija montaže vode se prema svakom potvrđenom projektu. Uslužujemo vlasnike stanova i odabrane B2B klijente širom Crne Gore — Bar, Budva, Tivat i Podgorica.",
     "steps_title": "Proizvodni proces",
     "step1_title": "Prijem materijala",
     "step1_text": "Ploče, furnir, okovi i radne ploče se pregledaju pri prijemu prije ulaska u proizvodnju.",
-    "step2_title": "CNC rezanje",
-    "step2_text": "Elementi se režu po projektnim crtežima sa ponovljivom preciznošću za kuhinje, plakare i pultove.",
+    "step2_title": "Proizvodnja",
+    "step2_text": "Elementi se pripremaju prema potvrđenim projektnim crtežima za kuhinje, plakare i pultove.",
     "step3_title": "Sklapanje i završna obrada",
     "step3_text": "Korpusi se sklapaju, kantuju i završno obrađuju u laku, furniru ili drugom traženom materijalu.",
     "step4_title": "Kontrola i pakovanje",
     "step4_text": "Svaka jedinica se provjerava, obilježava i priprema za isporuku na objekat ili eksportno pakovanje.",
     "materials_title": "Glavni materijali",
     "mat1_name": "Hrast / furnir",
-    "mat1_origin": "EU dobavljači",
+    "mat1_origin": "Izbor po projektu",
     "mat2_name": "Lakirani MDF",
     "mat2_origin": "Projektni finiši",
     "mat3_name": "Kompakt / kamene ploče",
-    "mat3_origin": "Odabrani projektni dobavljači",
+    "mat3_origin": "Izbor po projektu",
     "capacity_title": "Kapacitet",
-    "cap1": "300 m² proizvodne površine",
+    "cap1": "Radionica u Zaljevu, Bar",
     "cap2": "Apartmanski paketi i pojedinačni komadi po mjeri",
     "cap3": "Odabrani HoReCa / B2B enterijeri",
     "projects_link": "Pogledajte odabrane projekte →"
@@ -197,11 +197,11 @@
     "residential": {
       "meta": {
         "title": "Kuhinje po mjeri i opremanje apartmana za izdavanje u Crnoj Gori",
-        "description": "Kuhinje po mjeri, plakari, TV zidovi i ugradni namještaj za stanove, vile i apartmane za izdavanje. Pogon u Baru, montaža širom Crne Gore. Besplatna procjena."
+      "description": "Kuhinje po mjeri, plakari, TV zidovi i ugradni namještaj za stanove, vile i apartmane za izdavanje. Radionica u Baru, montaža širom Crne Gore. Procjena po projektu."
       },
       "label": "Stanovi i apartmani",
       "title": "Kuhinje po mjeri, plakari i opremanje apartmana",
-      "description": "Opremamo stanove, apartmane, vile i nekretnine za izdavanje u Crnoj Gori: kuhinje, plakare, ulazno odlaganje, TV zidove i kompaktna ugradna rješenja. Proizvodnja u radionici od 300 m² u Zaljevu (Bar), mjerenje i montaža širom zemlje. Prosječan rok izrade 3–5 sedmica.",
+      "description": "Opremamo stanove, apartmane, vile i nekretnine za izdavanje u Crnoj Gori: kuhinje, plakare, ulazno odlaganje, TV zidove i kompaktna ugradna rješenja. Proizvodnja se vodi iz radionice u Zaljevu (Bar), uz mjerenje i montažu širom zemlje.",
       "image_alt": "Apartmanska kuhinja i odlaganje ARTIDOM",
       "pain1": "Apartman traži kuhinju, plakare i odlaganje koji tačno staju u prostor",
       "sol1": "Radimo po realnoj osnovi, ne po standardnim modulima",
@@ -216,10 +216,10 @@
   "Contact": {
     "meta": {
       "title": "Kontakt — naručite namještaj po mjeri u Crnoj Gori",
-      "description": "Pošaljite osnovu ili opis projekta. Radionica u Baru. Besplatna procjena u roku od 24 sata. Cijena po veličini i materijalu."
+      "description": "Pošaljite osnovu ili opis projekta. Radionica u Baru. Svaki projekat se procjenjuje pojedinačno prema obimu i materijalima."
     },
     "title": "Recite nam o stambenom ili B2B projektu",
-    "subtitle": "Pošaljite osnovu, crteže ili kratak opis. Odgovaramo u roku od 24 sata.",
+    "subtitle": "Pošaljite osnovu, crteže ili kratak opis. Pregledaćemo obim i javiti se sa sljedećim korakom.",
     "name": "Vaše ime",
     "company": "Firma",
     "project_type": "Tip projekta",
@@ -233,7 +233,7 @@
     "phone_placeholder": "Broj telefona",
     "email_placeholder": "Email",
     "submit": "Pošalji →",
-    "success": "Poruka je primljena. Odgovorićemo u roku od 24 sata.",
+    "success": "Poruka je primljena. Odgovorićemo nakon pregleda detalja projekta.",
     "error_rate_limit": "Previše zahtjeva. Pokušajte ponovo kasnije.",
     "error_phone": "Unesite ispravan broj telefona.",
     "error_email": "Unesite ispravnu email adresu.",
@@ -245,7 +245,6 @@
     "location_label": "Adresa",
     "phone_label": "Telefon",
     "contacts": [
-      { "name": "Alena", "phone": "+382 68 247 350", "role": "artidom.art" },
       { "name": "Vladimir", "phone": "+382 68 282 371", "role": "Direktor" }
     ],
     "company_label": "Firma",
@@ -255,8 +254,8 @@
   },
   "Catalog": {
     "meta": {
-      "title": "Katalog namještaja po mjeri — kuhinje, plakari, stolarija | ARTIDOM",
-      "description": "Kuhinje po mjeri, plakari i ugradna stolarija za apartmane, vile i restorane u Crnoj Gori. Izrada po osnovi prostora u radionici u Baru. Besplatna procjena."
+      "title": "Katalog namještaja po mjeri — kuhinje i plakari | ARTIDOM",
+      "description": "Kuhinje po mjeri, plakari i ugradni namještaj za apartmane, vile i restorane u Crnoj Gori. Izrada po osnovi prostora u radionici u Baru. Procjena po projektu."
     },
     "title": "Kuhinje po mjeri, plakari i stolarija",
     "subtitle": "Početne tipologije za apartmane, vile i odabrane B2B enterijere. Svaki element radimo po vašoj osnovi u Baru, Crna Gora.",
@@ -283,8 +282,8 @@
   },
   "Projects": {
     "meta": {
-      "title": "Projekti namještaja po mjeri u Crnoj Gori",
-      "description": "Pogledajte završene kuhinje, plakare, ugradnu stolariju i HoReCa projekte iz ARTIDOM radionice u Baru, Budvi, Podgorici."
+      "title": "Slike kuhinja i namještaja po mjeri u Crnoj Gori",
+      "description": "Pogledajte slike završenih kuhinja po mjeri, plakara, ugradnog namještaja i HoReCa projekata iz ARTIDOM radionice u Baru, Budvi i Podgorici."
     },
     "title": "Odabrani projekti u Crnoj Gori",
     "subtitle": "Fokus je na stanovima i apartmanima: kuhinje, plakari, odlaganje i mali broj HoReCa / javnih enterijera iz naše radionice u Baru.",
@@ -301,7 +300,6 @@
     "address": "Zaljevo bb\n85000 Bar, Crna Gora",
     "email": "artidom96@gmail.com",
     "contacts": [
-      { "name": "Alena", "phone": "+382 68 247 350" },
       { "name": "Vladimir", "phone": "+382 68 282 371" }
     ],
     "nav_solutions": "Rješenja",
@@ -327,7 +325,7 @@
     "items": [
       {
         "question": "Koliko traje izrada kuhinje po mjeri?",
-        "answer": "3–5 sedmica od odobrenja crteža i materijala."
+        "answer": "Rok zavisi od potvrđenih crteža, materijala i obima projekta."
       },
       {
         "question": "Da li dostavljate van Bara?",
@@ -335,7 +333,7 @@
       },
       {
         "question": "Koje materijale koristite?",
-        "answer": "Hrast evropskog kvaliteta, furnir, lakirani MDF, kompakt HPL i kamene ploče. Blum/Hettich okovi."
+        "answer": "Materijali i okovi biraju se za svaki projekat nakon potvrde brifa, uslova prostora i željene završne obrade."
       },
       {
         "question": "Možete li opremiti cijeli apartman?",
@@ -343,7 +341,7 @@
       },
       {
         "question": "Koliko košta kuhinja po mjeri u Crnoj Gori?",
-        "answer": "Cijena zavisi od veličine, materijala i rasporeda. Pošaljite osnovu za besplatnu procjenu u roku od 24 sata."
+        "answer": "Cijena zavisi od veličine, materijala i rasporeda. Pošaljite osnovu ili mjere za pojedinačnu procjenu."
       },
       {
         "question": "Da li radite sa arhitektama i investitorima?",

@@ -56,11 +56,11 @@ export default async function WorkshopPage({ params }: { params: Promise<{ local
       },
     },
     step2: {
-      src: '/images/workshop/step-cnc-cutting.webp',
+      src: '/images/workshop/step-panel-prep.webp',
       alt: {
-        en: 'CNC panel cutting for custom kitchens and wardrobes, Bar workshop',
-        sr: 'CNC rezanje ploča za kuhinje i plakare po mjeri, radionica Bar',
-        ru: 'ЧПУ-раскрой плит для кухонь и шкафов на заказ в цехе ARTIDOM, Бар',
+        en: 'Panel preparation for custom kitchens and wardrobes, Bar workshop',
+        sr: 'Priprema ploča za kuhinje i plakare po mjeri, radionica Bar',
+        ru: 'Подготовка деталей для кухонь и шкафов на заказ в цехе ARTIDOM, Бар',
       },
     },
     step3: {

@@ -33,8 +33,6 @@ interface ProjectSchemaOptions {
     images: string[];
     path: string;
     locale: 'en' | 'sr' | 'ru';
-    sqm?: number;
-    units?: number;
 }
 
 interface ArticleSchemaOptions {
@@ -140,15 +138,6 @@ export function getServiceSchema({ title, description, areaServed, image, path, 
         provider: {
             '@id': businessId,
         },
-        offers: {
-            '@type': 'Offer',
-            url: `https://artidom.art/${locale}${path}`,
-            priceCurrency: 'EUR',
-            availability: 'https://schema.org/InStock',
-            seller: {
-                '@id': businessId,
-            },
-        },
     };
 }
 
@@ -173,22 +162,6 @@ export function getCatalogProductSchema(options: CatalogProductSchemaOptions) {
             { '@type': 'PropertyValue', name: 'Lead time', value: options.leadTime },
             { '@type': 'PropertyValue', name: 'Made in', value: 'Bar, Montenegro' },
         ],
-        offers: {
-            '@type': 'Offer',
-            url: `https://artidom.art/${options.locale}${options.path}`,
-            priceCurrency: 'EUR',
-            availability: 'https://schema.org/InStock',
-            seller: { '@id': businessId },
-            priceSpecification: {
-                '@type': 'PriceSpecification',
-                priceCurrency: 'EUR',
-                description: options.locale === 'ru'
-                    ? 'Цена рассчитывается по размерам, материалам и монтажу'
-                    : options.locale === 'sr'
-                        ? 'Cijena se procjenjuje prema dimenzijama, materijalima i montaži'
-                        : 'Price is estimated by dimensions, materials and installation scope',
-            },
-        },
     };
 }
 
@@ -214,10 +187,6 @@ export function getProjectCreativeWorkSchema(options: ProjectSchemaOptions) {
             'apartment furnishing Montenegro',
             'made-to-measure joinery',
         ],
-        additionalProperty: [
-            options.sqm ? { '@type': 'PropertyValue', name: 'Area', value: `${options.sqm} m2` } : null,
-            options.units ? { '@type': 'PropertyValue', name: 'Units', value: String(options.units) } : null,
-        ].filter(Boolean),
     };
 }
 

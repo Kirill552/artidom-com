@@ -47,10 +47,8 @@ export const getSchemaData = (locale: string) => {
     "@id": businessId,
     "url": "https://artidom.art",
     "email": "artidom96@gmail.com",
-    "telephone": "+38268247350",
+    "telephone": "+38268282371",
     "taxID": "03505464",
-    "currenciesAccepted": "EUR",
-    "paymentAccepted": "Cash, Bank transfer",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Zaljevo bb",
@@ -63,29 +61,13 @@ export const getSchemaData = (locale: string) => {
       "latitude": 42.0649384,
       "longitude": 19.1172821
     },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "18:00"
-    },
     "contactPoint": [
-      {
-        "@type": "ContactPoint",
-        "name": "Alena",
-        "contactType": "customer support",
-        "telephone": "+38268247350",
-        "email": "artidom96@gmail.com",
-        "areaServed": "ME",
-        "availableLanguage": ["sr", "en", "ru"]
-      },
       {
         "@type": "ContactPoint",
         "name": "Vladimir",
         "contactType": "sales",
         "telephone": "+38268282371",
+        "email": "artidom96@gmail.com",
         "areaServed": "ME",
         "availableLanguage": ["sr", "en", "ru"]
       }
@@ -132,16 +114,6 @@ export const getSchemaData = (locale: string) => {
         "name": "Cetinje"
       }
     ],
-    "serviceArea": {
-      "@type": "GeoCircle",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": 42.0649384,
-        "longitude": 19.1172821
-      },
-      "geoRadius": "150000"
-    },
-    "priceRange": "€€",
     "knowsAbout": serviceNames[localeKey],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -149,7 +121,6 @@ export const getSchemaData = (locale: string) => {
       "itemListElement": serviceNames[localeKey].map((name) => ({
         "@type": "Offer",
         "areaServed": "Montenegro",
-        "priceCurrency": "EUR",
         "itemOffered": {
           "@type": "Service",
           "name": name,

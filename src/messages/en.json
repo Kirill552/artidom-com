@@ -14,13 +14,13 @@
     "title": "ARTIDOM | Custom Kitchens & Apartment Furniture in Montenegro",
     "meta": {
       "title": "Custom Kitchens & Furniture in Montenegro",
-      "description": "Order custom kitchens, wardrobes and built-in furniture in Montenegro. 300 sqm workshop in Bar. Production 3-5 weeks. Installation across the coast — Bar, Budva, Tivat, Kotor, Podgorica. Free estimate."
+      "description": "Order custom kitchens, wardrobes and built-in furniture in Montenegro. Workshop in Zaljevo, Bar. Measurement, production and installation across the coast — Bar, Budva, Tivat, Kotor, Podgorica."
     },
     "hero": {
       "label": "Workshop in Bar, Montenegro",
       "tag": "Apartments first. B2B on request.",
       "title": "Custom kitchens and apartment furnishing in Montenegro",
-      "description": "ARTIDOM makes kitchens, wardrobes and built-in furniture for apartments, villas and rental properties in Montenegro. Production at our workshop in Zaljevo, Bar. Measurement and installation across the coast and Podgorica. Typical lead time 3–5 weeks. Selected HoReCa and B2B orders as well.",
+      "description": "ARTIDOM makes kitchens, wardrobes and built-in furniture for apartments, villas and rental properties in Montenegro. Production is coordinated from our workshop in Zaljevo, Bar. Measurement and installation across the coast and Podgorica. Selected HoReCa and B2B orders as well.",
       "cta": "Request estimate",
       "image_alt": "Warm minimal apartment by ARTIDOM"
     },
@@ -61,13 +61,13 @@
       "step2": "Drawings & estimate",
       "step2_text": "Our designer creates 3D renders and technical drawings. You receive a transparent cost estimate with no hidden fees.",
       "step3": "Production",
-      "step3_text": "Furniture is manufactured at our 300 m² workshop in Zaljevo, Bar using CNC cutting and European-grade materials.",
+      "step3_text": "Furniture is manufactured at our workshop in Zaljevo, Bar using project-approved materials.",
       "step4": "Delivery & install",
-      "step4_text": "We deliver and install everything on-site across Montenegro. Average lead time is 3–5 weeks from approval."
+      "step4_text": "We deliver and install everything on-site across Montenegro. Timing depends on the approved scope and materials."
     },
     "cta": {
       "title": "Need a kitchen, wardrobes or a furnishing package?",
-      "subtitle": "Send the floor plan, drawings or a short brief. We reply within 24 hours.",
+      "subtitle": "Send the floor plan, drawings or a short brief. We will review the scope and reply with the next step.",
       "name": "Your name",
       "phone": "Phone number",
       "email": "Email",
@@ -77,14 +77,14 @@
     },
     "pricing": {
       "title": "Pricing approach",
-      "text": "Every project is priced individually based on size, materials, finish complexity and number of units. There is no fixed price list — we estimate each order after reviewing the floor plan or brief. A typical apartment kitchen in Montenegro starts from a mid-range budget. Send your plan for a free estimate within 24 hours.",
-      "cta": "Get a free estimate →"
+      "text": "Every project is priced individually based on size, materials, finish complexity and number of units. There is no fixed price list — we estimate each order after reviewing the floor plan or brief. Send your plan for an individual estimate.",
+      "cta": "Request an estimate →"
     }
   },
   "WorkshopProof": {
     "default": [
       "Kitchens, wardrobes and built-ins made in Bar",
-      "CNC cutting + hand finishing",
+      "Workshop production + hand finishing",
       "Measurement and installation across Montenegro"
     ],
     "horeca": [
@@ -100,36 +100,36 @@
     "catalog": [
       "Built to your floor plan",
       "Materials and finishes selected to brief",
-      "Typical lead time 3-6 weeks"
+      "Timing depends on project scope"
     ]
   },
   "Workshop": {
     "meta": {
       "title": "Custom Furniture Workshop in Bar, Montenegro",
-      "description": "ARTIDOM is a custom furniture maker and carpentry workshop in Zaljevo, Bar, Montenegro. We manufacture kitchens, wardrobes and joinery — CNC cutting, assembly and finishing on a 300 sqm production floor. Carpenter services across the Montenegrin coast."
+      "description": "ARTIDOM is a custom furniture maker and carpentry workshop in Zaljevo, Bar, Montenegro. We manufacture kitchens, wardrobes and joinery for apartments, villas and selected B2B interiors across the Montenegrin coast."
     },
     "hero_label": "Zaljevo, Bar, Montenegro",
     "hero_title": "Custom furniture workshop in Bar",
-    "intro_fact": "300 sqm workshop.\nCNC machinery and finishing line.\nProduction in Bar for apartments and selected B2B interiors.",
-    "intro_text": "ARTIDOM is a custom furniture workshop in Zaljevo, Bar, Montenegro. We produce kitchens, wardrobes, TV walls, counters and other interior joinery. CNC cutting, assembly, finishing and packing happen in the same 300 m² facility. We serve apartment owners and selected B2B clients across Montenegro, including Bar, Budva, Tivat and Podgorica.",
+    "intro_fact": "Workshop in Zaljevo, Bar.\nFurniture made to the approved project.\nProduction for apartments and selected B2B interiors.",
+    "intro_text": "ARTIDOM is a custom furniture workshop in Zaljevo, Bar, Montenegro. We produce kitchens, wardrobes, TV walls, counters and other interior joinery. Production, finishing and installation coordination are handled around each approved project. We serve apartment owners and selected B2B clients across Montenegro, including Bar, Budva, Tivat and Podgorica.",
     "steps_title": "Production process",
     "step1_title": "Material intake",
     "step1_text": "Boards, veneer, fittings and stone tops are checked on arrival before they enter production.",
-    "step2_title": "CNC cutting",
-    "step2_text": "Panels are cut to the project drawings with repeatable tolerances for kitchens, wardrobes and counters.",
+    "step2_title": "Production",
+    "step2_text": "Elements are prepared according to the approved project drawings for kitchens, wardrobes and counters.",
     "step3_title": "Assembly & finishing",
     "step3_text": "Cabinets are assembled, edged and finished in lacquer, veneer or other specified materials.",
     "step4_title": "QC & packing",
     "step4_text": "Every unit is checked, labelled and prepared for site delivery or export packing.",
     "materials_title": "Primary materials",
     "mat1_name": "Oak / Veneer",
-    "mat1_origin": "EU suppliers",
+    "mat1_origin": "Selected per project",
     "mat2_name": "Lacquered MDF",
     "mat2_origin": "Project finish options",
     "mat3_name": "Compact / Stone Tops",
-    "mat3_origin": "Selected project suppliers",
+    "mat3_origin": "Selected per project",
     "capacity_title": "Capacity",
-    "cap1": "300 sqm production floor",
+    "cap1": "Workshop in Zaljevo, Bar",
     "cap2": "Apartment packages and single custom units",
     "cap3": "Selected HoReCa / B2B fit-outs",
     "projects_link": "See selected projects →"
@@ -149,7 +149,7 @@
       "title": "Restaurant, hotel and service counter joinery",
       "description": "A secondary direction for ARTIDOM: counters, branded fronts, room furniture and selected public interiors where the brief is already clear and technical.",
       "image_alt": "Custom HoReCa counter by ARTIDOM",
-      "pain1": "Brand needs custom front-of-house furniture, not off-the-shelf equipment",
+      "pain1": "Brand needs custom front-of-house furniture, not a ready-made solution",
       "sol1": "We build counters, fronts and back-of-house joinery to the concept and workflow",
       "pain2": "Openings and launch dates are fixed",
       "sol2": "Production is scheduled against your site programme and handover date",
@@ -201,7 +201,7 @@
       },
       "label": "Residential",
       "title": "Custom kitchens, wardrobes and apartment furnishing",
-      "description": "We furnish apartments, villas and rental properties in Montenegro: kitchens, wardrobes, entry storage, TV walls and compact built-in solutions. Production at our 300 m² workshop in Zaljevo (Bar), measurement and installation across the country. Typical lead time is 3–5 weeks.",
+      "description": "We furnish apartments, villas and rental properties in Montenegro: kitchens, wardrobes, entry storage, TV walls and compact built-in solutions. Production is coordinated from our workshop in Zaljevo (Bar), with measurement and installation across the country.",
       "image_alt": "Apartment kitchen and storage by ARTIDOM",
       "pain1": "Apartment needs a kitchen, wardrobes and storage that actually fit",
       "sol1": "We build to the real floor plan, not standard module sizes",
@@ -216,10 +216,10 @@
   "Contact": {
     "meta": {
       "title": "Contact — Custom Furniture in Montenegro",
-      "description": "Send your floor plan or project brief to ARTIDOM. Custom kitchens and furniture workshop in Bar, Montenegro. Free estimate within 24 hours."
+      "description": "Send your floor plan or project brief to ARTIDOM. Custom kitchens and furniture workshop in Bar, Montenegro. Every project is estimated individually."
     },
     "title": "Tell us about your apartment or B2B project",
-    "subtitle": "Send a floor plan, drawings or a short brief. We reply within 24 hours.",
+    "subtitle": "Send a floor plan, drawings or a short brief. We will review the scope and reply with the next step.",
     "name": "Your name",
     "company": "Company",
     "project_type": "Project type",
@@ -233,7 +233,7 @@
     "phone_placeholder": "Phone number",
     "email_placeholder": "Email",
     "submit": "Send →",
-    "success": "Message received. We will reply within 24 hours.",
+    "success": "Message received. We will reply after reviewing the project details.",
     "error_rate_limit": "Too many requests. Please try again later.",
     "error_phone": "Please enter a valid phone number.",
     "error_email": "Please enter a valid email address.",
@@ -245,7 +245,6 @@
     "location_label": "Address",
     "phone_label": "Phone",
     "contacts": [
-      { "name": "Alena", "phone": "+382 68 247 350", "role": "artidom.art" },
       { "name": "Vladimir", "phone": "+382 68 282 371", "role": "Director" }
     ],
     "company_label": "Company",
@@ -256,7 +255,7 @@
   "Catalog": {
     "meta": {
       "title": "Custom Kitchens, Wardrobes & Joinery in Montenegro",
-      "description": "Browse and order ARTIDOM custom kitchens, storage and joinery for apartments and villas in Montenegro. Each item built to your floor plan. Free estimate."
+      "description": "Browse and order ARTIDOM custom kitchens, storage and joinery for apartments and villas in Montenegro. Each item is built to your floor plan and estimated individually."
     },
     "title": "Custom kitchens, wardrobes and joinery",
     "subtitle": "Productised starting points for apartments, villas and selected B2B interiors. Each item is made to your floor plan in Bar, Montenegro.",
@@ -301,7 +300,6 @@
     "address": "Zaljevo bb\n85000 Bar, Montenegro",
     "email": "artidom96@gmail.com",
     "contacts": [
-      { "name": "Alena", "phone": "+382 68 247 350" },
       { "name": "Vladimir", "phone": "+382 68 282 371" }
     ],
     "nav_solutions": "Solutions",
@@ -327,7 +325,7 @@
     "items": [
       {
         "question": "How long does a custom kitchen take?",
-        "answer": "3–5 weeks from approval of drawings and materials."
+        "answer": "Timing depends on the approved drawings, materials and project scope."
       },
       {
         "question": "Do you deliver outside Bar?",
@@ -335,7 +333,7 @@
       },
       {
         "question": "What materials do you use?",
-        "answer": "European-grade oak, veneer, lacquered MDF, compact HPL and stone tops with Blum/Hettich fittings."
+        "answer": "Materials and fittings are selected for each project after the brief, room conditions and finish are confirmed."
       },
       {
         "question": "Can you furnish a whole apartment?",
@@ -343,7 +341,7 @@
       },
       {
         "question": "How much does a custom kitchen cost in Montenegro?",
-        "answer": "Price depends on size, materials and layout. Send a floor plan for a free estimate within 24 hours."
+        "answer": "Price depends on size, materials and layout. Send a floor plan or measured layout for an individual estimate."
       },
       {
         "question": "Do you work with architects and developers?",

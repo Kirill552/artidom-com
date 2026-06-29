@@ -4,7 +4,7 @@ slug: custom-kitchens-bar-montenegro
 tag: projects
 publishedAt: 2026-03-10
 seoTitle: "Custom Kitchens Bar Montenegro — ARTIDOM Workshop"
-seoDescription: "Custom kitchens in Bar, Montenegro: measurement to installation in 3-5 weeks. Workshop in Zaljevo, Bar, CNC processing, European materials. Free estimate."
+seoDescription: "Custom kitchens in Bar, Montenegro: measurement, drawings, production and installation. Workshop in Zaljevo, Bar. Every project is estimated individually."
 coverImage: /images/projects/warm-minimal-apartment/01.jpg
 ---
 
@@ -12,7 +12,7 @@ When you need a custom kitchen in Bar, you need a workshop that understands coas
 
 ## What "custom kitchen" means
 
-A custom kitchen means every element — cabinet, front, countertop, fittings — is made to your floor plan. No standard modules. If your niche is 287 cm, the kitchen is 287 cm. No gaps, no compromises.
+A custom kitchen means every element — cabinet, front, countertop, fittings — is made to your floor plan. We start from the real room geometry instead of forcing a standard module into the space.
 
 ## How the process works
 
@@ -20,27 +20,27 @@ A custom kitchen means every element — cabinet, front, countertop, fittings �
 We visit your location in Bar or the surrounding area. We survey the floor plan and discuss style, budget and timeline.
 
 **2. Drawings and estimate**
-We create a 3D visualization and technical drawings. You receive a transparent estimate — no hidden costs. Free, within 24 hours of receiving the floor plan.
+We create a 3D visualization and technical drawings. You receive a transparent estimate after we review the floor plan, materials and project scope.
 
 **3. Production**
-CNC panel cutting, cabinet assembly, lacquering or veneering — all in our 300 sqm workshop in Zaljevo, Bar. Lead time: 3-5 weeks from approval.
+Elements are produced, assembled and finished at our workshop in Zaljevo, Bar. Timing is confirmed after the project and materials are approved.
 
 **4. Delivery and installation**
-We deliver and install in Bar and across the coast: Budva, Tivat, Kotor, Herceg Novi. Installation is included in the price.
+We deliver and install in Bar and across the coast: Budva, Tivat, Kotor, Herceg Novi. Installation scope is included in the agreed specification.
 
 ## Materials we use
 
-- European-grade oak and veneer (EU suppliers)
-- Lacquered MDF (project finish options)
-- Compact HPL and stone countertops
-- Blum and Hettich fittings — soft-close, long-lasting
+- front and board materials selected for the project
+- finishes aligned with the room style
+- worktops selected for the way the kitchen will be used
+- fittings and mechanisms selected by scope and budget
 
 ## Why a workshop in Zaljevo, Bar
 
-Our own production means quality control from cutting to packing. No middlemen, no waiting for delivery from Serbia or Italy. All stages under one roof.
+Our own workshop means clearer project control, easier communication and one responsible team from measurement to installation.
 
 ## How much does a custom kitchen cost in Bar
 
-Price depends on: kitchen size, materials (MDF/oak/stone), project complexity, number of units. Each project is estimated individually. Send your floor plan — get an estimate within 24 hours.
+Price depends on kitchen size, materials, project complexity, number of units and installation scope. Each project is estimated individually after we review the floor plan and brief.
 
-For measurement and a free estimate, [contact us](/en/contact) or browse our [completed projects](/en/projects).
+For measurement and an individual estimate, [contact us](/en/contact) or browse our [completed projects](/en/projects).

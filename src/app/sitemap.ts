@@ -1,20 +1,12 @@
 import type { MetadataRoute } from 'next';
-import { appLocales, defaultLocale } from '@/i18n/locale-config';
+import { appLocales } from '@/i18n/locale-config';
 import { catalogItems } from '@/lib/catalog';
 import { projects } from '@/lib/projects';
 import { getPosts } from '@/lib/cms';
+import { buildSharedPathAlternates, buildSitemapAlternates } from '@/lib/seo/sitemap-alternates';
 
 const BASE_URL = 'https://artidom.art';
 const SEO_UPDATE_DATE = '2026-04-24';
-
-function localizedAlternates(path: string) {
-  return {
-    languages: {
-      ...Object.fromEntries(appLocales.map((locale) => [locale, `${BASE_URL}/${locale}${path}`])),
-      'x-default': `${BASE_URL}/${defaultLocale}${path}`,
-    },
-  };
-}
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const entries: MetadataRoute.Sitemap = [];
@@ -41,7 +33,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         lastModified: new Date(page.lastModified),
         changeFrequency: page.priority >= 0.8 ? 'weekly' : 'monthly',
         priority: page.priority,
-        alternates: localizedAlternates(page.path),
+        alternates: buildSharedPathAlternates(page.path),
       });
     }
   }
@@ -53,7 +45,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         lastModified: new Date('2026-03-15'),
         changeFrequency: 'weekly',
         priority: slug === 'cijena' ? 0.85 : 0.8,
-        alternates: localizedAlternates(`/solutions/residential/${slug}`),
+        alternates: buildSharedPathAlternates(`/solutions/residential/${slug}`),
       });
     }
   }
@@ -65,7 +57,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         lastModified: new Date('2026-03-15'),
         changeFrequency: 'monthly',
         priority: 0.7,
-        alternates: localizedAlternates(`/catalog/${item.slug}`),
+        alternates: buildSharedPathAlternates(`/catalog/${item.slug}`),
         images: item.images.map((image) => `${BASE_URL}${image}`),
       });
     }
@@ -78,7 +70,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         lastModified: new Date('2026-03-15'),
         changeFrequency: 'monthly',
         priority: 0.7,
-        alternates: localizedAlternates(`/projects/${project.slug}`),
+        alternates: buildSharedPathAlternates(`/projects/${project.slug}`),
         images: project.images.map((image) => `${BASE_URL}${image}`),
       });
     }
@@ -87,12 +79,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   for (const locale of appLocales) {
     const posts = await getPosts(locale);
     for (const post of posts) {
+      const path = `/blog/${post.slug}`;
+      const alternates = buildSitemapAlternates({ [locale]: path });
+
       entries.push({
-        url: `${BASE_URL}/${locale}/blog/${post.slug}`,
+        url: `${BASE_URL}/${locale}${path}`,
         lastModified: post.publishedAt ? new Date(post.publishedAt) : new Date('2026-03-08'),
         changeFrequency: 'monthly',
         priority: 0.6,
-        alternates: localizedAlternates(`/blog/${post.slug}`),
+        ...(alternates ? { alternates } : {}),
         images: post.coverImage ? [`${BASE_URL}${post.coverImage.url}`] : undefined,
       });
     }

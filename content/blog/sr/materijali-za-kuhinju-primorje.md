@@ -8,28 +8,28 @@ seoDescription: "Praktičan vodič za izbor radnih ploča, frontova i okova za k
 coverImage: "/images/workshop/mat-stone-tops.webp"
 ---
 
-Slani vazduh, ljetnja vlažnost iznad 80% i zimska kondenzacija na hladnim zidovima. Ako kupite stan na crnogorskom primorju i naručite kuhinju bez razmišljanja o ovim uslovima, očekujte natečene ivice, ljuštenje laminata i zarđale šarke u roku od dvije sezone.
+Slani vazduh, ljetnja vlažnost i zimska kondenzacija na hladnim zidovima brzo pokažu slabosti materijala. Ako kupite stan na crnogorskom primorju i naručite kuhinju bez razmišljanja o ovim uslovima, rizikujete natečene ivice, ljuštenje laminata i problematične šarke.
 
-Pravimo kuhinje u Baru i ugrađujemo ih od Ulcinja do Kotora. Evo šta smo naučili za 25 godina o materijalima koji opstaju — i onima koji ne opstaju.
+Pravimo kuhinje u Baru i ugrađujemo ih duž obale. Ovo su materijali i odluke koje najčešće razmatramo za primorske stanove.
 
 ## Radne ploče: kompakt laminat pobjeđuje sve
 
-Prirodni kamen izgleda lijepo, ali upija ulje i limunov sok. Jeftine postforming ploče se raslojavaju tamo gdje se voda zadržava kod sudopere. Kompakt laminat (12 mm HPL) podnosi vlagu, toplotu i grebanje bez posebnog održavanja. Koristimo ga na 80% projekata primorskih kuhinja — cijena je umjerena, a zamjena nakon 10+ godina je jednostavna.
+Prirodni kamen izgleda lijepo, ali traži pažljiviji izbor i održavanje. Jeftine postforming ploče mogu stradati tamo gdje se voda zadržava kod sudopere. Kompakt laminat i slične otporne radne ploče često su praktičnije za primorske stanove jer bolje podnose vlagu, toplotu i svakodnevno korišćenje.
 
 ## Frontovi: lakirani MDF ili puni laminat
 
-MDF obložen folijom je najjeftinija opcija i prva koja zakaže na primorju. PVC folija se podiže na uglovima kada vlažnost varira između 40% i 85%. Lakirani MDF sa pravilno zabrtvljenim ivicama dobro se drži. Za veće budžete, frontovi od punog laminata uopšte ne trebaju kantovanje — vlaga nema kuda da uđe.
+MDF obložen folijom može izgledati dobro na uzorku, ali na primorju treba pažljivo gledati ivice i način obrade. Lakirani MDF sa pravilno zaštićenim ivicama može biti bolji izbor. Za zahtjevnije projekte razmatraju se frontovi i ploče sa većom otpornošću na vlagu.
 
 ## Okovi: samo nehrđajući ili presvučeni
 
-Standardne cinkom prevučene šarke korodiraju za 18 mjeseci blizu mora. Mi specificiramo Blum ili Hettich šarke sa niklovanim ili nehrđajućim tijelima. Razlika u cijeni po kuhinji je oko 40–60 € — zanemarljivo u poređenju sa zamjenom kompletnog seta šarki kasnije.
+Okovi su posebno važni blizu mora. Biramo šarke, fioke i podizne mehanizme prema načinu korišćenja kuhinje i uslovima prostora. Kod apartmana za izdavanje vrijedi birati rješenja koja se lako podešavaju i servisiraju.
 
 ## Problem zadnjeg zida
 
-Mnoge kuhinje u novim crnogorskim zgradama stoje uz spoljašnje zidove sa lošom izolacijom. Kondenzacija se formira iza gornjih elemenata zimi. Ostavljamo 15 mm ventilacioni razmak i preporučujemo staklenu ili kompakt-laminatnu zidnu oblogu umjesto obojenog maltera koji će se upliješniti za jednu sezonu.
+Mnoge kuhinje u novim crnogorskim zgradama stoje uz spoljašnje zidove sa slabijom izolacijom. Kondenzacija se može formirati iza gornjih elemenata zimi. Zato već u projektu gledamo ventilaciju, oblogu zadnjeg zida i način montaže.
 
 ## Šta to znači za vaš budžet
 
-Kuhinja spremna za primorje košta otprilike 15–20% više od identičnog rasporeda sa osnovnim materijalima. Ta razlika se isplati tako što izbjegavate popravke u drugoj ili trećoj godini. Ako opremete stan za izdavanje, matematika je jednostavna — žalba gosta na natečena vratašca ormara košta više od nadogradnje.
+Kuhinja spremna za primorje nije samo pitanje skupljeg materijala. Važnije je da se frontovi, radna ploča, okovi i montaža izaberu kao jedan sistem. Ako opremate stan za izdavanje, bolje je unaprijed planirati površine koje se lako čiste i održavaju.
 
-Proizvodimo kuhinje u našoj radionici u Zaljevu, Bar i ugrađujemo duž obale. Ako želite da razgovaramo o materijalima za konkretan stan, pošaljite nam tlocrt — predložićemo raspored i ponudu u roku od nekoliko dana.
+Proizvodimo kuhinje u našoj radionici u Zaljevu, Bar i ugrađujemo duž obale. Ako želite da razgovaramo o materijalima za konkretan stan, pošaljite nam tlocrt — predložićemo sljedeći korak nakon pregleda prostora.

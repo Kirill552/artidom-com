@@ -4,48 +4,48 @@ slug: zasto-kuhinja-po-mjeri
 tag: industry
 publishedAt: 2026-03-26
 seoTitle: "Kuhinje po mjeri vs. gotove kuhinje — šta se isplati u Crnoj Gori"
-seoDescription: "Poredimo kuhinje po mjeri i gotove kuhinje za apartmane i stanove u Crnoj Gori. Praktične razlike u cijeni, trajnosti i prostoru. Iz radionice u Baru."
-coverImage: /images/workshop/step-cnc-cutting.webp
+seoDescription: "Poredimo kuhinje po mjeri i gotove kuhinje za apartmane i stanove u Crnoj Gori. Praktične razlike u prostoru, materijalima i procesu. Iz radionice u Baru."
+coverImage: /images/workshop/step-panel-prep.webp
 ---
 
 Gotova kuhinja iz salona košta manje i stiže brže. To je jedini argument u njenu korist. Sve ostalo ide na stranu izrade po mjeri — pogotovo ako živite na primorju ili opremite apartman za izdavanje.
 
-Radimo kuhinje po mjeri u Zaljevu, Bar već godinama. Evo šta vidimo kad nas pozovu da zamijenimo gotovu kuhinju nakon dvije-tri sezone.
+Radimo kuhinje po mjeri u Zaljevu, Bar. Evo šta najčešće vidimo kada klijenti žele zamijeniti gotovu kuhinju koja se nije uklopila u prostor ili uslove na primorju.
 
 ## Prostor: centimetri koje gotova kuhinja ne pokriva
 
-Stanovi na primorju Crne Gore rijetko imaju pravilan raspored. Niše su nestandardne, plafoni niski, cijevi prolaze na čudnim mjestima. Kuhinja iz IKEA-e ili sličnog salona dolazi u modulima od 60 cm. Ako vaš zid ima 247 cm, ostaje vam praznina od 7 cm koju ćete popuniti... ničim.
+Stanovi na primorju Crne Gore rijetko imaju pravilan raspored. Niše su nestandardne, plafoni niski, cijevi prolaze na čudnim mjestima. Gotova kuhinja iz salona dolazi u standardnim modulima i često ostavlja praznine koje se kasnije teško rješavaju.
 
-Kuhinja po mjeri ide milimetar po milimetar. Nemamo standardne module — svaki korpus je rezan prema vašem tlocrtu. Niša od 247 cm dobija kuhinju od 247 cm.
+Kuhinja po mjeri prati stvarnu geometriju prostora. Svaki korpus se planira prema vašem tlocrtu i mjerama, bez oslanjanja na gotov modul.
 
 To nije luksuz. To je zdrav razum kad radite sa prostorom koji vas ograničava.
 
 ## Materijali: šta traje na primorju
 
-Bar, Budva, Tivat — sve je blizu mora. Vlaga, so u vazduhu, temperaturne promjene. Gotove kuhinje su najčešće od iverice obložene melaminskom folijom. Folija se nakon godinu-dvije počne ljuštiti na ivicama, naročito oko sudopere i rerne.
+Bar, Budva, Tivat — sve je blizu mora. Vlaga, so u vazduhu, temperaturne promjene. Kod gotovih kuhinja problem često nastaje na ivicama, oko sudopere, rerne i mjesta gdje voda ostaje duže nego što bi trebalo.
 
-U radionici koristimo materijale koji podnose primorske uslove: MDF sa PVC kantom od 2 mm (zavarena, ne lijepljena), vodootporne radne ploče, okove koji ne hrđaju. Nisu skupi materijali — samo pravi za ovo podneblje.
+U radionici biramo materijale i završne obrade prema uslovima prostora. Za primorje je važno da ivice, radna ploča i okovi budu planirani za vlagu i svakodnevno korišćenje.
 
-Razlika se vidi tek nakon druge zime. Tada gotova kuhinja počinje da se raspada, a kuhinja po mjeri izgleda isto kao prvog dana.
+Razlika se obično vidi kroz svakodnevno korišćenje: vrata se bolje podešavaju, odlaganje ima smisla, a površine su odabrane za konkretne uslove.
 
-## Cijena: koliko zapravo plaćate
+## Procjena: šta zapravo ulazi u ponudu
 
-Gotova kuhinja od 2 metra u Podgorici košta 800-1.200 eura. Kuhinja po mjeri istih dimenzija u našoj radionici — od 1.400 eura. Razlika je 200-600 eura.
+Gotova kuhinja i kuhinja po mjeri ne porede se samo po početnoj cifri. Kod izrade po mjeri u obim ulaze stavke koje kod gotovih rješenja često ostanu za naknadni dogovor.
 
 Ali ta razlika uključuje:
-- mjerenje na licu mjesta (besplatno)
-- 3D projekat i tehničke crteže
+- mjerenje na licu mjesta
+- projektovanje i tehničke crteže
 - materijale prilagođene primorju
 - transport i montažu
 - garanciju na korpus i okove
 
-Gotova kuhinja dolazi u paketima. Montažu plaćate posebno — obično 150-250 eura. Ako treba prilagoditi cijevi, to je još 100-150. I ispadne da razlika nije 600 eura, nego 200-300. Za kuhinju koja traje duplo duže.
+Gotova kuhinja dolazi u paketima. Montaža, prilagođavanje cijevi, ispune i sitne korekcije često se rješavaju odvojeno. Zato je za realno poređenje važan kompletan obim, a ne samo početna cijena.
 
-## Rok: koliko čekate
+## Rok: šta utiče na čekanje
 
-Ovo je jedina kategorija gdje gotova kuhinja vodi. Kupite danas, sutra je kod vas.
+Gotova kuhinja je brža kada prostor odgovara standardnim modulima.
 
-Kuhinja po mjeri traži 3-5 sedmica od odobrenja crteža. Mjerenje i projekat — još sedmicu dana. Dakle, mjesec i po od prvog poziva do montirane kuhinje.
+Kuhinja po mjeri ide kroz mjerenje, crteže, potvrdu materijala, proizvodnju i montažu. Rok zavisi od obima, materijala i spremnosti prostora.
 
 Za nove stanove ili renovacije to nije problem — ionako čekate molerske radove ili pločice. Ali ako vam kuhinja treba hitno, gotova je brži izbor. To ne skrivamo.
 
@@ -53,7 +53,7 @@ Za nove stanove ili renovacije to nije problem — ionako čekate molerske radov
 
 Vlasnici apartmana u Crnoj Gori često biraju najjeftinije. Razumljivo — hoćete da vratite investiciju. Ali gosti primjećuju kvalitet. Fioke koje se zaglave, vrata koja ne zatvaraju do kraja, radna ploča koja se napuhla od vode.
 
-U apartmanu koji izdajete za 50-80 eura po noći, kuhinja po mjeri je investicija koja se vrati kroz bolje ocjene i manje popravke. Imamo vlasnike koji su zamijenili gotove kuhinje nakon dva ljeta — i tek tada naručili izradu po mjeri.
+U apartmanu za izdavanje kuhinja po mjeri često znači manje praznog prostora, bolje odlaganje i manje sitnih popravki. To direktno utiče na iskustvo gosta i održavanje stana.
 
 Bolje je odmah uraditi kako treba.
 
@@ -61,12 +61,12 @@ Bolje je odmah uraditi kako treba.
 
 Gotova kuhinja ima smisla ako:
 - trebate kuhinju sutra
-- prostor je standardan (moduli od 60 cm sjedaju bez praznina)
+- prostor je standardan i gotovi moduli sjedaju bez praznina
 - ne živite na primorju
 
 Kuhinja po mjeri je bolji izbor ako:
 - imate nestandardan prostor
 - živite blizu mora ili opremite apartman
-- želite da kuhinja traje 10+ godina bez zamjene
+- želite rješenje planirano za konkretan prostor i način korišćenja
 
-U radionici u Zaljevu (Bar) radimo besplatnu procjenu u roku od 24 sata od prijema tlocrta. Pošaljite osnovu prostora i dobićete projekat, materijale i cijenu — bez obaveze.
+U radionici u Zaljevu (Bar) radimo procjenu nakon pregleda tlocrta, fotografija i željenog obima. Pošaljite osnovu prostora i dobićete prijedlog sljedećeg koraka.

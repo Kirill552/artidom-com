@@ -74,14 +74,14 @@ export const catalogItems: CatalogItem[] = [
         category: 'kitchens',
         name: localized('Custom Apartment Kitchen', 'Kuhinja po mjeri za apartman', 'Кухня на заказ для квартиры'),
         material: localized('Lacquered MDF + compact worktop', 'Lakirani MDF + kompakt radna ploča', 'Лакированный МДФ + столешница из компакта'),
-        origin: localized('EU boards and fittings', 'EU pločasti materijal i okovi', 'Европейские плиты и фурнитура'),
+        origin: localized('Project-selected boards and fittings', 'Pločasti materijal i okovi po projektu', 'Плиты и фурнитура под проект'),
         dimensions: localized('Made to the floor plan', 'Po osnovi prostora', 'По плану помещения'),
         finishOptions: [
             localized('Graphite matte', 'Grafit mat', 'Графит матовый'),
             localized('Warm oak', 'Topli hrast', 'Тёплый дуб'),
             localized('Stone-look worktop', 'Radna ploča sa izgledom kamena', 'Столешница под камень'),
         ],
-        leadTime: localized('4-6 weeks', '4-6 sedmica', '4–6 недель'),
+        leadTime: localized('Estimated after project review', 'Rok se procjenjuje nakon pregleda projekta', 'Срок оценивается после разбора проекта'),
         coverImage: '/images/projects/beige-apartment-kitchen/01.jpg',
         images: [
             '/images/projects/beige-apartment-kitchen/01.jpg',
@@ -102,14 +102,14 @@ export const catalogItems: CatalogItem[] = [
         category: 'kitchens',
         name: localized('Warm Oak Kitchen Wall', 'Kuhinjski zid u toplom hrastu', 'Кухонная стенка в тёплом дубе'),
         material: localized('Oak veneer + lacquered MDF', 'Hrastov furnir + lakirani MDF', 'Шпон дуба + лакированный МДФ'),
-        origin: localized('Bar workshop + EU suppliers', 'Radionica Bar + EU dobavljači', 'Цех в Баре + европейские поставщики'),
+        origin: localized('Bar workshop + project-selected materials', 'Radionica Bar + materijali po projektu', 'Цех в Баре + материалы под проект'),
         dimensions: localized('Made to the apartment layout', 'Po rasporedu apartmana', 'По планировке квартиры'),
         finishOptions: [
             localized('Natural oak', 'Prirodni hrast', 'Натуральный дуб'),
             localized('Soft beige lacquer', 'Nježna bež lak obrada', 'Мягкий бежевый лак'),
             localized('Integrated LED details', 'Integrisana LED rasvjeta', 'Встроенная LED-подсветка'),
         ],
-        leadTime: localized('4-6 weeks', '4-6 sedmica', '4–6 недель'),
+        leadTime: localized('Estimated after project review', 'Rok se procjenjuje nakon pregleda projekta', 'Срок оценивается после разбора проекта'),
         coverImage: '/images/projects/bar-counter-kitchen/01.jpg',
         images: [
             '/images/projects/bar-counter-kitchen/01.jpg',
@@ -136,7 +136,7 @@ export const catalogItems: CatalogItem[] = [
             localized('Oak veneer', 'Hrastov furnir', 'Шпон дуба'),
             localized('Hidden handles', 'Skriveni rukohvati', 'Скрытые ручки'),
         ],
-        leadTime: localized('3-5 weeks', '3-5 sedmica', '3–5 недель'),
+        leadTime: localized('Estimated after project review', 'Rok se procjenjuje nakon pregleda projekta', 'Срок оценивается после разбора проекта'),
         coverImage: '/images/projects/display-wardrobe/01.jpg',
         images: [
             '/images/projects/display-wardrobe/01.jpg',
@@ -162,7 +162,7 @@ export const catalogItems: CatalogItem[] = [
             localized('Bench niche', 'Niša sa klupom', 'Ниша с банкеткой'),
             localized('Utility tall cabinet', 'Visoki servisni ormar', 'Высокий хозяйственный шкаф'),
         ],
-        leadTime: localized('3-5 weeks', '3-5 sedmica', '3–5 недель'),
+        leadTime: localized('Estimated after project review', 'Rok se procjenjuje nakon pregleda projekta', 'Срок оценивается после разбора проекта'),
         coverImage: '/images/projects/hallway-wardrobe/01.jpg',
         images: [
             '/images/projects/hallway-wardrobe/01.jpg',
@@ -188,7 +188,7 @@ export const catalogItems: CatalogItem[] = [
             localized('Stone or compact top', 'Kamena ili kompakt ploča', 'Каменная или компакт-столешница'),
             localized('Integrated back counter', 'Integrisani radni pult iza fronta', 'Встроенная рабочая зона за стойкой'),
         ],
-        leadTime: localized('5-7 weeks', '5-7 sedmica', '5–7 недель'),
+        leadTime: localized('Estimated after project review', 'Rok se procjenjuje nakon pregleda projekta', 'Срок оценивается после разбора проекта'),
         coverImage: '/images/projects/horeca-counters/01.webp',
         images: [
             '/images/projects/horeca-counters/01.webp',

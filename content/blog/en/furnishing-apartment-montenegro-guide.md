@@ -4,128 +4,106 @@ slug: furnishing-apartment-montenegro-guide
 tag: industry
 publishedAt: "2026-03-17"
 seoTitle: "Furnishing Your Apartment in Montenegro — Guide 2026"
-seoDescription: "How to furnish an apartment in Montenegro: find a carpenter, choose materials, budget 3000-15000 EUR. Workshop in Bar, installation across the coast."
+seoDescription: "How to furnish an apartment in Montenegro: find a workshop, choose coastal materials, prepare measurements, approve drawings and plan installation."
 coverImage: "/images/projects/compact-apartment/04.jpg"
 ---
 
-Furnishing an apartment in Montenegro typically costs between €3,000 and €15,000 depending on apartment size, material choices and whether you go custom or flat-pack. If you have just bought a place in Bar, Budva or Tivat and need it liveable — for yourself or for rental — this guide covers the practical steps: finding a furniture maker, understanding what materials work on the coast, realistic timelines, and where the money actually goes.
+If you have bought an apartment in Montenegro, start with the floor plan before you start shopping. Coastal apartments often have irregular walls, awkward service points and spaces where standard furniture leaves gaps. Ready-made furniture works for loose items, but kitchens, wardrobes and built-in storage usually need to be made to the actual room.
+
+This guide covers the practical sequence: what to measure, how to choose a workshop, what materials work on the coast and how to keep the project clear until installation.
 
 ## Why furnishing in Montenegro is different from back home
 
-If you are coming from the UK, Scandinavia or North America, three things will surprise you.
+**There is no local IKEA.** You can import flat-pack furniture, but transport, damaged boxes and missing parts often turn a simple order into a long process.
 
-**There is no IKEA.** The nearest IKEA is in Belgrade — a 7-hour drive from the coast. You can order online and arrange transport, but delivery to Montenegro is expensive and unreliable. Most expats try it once, deal with damaged boxes and missing parts, and then look for local options.
+**Apartments are often handed over empty.** A new apartment may include a bathroom and electrical points, but no kitchen, no wardrobes and no storage.
 
-**Apartments come empty.** Not "unfurnished" in the Western European sense where you at least get a kitchen. In Montenegro, new-build apartments are often handed over with bare walls, a bathroom and electrical outlets. No kitchen, no wardrobes, no shelving. You are starting from zero.
-
-**Standard sizes rarely fit.** Montenegrin apartments — especially in older buildings along the coast — have non-standard room dimensions, pipes in unexpected places and ceiling heights that vary by 3-5 cm across a single room. Flat-pack furniture from a catalogue leaves gaps. Custom furniture uses every centimetre.
+**Standard sizes rarely fit.** Pipes, niches, ceiling height and wall angles vary more than many owners expect. Custom furniture uses the real measurements instead of forcing a catalogue module into the space.
 
 ## How to find a furniture maker in Montenegro
 
-This is the part most expats struggle with. Here is what actually works:
+**Check for a physical workshop.** Anyone can call themselves a carpenter. A workshop with its own production is easier to visit, verify and hold accountable. Local workshops like [ARTIDOM in Bar](https://artidom.art/en) let clients see the production process.
 
-**Ask other expats.** Facebook groups like "Expats in Montenegro" and "Montenegro Real Estate" are full of recommendations and warnings. Search the group before posting — the question has been asked before.
+**Ask for installed photos.** Renders are useful, but finished kitchens and wardrobes show the real level of work.
 
-**Check for a physical workshop.** Anyone can call themselves a carpenter in Montenegro. The difference between a one-man operation working from a garage and a proper workshop with CNC equipment and a team is enormous — in quality, timelines and accountability. Ask to visit the workshop before committing. Local workshops like [ARTIDOM in Bar](https://artidom.art/en) have their own production facility where you can see the process firsthand.
+**Clarify the language situation.** Confirm who speaks English, who measures the apartment and who manages the installation.
 
-**Ask for references and photos.** A good furniture maker will have photos of completed kitchens, wardrobes and full apartment fits. Not 3D renders — actual photos of installed furniture. If they only show renders, they are probably outsourcing production.
+**Get a written estimate.** Ask for a clear scope: materials, fittings, worktops, installation and what is not included. A written specification prevents misunderstandings later.
 
-**Clarify the language situation upfront.** Many workshops on the coast speak Serbian or Montenegrin only. Some have English-speaking staff, others expect you to bring a translator. Clarify this before the first meeting to avoid misunderstandings about specifications, materials and deadlines.
+## Custom furniture vs. ready-made furniture
 
-**Get a written estimate.** Verbal agreements are common in Montenegro. Insist on a written breakdown with itemised costs, materials specified by name (not "white laminate" but "Egger W1100 ST9" or equivalent), and a timeline with a start and completion date.
+**Ready-made furniture** is useful for beds, sofas, dining tables and simple storage when the room is straightforward.
 
-## Custom furniture vs. buying ready-made
+**Custom furniture** makes sense for kitchens, built-in wardrobes, entry storage, bathroom furniture and TV walls. A workshop measures the walls, prepares drawings and produces furniture for the actual space.
 
-Both approaches work. The choice depends on your apartment and budget.
-
-**Ready-made furniture** works when your rooms have standard dimensions and you need basics quickly. Shops in Podgorica (Forma Ideale, Lesnina) and smaller stores in Bar and Budva carry beds, sofas, dining tables and some modular storage. Expect delivery in 1-2 weeks for in-stock items. Quality ranges from disposable to decent.
-
-**Custom furniture** makes sense when you need a kitchen (almost always custom on the coast), built-in wardrobes, or anything that fits a non-standard space. A bespoke furniture workshop will measure your walls, produce drawings, and build to exact dimensions. Lead time is typically 3-5 weeks from approval, sometimes longer if you pick materials that need to be imported.
-
-Most expats end up with a mix: custom kitchen and wardrobes, ready-made beds and sofas.
+Most apartment owners use both: custom kitchen and wardrobes, ready-made loose furniture.
 
 ## Materials available on the coast
 
-Material choice drives both cost and durability. Here is what you will encounter:
+Material choice affects both durability and maintenance:
 
-**MDF with lacquer or laminate** — the standard for kitchen fronts and wardrobe doors. Lacquered MDF with sealed edges holds up well in coastal humidity. Film-wrapped MDF (PVC foil) is cheaper but peels in 2-3 seasons near the sea. Avoid it.
+**MDF with lacquer or laminate** is common for fronts and wardrobe doors. Proper edge sealing matters near the sea.
 
-**European oak** — available as solid wood or veneer on MDF. A popular choice for visible shelving, table tops and feature pieces. Oak from EU suppliers is readily available through Montenegrin workshops. Solid oak is heavy and expensive; veneered panels give the same look at lower cost.
+**Wood veneer or solid wood** gives a warmer look but needs the right finish and care.
 
-**Compact HPL (High-Pressure Laminate)** — the practical choice for kitchen worktops on the coast. Handles moisture, heat and scratching. Better than granite (which absorbs oil) and far better than cheap post-formed tops (which swell near sinks).
+**More resistant worktops** are discussed when moisture and daily wear matter.
 
-**Blum and Hettich hardware** — the two brands you want for hinges, drawer runners and lift mechanisms. Both are Austrian/German, widely available in Montenegro, and last 15+ years without maintenance. The soft-close action is worth the small premium over generic Chinese hardware. Budget around €40-60 extra per kitchen for quality fittings — it saves a full hinge replacement in two years.
+**Fittings and mechanisms** are selected by use case, front weight and room conditions.
 
-## What a typical apartment furnishing costs
+## What affects the estimate
 
-Here is a realistic breakdown for a two-bedroom apartment (55-70 m2) on the Montenegrin coast, using mid-range materials and custom production:
+There is no useful fixed price list for made-to-measure furniture. The estimate depends on:
 
-| Item | Budget range (EUR) | Notes |
-|------|-------------------|-------|
-| Kitchen (L-shaped, 3-4 m) | €2,500 - €5,500 | With worktop, sink, fittings. Appliances separate |
-| Bedroom wardrobes (2 rooms) | €1,200 - €2,800 | Built-in, floor to ceiling |
-| Entry storage / hallway | €400 - €800 | Shoe cabinet + coat hooks + shelf |
-| Bathroom vanity | €300 - €700 | Wall-mounted, with basin |
-| Living room shelving / TV unit | €400 - €1,200 | Depends on complexity |
-| Beds + mattresses (ready-made) | €600 - €1,500 | Good mattress matters more than the frame |
-| Sofa (ready-made) | €400 - €1,200 | From Podgorica shops |
-| Dining table + chairs | €300 - €800 | Custom or ready-made |
-| Delivery + installation | Often included | Some workshops include this in the quote |
-| **Total** | **€6,100 - €14,500** | Varies by material and complexity |
+- room measurements and wall condition;
+- number of cabinets, drawers and internal sections;
+- front material and finish;
+- worktop material;
+- hardware and opening mechanisms;
+- appliance integration;
+- delivery, access and installation scope;
+- whether the apartment is ready for installation.
 
-For a studio (30-40 m2), expect €3,000-€7,000. For a premium finish with European oak fronts, stone worktops and designer fittings, add 40-60% on top.
+Send a floor plan, photos, preferred style and appliance list. If you do not have exact measurements yet, a sketch and photos are enough for the first conversation.
 
-**Appliances are separate.** A basic set — hob, oven, extractor, fridge, washing machine — runs €1,500-€3,500. Buy from local shops in Bar or Podgorica for warranty service. Bosch, Gorenje and Beko are widely available and serviced locally.
+## Timeline and process
 
-## Timelines: what to expect
+1. **Initial brief** — floor plan, photos, style and required items.
+2. **Measurement** — the workshop checks walls, services, levels and access.
+3. **Drawings and 3D layout** — you approve the arrangement before production.
+4. **Material confirmation** — fronts, worktop, hardware and appliances are locked in.
+5. **Production** — furniture is made in the workshop.
+6. **Delivery and installation** — fitting, adjustment and final checks on site.
 
-Here is a realistic timeline for furnishing an apartment from scratch:
-
-- **Week 1:** Measurement visit, brief discussion, material selection
-- **Week 2:** Drawings, 3D layout, estimate approval
-- **Weeks 3-7:** Production (3-5 weeks depending on complexity and workshop workload)
-- **Week 7-8:** Delivery and installation (1-2 days for a full apartment)
-
-**Total: 6-8 weeks from first contact to move-in.** This assumes you make decisions quickly. If you go back and forth on materials or layout for two weeks, add that to the timeline.
-
-Summer is the busiest season — workshops are overloaded with rental-apartment refits before tourist season. If you can schedule production for October-March, you will likely get faster delivery and sometimes better prices.
+The timeline depends on scope, material availability and how quickly drawings and finishes are approved.
 
 ## How to manage the process remotely
 
-Many expats buy in Montenegro but live elsewhere for most of the year. Remote furnishing is common and workable, but you need to set it up right.
+Many owners buy in Montenegro but live elsewhere. Remote furnishing can work if the brief is written clearly.
 
-**Do the measurement visit in person if possible.** Fly in for a weekend, meet the workshop, walk through the apartment together, discuss what you want. This single visit prevents most misunderstandings.
+**Use photos and marked-up plans.** Show every wall, service point, window and niche.
 
-**Communicate in writing.** After the in-person meeting, handle everything through email or messaging with photos and drawings. Avoid phone calls for technical details — things get lost in translation, literally.
+**Approve drawings carefully.** Check door swings, handle positions, appliance dimensions and worktop details before production.
 
-**Approve drawings carefully.** A proper workshop will send you dimensioned drawings or 3D renders before production. Check every measurement, every door opening direction, every handle position. Changes are free on paper. Changes after production are expensive.
-
-**Arrange a local contact.** Have someone — a friend, rental manager or property agent — who can be present for delivery and installation. They can check the work, sign off and handle any immediate adjustments.
+**Arrange a local contact.** A property manager, friend or agent can be present for installation and immediate decisions.
 
 ## Frequently asked questions
 
 ### Can I bring furniture from abroad?
 
-You can, but import logistics are painful. Customs clearance at the port of Bar adds 1-3 weeks and costs vary. VAT is 21%. For most items, buying or building locally is cheaper and faster than shipping from IKEA Sweden or a UK warehouse.
+You can, but import logistics, customs, damaged packaging and lack of local service can make it harder than expected. Built-in furniture is usually easier to produce locally.
 
 ### How do I pay a furniture maker in Montenegro?
 
-Bank transfer to a company account is standard. Some workshops accept cash, but always get an invoice (faktura) — you need it for any warranty claims. Typical payment structure: 50% deposit at order confirmation, 50% on delivery and installation. Some workshops offer 30/40/30 splits for larger projects.
+Bank transfer to a company account is standard. Always ask for an invoice and written scope so warranty questions are clear.
 
 ### What if something is wrong after installation?
 
-A reputable workshop will come back and fix issues at no charge. This is normal and expected. Ask about the warranty period upfront — 2 years on production, 5+ years on Blum/Hettich hardware is standard. Get this in writing.
-
-### Is it cheaper to furnish in Serbia and transport to Montenegro?
-
-Sometimes, but not by much after you factor in transport costs (€300-600 for a truck from Belgrade to the coast) and the risk of damage. Serbian workshops like those in Novi Sad and Belgrade are competitive on price, but you lose the advantage of a local team that can measure, install and service the furniture. For kitchens and built-ins, local production almost always makes more sense.
+A reputable workshop should return for adjustments. Clarify the warranty and service process before production starts.
 
 ### Do I need a designer or can I work directly with the workshop?
 
-For a standard apartment, you can work directly with the workshop. Good furniture makers will suggest layouts based on hundreds of similar apartments they have done. If you have a larger property, unusual requirements or a specific aesthetic vision, an interior designer can help — but they add €1,000-€3,000 to the project and 2-4 weeks to the timeline.
+For a standard apartment, you can usually work directly with the workshop. For a larger property or a specific interior concept, an interior designer may help coordinate the full look.
 
 ## Next steps
 
-If you have an apartment on the Montenegrin coast and need it furnished, start with the floor plan. Most workshops can give you an estimate from a floor plan with photos, even before an in-person visit.
-
-Browse our [catalog](/en/catalog) to see the types of kitchens, wardrobes and storage solutions we produce. Visit the [workshop page](/en/workshop) to learn about our production facility in Bar. Or [get in touch](/en/contact) with your floor plan and photos — we will reply with a layout suggestion and estimate within a few days.
+If you have an apartment on the Montenegrin coast and need it furnished, start with the floor plan and photos. Browse our [catalog](/en/catalog), visit the [workshop page](/en/workshop), or [get in touch](/en/contact) with your brief.

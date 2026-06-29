@@ -8,28 +8,28 @@ seoDescription: "Practical guide to choosing kitchen worktops, fronts and hardwa
 coverImage: "/images/workshop/mat-stone-tops.webp"
 ---
 
-Salt air, summer humidity above 80%, and winter condensation on cold walls. If you buy an apartment on the Montenegrin coast and order a kitchen without thinking about these conditions, expect swollen edges, peeling laminate and rusty hinges within two seasons.
+Salt air, summer humidity and winter condensation on cold walls quickly reveal weak material choices. If you buy an apartment on the Montenegrin coast and order a kitchen without thinking about these conditions, you risk swollen edges, peeling laminate and problematic hardware.
 
-We build kitchens in Bar and install them from Ulcinj to Kotor. Here is what we have learned over 25 years about materials that survive — and those that don't.
+We build kitchens in Bar and install them along the coast. These are the material choices we most often discuss for coastal apartments.
 
 ## Worktops: compact laminate beats everything
 
-Natural stone looks beautiful but absorbs oil and lemon juice. Cheap post-formed tops delaminate where water pools near the sink. Compact laminate (12 mm HPL) handles moisture, heat and scratching without special care. We use it on 80% of coastal kitchen projects — the cost is moderate, and replacement after 10+ years is straightforward.
+Natural stone looks beautiful but needs careful selection and maintenance. Cheap post-formed tops can fail where water pools near the sink. Compact laminate and similar resistant worktops are often more practical for coastal apartments because they handle moisture, heat and daily use better.
 
 ## Fronts: lacquered MDF or solid laminate
 
-Film-wrapped MDF is the cheapest option and the first to fail on the coast. The PVC film lifts at corners when humidity swings between 40% and 85%. Lacquered MDF with proper edge sealing holds up well. For higher budgets, solid-colour laminate fronts need no edge banding at all — moisture has nowhere to enter.
+Film-wrapped MDF can look good on a sample, but on the coast the edge quality and finish matter more. Lacquered MDF with protected edges can be a better choice. For more demanding projects, we discuss fronts and panels with stronger moisture resistance.
 
 ## Hardware: only stainless or coated
 
-Standard zinc-plated hinges corrode in 18 months near the sea. We spec Blum or Hettich hinges with nickel-plated or stainless bodies. The price difference per kitchen is around €40–60 — negligible compared to replacing a full set of hinges later.
+Hardware matters near the sea. Hinges, drawers and lift systems should be selected for the way the kitchen will be used and for the room conditions. Rental apartments usually benefit from fittings that are easy to adjust and service.
 
 ## The back wall problem
 
-Many kitchens in new Montenegrin buildings sit against exterior walls with poor insulation. Condensation forms behind upper cabinets in winter. We leave a 15 mm ventilation gap and recommend a glass or compact-laminate backsplash instead of painted plaster that will mould within one season.
+Many kitchens in new Montenegrin buildings sit against exterior walls with weaker insulation. Condensation can form behind upper cabinets in winter. That is why ventilation, backsplash material and installation details should be discussed during the project stage.
 
 ## What this means for your budget
 
-A coastal-ready kitchen costs roughly 15–20% more than an identical layout using basic materials. That premium pays for itself by avoiding repairs in year two or three. If you are furnishing an apartment for rental, the math is simple — a guest complaint about a swollen cabinet door costs more than the upgrade.
+A coastal-ready kitchen is not just about choosing more expensive materials. The fronts, worktop, hardware and installation should work as one system. If you are furnishing a rental apartment, plan surfaces that are easy to clean and maintain from the start.
 
-We produce kitchens in our workshop in Zaljevo, Bar and install across the coast. If you want to discuss materials for a specific apartment, send us the floor plan — we will suggest a layout and quote within a few days.
+We produce kitchens in our workshop in Zaljevo, Bar and install across the coast. If you want to discuss materials for a specific apartment, send us the floor plan — we will suggest the next step after reviewing the space.

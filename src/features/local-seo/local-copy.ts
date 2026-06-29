@@ -41,7 +41,7 @@ const residentialLinks: LocalSeoLinkCard[] = [
     },
     {
         slug: 'cijena',
-        title: localized('Pricing & lead time', 'Cijena i rokovi', 'Цены и сроки'),
+        title: localized('Estimate & timing', 'Procjena i rokovi', 'Расчёт и сроки'),
         description: localized('What affects the price of a custom kitchen, wardrobe or apartment package in Montenegro.', 'Šta utiče na cijenu kuhinje po mjeri, plakara ili kompletnog paketa za apartman u Crnoj Gori.', 'Что влияет на стоимость кухни на заказ, шкафов или пакета меблировки в Черногории.'),
     },
 ];
@@ -59,8 +59,8 @@ const residentialFaqSection: FAQSectionContent = {
             answer: localized('Yes. The workshop is in Zaljevo, Bar, and we organise measurement, delivery and installation across Bar, Budva, Podgorica and nearby locations.', 'Da. Radionica je u Zaljevu, Bar, a mjerenje, isporuku i montažu organizujemo za Bar, Budvu, Podgoricu i okolinu.', 'Да. Цех в Залево (Бар), а замер, доставку и монтаж организуем в Баре, Будве, Подгорице и окрестностях.'),
         },
         {
-            question: localized('What is the usual lead time for apartment furnishing?', 'Koliki je tipičan rok za opremanje apartmana?', 'Какой средний срок меблировки квартиры?'),
-            answer: localized('Most apartment packages land in the 3-6 week range after measurements and material confirmation. Larger or more custom packages can take longer.', 'Većina apartmanskih paketa je u rasponu 3-6 sedmica nakon mjerenja i potvrde materijala. Veći ili složeniji paketi mogu tražiti više vremena.', 'Большинство квартирных пакетов укладывается в 3–6 недель после замера и согласования материалов. Сложные проекты могут занять больше.'),
+            question: localized('What affects timing for apartment furnishing?', 'Šta utiče na rok opremanja apartmana?', 'Что влияет на срок меблировки квартиры?'),
+            answer: localized('Timing depends on measurements, material confirmation, project scope and installation access. Larger or more custom packages can take longer.', 'Rok zavisi od mjerenja, potvrde materijala, obima projekta i pristupa za montažu. Veći ili složeniji paketi mogu tražiti više vremena.', 'Срок зависит от замера, согласования материалов, объёма проекта и доступа для монтажа. Сложные проекты могут занять больше.'),
         },
         {
             question: localized('What is included in an apartment furnishing package?', 'Šta ulazi u paket opremanja apartmana?', 'Что входит в пакет меблировки квартиры?'),
@@ -90,12 +90,12 @@ const workshopFaqSection: FAQSectionContent = {
             answer: localized('Mostly lacquered MDF, veneer, compact tops, stone-look tops and durable board materials for apartment, villa and selected public interiors.', 'Najčešće radimo lakirani MDF, furnir, kompakt ploče, radne ploče sa izgledom kamena i postojane pločaste materijale za stanove, vile i odabrane javne enterijere.', 'Чаще всего — лакированный МДФ, шпон, компакт-плиты, столешницы под камень и износостойкие плитные материалы для квартир, вилл и избранных общественных интерьеров.'),
         },
         {
-            question: localized('Do you have CNC cutting in the Bar workshop?', 'Imate li CNC rezanje u radionici u Baru?', 'Есть ли ЧПУ-раскрой в цехе в Баре?'),
-            answer: localized('Yes. CNC cutting, edge preparation, assembly, finishing, packing and installation coordination are handled from the Zaljevo workshop.', 'Da. CNC rezanje, priprema ivica, sklapanje, završna obrada, pakovanje i koordinacija montaže vode se iz radionice u Zaljevu.', 'Да. ЧПУ-раскрой, подготовка кромок, сборка, отделка, упаковка и координация монтажа идут из цеха в Залево.'),
+            question: localized('Is production handled from the Bar workshop?', 'Vodi li se proizvodnja iz radionice u Baru?', 'Производство ведётся из цеха в Баре?'),
+            answer: localized('Yes. Production preparation, assembly, finishing and installation coordination are handled from the Zaljevo workshop.', 'Da. Priprema proizvodnje, sklapanje, završna obrada i koordinacija montaže vode se iz radionice u Zaljevu.', 'Да. Подготовка производства, сборка, отделка и координация монтажа идут из цеха в Залево.'),
         },
         {
             question: localized('Can production and installation be coordinated from one workshop?', 'Može li proizvodnja i montaža da se vodi iz jedne radionice?', 'Можно ли вести производство и монтаж из одного цеха?'),
-            answer: localized('Yes. Measurement, cutting, assembly, packing, delivery and installation are coordinated from the same team in Zaljevo, Bar.', 'Da. Mjerenje, rezanje, sklapanje, pakovanje, isporuka i montaža koordiniraju se iz istog tima u Zaljevu, Bar.', 'Да. Замер, раскрой, сборку, упаковку, доставку и монтаж координирует одна команда в Залево (Бар).'),
+            answer: localized('Yes. Measurement, production preparation, delivery and installation are coordinated by the same team in Zaljevo, Bar.', 'Da. Mjerenje, priprema proizvodnje, isporuka i montaža koordiniraju se iz istog tima u Zaljevu, Bar.', 'Да. Замер, подготовку производства, доставку и монтаж координирует одна команда в Залево (Бар).'),
         },
         {
             question: localized('Do you work from technical drawings only?', 'Radite li samo po tehničkim crtežima?', 'Работаете только по техническим чертежам?'),
@@ -130,7 +130,7 @@ export function getWorkshopFaqSection(locale: SupportedSeoLocale) {
 
 export function getResidentialLocalLinksHeading(locale: SupportedSeoLocale) {
     return {
-        title: resolveText(localized('Cities and pricing', 'Gradovi i cijena', 'Города и цены'), locale),
+        title: resolveText(localized('Cities and estimates', 'Gradovi i procjena', 'Города и расчёт'), locale),
         intro: resolveText(localized('These pages target the main residential GEO queries we want to own in Montenegro first.', 'Ove stranice ciljaju glavne GEO upite za stanove i apartmane koje želimo da pokrijemo prvo u Crnoj Gori.', 'Страницы по основным ГЕО-запросам для жилой мебели в Черногории.'), locale),
     };
 }

@@ -2,8 +2,8 @@
 
 import styles from './MessengerLinks.module.css';
 
-const WA_URL = 'https://wa.me/38268247350';
-const VIBER_URL = 'viber://chat?number=%2B38268247350';
+const WA_URL = 'https://wa.me/38268282371';
+const VIBER_URL = 'viber://chat?number=%2B38268282371';
 
 export default function MessengerLinks({ className }: { className?: string }) {
   return (

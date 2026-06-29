@@ -7,8 +7,8 @@ import {
   replaceLocaleInPathname,
 } from './locale-config.ts';
 
-test('uses Serbian as default locale and keeps English as secondary locale', () => {
-  assert.deepEqual(appLocales, ['sr', 'en']);
+test('uses Serbian as default locale and keeps English plus Russian as secondary locales', () => {
+  assert.deepEqual(appLocales, ['sr', 'en', 'ru']);
   assert.equal(defaultLocale, 'sr');
 });
 

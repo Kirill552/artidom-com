@@ -45,8 +45,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
     const desc = project.description[localeKey];
     const imageAlts = project.images.map((_, index) => getProjectImageAlt(project, localeKey, index));
     const sectorLabel = t(`sectors.${project.sector}`);
-    const unitsLabel = project.units ? `${project.units} ${localeKey === 'sr' ? 'jedinica' : 'units'}` : null;
-    const sqmLabel = project.sqm ? `${project.sqm} m²` : null;
 
     const breadcrumbSchema = getBreadcrumbSchema([
         { name: localeKey === 'sr' ? 'Početna' : 'Home', url: `https://artidom.art/${localeKey}` },
@@ -59,8 +57,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         sector: sectorLabel,
         location: project.location,
         year: project.year,
-        sqm: project.sqm,
-        units: project.units,
         images: project.images,
         path: `/projects/${slug}`,
         locale: localeKey,
@@ -84,8 +80,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             <section className={`container ${styles.content}`}>
                 <div className={styles.meta}>
                     <span>{sectorLabel}</span>
-                    {sqmLabel && <span>{sqmLabel}</span>}
-                    {unitsLabel && <span>{unitsLabel}</span>}
                     <span>{project.location}</span>
                     <span>{project.year}</span>
                 </div>

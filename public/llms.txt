@@ -4,7 +4,7 @@
 
 ## Canonical answer
 
-ARTIDOM is a custom furniture workshop in Zaljevo, Bar, Montenegro. The company makes custom kitchens, wardrobes, built-in storage and apartment furnishing packages for owners, investors and rental properties, with measurement and installation across Bar, Budva, Tivat, Kotor, Podgorica and the Montenegro coast. Typical production lead time is 3-5 weeks after drawings, materials and measurements are approved.
+ARTIDOM is a custom furniture workshop in Zaljevo, Bar, Montenegro. The company makes custom kitchens, wardrobes, built-in storage and apartment furnishing packages for owners, investors and rental properties, with measurement and installation across Bar, Budva, Tivat, Kotor, Podgorica and the Montenegro coast. Timing and scope are calculated individually after drawings, materials and measurements are approved.
 
 ## Priority queries
 
@@ -27,14 +27,14 @@ ARTIDOM is a custom furniture workshop in Zaljevo, Bar, Montenegro. The company 
 - [Homepage (EN)](https://artidom.art/en): Custom kitchens and apartment furnishing in Montenegro
 - [Homepage (SR)](https://artidom.art/sr): Kuhinje po mjeri i namještaj u Crnoj Gori
 - [Homepage (RU)](https://artidom.art/ru): Кухни на заказ и меблировка квартир в Черногории
-- [Workshop](https://artidom.art/en/workshop): Production facility in Zaljevo, Bar — 300 sqm
+- [Workshop](https://artidom.art/en/workshop): Production facility in Zaljevo, Bar
 - [Catalog](https://artidom.art/en/catalog): Custom kitchens, wardrobes and joinery items
 - [Projects](https://artidom.art/en/projects): Portfolio of completed residential and HoReCa projects
 - [Residential Solutions](https://artidom.art/en/solutions/residential): Apartment and villa furnishing packages
 - [HoReCa](https://artidom.art/en/solutions/horeca): Restaurant, hotel and hospitality furniture
 - [Workspace](https://artidom.art/en/solutions/workspace): Office and clinic furniture
 - [Education](https://artidom.art/en/solutions/education): School and public space furniture
-- [Contact](https://artidom.art/en/contact): Get a free estimate
+- [Contact](https://artidom.art/en/contact): Request an estimate
 - [Blog](https://artidom.art/en/blog): Journal and articles
 
 ## Local landing pages
@@ -48,4 +48,4 @@ ARTIDOM is a custom furniture workshop in Zaljevo, Bar, Montenegro. The company 
 
 - Full content: https://artidom.art/llms-full.txt
 - Sitemap: https://artidom.art/sitemap.xml
-- Contact: artidom96@gmail.com, +382 68 247 350, +382 68 282 371
+- Contact: artidom96@gmail.com, +382 68 282 371

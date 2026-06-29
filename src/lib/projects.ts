@@ -4,8 +4,6 @@ export interface Project {
     title: { en: string; sr: string; ru: string };
     location: string;
     year: number;
-    sqm?: number;
-    units?: number;
     coverImage: string;
     images: string[];
     description: { en: string; sr: string; ru: string };
@@ -142,17 +140,15 @@ export const projects: Project[] = [
         },
         location: 'Montenegro',
         year: 2024,
-        sqm: 1200,
-        units: 40,
         coverImage: '/images/projects/school/photo_5267340135563465942_y.jpg',
         images: [
             '/images/projects/school/photo_5267340135563465942_y.jpg',
             '/images/projects/school/photo_5267340135563465940_y.jpg',
         ],
         description: {
-            en: '1,200 sqm educational facility in Montenegro. Custom classroom storage, reception joinery and staff-room furniture produced and installed to the project schedule.',
-            sr: 'Obrazovni objekat od 1.200 m² u Crnoj Gori. Namještaj po mjeri za učionice, recepciju i prostorije za osoblje proizveden i montiran po dinamici projekta.',
-            ru: 'Образовательное учреждение 1 200 м² в Черногории. Мебель для классов, ресепшн и учительских — производство и монтаж по графику проекта.',
+            en: 'Educational facility in Montenegro. Custom classroom storage, reception joinery and staff-room furniture produced and installed to the project schedule.',
+            sr: 'Obrazovni objekat u Crnoj Gori. Namještaj po mjeri za učionice, recepciju i prostorije za osoblje proizveden i montiran po dinamici projekta.',
+            ru: 'Образовательное учреждение в Черногории. Мебель для классов, ресепшн и учительских — производство и монтаж по графику проекта.',
         },
     },
 ];
