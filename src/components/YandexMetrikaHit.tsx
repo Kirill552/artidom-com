@@ -3,7 +3,7 @@
 import { usePathname, useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 
-const METRIKA_ID = 107732709;
+import { METRIKA_ID } from '@/lib/analytics';
 
 /** Отправляет hit в Яндекс.Метрику при SPA-переходах (Next.js client navigation) */
 export default function YandexMetrikaHit() {

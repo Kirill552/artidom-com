@@ -30,7 +30,7 @@ function cityFaqs(cityEn: string, citySr: string, cityRu: string): FAQItem[] {
         },
         {
             question: localized('Do you handle only apartments?', 'Radite li samo apartmane?', 'Работаете только с квартирами?'),
-            answer: localized('Residential is the main offer, but selected HoReCa and B2B briefs are possible when the task and schedule are already technical and clear.', 'Stanovi i apartmani su glavni fokus, ali su mogući i odabrani HoReCa i B2B poslovi kada je zadatak tehnički jasan i rok usklađen.', 'Квартиры — основное направление, но берём избранные HoReCa и B2B заказы, когда задание технически проработано и сроки ясны.'),
+            answer: localized('Residential is the main offer, but selected HoReCa and B2B briefs are possible when the task, budget and logistics can be aligned.', 'Stanovi i apartmani su glavni fokus, ali su mogući i odabrani HoReCa i B2B poslovi kada zadatak, budžet i logistika mogu da se usklade.', 'Квартиры — основное направление, но берём избранные HoReCa и B2B заказы, когда задачу, бюджет и логистику можно согласовать.'),
         },
     ];
 }
@@ -46,7 +46,7 @@ const pricingFaqs: FAQItem[] = [
     },
     {
         question: localized('Do you price kitchens by linear meter?', 'Računate li kuhinje po dužnom metru?', 'Считаете ли кухни по погонному метру?'),
-        answer: localized('A linear-meter range can help compare options, but the final estimate is project-based because height, fronts, worktop, hardware and installation change the number.', 'Dužni metar može pomoći za grubo poređenje, ali konačna procjena ide po projektu jer visina, frontovi, radna ploča, okovi i montaža mijenjaju cijenu.', 'Ориентир за погонный метр помогает сравнить варианты, но финальный расчёт идёт по проекту: высота, фасады, столешница, фурнитура и монтаж меняют сумму.'),
+        answer: localized('No single linear-meter rate is reliable without the project details. The final estimate is project-based because height, fronts, worktop, hardware and installation change the number.', 'Jedna cijena po dužnom metru nije pouzdana bez detalja projekta. Konačna procjena ide po projektu jer visina, frontovi, radna ploča, okovi i montaža mijenjaju cijenu.', 'Одной надёжной цены за погонный метр без деталей проекта нет. Финальный расчёт идёт по проекту: высота, фасады, столешница, фурнитура и монтаж меняют сумму.'),
     },
     {
         question: localized('Can you estimate wardrobes together with the kitchen?', 'Možete li procijeniti plakare zajedno sa kuhinjom?', 'Можно посчитать шкафы вместе с кухней?'),

@@ -72,7 +72,7 @@ const residentialFaqSection: FAQSectionContent = {
         },
         {
             question: localized('Do you only make apartments or can you also do HoReCa and B2B?', 'Radite li samo stanove ili i HoReCa / B2B?', 'Вы работаете только с квартирами или берёте HoReCa / B2B?'),
-            answer: localized('Residential is the main direction. We also take selected HoReCa and B2B briefs when the task, drawings and schedule are already clear.', 'Stanovi i apartmani su glavni pravac. Uzimamo i odabrane HoReCa i B2B projekte kada su zadatak, crteži i rok već jasno definisani.', 'Квартиры — основное направление. Берём избранные HoReCa и B2B заказы, когда задание, чертежи и сроки уже проработаны.'),
+            answer: localized('Residential is the main direction. We also take selected HoReCa and B2B briefs when the task, drawings, budget and logistics can be aligned.', 'Stanovi i apartmani su glavni pravac. Uzimamo i odabrane HoReCa i B2B projekte kada zadatak, crteži, budžet i logistika mogu da se usklade.', 'Квартиры — основное направление. Берём избранные HoReCa и B2B заказы, когда задачу, чертежи, бюджет и логистику можно согласовать.'),
         },
     ],
 };

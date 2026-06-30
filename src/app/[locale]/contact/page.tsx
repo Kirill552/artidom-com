@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import MessengerLinks from '@/components/MessengerLinks';
+import { trackLeadEvent } from '@/lib/analytics';
 import styles from './page.module.css';
 
 export default function ContactPage() {
@@ -33,9 +34,7 @@ export default function ContactPage() {
                 return;
             }
             setStatus('success');
-            if (typeof window !== 'undefined' && typeof window.ym === 'function') {
-                window.ym(107732709, 'reachGoal', 'contact_form_submit');
-            }
+            trackLeadEvent('contact_form_submit');
         } catch {
             setStatus('error');
         }
@@ -91,7 +90,7 @@ export default function ContactPage() {
                     {contacts.map((c) => (
                         <div key={c.name} className={styles.contactDetail}>
                             <span className={styles.detailLabel}>{c.name} — {c.role}</span>
-                            <a href={`tel:${c.phone.replace(/\s+/g, '')}`} onClick={() => { if (typeof window !== 'undefined' && typeof window.ym === 'function') window.ym(107732709, 'reachGoal', 'phone_click') }}>{c.phone}</a>
+                            <a href={`tel:${c.phone.replace(/\s+/g, '')}`} onClick={() => trackLeadEvent('phone_click')}>{c.phone}</a>
                         </div>
                     ))}
                     <div className={styles.contactDetail}>

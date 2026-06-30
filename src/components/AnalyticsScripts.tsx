@@ -1,7 +1,7 @@
 import Script from 'next/script';
 
-const METRIKA_ID = 107732709;
-const GA_ID = 'G-3BPCM5087W';
+import { GA_ID, METRIKA_ID } from '@/lib/analytics';
+
 const ANALYTICS_DELAY_MS = 3500;
 
 export default function AnalyticsScripts() {
