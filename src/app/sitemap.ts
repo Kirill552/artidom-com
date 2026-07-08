@@ -6,7 +6,19 @@ import { getPosts } from '@/lib/cms';
 import { buildSharedPathAlternates, buildSitemapAlternates } from '@/lib/seo/sitemap-alternates';
 
 const BASE_URL = 'https://artidom.art';
-const SEO_UPDATE_DATE = '2026-04-24';
+const SEO_UPDATE_DATE = '2026-06-30';
+
+function getPostLastModified(publishedAt: string) {
+  const seoUpdatedAt = new Date(SEO_UPDATE_DATE);
+
+  if (!publishedAt) {
+    return seoUpdatedAt;
+  }
+
+  const publishedDate = new Date(publishedAt);
+
+  return publishedDate > seoUpdatedAt ? publishedDate : seoUpdatedAt;
+}
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const entries: MetadataRoute.Sitemap = [];
@@ -17,11 +29,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: '/catalog', priority: 0.8, lastModified: SEO_UPDATE_DATE },
     { path: '/projects', priority: 0.8, lastModified: SEO_UPDATE_DATE },
     { path: '/solutions/residential', priority: 0.85, lastModified: SEO_UPDATE_DATE },
-    { path: '/solutions/horeca', priority: 0.7, lastModified: '2026-03-08' },
-    { path: '/solutions/education', priority: 0.6, lastModified: '2026-03-01' },
-    { path: '/solutions/workspace', priority: 0.6, lastModified: '2026-03-01' },
-    { path: '/contact', priority: 0.7, lastModified: '2026-03-08' },
-    { path: '/blog', priority: 0.6, lastModified: '2026-03-10' },
+    { path: '/solutions/horeca', priority: 0.7, lastModified: SEO_UPDATE_DATE },
+    { path: '/solutions/education', priority: 0.6, lastModified: SEO_UPDATE_DATE },
+    { path: '/solutions/workspace', priority: 0.6, lastModified: SEO_UPDATE_DATE },
+    { path: '/contact', priority: 0.7, lastModified: SEO_UPDATE_DATE },
+    { path: '/blog', priority: 0.6, lastModified: SEO_UPDATE_DATE },
   ];
 
   const residentialLocalSlugs = ['bar', 'podgorica', 'budva', 'cijena'];
@@ -42,7 +54,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     for (const locale of appLocales) {
       entries.push({
         url: `${BASE_URL}/${locale}/solutions/residential/${slug}`,
-        lastModified: new Date('2026-03-15'),
+        lastModified: new Date(SEO_UPDATE_DATE),
         changeFrequency: 'weekly',
         priority: slug === 'cijena' ? 0.85 : 0.8,
         alternates: buildSharedPathAlternates(`/solutions/residential/${slug}`),
@@ -54,7 +66,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     for (const locale of appLocales) {
       entries.push({
         url: `${BASE_URL}/${locale}/catalog/${item.slug}`,
-        lastModified: new Date('2026-03-15'),
+        lastModified: new Date(SEO_UPDATE_DATE),
         changeFrequency: 'monthly',
         priority: 0.7,
         alternates: buildSharedPathAlternates(`/catalog/${item.slug}`),
@@ -67,7 +79,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     for (const locale of appLocales) {
       entries.push({
         url: `${BASE_URL}/${locale}/projects/${project.slug}`,
-        lastModified: new Date('2026-03-15'),
+        lastModified: new Date(SEO_UPDATE_DATE),
         changeFrequency: 'monthly',
         priority: 0.7,
         alternates: buildSharedPathAlternates(`/projects/${project.slug}`),
@@ -84,7 +96,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
       entries.push({
         url: `${BASE_URL}/${locale}${path}`,
-        lastModified: post.publishedAt ? new Date(post.publishedAt) : new Date('2026-03-08'),
+        lastModified: getPostLastModified(post.publishedAt),
         changeFrequency: 'monthly',
         priority: 0.6,
         ...(alternates ? { alternates } : {}),
