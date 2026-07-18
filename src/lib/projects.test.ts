@@ -13,6 +13,13 @@ const expectedSlugs = [
   'residential-joinery-details',
   'horeca-counter-collection',
   'international-school-montenegro',
+  'chicko-restaurant',
+  'hochupuri-moscow',
+  'atlantik-hotel-bar',
+  'school-canteen',
+  'wall-panels-hall',
+  'chaiburg-kiosk',
+  'burger-king-ekaterinburg',
 ];
 
 test('projects showcase includes the planned case studies and collections', () => {
