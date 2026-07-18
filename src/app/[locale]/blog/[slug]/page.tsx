@@ -1,14 +1,23 @@
 import { notFound } from 'next/navigation';
-import { getPost } from '@/lib/cms';
+import { getPost, getPosts } from '@/lib/cms';
 import WorkshopProof from '@/components/WorkshopProof';
 import { Link } from '@/i18n/routing';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { defaultLocale, isAppLocale, type AppLocale } from '@/i18n/locale-config';
+import { appLocales, defaultLocale, isAppLocale, type AppLocale } from '@/i18n/locale-config';
 import { buildMetadata } from '@/lib/seo/page-metadata';
 import { getArticleSchema, getBreadcrumbSchema } from '@/lib/seo/local-page-schema';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import styles from './page.module.css';
+
+export async function generateStaticParams() {
+  const params: Array<{ locale: string; slug: string }> = [];
+  for (const locale of appLocales) {
+    const posts = await getPosts(locale);
+    for (const post of posts) params.push({ locale, slug: post.slug });
+  }
+  return params;
+}
 
 export async function generateMetadata({
   params,

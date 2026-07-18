@@ -1,15 +1,19 @@
 import type { Metadata } from 'next';
 import { Suspense } from 'react';
 import { notFound } from 'next/navigation';
-import { getProject, getProjectImageAlt } from '@/lib/projects';
+import { getProject, getProjectImageAlt, projects } from '@/lib/projects';
 import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { defaultLocale, isAppLocale, type AppLocale } from '@/i18n/locale-config';
+import { appLocales, defaultLocale, isAppLocale, type AppLocale } from '@/i18n/locale-config';
 import { buildMetadata } from '@/lib/seo/page-metadata';
 import { getBreadcrumbSchema, getProjectCreativeWorkSchema } from '@/lib/seo/local-page-schema';
 import ProjectGallery from './ProjectGallery';
 import styles from './page.module.css';
+
+export function generateStaticParams() {
+    return appLocales.flatMap((locale) => projects.map((p) => ({ locale, slug: p.slug })));
+}
 
 export async function generateMetadata({
     params,

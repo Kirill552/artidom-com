@@ -59,6 +59,21 @@
   }
 }
 
+@media (max-width: 720px) {
+  .veil {
+    animation: veilDone 0s 0.65s forwards;
+  }
+
+  .left,
+  .right {
+    animation-duration: 480ms;
+  }
+
+  .word {
+    animation-duration: 400ms;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .veil {
     display: none;

@@ -6,12 +6,17 @@ import {
     getCatalogItem,
     getCatalogImageAlt,
     getCatalogLocaleValue,
+    catalogItems,
 } from '@/lib/catalog';
 import { ImageLightbox } from '@/components/ImageLightbox';
 import { buildMetadata } from '@/lib/seo/page-metadata';
 import { getBreadcrumbSchema, getCatalogProductSchema } from '@/lib/seo/local-page-schema';
-import { defaultLocale, isAppLocale, type AppLocale } from '@/i18n/locale-config';
+import { appLocales, defaultLocale, isAppLocale, type AppLocale } from '@/i18n/locale-config';
 import styles from './page.module.css';
+
+export function generateStaticParams() {
+    return appLocales.flatMap((locale) => catalogItems.map((item) => ({ locale, slug: item.slug })));
+}
 
 export async function generateMetadata({
     params,

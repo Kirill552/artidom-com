@@ -33,7 +33,7 @@ export default function HeroSection() {
           {words.map((word, i) => (
             <Fragment key={`${word}-${i}`}>
               <span className={styles.clip}>
-                <span style={{ animationDelay: `calc(1.8s + ${i} * 70ms)` }}>{word}</span>
+                <span style={{ animationDelay: `calc(var(--reveal-base) + ${i} * 70ms)` }}>{word}</span>
               </span>
               {i < words.length - 1 ? ' ' : null}
             </Fragment>

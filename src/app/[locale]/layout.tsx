@@ -2,7 +2,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Commissioner, Unbounded } from 'next/font/google';
-import { isAppLocale } from '@/i18n/locale-config';
+import { appLocales, isAppLocale } from '@/i18n/locale-config';
 import { getSchemaData, getWebSiteSchema } from '@/lib/seo/schema';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
@@ -44,6 +44,11 @@ export const metadata: Metadata = {
     type: 'website',
   },
 };
+
+// Static rendering: prerender all locales at build time (TTFB via CDN instead of SSR)
+export function generateStaticParams() {
+  return appLocales.map((locale) => ({ locale }));
+}
 
 export default async function LocaleLayout({
   children,
