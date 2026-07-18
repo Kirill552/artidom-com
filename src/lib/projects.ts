@@ -123,9 +123,9 @@ export const projects: Project[] = [
         },
         location: 'Selected Balkans Projects',
         year: 2024,
-        coverImage: '/images/projects/horeca-counters/03.webp',
+        coverImage: '/images/projects/horeca-counters/02.webp',
         images: [
-            '/images/projects/horeca-counters/03.webp',
+            '/images/projects/horeca-counters/02.webp',
             '/images/projects/horeca-counters/01.webp',
             '/images/projects/horeca-counters/02.webp',
             '/images/projects/horeca-counters/06.webp',
@@ -326,6 +326,30 @@ export const projects: Project[] = [
             en: 'Series of Burger King restaurant fit-outs in Ekaterinburg: service counters, tables and booth seating. Archive project from the 2000s.',
             sr: 'Serija opremanja restorana Burger King u Ekaterinburgu: pultovi, stolovi i klupe. Arhivski projekat iz 2000-ih.',
             ru: 'Серия ресторанов Burger King в Екатеринбурге: стойки, столы и буты. Архивный проект 2000-х.',
+        },
+    },
+    {
+        slug: 'library-display-cabinet',
+        country: 'RU',
+        sector: 'residential',
+        title: {
+            en: 'Library Display Cabinet',
+            sr: 'Vitrina za biblioteku',
+            ru: 'Витрина для библиотеки',
+        },
+        location: 'Russia',
+        year: 2025,
+        coverImage: '/images/projects/library-display-cabinet/01.webp',
+        images: [
+            '/images/projects/library-display-cabinet/01.webp',
+            '/images/projects/library-display-cabinet/02.webp',
+            '/images/projects/library-display-cabinet/03.webp',
+            '/images/projects/library-display-cabinet/04.webp',
+        ],
+        description: {
+            en: 'Full-height display cabinet with brass-framed glass shelving and integrated LED lighting, built for a private living-room library.',
+            sr: 'Vitrina u punoj visini sa staklenim policama u mesinganom ramu i integrisanim LED osvetljenjem za privatnu kućnu biblioteku.',
+            ru: 'Витрина в полный рост со стеклянными полками в латунной раме и встроенной LED-подсветкой для домашней библиотеки.',
         },
     },
 ];

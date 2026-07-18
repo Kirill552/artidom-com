@@ -193,7 +193,7 @@ export const catalogItems: CatalogItem[] = [
         images: [
             '/images/projects/horeca-counters/01.webp',
             '/images/projects/horeca-counters/02.webp',
-            '/images/projects/horeca-counters/03.webp',
+            '/images/projects/horeca-counters/02.webp',
             '/images/projects/horeca-counters/04.webp',
             '/images/projects/horeca-counters/05.webp',
             '/images/projects/horeca-counters/06.webp',

@@ -20,6 +20,7 @@ const expectedSlugs = [
   'wall-panels-hall',
   'chaiburg-kiosk',
   'burger-king-ekaterinburg',
+  'library-display-cabinet',
 ];
 
 test('projects showcase includes the planned case studies and collections', () => {

@@ -17,7 +17,7 @@ export async function generateMetadata({
         locale: appLocale,
         namespace: 'Solutions.horeca',
         path: '/solutions/horeca',
-        image: '/images/projects/horeca-counters/03.webp',
+        image: '/images/projects/horeca-counters/02.webp',
     });
 }
 
@@ -36,7 +36,7 @@ export default async function HoRecaPage({ params }: { params: Promise<{ locale:
         title: t('title'),
         description: t('description'),
         areaServed: appLocale === 'ru' ? 'Черногория' : appLocale === 'sr' ? 'Crna Gora' : 'Montenegro',
-        image: '/images/projects/horeca-counters/03.webp',
+        image: '/images/projects/horeca-counters/02.webp',
         path: '/solutions/horeca',
         locale: appLocale,
     });
