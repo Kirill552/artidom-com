@@ -81,16 +81,8 @@ export default async function WorkshopPage({ params }: { params: Promise<{ local
     },
   };
 
-  const materials = ['mat1', 'mat2', 'mat3'] as const;
+  const materials = ['mat1', 'mat2', 'mat3', 'mat4'] as const;
   const materialImages: Record<string, { src: string; alt: Record<string, string> }> = {
-    mat1: {
-      src: '/images/workshop/mat-oak-veneer.webp',
-      alt: {
-        en: 'Oak veneer samples used for custom apartment furniture in Montenegro',
-        sr: 'Uzorci hrastovog furnira za namještaj po mjeri u Crnoj Gori',
-        ru: 'Образцы шпона дуба для мебели на заказ в Черногории',
-      },
-    },
     mat2: {
       src: '/images/workshop/mat-lacquered-mdf.webp',
       alt: {
@@ -100,11 +92,19 @@ export default async function WorkshopPage({ params }: { params: Promise<{ local
       },
     },
     mat3: {
+      src: '/images/workshop/mat-oak-veneer.webp',
+      alt: {
+        en: 'Oak veneer samples used for custom apartment furniture in Montenegro',
+        sr: 'Uzorci hrastovog furnira za namještaj po mjeri u Crnoj Gori',
+        ru: 'Образцы шпона дуба для мебели на заказ в Черногории',
+      },
+    },
+    mat4: {
       src: '/images/workshop/mat-stone-tops.webp',
       alt: {
-        en: 'Compact laminate and stone countertop samples for kitchen projects',
-        sr: 'Kompakt laminat i kamene radne ploče za kuhinjske projekte',
-        ru: 'Компакт-ламинат и образцы каменных столешниц для кухонь',
+        en: 'Worktop samples: postforming, acrylic stone and quartz at the ARTIDOM workshop',
+        sr: 'Uzorci radnih ploča: postforming, akrilni kamen i kvarc u ARTIDOM radionici',
+        ru: 'Образцы столешниц: постформинг, акриловый камень и кварц в цехе ARTIDOM',
       },
     },
   };
@@ -174,21 +174,26 @@ export default async function WorkshopPage({ params }: { params: Promise<{ local
         <section className={`container ${styles.materials}`}>
           <h2 className={styles.sectionTitle}>{t('materials_title')}</h2>
           <div className={styles.materialsGrid}>
-            {materials.map((m) => (
-              <div key={m} className={styles.material}>
-                <div className={styles.materialImage}>
-                  <Image
-                    src={materialImages[m].src}
-                    alt={materialImages[m].alt[appLocale] || materialImages[m].alt.en}
-                    fill
-                    sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    style={{ objectFit: 'cover' }}
-                  />
+            {materials.map((m) => {
+              const image = materialImages[m];
+              return (
+                <div key={m} className={`${styles.material} ${image ? '' : styles.materialTextOnly}`}>
+                  {image && (
+                    <div className={styles.materialImage}>
+                      <Image
+                        src={image.src}
+                        alt={image.alt[appLocale] || image.alt.en}
+                        fill
+                        sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        style={{ objectFit: 'cover' }}
+                      />
+                    </div>
+                  )}
+                  <span className={styles.materialName}>{t(`${m}_name`)}</span>
+                  <span className={styles.materialOrigin}>{t(`${m}_origin`)}</span>
                 </div>
-                <span className={styles.materialName}>{t(`${m}_name`)}</span>
-                <span className={styles.materialOrigin}>{t(`${m}_origin`)}</span>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </section>
 

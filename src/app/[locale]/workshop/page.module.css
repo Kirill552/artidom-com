@@ -164,6 +164,24 @@
     margin-top: 2px;
 }
 
+.materialTextOnly {
+    background: var(--surface-elevated);
+    border-radius: var(--radius);
+    padding: clamp(20px, 3vw, 32px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+
+.materialTextOnly:nth-child(1) {
+    aspect-ratio: 16 / 10;
+}
+
+.materialTextOnly .materialOrigin {
+    margin-top: 0;
+}
+
 .projectsLink {
     padding: 2rem 0 clamp(56px, 8vw, 96px);
 }
@@ -202,6 +220,10 @@
 
     .material:nth-child(1) {
         grid-column: span 1;
+    }
+
+    .materialTextOnly:nth-child(1) {
+        aspect-ratio: auto;
     }
 }
 

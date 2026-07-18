@@ -87,7 +87,7 @@ const workshopFaqSection: FAQSectionContent = {
         },
         {
             question: localized('Which materials do you work with most often?', 'Sa kojim materijalima najčešće radite?', 'С какими материалами вы работаете чаще всего?'),
-            answer: localized('Mostly lacquered MDF, veneer, compact tops, stone-look tops and durable board materials for apartment, villa and selected public interiors.', 'Najčešće radimo lakirani MDF, furnir, kompakt ploče, radne ploče sa izgledom kamena i postojane pločaste materijale za stanove, vile i odabrane javne enterijere.', 'Чаще всего — лакированный МДФ, шпон, компакт-плиты, столешницы под камень и износостойкие плитные материалы для квартир, вилл и избранных общественных интерьеров.'),
+            answer: localized('Mostly laminated board (LDSP) and lacquered MDF. Veneer and pricier finishes on request. Worktops: postforming, acrylic stone, quartz.', 'Najčešće iverica (LSDP) i lakirani MDF. Furnir i skuplje obrade na zahtjev. Radne ploče: postforming, akrilni kamen, kvarc.', 'Чаще всего — ЛДСП и лакированный МДФ. Шпон и более дорогие отделки — по запросу. Столешницы: постформинг, акриловый камень, кварц.'),
         },
         {
             question: localized('Is production handled from the Bar workshop?', 'Vodi li se proizvodnja iz radionice u Baru?', 'Производство ведётся из цеха в Баре?'),
@@ -99,7 +99,7 @@ const workshopFaqSection: FAQSectionContent = {
         },
         {
             question: localized('Do you work from technical drawings only?', 'Radite li samo po tehničkim crtežima?', 'Работаете только по техническим чертежам?'),
-            answer: localized('Not only. Technical drawings speed things up, but we can also start from a floor plan, developer brochure or a measured apartment.', 'Ne samo po tehničkim crtežima. Oni ubrzavaju posao, ali možemo krenuti i od osnove, developerske brošure ili izmjerenog stana.', 'Не только. Чертежи ускоряют работу, но можно начать с плана квартиры, брошюры застройщика или замеренного помещения.'),
+            answer: localized('Not only. We make the design and technical drawings ourselves when needed: a floor plan, measurements or photos of the room are enough to start.', 'Ne samo. Projekt i tehničke crteže radimo i sami po potrebi: za početak su dovoljni osnova, mjere ili fotografije prostora.', 'Не только. Проект и чертежи делаем сами при необходимости: для старта хватит плана, замеров или фото помещения.'),
         },
     ],
 };
