@@ -1,6 +1,7 @@
 export interface Project {
     slug: string;
     sector: 'horeca' | 'education' | 'workspace' | 'residential';
+    country: 'ME' | 'RU';
     title: { en: string; sr: string; ru: string };
     location: string;
     year: number;
@@ -12,6 +13,7 @@ export interface Project {
 export const projects: Project[] = [
     {
         slug: 'warm-minimal-apartment',
+        country: 'ME',
         sector: 'residential',
         title: {
             en: 'Warm Minimal Apartment',
@@ -38,6 +40,7 @@ export const projects: Project[] = [
     },
     {
         slug: 'compact-apartment-kitchen-storage',
+        country: 'ME',
         sector: 'residential',
         title: {
             en: 'Compact Apartment Kitchen & Storage',
@@ -65,6 +68,7 @@ export const projects: Project[] = [
     },
     {
         slug: 'graphite-apartment-kitchen',
+        country: 'ME',
         sector: 'residential',
         title: {
             en: 'Graphite Apartment Kitchen',
@@ -87,6 +91,7 @@ export const projects: Project[] = [
     },
     {
         slug: 'residential-joinery-details',
+        country: 'ME',
         sector: 'residential',
         title: {
             en: 'Residential Joinery Details',
@@ -109,6 +114,7 @@ export const projects: Project[] = [
     },
     {
         slug: 'horeca-counter-collection',
+        country: 'ME',
         sector: 'horeca',
         title: {
             en: 'HoReCa Counter Collection',
@@ -132,6 +138,7 @@ export const projects: Project[] = [
     },
     {
         slug: 'international-school-montenegro',
+        country: 'ME',
         sector: 'education',
         title: {
             en: 'International School Montenegro',
@@ -157,6 +164,7 @@ export const projects: Project[] = [
     },
     {
         slug: 'chicko-restaurant',
+        country: 'RU',
         sector: 'horeca',
         title: {
             en: 'CHICKO Corn-Dog Restaurant',
@@ -181,6 +189,7 @@ export const projects: Project[] = [
     },
     {
         slug: 'hochupuri-moscow',
+        country: 'RU',
         sector: 'horeca',
         title: {
             en: 'Hochupuri Georgian Restaurant',
@@ -205,6 +214,7 @@ export const projects: Project[] = [
     },
     {
         slug: 'atlantik-hotel-bar',
+        country: 'RU',
         sector: 'horeca',
         title: {
             en: 'Hotel Bars & Reception Counters',
@@ -228,6 +238,7 @@ export const projects: Project[] = [
     },
     {
         slug: 'school-canteen',
+        country: 'RU',
         sector: 'education',
         title: {
             en: 'School Canteen & Recreation Zones',
@@ -252,6 +263,7 @@ export const projects: Project[] = [
     },
     {
         slug: 'wall-panels-hall',
+        country: 'RU',
         sector: 'workspace',
         title: {
             en: 'Event Hall Wall Panels',
@@ -274,6 +286,7 @@ export const projects: Project[] = [
     },
     {
         slug: 'chaiburg-kiosk',
+        country: 'RU',
         sector: 'horeca',
         title: {
             en: 'Chaiburg Mall Kiosk',
@@ -295,6 +308,7 @@ export const projects: Project[] = [
     },
     {
         slug: 'burger-king-ekaterinburg',
+        country: 'RU',
         sector: 'horeca',
         title: {
             en: 'Burger King Restaurants, Ekaterinburg',
