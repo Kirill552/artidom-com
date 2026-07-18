@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | ARTIDOM</title>
+<meta name="description" content="Design mockup: Night Showroom concept, projects gallery. Not for production.">
+<script>document.documentElement.classList.add('js');</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600&family=Commissioner:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+@view-transition { navigation: auto; }
+:root {
+  --surface-night:    oklch(0.17 0.01 50);
+  --surface-elevated: oklch(0.22 0.012 55);
+  --hairline:         oklch(0.95 0.015 85 / 0.10);
+  --ink-warm:         oklch(0.95 0.015 85);
+  --ink-dim:          oklch(0.72 0.02 75);
+  --amber-light:      oklch(0.78 0.14 75);
+  --amber-deep:       oklch(0.62 0.15 60);
+  --glow-under:       0 14px 44px -12px oklch(0.78 0.14 75 / 0.28);
+  --radius:           12px;
+  --ease-out-brand:   cubic-bezier(0.23, 1, 0.32, 1);
+  --font-display:     'Unbounded', system-ui, sans-serif;
+  --font-text:        'Commissioner', system-ui, sans-serif;
+  --container:        1400px;
+  color-scheme: dark;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: var(--surface-night);
+  color: var(--ink-warm);
+  font-family: var(--font-text);
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.045;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+::selection { background: oklch(0.78 0.14 75 / 0.3); }
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+.container { max-width: var(--container); margin-inline: auto; padding-inline: max(20px, 4vw); }
+h1, h2 { font-family: var(--font-display); font-weight: 500; line-height: 1.12; text-wrap: balance; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--amber-light);
+  color: var(--surface-night);
+  font-family: var(--font-text);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 200ms var(--ease-out-brand), transform 160ms var(--ease-out-brand);
+}
+.btn:hover { background: var(--amber-deep); }
+.btn:active { transform: scale(0.97); }
+.btn:focus-visible { outline: 2px solid var(--amber-light); outline-offset: 3px; }
+
+.nav {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 50;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  background: oklch(0.17 0.01 50 / 0.72);
+  border-bottom: 1px solid var(--hairline);
+}
+.nav-inner { height: 64px; display: flex; align-items: center; gap: 28px; }
+.wordmark {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--ink-warm);
+  margin-right: auto;
+}
+.nav-links { display: flex; gap: 26px; list-style: none; }
+.nav-links a { color: var(--ink-dim); font-size: 0.94rem; font-weight: 500; transition: color 180ms var(--ease-out-brand); }
+.nav-links a:hover, .nav-links a.current { color: var(--ink-warm); }
+.nav-links a.current { border-bottom: 1px solid var(--amber-light); padding-bottom: 2px; }
+.nav-lang { display: flex; gap: 4px; font-size: 0.8rem; font-weight: 600; }
+.nav-lang a { color: var(--ink-dim); padding: 4px 6px; border-radius: 6px; }
+.nav-lang a.active { color: var(--surface-night); background: var(--ink-warm); }
+.nav-cta { padding: 10px 20px; font-size: 0.92rem; }
+.burger { display: none; background: none; border: 0; color: var(--ink-warm); cursor: pointer; padding: 8px; }
+
+.page-head { padding: clamp(140px, 20vh, 200px) 0 clamp(40px, 6vw, 72px); }
+.page-head h1 { font-size: clamp(1.9rem, 4vw, 3.2rem); letter-spacing: -0.01em; max-width: 20ch; }
+.page-head p { color: var(--ink-dim); margin-top: 18px; max-width: 56ch; }
+
+.pgrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: clamp(18px, 2.5vw, 32px);
+  padding-bottom: clamp(72px, 10vw, 140px);
+}
+.pcard { display: block; }
+.pcard:nth-child(1), .pcard:nth-child(2) { grid-column: span 3; }
+.pcard:nth-child(3), .pcard:nth-child(4), .pcard:nth-child(5) { grid-column: span 2; }
+.pcard:nth-child(6) { grid-column: span 6; }
+.pcard .frame {
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: box-shadow 400ms var(--ease-out-brand);
+}
+.pcard img {
+  width: 100%;
+  object-fit: cover;
+  transition: transform 700ms var(--ease-out-brand), filter 400ms var(--ease-out-brand);
+  filter: brightness(0.92);
+}
+.pcard:nth-child(1) img, .pcard:nth-child(2) img { aspect-ratio: 4 / 3; }
+.pcard:nth-child(1) img { view-transition-name: featured-project; }
+.pcard:nth-child(3) img, .pcard:nth-child(4) img, .pcard:nth-child(5) img { aspect-ratio: 3 / 3.6; }
+.pcard:nth-child(6) img { aspect-ratio: 2.4 / 1; }
+@media (hover: hover) and (pointer: fine) {
+  .pcard:hover .frame { box-shadow: var(--glow-under); }
+  .pcard:hover img { transform: scale(1.03); filter: brightness(1); }
+}
+.pcard .cap { padding: 14px 2px 0; }
+.pcard .cap h3 {
+  font-family: var(--font-text);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 200ms var(--ease-out-brand);
+}
+.pcard:hover .cap h3 { color: var(--amber-light); }
+.pcard .cap p { color: var(--ink-dim); font-size: 0.88rem; margin-top: 2px; }
+
+footer { border-top: 1px solid var(--hairline); padding: 40px 0; }
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  color: var(--ink-dim);
+  font-size: 0.85rem;
+}
+
+.js .rv { opacity: 0; transform: translateY(26px); transition: opacity 650ms var(--ease-out-brand), transform 650ms var(--ease-out-brand); }
+.js .rv.in { opacity: 1; transform: none; }
+
+.spotlight {
+  position: fixed;
+  z-index: 40;
+  left: 0;
+  top: 0;
+  width: 720px;
+  height: 720px;
+  margin: -360px 0 0 -360px;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 700ms var(--ease-out-brand);
+  background: radial-gradient(circle,
+    oklch(0.82 0.13 80 / 0.09) 0%,
+    oklch(0.78 0.14 75 / 0.045) 34%,
+    transparent 68%);
+  mix-blend-mode: screen;
+  will-change: transform;
+}
+.spotlight.on { opacity: 1; }
+@media (prefers-reduced-motion: reduce) {
+  .spotlight { display: none; }
+}
+
+.menu-overlay {
+  position: fixed; inset: 0; z-index: 80;
+  background: var(--surface-night);
+  display: grid; place-content: center; gap: 8px; text-align: center;
+  opacity: 0; visibility: hidden;
+  transition: opacity 300ms var(--ease-out-brand), visibility 300ms;
+}
+.menu-overlay.open { opacity: 1; visibility: visible; }
+.menu-overlay a { font-family: var(--font-display); font-size: 1.6rem; padding: 10px; color: var(--ink-warm); }
+.menu-close { position: absolute; top: 18px; right: 22px; background: none; border: 0; color: var(--ink-warm); font-size: 2rem; cursor: pointer; }
+.menu-lang { margin-top: 22px; display: flex; justify-content: center; gap: 10px; }
+.menu-lang a { font-size: 1rem; font-family: var(--font-text); color: var(--ink-dim); }
+.menu-lang a.active { color: var(--amber-light); }
+
+@media (max-width: 1023px) {
+  .nav-links, .nav-lang { display: none; }
+  .burger { display: block; }
+  .pgrid { grid-template-columns: repeat(2, 1fr); }
+  .pcard:nth-child(n) { grid-column: span 1; }
+  .pcard:nth-child(1), .pcard:nth-child(6) { grid-column: span 2; }
+  .pcard:nth-child(n) img { aspect-ratio: 4 / 3; }
+}
+@media (max-width: 720px) {
+  .nav-cta { display: none; }
+  .pgrid { grid-template-columns: 1fr; }
+  .pcard:nth-child(n) { grid-column: span 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 200ms !important; }
+  .js .rv { opacity: 1; transform: none; }
+}
+</style>
+</head>
+<body>
+
+<div class="spotlight" id="spotlight" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="wordmark" href="index.html">Artidom</a>
+    <nav aria-label="Main">
+      <ul class="nav-links">
+        <li><a href="index.html#sectors">solutions</a></li>
+        <li><a href="index.html#process">workshop</a></li>
+        <li><a href="#">catalog</a></li>
+        <li><a href="projects.html" class="current">projects</a></li>
+        <li><a href="#">journal</a></li>
+      </ul>
+    </nav>
+    <div class="nav-lang" aria-label="Language">
+      <a href="#" class="active">EN</a><a href="#">SR</a><a href="#">RU</a>
+    </div>
+    <a class="btn nav-cta" href="index.html#contact">Request estimate</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay">
+  <button class="menu-close" id="menuClose" aria-label="Close menu">&times;</button>
+  <a href="index.html#sectors">solutions</a>
+  <a href="index.html#process">workshop</a>
+  <a href="#">catalog</a>
+  <a href="projects.html">projects</a>
+  <a href="#">journal</a>
+  <div class="menu-lang"><a href="#" class="active">EN</a><a href="#">SR</a><a href="#">RU</a></div>
+</div>
+
+<main class="container">
+  <div class="page-head">
+    <h1>Selected projects in Montenegro</h1>
+    <p>Apartments first: kitchens, wardrobes, storage and a small set of HoReCa / public interiors from our Bar workshop.</p>
+  </div>
+
+  <div class="pgrid">
+    <a class="pcard rv" href="#">
+      <span class="frame"><img src="../public/images/projects/warm-minimal-apartment/cover.webp" alt="Warm Minimal Apartment: custom kitchen, wardrobes and apartment furnishing in Bar, Montenegro"></span>
+      <span class="cap"><h3>Warm Minimal Apartment</h3><p>Bar, Montenegro &middot; 2025</p></span>
+    </a>
+    <a class="pcard rv" href="#">
+      <span class="frame"><img src="../public/images/projects/compact-apartment/04.jpg" alt="Compact Apartment Kitchen and Storage: custom furniture by ARTIDOM on the Montenegro Coast"></span>
+      <span class="cap"><h3>Compact Apartment Kitchen &amp; Storage</h3><p>Montenegro Coast &middot; 2025</p></span>
+    </a>
+    <a class="pcard rv" href="#">
+      <span class="frame"><img src="../public/images/projects/graphite-kitchen/01.jpg" alt="Graphite Apartment Kitchen: custom kitchen by ARTIDOM in Budva, Montenegro"></span>
+      <span class="cap"><h3>Graphite Apartment Kitchen</h3><p>Budva, Montenegro &middot; 2025</p></span>
+    </a>
+    <a class="pcard rv" href="#">
+      <span class="frame"><img src="../public/images/projects/residential-details/02.jpg" alt="Residential Joinery Details: custom furniture by ARTIDOM in Montenegro"></span>
+      <span class="cap"><h3>Residential Joinery Details</h3><p>Montenegro &middot; 2025</p></span>
+    </a>
+    <a class="pcard rv" href="#">
+      <span class="frame"><img src="../public/images/projects/horeca-counters/03.webp" alt="HoReCa Counter Collection: custom counters by ARTIDOM, selected Balkans projects"></span>
+      <span class="cap"><h3>HoReCa Counter Collection</h3><p>Selected Balkans Projects &middot; 2024</p></span>
+    </a>
+    <a class="pcard rv" href="#">
+      <span class="frame"><img src="../public/images/projects/school/photo_5267340135563465942_y.jpg" alt="International School Montenegro: custom furniture by ARTIDOM"></span>
+      <span class="cap"><h3>International School Montenegro</h3><p>Montenegro &middot; 2024</p></span>
+    </a>
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-bottom">
+    <span>&copy; ARTIDOM</span>
+    <span>Artidom DOO &middot; PIB 03505464</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  var spot = document.getElementById('spotlight');
+  if (finePointer && !reduceMotion) {
+    var sx = innerWidth / 2, sy = innerHeight / 2, stx = sx, sty = sy, spotOn = false;
+    window.addEventListener('pointermove', function (e) {
+      stx = e.clientX; sty = e.clientY;
+      if (!spotOn) { spot.classList.add('on'); spotOn = true; }
+    }, { passive: true });
+    (function spotLoop() {
+      sx += (stx - sx) * 0.09;
+      sy += (sty - sy) * 0.09;
+      spot.style.transform = 'translate3d(' + sx + 'px,' + sy + 'px,0)';
+      requestAnimationFrame(spotLoop);
+    })();
+  }
+  var overlay = document.getElementById('menuOverlay');
+  var burger = document.getElementById('burger');
+  burger.addEventListener('click', function () { overlay.classList.add('open'); burger.setAttribute('aria-expanded', 'true'); });
+  document.getElementById('menuClose').addEventListener('click', function () { overlay.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); });
+
+  var items = document.querySelectorAll('.rv');
+  if (!reduceMotion && 'IntersectionObserver' in window) {
+    items.forEach(function (el, i) { el.style.transitionDelay = (i % 3) * 70 + 'ms'; });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    items.forEach(function (el) { io.observe(el); });
+  } else {
+    items.forEach(function (el) { el.classList.add('in'); });
+  }
+})();
+</script>
+</body>
+</html>
