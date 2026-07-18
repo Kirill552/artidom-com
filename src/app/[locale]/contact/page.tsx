@@ -115,6 +115,26 @@ export default function ContactPage() {
                     </div>
                 </div>
             </section>
+
+            <section className={styles.mapSection} aria-label="Google Maps">
+                <div className={styles.mapWrap}>
+                    <iframe
+                        src="https://maps.google.com/maps?q=Zaljevo%20bb%2C%2085000%20Bar%2C%20Montenegro&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        loading="lazy"
+                        title="Google Maps: Zaljevo bb, Bar, Montenegro"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        allowFullScreen
+                    />
+                </div>
+                <a
+                    className={styles.mapLink}
+                    href="https://maps.google.com/?q=Zaljevo+bb,+85000+Bar,+Montenegro"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Google Maps →
+                </a>
+            </section>
         </main>
     );
 }
