@@ -8,10 +8,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-muted, #7a826e);
-  transition: color 0.2s;
+  color: var(--ink-dim);
+  transition: color 0.2s var(--ease-out-brand);
 }
 
 .icon:hover {
-  color: var(--color-text, #fdfaf5);
+  color: var(--amber-light);
 }

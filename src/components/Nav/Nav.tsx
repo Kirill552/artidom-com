@@ -1,15 +1,15 @@
 'use client';
 import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
-import { Link } from '@/i18n/routing';
-import { appLocales, replaceLocaleInPathname } from '@/i18n/locale-config';
-import { usePathname } from 'next/navigation';
+import { Link, usePathname, useRouter } from '@/i18n/routing';
+import { appLocales } from '@/i18n/locale-config';
 import styles from './Nav.module.css';
 
 export default function Nav() {
   const t = useTranslations('Nav');
   const locale = useLocale();
   const pathname = usePathname();
+  const router = useRouter();
   const [open, setOpen] = useState(false);
 
   return (
@@ -41,14 +41,18 @@ export default function Nav() {
             {appLocales.map((lang) => {
               const isActive = locale === lang;
               return (
-                <a
+                <button
                   key={lang}
-                  href={isActive ? undefined : replaceLocaleInPathname(pathname, lang)}
+                  type="button"
+                  onClick={() => {
+                    setOpen(false);
+                    router.replace(pathname, { locale: lang });
+                  }}
                   className={`${styles.lang} ${isActive ? styles.langActive : ''}`}
-                  style={isActive ? { pointerEvents: 'none' } : undefined}
+                  aria-current={isActive ? 'true' : undefined}
                 >
                   {t(`lang_${lang}`)}
-                </a>
+                </button>
               );
             })}
           </div>

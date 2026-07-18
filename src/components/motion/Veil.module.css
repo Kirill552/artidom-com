@@ -1,0 +1,70 @@
+.veil {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  display: flex;
+  pointer-events: none;
+  animation: veilDone 0s 1.2s forwards;
+}
+
+.panel {
+  flex: 1;
+  background: var(--surface-deep);
+}
+
+.left {
+  animation: veilPanelLeft 850ms var(--ease-in-out-brand) 120ms both;
+}
+
+.right {
+  animation: veilPanelRight 850ms var(--ease-in-out-brand) 120ms both;
+}
+
+.word {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-display);
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  animation: veilWordIn 700ms var(--ease-out-brand) 60ms both;
+}
+
+@keyframes veilPanelLeft {
+  to {
+    transform: translateX(-101%);
+  }
+}
+
+@keyframes veilPanelRight {
+  to {
+    transform: translateX(101%);
+  }
+}
+
+@keyframes veilWordIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes veilDone {
+  to {
+    visibility: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .veil {
+    display: none;
+  }
+}
+
+:global(.veil-skip) .veil {
+  display: none;
+}
