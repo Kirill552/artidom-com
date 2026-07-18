@@ -134,6 +134,14 @@
 }
 
 @media (max-width: 900px) {
+  .nav {
+    /* backdrop-filter creates a containing block for fixed descendants —
+       must be off on mobile so .menu's fixed inset:0 covers the viewport */
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background: oklch(0.17 0.01 50 / 0.94);
+  }
+
   .burger {
     display: block;
   }
