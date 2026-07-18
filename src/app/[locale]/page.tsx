@@ -1,16 +1,17 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { Link } from '@/i18n/routing';
 import { defaultLocale, isAppLocale, type AppLocale } from '@/i18n/locale-config';
-import Hero from '@/components/Hero';
 import WorkshopProof from '@/components/WorkshopProof';
-import Image from 'next/image';
-import { getProject } from '@/lib/projects';
+import Veil from '@/components/motion/Veil';
 import { getPageMetadata } from '@/lib/seo/page-metadata';
 import { getHowToSchema, getFaqPageSchema, getSpeakableSchema } from '@/lib/seo/local-page-schema';
 import FaqSection from '@/components/FaqSection';
-import { CtaForm } from '@/components/CtaForm';
-import styles from './page.module.css';
+import HeroSection from '@/features/home-v2/HeroSection';
+import FeaturedCase from '@/features/home-v2/FeaturedCase';
+import SectorIndex from '@/features/home-v2/SectorIndex';
+import ProcessScene from '@/features/home-v2/ProcessScene';
+import PricingSection from '@/features/home-v2/PricingSection';
+import CtaSection from '@/features/home-v2/CtaSection';
 
 export async function generateMetadata({
   params,
@@ -28,15 +29,7 @@ export default async function IndexPage({ params }: { params: Promise<{ locale: 
   setRequestLocale(locale);
 
   const t = await getTranslations('Index');
-  const featuredProject = getProject('warm-minimal-apartment');
   const localeKey: AppLocale = isAppLocale(locale) ? locale : defaultLocale;
-
-  if (!featuredProject) {
-    throw new Error('Featured project is missing.');
-  }
-
-  const featuredTitle = featuredProject.title[localeKey];
-  const featuredDescription = featuredProject.description[localeKey];
 
   const faqT = await getTranslations('FAQ');
   const faqItems = faqT.raw('items') as Array<{ question: string; answer: string }>;
@@ -59,98 +52,18 @@ export default async function IndexPage({ params }: { params: Promise<{ locale: 
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
+    <Veil />
     <main>
-      {/* Hero */}
-      <div className="container">
-        <Hero />
-      </div>
-
-      {/* Workshop Proof Strip */}
-      <WorkshopProof />
-
-      {/* Featured Case */}
-      <section className={`container ${styles.case}`}>
-        <div className={styles.caseHeader}>
-          <span className={styles.label}>{t('cases.featured.label')}</span>
-          <h2 className={styles.caseTitle}>{featuredTitle}</h2>
-        </div>
-        <div className={styles.caseBody}>
-          <div className={styles.caseText}>
-            <p>{featuredDescription}</p>
-            <div className={styles.stats}>
-              <div className={styles.stat}>
-                <strong>{featuredProject.location}</strong>
-                <span>{t('cases.featured.location_label')}</span>
-              </div>
-              <div className={styles.stat}>
-                <strong>{t('cases.featured.scope_value')}</strong>
-                <span>{t('cases.featured.scope_label')}</span>
-              </div>
-              <div className={styles.stat}>
-                <strong>{t('cases.featured.type_value')}</strong>
-                <span>{t('cases.featured.type_label')}</span>
-              </div>
-            </div>
-          </div>
-          <Link href={`/projects/${featuredProject.slug}`} className={styles.caseImage}>
-            <Image
-              src={featuredProject.coverImage}
-              alt={t('cases.featured.image_alt')}
-              fill
-              className={styles.image}
-              sizes="(max-width: 1024px) 100vw, 55vw"
-            />
-          </Link>
-        </div>
-      </section>
-
-      {/* Sectors */}
-      <section className={`container ${styles.sectors}`}>
-        <span className={styles.label}>{t('sectors.title')}</span>
-        <div className={styles.sectorGrid}>
-          {(['residential', 'horeca', 'workspace', 'education'] as const).map((s) => (
-            <Link key={s} href={`/solutions/${s}`} className={styles.sectorCard}>
-              <span className={styles.sectorLabel}>{t(`sectors.${s}.label`)}</span>
-              <p className={styles.sectorDesc}>{t(`sectors.${s}.description`)}</p>
-              <span className={styles.sectorArrow}>→</span>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      {/* Process */}
-      <section className={styles.process}>
-        <div className="container">
-          <span className={styles.label}>{t('process.title')}</span>
-          <div className={styles.processSteps}>
-            {(['step1', 'step2', 'step3', 'step4'] as const).map((s, i) => (
-              <div key={s} className={styles.processStep}>
-                <span className={styles.processNum}>0{i + 1}</span>
-                <span className={styles.processName}>{t(`process.${s}`)}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing */}
-      <section className={`container ${styles.pricing}`}>
-        <span className={styles.label}>{t('pricing.title')}</span>
-        <p className={styles.pricingText}>{t('pricing.text')}</p>
-        <Link href="/contact" className={styles.pricingCta}>{t('pricing.cta')}</Link>
-      </section>
-
-      {/* FAQ */}
-      <section className="container">
+      <HeroSection />
+      <WorkshopProof variant="default" />
+      <FeaturedCase locale={localeKey} />
+      <SectorIndex />
+      <ProcessScene />
+      <PricingSection />
+      <div className="rv container">
         <FaqSection title={faqT('title')} items={faqItems} />
-      </section>
-
-      {/* CTA Block */}
-      <section className={`container ${styles.ctaBlock}`}>
-        <h2 className={styles.ctaTitle}>{t('cta.title')}</h2>
-        <p className={styles.ctaSub}>{t('cta.subtitle')}</p>
-        <CtaForm className={styles.ctaForm} />
-      </section>
+      </div>
+      <CtaSection />
     </main>
     </>
   );

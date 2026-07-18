@@ -1,0 +1,182 @@
+/* HERO — «свет включается» (staged), ported from design-mockups/index.html */
+
+.hero {
+  position: relative;
+  min-height: 100dvh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.heroMedia {
+  position: absolute;
+  inset: 0;
+}
+
+.heroImage {
+  object-fit: cover;
+  object-position: center 62%;
+  animation: light-on 1.2s var(--ease-out-brand) 0.95s both;
+}
+
+@keyframes light-on {
+  from {
+    filter: brightness(0.3) saturate(0.85);
+  }
+  to {
+    filter: brightness(1) saturate(1);
+  }
+}
+
+.ignite {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  background: radial-gradient(closest-side, oklch(0.88 0.12 82 / 0.6), oklch(0.78 0.14 75 / 0.22) 55%, transparent 72%);
+  opacity: 0;
+  transform: scale(0.55);
+  animation: ignite 950ms var(--ease-out-brand) both;
+}
+
+.ignite1 {
+  left: 4%;
+  top: 12%;
+  width: 34%;
+  height: 30%;
+  animation-delay: 1.05s;
+}
+
+.ignite2 {
+  left: 58%;
+  top: 6%;
+  width: 30%;
+  height: 46%;
+  animation-delay: 1.25s;
+}
+
+.ignite3 {
+  left: 52%;
+  top: 68%;
+  width: 30%;
+  height: 26%;
+  animation-delay: 1.45s;
+}
+
+@keyframes ignite {
+  0% {
+    opacity: 0;
+    transform: scale(0.55);
+  }
+  35% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.18);
+  }
+}
+
+.heroScrim {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(120% 90% at 50% 0%, transparent 55%, oklch(0.12 0.008 50 / 0.5) 100%),
+    linear-gradient(to top, var(--surface-night) 2%, oklch(0.17 0.01 50 / 0.55) 34%, transparent 62%),
+    linear-gradient(100deg, oklch(0.17 0.01 50 / 0.66) 0%, transparent 58%);
+}
+
+.heroContent {
+  position: relative;
+  width: 100%;
+  padding-bottom: clamp(48px, 8vh, 96px);
+  padding-top: 120px;
+}
+
+.heroLabel {
+  opacity: 0;
+  animation: rise 700ms var(--ease-out-brand) 1.65s both;
+}
+
+.title {
+  font-weight: 500;
+  font-size: clamp(1.9rem, 4.6vw, 4.2rem);
+  letter-spacing: -0.01em;
+  max-width: 16ch;
+  margin-top: 18px;
+}
+
+.clip {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.clip > span {
+  display: inline-block;
+  transform: translateY(112%);
+  animation: unclip 750ms var(--ease-out-brand) both;
+}
+
+@keyframes unclip {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.heroDesc {
+  max-width: 52ch;
+  color: var(--ink-dim);
+  margin-top: 22px;
+  opacity: 0;
+  animation: rise 700ms var(--ease-out-brand) 2.1s both;
+}
+
+.heroCtas {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 34px;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: rise 700ms var(--ease-out-brand) 2.22s both;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 720px) {
+  .title {
+    max-width: 22ch;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroImage {
+    animation: none;
+    filter: none;
+  }
+
+  .ignite {
+    display: none;
+  }
+
+  .clip > span {
+    transform: none;
+    animation: none;
+  }
+
+  .heroLabel,
+  .heroDesc,
+  .heroCtas {
+    opacity: 1;
+    animation: none;
+  }
+}

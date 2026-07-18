@@ -16,7 +16,6 @@ export default function WorkshopProof({ variant = 'default' }: WorkshopProofProp
             {items.map((item, i) => (
                 <span key={i} className={styles.item}>
                     {item}
-                    {i < items.length - 1 && <span className={styles.dot}>·</span>}
                 </span>
             ))}
         </div>

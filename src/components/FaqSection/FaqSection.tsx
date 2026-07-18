@@ -12,13 +12,16 @@ interface FAQSectionProps {
 export default function FAQSection({ title, intro, items }: FAQSectionProps) {
     return (
         <section className={styles.section}>
-            <span className={styles.label}>{title}</span>
+            <h2 className={styles.faqTitle}>{title}</h2>
             {intro ? <p className={styles.intro}>{intro}</p> : null}
             <div className={styles.list}>
                 {items.map((item) => (
                     <details key={item.question} className={styles.item}>
-                        <summary className={styles.question}>{item.question}</summary>
-                        <p className={styles.answer}>{item.answer}</p>
+                        <summary className={styles.question}>
+                            {item.question}
+                            <span className={styles.plus} aria-hidden="true" />
+                        </summary>
+                        <div className={styles.answer}>{item.answer}</div>
                     </details>
                 ))}
             </div>

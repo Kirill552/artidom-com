@@ -1,0 +1,96 @@
+/* CTA — ported from design-mockups/index.html section 8; .ctaForm block moved unchanged from page.module.css */
+
+.cta {
+  background: var(--surface-elevated);
+  border-block: 1px solid var(--hairline);
+}
+
+.ctaGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(36px, 6vw, 96px);
+  align-items: start;
+}
+
+.title {
+  font-weight: 500;
+  font-size: clamp(1.5rem, 2.8vw, 2.3rem);
+}
+
+.ctaSub {
+  color: var(--ink-dim);
+  margin-top: 16px;
+  max-width: 42ch;
+}
+
+.ctaForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ctaForm label {
+  color: var(--ink-dim);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.ctaForm input,
+.ctaForm textarea {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--hairline);
+  border-radius: 0;
+  padding: 0.75rem 0;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--ink-warm);
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.ctaForm input::placeholder,
+.ctaForm textarea::placeholder {
+  color: oklch(0.72 0.02 75 / 0.55);
+}
+
+.ctaForm input:focus,
+.ctaForm textarea:focus {
+  border-bottom-color: var(--amber-light);
+  outline: none;
+}
+
+.ctaForm p {
+  color: var(--error);
+}
+
+.ctaForm button {
+  align-self: flex-start;
+  margin-top: 1rem;
+  padding: 1rem 2.5rem;
+  background: var(--amber-light);
+  color: var(--surface-night);
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background-color 180ms var(--ease-out-brand), transform 120ms var(--ease-out-brand);
+}
+
+.ctaForm button:hover {
+  background: var(--amber-deep);
+}
+
+.ctaForm button:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 1023px) {
+  .ctaGrid {
+    grid-template-columns: 1fr;
+  }
+}

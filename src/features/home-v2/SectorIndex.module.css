@@ -1,0 +1,95 @@
+/* SECTORS INDEX — ported from design-mockups/index.html section 4 */
+
+.title {
+  font-weight: 500;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  margin-bottom: clamp(30px, 4vw, 54px);
+}
+
+.sectorList {
+  list-style: none;
+  border-top: 1px solid var(--hairline);
+}
+
+.sectorRow {
+  border-bottom: 1px solid var(--hairline);
+}
+
+.sectorRow a {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.4fr) 40px;
+  align-items: baseline;
+  gap: 28px;
+  padding: 30px 18px;
+  transition: background-color 350ms var(--ease-out-brand);
+}
+
+.sectorRow a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, oklch(0.78 0.14 75 / 0.07), transparent 65%);
+  opacity: 0;
+  transition: opacity 350ms var(--ease-out-brand);
+}
+
+.sectorRow a:hover::before {
+  opacity: 1;
+}
+
+.sectorName {
+  position: relative;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.25rem, 2.3vw, 1.9rem);
+  transition:
+    transform 350ms var(--ease-out-brand),
+    color 350ms var(--ease-out-brand);
+}
+
+.sectorDesc {
+  position: relative;
+  color: var(--ink-dim);
+  font-size: 0.97rem;
+  max-width: 52ch;
+}
+
+.sectorArr {
+  position: relative;
+  justify-self: end;
+  color: var(--ink-dim);
+  transition:
+    transform 350ms var(--ease-out-brand),
+    color 350ms var(--ease-out-brand);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .sectorRow a:hover .sectorName {
+    transform: translateX(10px);
+    color: var(--amber-light);
+  }
+
+  .sectorRow a:hover .sectorArr {
+    transform: translateX(6px);
+    color: var(--amber-light);
+  }
+}
+
+@media (max-width: 1023px) {
+  .sectorRow a {
+    grid-template-columns: 1fr 32px;
+  }
+
+  .sectorDesc {
+    grid-column: 1 / 2;
+    grid-row: 2;
+  }
+
+  .sectorArr {
+    grid-row: 1;
+    grid-column: 2;
+    align-self: start;
+    margin-top: 8px;
+  }
+}

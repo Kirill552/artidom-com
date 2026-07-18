@@ -1,0 +1,73 @@
+/* FEATURED CASE — ported from design-mockups/index.html section 3 */
+
+.caseGrid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: clamp(32px, 5vw, 80px);
+  align-items: center;
+}
+
+.caseMedia {
+  position: relative;
+  display: block;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--glow-under);
+}
+
+.caseImage {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3.1;
+  object-fit: cover;
+  transition: transform 700ms var(--ease-out-brand);
+}
+
+.caseMedia:hover .caseImage {
+  transform: scale(1.025);
+}
+
+.caseTitle {
+  font-weight: 500;
+  font-size: clamp(1.5rem, 2.6vw, 2.2rem);
+  margin-top: 16px;
+}
+
+.caseDesc {
+  color: var(--ink-dim);
+  margin-top: 16px;
+  max-width: 46ch;
+}
+
+.caseFacts {
+  margin-top: 30px;
+  border-top: 1px solid var(--hairline);
+}
+
+.caseFacts > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--hairline);
+  font-size: 0.95rem;
+}
+
+.caseFacts dt {
+  color: var(--ink-dim);
+}
+
+.caseFacts dd {
+  font-weight: 600;
+  text-align: right;
+}
+
+.caseLink {
+  margin-top: 30px;
+}
+
+@media (max-width: 1023px) {
+  .caseGrid {
+    grid-template-columns: 1fr;
+  }
+}

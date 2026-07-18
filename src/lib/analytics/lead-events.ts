@@ -5,7 +5,9 @@ export type LeadEventName =
   | 'cta_request_estimate'
   | 'phone_click'
   | 'whatsapp_click'
-  | 'viber_click';
+  | 'viber_click'
+  | 'home_workshop_story_half'
+  | 'home_workshop_story_complete';
 
 type LeadEventConfig = {
   gaEventName: LeadEventName;
@@ -38,6 +40,16 @@ const leadEvents: Record<LeadEventName, LeadEventConfig> = {
     gaEventName: 'viber_click',
     metrikaGoals: ['messenger_click', 'viber_click'],
     method: 'viber',
+  },
+  home_workshop_story_half: {
+    gaEventName: 'home_workshop_story_half',
+    metrikaGoals: ['home_workshop_story_half'],
+    method: 'scroll',
+  },
+  home_workshop_story_complete: {
+    gaEventName: 'home_workshop_story_complete',
+    metrikaGoals: ['home_workshop_story_complete'],
+    method: 'scroll',
   },
 };
 

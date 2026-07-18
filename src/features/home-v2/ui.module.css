@@ -1,0 +1,72 @@
+/* Shared primitives for the home page — ported from design-mockups/index.html */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--amber-light);
+  color: var(--surface-night);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 200ms var(--ease-out-brand),
+    transform 160ms var(--ease-out-brand);
+  will-change: transform;
+}
+
+.btn:hover {
+  background: var(--amber-deep);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--amber-light);
+  outline-offset: 3px;
+}
+
+.linkQuiet {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ink-dim);
+  font-weight: 500;
+  border-bottom: 1px solid var(--hairline);
+  padding-bottom: 3px;
+  transition:
+    color 200ms var(--ease-out-brand),
+    border-color 200ms var(--ease-out-brand);
+}
+
+.linkQuiet:hover {
+  color: var(--amber-light);
+  border-color: var(--amber-light);
+}
+
+.arr {
+  transition: transform 250ms var(--ease-out-brand);
+}
+
+.linkQuiet:hover .arr {
+  transform: translateX(4px);
+}
+
+.eyebrow {
+  font-family: var(--font-main);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--amber-light);
+}
+
+.section {
+  padding-block: clamp(72px, 11vw, 150px);
+}
