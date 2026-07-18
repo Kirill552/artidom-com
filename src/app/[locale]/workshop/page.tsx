@@ -118,7 +118,16 @@ export default async function WorkshopPage({ params }: { params: Promise<{ local
       <main>
         {/* Hero */}
         <section className={styles.hero}>
-          <div className={styles.heroOverlay}>
+          <Image
+            src={stepImages.step3.src}
+            alt={stepImages.step3.alt[appLocale] || stepImages.step3.alt.en}
+            fill
+            priority
+            sizes="100vw"
+            className={styles.heroImage}
+          />
+          <div className={styles.heroScrim} aria-hidden="true" />
+          <div className={`container ${styles.heroOverlay}`}>
             <span className={styles.heroLabel}>{t('hero_label')}</span>
             <h1 className={styles.heroTitle}>{t('hero_title')}</h1>
           </div>
@@ -138,21 +147,24 @@ export default async function WorkshopPage({ params }: { params: Promise<{ local
 
         {/* Steps */}
         <section className={`container ${styles.steps}`}>
-          <span className={styles.label}>{t('steps_title')}</span>
-          <div className={styles.stepsGrid}>
-            {steps.map((s) => (
+          <h2 className={styles.sectionTitle}>{t('steps_title')}</h2>
+          <div className={styles.stepsList}>
+            {steps.map((s, i) => (
               <div key={s} className={styles.step}>
                 <div className={styles.stepImage}>
                   <Image
                     src={stepImages[s].src}
                     alt={stepImages[s].alt[appLocale] || stepImages[s].alt.en}
                     fill
-                    sizes="(max-width: 768px) 100vw, 25vw"
+                    sizes="(max-width: 768px) 100vw, 40vw"
                     style={{ objectFit: 'cover' }}
                   />
                 </div>
-                <h3 className={styles.stepTitle}>{t(`${s}_title`)}</h3>
-                <p className={styles.stepText}>{t(`${s}_text`)}</p>
+                <div className={styles.stepBody}>
+                  <div className={styles.stepNum}>{`0${i + 1}`}</div>
+                  <h3 className={styles.stepTitle}>{t(`${s}_title`)}</h3>
+                  <p className={styles.stepText}>{t(`${s}_text`)}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -160,7 +172,7 @@ export default async function WorkshopPage({ params }: { params: Promise<{ local
 
         {/* Materials */}
         <section className={`container ${styles.materials}`}>
-          <span className={styles.label}>{t('materials_title')}</span>
+          <h2 className={styles.sectionTitle}>{t('materials_title')}</h2>
           <div className={styles.materialsGrid}>
             {materials.map((m) => (
               <div key={m} className={styles.material}>
@@ -169,7 +181,7 @@ export default async function WorkshopPage({ params }: { params: Promise<{ local
                     src={materialImages[m].src}
                     alt={materialImages[m].alt[appLocale] || materialImages[m].alt.en}
                     fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     style={{ objectFit: 'cover' }}
                   />
                 </div>

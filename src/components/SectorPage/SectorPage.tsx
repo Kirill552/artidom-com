@@ -43,6 +43,7 @@ export default function SectorPage({ sector, proofVariant = 'default', children 
                             className={styles.heroImageMedia}
                             sizes="(max-width: 900px) 100vw, 50vw"
                         />
+                        <div className={styles.heroScrim} aria-hidden="true" />
                     </div>
                 </div>
             </section>
@@ -51,27 +52,19 @@ export default function SectorPage({ sector, proofVariant = 'default', children 
 
             {/* Pain → Solution */}
             <section className={`container ${styles.painSol}`}>
-                <div className={styles.painSolGrid}>
-                    <div>
-                        <h2 className={styles.painSolTitle}>{tCommon('needs_title')}</h2>
-                        <div className={styles.pains}>
-                            {pains.map((p) => (
-                                <div key={p} className={styles.painItem}>
-                                    <span className={styles.painText}>{t(p)}</span>
-                                </div>
-                            ))}
+                <div className={styles.painSolHead}>
+                    <h2 className={styles.painSolTitle}>{tCommon('needs_title')}</h2>
+                    <span className={styles.painSolHeadGap} aria-hidden="true" />
+                    <h2 className={styles.painSolTitle}>{tCommon('solution_title')}</h2>
+                </div>
+                <div className={styles.painSolRows}>
+                    {pains.map((p, i) => (
+                        <div key={p} className={styles.painSolRow}>
+                            <p className={styles.painText}>{t(p)}</p>
+                            <span className={styles.painSolArrow} aria-hidden="true">→</span>
+                            <p className={styles.solText}>{t(`sol${i + 1}`)}</p>
                         </div>
-                    </div>
-                    <div>
-                        <h2 className={styles.painSolTitle}>{tCommon('solution_title')}</h2>
-                        <div className={styles.solutions}>
-                            {pains.map((p, i) => (
-                                <div key={p} className={styles.solItem}>
-                                    <span className={styles.solText}>{t(`sol${i + 1}`)}</span>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </section>
 

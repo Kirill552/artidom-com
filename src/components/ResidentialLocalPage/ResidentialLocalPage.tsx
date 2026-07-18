@@ -26,6 +26,7 @@ export default function ResidentialLocalPage({ page }: ResidentialLocalPageProps
                         className={styles.heroMedia}
                         sizes="(max-width: 900px) 100vw, 50vw"
                     />
+                    <div className={styles.heroScrim} aria-hidden="true" />
                 </div>
             </section>
 

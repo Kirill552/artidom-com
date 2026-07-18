@@ -1,146 +1,146 @@
 .label {
     display: block;
-    font-size: 0.75rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    color: var(--color-accent);
-    font-weight: 300;
-    margin-bottom: 2rem;
+    color: var(--amber-light);
+    margin-bottom: 1.25rem;
 }
 
 .hero {
-    padding: 4rem 0 5rem;
+    padding: calc(64px + clamp(48px, 8vh, 88px)) 0 clamp(48px, 7vw, 88px); /* fixed nav offset */
 }
 
 .heroBody {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5rem;
+    gap: clamp(32px, 5vw, 80px);
     align-items: center;
 }
 
 .heroTitle {
     font-family: var(--font-display);
-    font-size: 3.5rem;
-    font-style: italic;
-    font-weight: 300;
-    margin-bottom: 1.5rem;
-    line-height: 1.1;
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(1.9rem, 3.6vw, 3rem);
+    letter-spacing: -0.01em;
+    margin-bottom: 1.25rem;
+    line-height: 1.12;
 }
 
 .heroDesc {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     line-height: 1.8;
-    opacity: 0.75;
+    color: var(--ink-dim);
 }
 
 .heroImage {
     position: relative;
-    height: 450px;
-    background: var(--color-muted);
-    border-radius: 40px;
+    aspect-ratio: 4 / 3.2;
+    border-radius: var(--radius);
     overflow: hidden;
+    background: var(--surface-elevated);
 }
 
 .heroImageMedia {
     object-fit: cover;
 }
 
-.painSol {
-    padding: 5rem 0;
+.heroScrim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, var(--surface-night) 4%, oklch(0.17 0.01 50 / 0.55) 40%, transparent 70%);
 }
 
-.painSolGrid {
+.painSol {
+    padding: clamp(56px, 8vw, 96px) 0;
+}
+
+.painSolHead {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
+    grid-template-columns: minmax(0, 1fr) 48px minmax(0, 1fr);
+    gap: clamp(16px, 3vw, 40px);
+    margin-bottom: clamp(24px, 3vw, 40px);
 }
 
 .painSolTitle {
-    font-family: var(--font-main);
-    font-size: 0.8rem;
+    font-family: var(--font-display);
     font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-bottom: 2rem;
-    opacity: 0.5;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
 }
 
-.pains,
-.solutions {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
+.painSolRow {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 48px minmax(0, 1fr);
+    gap: clamp(16px, 3vw, 40px);
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid var(--hairline);
 }
 
-.painItem,
-.solItem {
-    padding: 1.5rem 0;
-    border-bottom: 1px solid var(--color-muted);
-}
-
-.painItem:first-child,
-.solItem:first-child {
-    border-top: 1px solid var(--color-muted);
+.painSolArrow {
+    color: var(--amber-light);
+    justify-self: center;
+    font-size: 1.1rem;
 }
 
 .painText {
-    font-size: 1rem;
-    font-weight: 300;
-    opacity: 0.8;
+    color: var(--ink-dim);
 }
 
 .solText {
-    font-size: 1rem;
-    font-weight: 300;
+    color: var(--ink-warm);
 }
 
 .cta {
-    padding: 3rem 0 6rem;
+    padding: 2rem 0 clamp(56px, 8vw, 96px);
 }
 
 .ctaBtn {
-    display: inline-block;
-    padding: 1.25rem 3rem;
-    background: var(--color-text);
-    color: var(--color-bg);
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 300;
-    transition: opacity 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    background: var(--amber-light);
+    color: var(--surface-night);
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 1rem;
+    transition:
+        background-color 200ms var(--ease-out-brand),
+        transform 160ms var(--ease-out-brand);
 }
 
 .ctaBtn:hover {
-    opacity: 0.7;
+    background: var(--amber-deep);
+}
+
+.ctaBtn:active {
+    transform: scale(0.97);
 }
 
 @media (max-width: 900px) {
     .heroBody {
         grid-template-columns: 1fr;
-        gap: 2rem;
     }
-    .heroTitle {
-        font-size: 2.5rem;
-    }
-    .heroImage {
-        height: 300px;
-        border-radius: 24px;
-    }
-    .painSolGrid {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
-}
 
-@media (max-width: 640px) {
-    .hero {
-        padding: 2.5rem 0 3rem;
+    .painSolHead {
+        grid-template-columns: 1fr;
+        gap: 8px;
     }
-    .heroTitle {
-        font-size: 2rem;
+
+    .painSolHeadGap {
+        display: none;
     }
-    .heroImage {
-        height: 250px;
+
+    .painSolRow {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .painSolArrow {
+        justify-self: start;
+        transform: rotate(90deg);
     }
 }
