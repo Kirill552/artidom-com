@@ -1,112 +1,18 @@
 .header {
-    padding: 4rem 0 2rem;
+    padding-top: calc(64px + clamp(56px, 9vh, 100px)); /* fixed nav offset + head spacing */
 }
 
 .title {
     font-family: var(--font-display);
-    font-size: 4rem;
-    font-style: italic;
-    font-weight: 300;
-    margin-bottom: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(1.9rem, 4vw, 3.2rem);
+    letter-spacing: -0.01em;
+    max-width: 20ch;
 }
 
 .subtitle {
-    opacity: 0.6;
-    margin-bottom: 2rem;
-}
-
-.tabs {
-    display: flex;
-    gap: 2rem;
-    border-bottom: 1px solid var(--color-muted);
-    padding-bottom: 1rem;
-}
-
-.tab {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 300;
-    cursor: pointer;
-    opacity: 0.5;
-    transition: opacity 0.3s;
-}
-
-.tab:hover,
-.tabActive {
-    opacity: 1;
-    color: var(--color-accent);
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    padding: 3rem 0 6rem;
-}
-
-.card {
-    display: block;
-    transition: transform 0.4s;
-}
-
-.card:hover {
-    transform: translateY(-4px);
-}
-
-.cardImage {
-    position: relative;
-    height: 320px;
-    background: var(--color-muted);
-    border-radius: 32px;
-    margin-bottom: 1.25rem;
-    overflow: hidden;
-}
-
-.image {
-    object-fit: cover;
-}
-
-.cardName {
-    display: block;
-    font-size: 1rem;
-    font-weight: 300;
-    margin-bottom: 0.4rem;
-}
-
-.cardMeta {
-    display: block;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    opacity: 0.5;
-    margin-bottom: 0.5rem;
-}
-
-.cardCta {
-    font-size: 0.8rem;
-    color: var(--color-accent);
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
-
-@media (max-width: 900px) {
-    .header {
-        padding-top: 3rem;
-    }
-
-    .title {
-        font-size: 2.75rem;
-    }
-
-    .tabs {
-        gap: 1rem;
-        flex-wrap: wrap;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-        padding-top: 2rem;
-    }
+    color: var(--ink-dim);
+    margin-top: 18px;
+    max-width: 56ch;
 }

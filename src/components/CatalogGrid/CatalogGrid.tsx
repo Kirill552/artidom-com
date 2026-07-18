@@ -38,29 +38,31 @@ export default function CatalogGrid({ items, locale, tabs, categories, cardCta }
         ))}
       </div>
 
-      <section className={`container ${styles.grid}`}>
-        {filtered.map((item) => {
+      <section className={styles.grid}>
+        {filtered.map((item, i) => {
           const name = getCatalogLocaleValue(item.name, locale)
           const leadTime = getCatalogLocaleValue(item.leadTime, locale)
 
           return (
             <Link key={item.slug} href={`/catalog/${item.slug}`} className={styles.card}>
-              <div className={styles.cardImage}>
+              <span className={styles.frame}>
                 <Image
                   src={item.coverImage}
                   alt={getCatalogImageAlt(item, locale, 0)}
                   fill
                   className={styles.image}
-                  sizes="(max-width: 900px) 100vw, (max-width: 1400px) 50vw, 33vw"
+                  sizes={i === 0
+                    ? '(max-width: 600px) 100vw, (max-width: 900px) 100vw, 66vw'
+                    : '(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw'}
                 />
-              </div>
-              <div className={styles.cardInfo}>
+              </span>
+              <span className={styles.cap}>
                 <span className={styles.cardName}>{name}</span>
                 <span className={styles.cardMeta}>
                   {categories[item.category]} · {leadTime}
                 </span>
                 <span className={styles.cardCta}>{cardCta}</span>
-              </div>
+              </span>
             </Link>
           )
         })}

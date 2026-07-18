@@ -75,6 +75,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                     priority
                     sizes="100vw"
                 />
+                <div className={styles.heroScrim} aria-hidden="true" />
             </div>
 
             <section className={`container ${styles.content}`}>

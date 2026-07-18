@@ -46,41 +46,43 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
         <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
-        <main className="container">
-            <section className={styles.page}>
+        <main className={`container ${styles.page}`}>
+            <section className={styles.pageHead}>
                 <h1 className={styles.title}>{t('title')}</h1>
                 <p className={styles.subtitle}>{t('subtitle')}</p>
-
-                <div className={styles.grid}>
-                    {projects.map((p, i) => (
-                        <Link
-                            key={p.slug}
-                            href={`/projects/${p.slug}`}
-                            className={`${styles.card} ${i === 0 ? styles.cardWide : ''}`}
-                        >
-                            <div className={styles.cardImage}>
-                                <Image
-                                    src={p.coverImage}
-                                    alt={
-                                        appLocale === 'ru'
-                                            ? `${p.title}: проект мебели на заказ в ${p.location}, ${p.year}`
-                                            : appLocale === 'sr'
-                                                ? `${p.title}: projekat namještaja po mjeri u ${p.location}, ${p.year}`
-                                                : `${p.title}: custom furniture project in ${p.location}, ${p.year}`
-                                    }
-                                    fill
-                                    className={styles.image}
-                                    sizes="(max-width: 900px) 100vw, (max-width: 1400px) 50vw, 33vw"
-                                />
-                                <div className={styles.cardOverlay}>
-                                    <span className={styles.cardTitle}>{p.title}</span>
-                                    <span className={styles.cardMeta}>{p.location} · {p.year}</span>
-                                </div>
-                            </div>
-                        </Link>
-                    ))}
-                </div>
             </section>
+
+            <div className={styles.grid}>
+                {projects.map((p, i) => (
+                    <Link
+                        key={p.slug}
+                        href={`/projects/${p.slug}`}
+                        className={`${styles.card} rv`}
+                        style={{ transitionDelay: `${(i % 3) * 70}ms` }}
+                    >
+                        <span className={styles.frame}>
+                            <Image
+                                src={p.coverImage}
+                                alt={
+                                    appLocale === 'ru'
+                                        ? `${p.title}: проект мебели на заказ в ${p.location}, ${p.year}`
+                                        : appLocale === 'sr'
+                                            ? `${p.title}: projekat namještaja po mjeri u ${p.location}, ${p.year}`
+                                            : `${p.title}: custom furniture project in ${p.location}, ${p.year}`
+                                }
+                                fill
+                                className={styles.image}
+                                style={i === 0 ? { viewTransitionName: 'featured-project' } : undefined}
+                                sizes="(max-width: 720px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                            />
+                        </span>
+                        <span className={styles.cap}>
+                            <span className={styles.capTitle}>{p.title}</span>
+                            <span className={styles.capMeta}>{p.location} &middot; {p.year}</span>
+                        </span>
+                    </Link>
+                ))}
+            </div>
         </main>
         </>
     );
