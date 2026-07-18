@@ -1,26 +1,27 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { Outfit, Cormorant_Garamond } from 'next/font/google';
+import { Commissioner, Unbounded } from 'next/font/google';
 import { isAppLocale } from '@/i18n/locale-config';
 import { getSchemaData, getWebSiteSchema } from '@/lib/seo/schema';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import AnalyticsScripts from '@/components/AnalyticsScripts';
+import Spotlight from '@/components/motion/Spotlight';
+import RevealController from '@/components/motion/RevealController';
 import type { Metadata } from 'next';
 import './globals.css';
 
-const outfit = Outfit({
-  subsets: ['latin', 'latin-ext'],
-  weight: ['200', '300', '400', '500', '600'],
+const commissioner = Commissioner({
+  subsets: ['latin', 'latin-ext', 'cyrillic'],
+  weight: ['400', '500', '600'],
   display: 'swap',
   variable: '--font-main',
 });
 
-const cormorant = Cormorant_Garamond({
+const unbounded = Unbounded({
   subsets: ['latin', 'latin-ext', 'cyrillic'],
-  weight: ['300', '400', '600'],
-  style: ['normal', 'italic'],
+  weight: ['500', '600'],
   display: 'swap',
   variable: '--font-display',
 });
@@ -64,8 +65,14 @@ export default async function LocaleLayout({
   const websiteSchema = getWebSiteSchema(locale);
 
   return (
-    <html lang={locale} className={`${outfit.variable} ${cormorant.variable}`}>
+    <html lang={locale} className={`${commissioner.variable} ${unbounded.variable}`} suppressHydrationWarning>
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "try{var d=document.documentElement;d.classList.add('js');if(sessionStorage.getItem('artidom_seen')){d.classList.add('veil-skip')}else{sessionStorage.setItem('artidom_seen','1')}}catch(e){d.classList.add('js')}",
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
@@ -85,6 +92,8 @@ export default async function LocaleLayout({
 
           <Footer />
         </NextIntlClientProvider>
+        <Spotlight />
+        <RevealController />
         <AnalyticsScripts />
       </body>
     </html>
