@@ -3,60 +3,118 @@
     height: 55vh;
     min-height: 400px;
     background: var(--color-muted);
-    margin-bottom: 0;
+    overflow: hidden;
 }
 
 .heroMedia {
     object-fit: cover;
 }
 
+.heroScrim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, var(--surface-night) 6%, transparent 50%);
+}
+
 .article {
-    padding: 4rem 0;
-    max-width: 740px;
+    padding: clamp(40px, 6vw, 72px) 0;
+    max-width: 68ch;
+    margin-inline: auto;
 }
 
 .meta {
     display: flex;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.tag {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: var(--color-accent);
-}
-
-.date {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    opacity: 0.4;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    margin-bottom: 1.75rem;
+    color: var(--ink-dim);
+    font-size: 0.92rem;
+    font-weight: 500;
 }
 
 .title {
     font-family: var(--font-display);
-    font-size: 3.5rem;
-    font-style: italic;
-    font-weight: 300;
-    line-height: 1.1;
-    margin-bottom: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(1.8rem, 3.6vw, 3rem);
+    letter-spacing: -0.01em;
+    line-height: 1.12;
+    margin-bottom: 2rem;
 }
 
 .body {
-    font-size: 1.1rem;
-    line-height: 1.9;
-    opacity: 0.8;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--ink-warm);
 }
 
 .body h2 {
+    font-family: var(--font-display);
+    font-weight: 500;
     font-size: 1.5rem;
-    margin: 2.5rem 0 1rem;
+    margin: 2.5em 0 0.8em;
+}
+
+.body h3 {
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 2em 0 0.6em;
 }
 
 .body p {
-    margin-bottom: 1.5rem;
+    margin: 0 0 1.5em;
+}
+
+.body ul,
+.body ol {
+    padding-left: 1.2em;
+    margin: 0 0 1.5em;
+}
+
+.body li {
+    margin: 0.4em 0;
+    color: var(--ink-warm);
+}
+
+.body blockquote {
+    border-top: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+    padding: 16px 0;
+    margin: 2em 0;
+    color: var(--ink-dim);
+    font-style: italic;
+}
+
+.body blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+.body a {
+    color: var(--amber-light);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.body strong {
+    font-weight: 600;
+    color: var(--ink-warm);
+}
+
+.body img {
+    border-radius: var(--radius);
+}
+
+.body code {
+    background: var(--surface-elevated);
+    padding: 2px 6px;
+    border-radius: 6px;
+}
+
+.body hr {
+    border: 0;
+    border-top: 1px solid var(--hairline);
+    margin: 2.5em 0;
 }
 
 .back {
@@ -64,28 +122,26 @@
 }
 
 .back a {
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--color-accent);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--ink-dim);
+    font-weight: 500;
+    border-bottom: 1px solid var(--hairline);
+    padding-bottom: 3px;
+    transition:
+        color 200ms var(--ease-out-brand),
+        border-color 200ms var(--ease-out-brand);
+}
+
+.back a:hover {
+    color: var(--amber-light);
+    border-color: var(--amber-light);
 }
 
 @media (max-width: 768px) {
     .heroImage {
         height: 40vh;
         min-height: 250px;
-    }
-    .article {
-        padding: 2.5rem 0;
-    }
-    .title {
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
-    }
-    .body {
-        font-size: 1rem;
-    }
-    .body h2 {
-        font-size: 1.25rem;
     }
 }

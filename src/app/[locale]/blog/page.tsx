@@ -22,6 +22,7 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
   setRequestLocale(locale);
   const posts = await getPosts(locale);
   const t = await getTranslations('Blog');
+  const [featured, ...restPosts] = posts;
 
   return (
     <main className="container">
@@ -33,34 +34,43 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
       {posts.length === 0 ? (
         <p className={styles.empty}>{t('empty')}</p>
       ) : (
-        <div className={styles.grid}>
-          {posts.map((post, i) => (
-            <Link
-              key={post.id}
-              href={`/blog/${post.slug}`}
-              className={`${styles.card} ${i === 0 ? styles.cardWide : ''}`}
-            >
-              {post.coverImage && (
-                <div className={styles.cardImage}>
-                  <Image
-                    src={post.coverImage.url}
-                    alt={`${post.title} - ARTIDOM journal`}
-                    fill
-                    className={styles.cardImageMedia}
-                    sizes={i === 0 ? '100vw' : '(max-width: 900px) 100vw, 50vw'}
-                  />
-                </div>
-              )}
-              <div className={styles.cardBody}>
-                <span className={styles.cardTag}>{post.tag}</span>
-                <h2 className={styles.cardTitle}>{post.title}</h2>
-                <span className={styles.cardDate}>
-                  {new Date(post.publishedAt).toLocaleDateString()}
+        <>
+          <Link href={`/blog/${featured.slug}`} className={styles.featured}>
+            {featured.coverImage && (
+              <span className={styles.featuredFrame}>
+                <Image
+                  src={featured.coverImage.url}
+                  alt={`${featured.title} - ARTIDOM journal`}
+                  fill
+                  className={styles.featuredImage}
+                  sizes="(max-width: 900px) 100vw, 90vw"
+                />
+              </span>
+            )}
+            <span className={styles.featuredCap}>
+              <span className={styles.cardMeta}>
+                {featured.tag} &middot; {new Date(featured.publishedAt).toLocaleDateString()}
+              </span>
+              <h2 className={styles.featuredTitle}>{featured.title}</h2>
+            </span>
+          </Link>
+
+          <div className={styles.rows}>
+            {restPosts.map((post) => (
+              <Link key={post.id} href={`/blog/${post.slug}`} className={styles.row}>
+                <span className={styles.rowMeta}>
+                  {new Date(post.publishedAt).toLocaleDateString()} &middot; {post.tag}
                 </span>
-              </div>
-            </Link>
-          ))}
-        </div>
+                <span className={styles.rowBody}>
+                  <span className={styles.rowTitle}>{post.title}</span>
+                  {post.seoDescription && (
+                    <span className={styles.rowExcerpt}>{post.seoDescription}</span>
+                  )}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </>
       )}
     </main>
   );

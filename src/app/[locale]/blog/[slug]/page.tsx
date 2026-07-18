@@ -69,6 +69,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             className={styles.heroMedia}
             sizes="100vw"
           />
+          <div className={styles.heroScrim} aria-hidden="true" />
         </div>
       )}
 
